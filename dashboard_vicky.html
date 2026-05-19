@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Ag. Nikolaos — Vicky's Dashboard</title>
+<script src="project_data.js"></script>
+<style>
+  :root {
+    --navy:   #1F3864;
+    --blue:   #2E75B6;
+    --lblue:  #D6E4F7;
+    --green:  #2E7D32;
+    --lgreen: #E8F5E9;
+    --yellow: #FFF8E1;
+    --dyellow:#F57F17;
+    --orange: #E65100;
+    --lred:   #FFEBEE;
+    --red:    #C62828;
+    --gray:   #F5F5F5;
+    --dgray:  #757575;
+    --white:  #FFFFFF;
+    --text:   #1A1A1A;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: #ECEFF1;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  /* ── Sticky header ── */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    padding: 14px 16px 10px;
+    border-bottom: 3px solid #F4B942;
+  }
+  .header-row { display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { color: white; font-size: 16px; font-weight: 700; }
+  .header-sub { color: #aac8f0; font-size: 11px; margin-top: 3px; }
+  .last-updated {
+    background: #F4B942;
+    color: #1a1a1a;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+
+  /* ── Section tabs ── */
+  .tabs {
+    display: flex;
+    background: var(--navy);
+    overflow-x: auto;
+    padding: 0 8px 10px;
+    gap: 6px;
+    scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    flex-shrink: 0;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    transition: background .2s;
+  }
+  .tab-btn.active { background: #F4B942; color: #1a1a1a; }
+
+  /* ── Sections ── */
+  .section { display: none; padding: 14px 14px 80px; }
+  .section.active { display: block; }
+
+  /* ── Section title ── */
+  .sec-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--lblue);
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  .card-header {
+    padding: 12px 14px 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .card-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+  .card-title { font-weight: 700; font-size: 14px; color: var(--navy); }
+  .card-sub   { font-size: 12px; color: var(--dgray); margin-top: 2px; }
+  .card-body  { padding: 0 14px 14px; }
+
+  /* status strips */
+  .card.urgent  { border-left: 4px solid var(--red); }
+  .card.waiting { border-left: 4px solid #F4B942; }
+  .card.ok      { border-left: 4px solid var(--green); }
+  .card.info    { border-left: 4px solid var(--blue); }
+  .card.done    { border-left: 4px solid #9E9E9E; opacity: .75; }
+
+  /* ── Badge ── */
+  .badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 4px;
+  }
+  .badge-red    { background: var(--lred);   color: var(--red); }
+  .badge-green  { background: var(--lgreen); color: var(--green); }
+  .badge-yellow { background: var(--yellow); color: var(--dyellow); }
+  .badge-blue   { background: var(--lblue);  color: var(--blue); }
+  .badge-gray   { background: var(--gray);   color: var(--dgray); }
+
+  /* ── Payment rows ── */
+  .pay-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 0;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 10px;
+  }
+  .pay-row:last-child { border-bottom: none; }
+  .pay-left  { flex: 1; }
+  .pay-who   { font-weight: 700; font-size: 14px; }
+  .pay-desc  { font-size: 12px; color: var(--dgray); margin-top: 2px; }
+  .pay-right { text-align: right; flex-shrink: 0; }
+  .pay-amt   { font-size: 17px; font-weight: 800; color: var(--navy); }
+  .pay-type  { font-size: 11px; color: var(--dgray); margin-top: 2px; }
+
+  /* auth box */
+  .auth-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 8px;
+  }
+  .auth-ok     { background: var(--lgreen); color: var(--green); }
+  .auth-wait   { background: var(--yellow); color: var(--dyellow); }
+  .auth-no     { background: var(--lred);   color: var(--red); }
+
+  /* ── Task items ── */
+  .task-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: flex-start;
+  }
+  .task-item:last-child { border-bottom: none; }
+  .task-check {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .task-check.done-check  { background: var(--green); border-color: var(--green); color: white; }
+  .task-check.todo-check  { border-color: var(--blue); }
+  .task-check.urgent-check{ border-color: var(--red); background: var(--lred); color: var(--red); }
+  .task-text  { flex: 1; font-size: 14px; }
+  .task-who   { font-size: 11px; color: var(--dgray); margin-top: 3px; }
+
+  /* ── Decision cards ── */
+  .decision-card {
+    background: var(--gray);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .decision-q {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .decision-body { font-size: 13px; color: var(--text); }
+  .decision-status {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .ds-waiting  { background: var(--yellow); color: var(--dyellow); }
+  .ds-answered { background: var(--lgreen); color: var(--green); }
+  .ds-urgent   { background: var(--lred);   color: var(--red); }
+
+  /* ── Divider label ── */
+  .week-label {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--dgray);
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin: 16px 0 8px;
+  }
+
+  /* ── Note box ── */
+  .note-box {
+    background: var(--lblue);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  /* ── Summary totals ── */
+  .totals-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .total-card {
+    background: white;
+    border-radius: 10px;
+    padding: 12px 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+  .total-label { font-size: 10px; text-transform: uppercase; letter-spacing: .5px; color: var(--dgray); }
+  .total-val   { font-size: 22px; font-weight: 800; margin: 4px 0 2px; color: var(--navy); }
+  .total-sub   { font-size: 10px; color: var(--dgray); }
+
+  /* ── Send reminder ── */
+  .send-reminder {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    color: white;
+    padding: 12px 16px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 200;
+  }
+  .send-btn {
+    background: #F4B942;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  /* ── Divider ── */
+  hr.divider { border: none; border-top: 1px solid #eee; margin: 6px 0; }
+
+  /* ── Kobi's message box ── */
+  .kobi-message {
+    background: #E3F2FD;
+    border-left: 3px solid var(--blue);
+    border-radius: 0 10px 10px 0;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .kobi-message .from { font-weight: 700; color: var(--blue); font-size: 11px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<div class="header">
+  <div class="header-row">
+    <div>
+      <h1>🏠 Ag. Nikolaos — Site Dashboard</h1>
+      <div class="header-sub">For Vicky &nbsp;·&nbsp; Agio Nikolaos, North Evia</div>
+    </div>
+    <div class="last-updated" id="last-updated">—</div>
+  </div>
+</div>
+
+<!-- Tab bar -->
+<div class="tabs" id="tabs">
+  <button class="tab-btn active" onclick="showTab('approvals')">🔴 Approvals</button>
+  <button class="tab-btn" onclick="showTab('payments')">💳 Payments</button>
+  <button class="tab-btn" onclick="showTab('tasks')">📋 This Week</button>
+  <button class="tab-btn" onclick="showTab('decisions')">❓ Decisions</button>
+  <button class="tab-btn" onclick="showTab('overview')">📊 Overview</button>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 1: APPROVALS FROM KOBI
+══════════════════════════════════════════ -->
+<div class="section active" id="tab-approvals">
+  <div class="sec-title">🔴 Needs Kobi's Approval</div>
+
+  <div class="note-box">
+    💬 Kobi: <em>"Vicky, the items below need your action once I approve — I've marked each one. Call me if anything is unclear!"</em>
+  </div>
+
+  <!-- Approved items -->
+  <div class="week-label">✅ ALREADY APPROVED — YOU CAN PROCEED</div>
+  <div id="approvals-approved"></div>
+
+  <!-- Items waiting for Kobi -->
+  <div class="week-label">⏳ WAITING FOR KOBI TO DECIDE</div>
+  <div id="approvals-waiting"></div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 2: PAYMENTS
+══════════════════════════════════════════ -->
+<div class="section" id="tab-payments">
+  <div class="sec-title">💳 Payments — This Cycle</div>
+
+  <!-- Due Now -->
+  <div class="week-label">🔴 DUE NOW</div>
+  <div id="payments-due-now"></div>
+
+  <!-- Workers this week -->
+  <div class="week-label">👷 WORKERS — AUTHORIZE BEFORE ASSIGNING TASKS</div>
+
+  <div class="card info">
+    <div class="card-header">
+      <div class="card-icon">👷</div>
+      <div>
+        <div class="card-title">Weekly Workers Wages</div>
+        <div class="card-sub">Calculate Saturday and send total to Kobi for transfer</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div style="font-size:13px; margin-bottom:8px;">
+        Expected: <strong>4–5 workers/day</strong> on apartments + 3rd floor from May 19
+      </div>
+      <div style="font-size:12px; color:var(--dgray); background:var(--gray); border-radius:8px; padding:10px;">
+        Standard rates:<br>
+        • €50/day — general laborer<br>
+        • €80/day — skilled worker<br>
+        • Fuel for cement mixer: ~€30/week
+      </div>
+      <div class="auth-box auth-ok" style="margin-top:8px;">✅ Kobi pre-authorizes weekly wages — send total each Saturday</div>
+    </div>
+  </div>
+
+  <!-- Upcoming planned -->
+  <div class="week-label">⏳ UPCOMING — DO NOT PAY YET</div>
+
+  <div class="card done">
+    <div class="card-header">
+      <div class="card-icon">🔧</div>
+      <div>
+        <div class="card-title">Plumber — Remaining balance</div>
+        <div class="card-sub">~€7,200 est. remaining of ~€10,000 total</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="auth-box auth-wait">⏳ Wait until water network connected + pressure test done</div>
+    </div>
+  </div>
+
+  <div class="card done">
+    <div class="card-header">
+      <div class="card-icon">⚡</div>
+      <div>
+        <div class="card-title">Electricians — Remaining phases</div>
+        <div class="card-sub">Full house wiring est. ~€20,000 total</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="auth-box auth-wait">⏳ Phase by phase — agree with Kobi before each payment</div>
+    </div>
+  </div>
+
+  <!-- Running total -->
+  <div class="week-label">💰 THIS CYCLE SUMMARY</div>
+  <div class="totals-grid" id="payments-summary-grid"></div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 3: THIS WEEK'S TASKS
+     (Mostly static — editorial content.
+      Only the week date is data-driven.)
+══════════════════════════════════════════ -->
+<div class="section" id="tab-tasks">
+  <div class="sec-title">📋 This Week — Work Plan</div>
+  <div style="font-size:12px;color:var(--dgray);margin-bottom:12px;">Week of <span id="week-of">—</span></div>
+
+  <div class="kobi-message">
+    <div class="from">Kobi &amp; Yael say:</div>
+    You and the team are doing an incredible job Vicky 🙏. We're really excited about the progress. Please send photos whenever you can — it keeps us going! Send us the weekly report + payment total by Saturday.
+  </div>
+
+  <!-- Main house / apartments -->
+  <div class="card info">
+    <div class="card-header">
+      <div class="card-icon">🏗️</div>
+      <div>
+        <div class="card-title">Apartments A &amp; B — Upper Floor</div>
+        <div class="card-sub">4–5 workers from Monday</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Continue brickwork on upper floor</div>
+          <div class="task-who">Workers — materials already on roof beams</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Electrical conduits — Apartment B (electrician to proceed)</div>
+          <div class="task-who">Electrician — advance paid ✅</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Coordinate electrician for lines in apartment layout</div>
+          <div class="task-who">Vicky — use electrical budget as reference (sent May 18)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Storage -->
+  <div class="card info">
+    <div class="card-header">
+      <div class="card-icon">🏠</div>
+      <div>
+        <div class="card-title">Storage Buildings</div>
+        <div class="card-sub">Both storages — finishing</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Large storage: Install dimmer switch + recessed spotlights (fiberboard ceiling)</div>
+          <div class="task-who">Electrician — arriving this week</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Small storage: Complete roof, door &amp; window installation</div>
+          <div class="task-who">Workers + Blacksmith (door €550 — approved)</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Add door stopper on large storage iron door (wind guard)</div>
+          <div class="task-who">Blacksmith — Kobi's request</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Confirm steel anchors delivered from Kairis → pay €2,875 balance</div>
+          <div class="task-who">Vicky — Kobi approved payment</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Ensure small storage has washing machine water + drainage hookup</div>
+          <div class="task-who">Plumber — Kobi's request</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Plumbing -->
+  <div class="card urgent">
+    <div class="card-header">
+      <div class="card-icon">🚰</div>
+      <div>
+        <div class="card-title">Plumbing — URGENT: Water Connection</div>
+        <div class="card-sub">Blocking pressure test and trench closure</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="task-item">
+        <div class="task-check urgent-check">!</div>
+        <div>
+          <div class="task-text">Follow up with community office on water network connection date</div>
+          <div class="task-who">Vicky — application already submitted. Chase urgently.</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Once water connected: plumber pressure tests + closes trenches</div>
+          <div class="task-who">Plumber</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legal / notary -->
+  <div class="card waiting">
+    <div class="card-header">
+      <div class="card-icon">📋</div>
+      <div>
+        <div class="card-title">Legal — Land Registry &amp; Notary</div>
+        <div class="card-sub">Blocking Antonis + funding application</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="task-item">
+        <div class="task-check urgent-check">!</div>
+        <div>
+          <div class="task-text">Push Vasiliki / Notary for formal land registry certificate</div>
+          <div class="task-who">Vicky — temp cert received. Formal cert = unblocks everything.</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Coordinate Antonis to review building split plans + sign off</div>
+          <div class="task-who">Vicky — Antonis needs 1 full day to review</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tiles -->
+  <div class="card info">
+    <div class="card-header">
+      <div class="card-icon">🪟</div>
+      <div>
+        <div class="card-title">Tiles &amp; Windows</div>
+        <div class="card-sub">First order confirmed — follow up on delivery + next orders</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Confirm delivery date from tile supplier (order May 8)</div>
+          <div class="task-who">CANDIA SLAB IVORY: 240 sqm 120×120 + 90 sqm 60×60 = 330 sqm</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Next tile orders to plan: rooftop room (wood-like), veranda (chosen, order TBD), bathrooms (after micro-cement test on storage)</div>
+          <div class="task-who">Vicky — coordinate with Kobi when ready</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Get quote for aluminum windows + doors (~25 openings)</div>
+          <div class="task-who">Vicky — once Kobi confirms color (black vs. other)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Insulation + Cameras -->
+  <div class="card urgent">
+    <div class="card-header">
+      <div class="card-icon">🏠</div>
+      <div>
+        <div class="card-title">House Insulation — URGENT Summer Task</div>
+        <div class="card-sub">Must complete during dry season — do not delay</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="task-item">
+        <div class="task-check urgent-check">!</div>
+        <div>
+          <div class="task-text">Research insulation method options + get pricing → send to Kobi for approval</div>
+          <div class="task-who">Vicky — before end of May. Dry season window is short.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card info">
+    <div class="card-header">
+      <div class="card-icon">📷</div>
+      <div>
+        <div class="card-title">WiFi Site Cameras</div>
+        <div class="card-sub">Kobi &amp; Yael want to watch progress from Israel</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Source 2–3 camera options + prices → send to Kobi</div>
+          <div class="task-who">Locations: entrance, main work area, storage. Mention to workers: owners are following from Israel.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blacksmith -->
+  <div class="card info">
+    <div class="card-header">
+      <div class="card-icon">⚙️</div>
+      <div>
+        <div class="card-title">Blacksmith — Gate Quote</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="task-item">
+        <div class="task-check todo-check">→</div>
+        <div>
+          <div class="task-text">Get formal price quote for entrance sliding gate (5m, 3 columns, black)</div>
+          <div class="task-who">Blacksmith — he measured already. Send quote to Kobi ASAP.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End of week -->
+  <div class="card ok">
+    <div class="card-header">
+      <div class="card-icon">📤</div>
+      <div>
+        <div class="card-title">Saturday — Send to Kobi</div>
+        <div class="card-sub">Weekly summary message</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div style="font-size:13px; color:var(--text); background:var(--gray); border-radius:8px; padding:10px;">
+        Please send Kobi:<br>
+        1. 📸 Photos of the week's progress<br>
+        2. 💰 Workers wages total (days × rates)<br>
+        3. 🧾 Any new invoices / payments made<br>
+        4. ✅ What was completed this week<br>
+        5. ⚠️ Any new issues or unexpected expenses
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 4: DECISIONS NEEDED
+══════════════════════════════════════════ -->
+<div class="section" id="tab-decisions">
+  <div class="sec-title">❓ Open Decisions</div>
+
+  <div class="note-box">
+    🟡 These are waiting for Kobi &amp; Yael to decide. You can flag them in your Saturday report or call if urgent.
+  </div>
+
+  <div id="decisions-list"></div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 5: OVERVIEW
+══════════════════════════════════════════ -->
+<div class="section" id="tab-overview">
+  <div class="sec-title">📊 Project Overview</div>
+
+  <div class="totals-grid" id="overview-kpis"></div>
+
+  <!-- Phase status -->
+  <div class="card" style="margin-top:4px;">
+    <div class="card-body" style="padding-top:14px;">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:10px;">Phase Status</div>
+      <div id="overview-phases"></div>
+    </div>
+  </div>
+
+  <!-- About this dashboard -->
+  <div class="card" style="margin-top:4px; background:var(--lblue);">
+    <div class="card-body" style="padding:14px;">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px;">ℹ️ About This Dashboard</div>
+      <div style="font-size:12px;color:var(--navy);">
+        This file is updated by Kobi &amp; Yael using Claude (AI assistant). When you send your weekly WhatsApp report, Kobi processes it and sends you an updated version of this dashboard every week.<br><br>
+        <strong>Important:</strong> This file requires <code>project_data.js</code> in the same folder to display correctly. Always keep both files together.<br><br>
+        Questions? Call Kobi or WhatsApp the group 🙏
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     BOTTOM REMINDER BAR
+══════════════════════════════════════════ -->
+<div class="send-reminder">
+  <span>📤 Send weekly report + photos to Kobi every Saturday</span>
+  <button class="send-btn" onclick="alert('Remember to include:\n1. Photos of progress\n2. Workers wages total (days × rates)\n3. Invoices/payments made\n4. What was completed\n5. Any new issues')">Checklist</button>
+</div>
+
+
+<script>
+// ── Tab navigation ─────────────────────────────────────────────────
+function showTab(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  const map = {approvals:0, payments:1, tasks:2, decisions:3, overview:4};
+  document.querySelectorAll('.tab-btn')[map[name]].classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ── Helpers ────────────────────────────────────────────────────────
+const esc = s => String(s)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+// ── Render from PROJECT_DATA ───────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function () {
+  const D = PROJECT_DATA;
+
+  // Header date
+  document.getElementById('last-updated').textContent = D.meta.lastUpdated;
+
+  // Week of (Tab 3)
+  document.getElementById('week-of').textContent = D.meta.weekOf;
+
+  // ── Tab 1: Approvals ──────────────────────────────────────────────
+  const approvedEl  = document.getElementById('approvals-approved');
+  const waitingEl   = document.getElementById('approvals-waiting');
+
+  D.vickyApprovals.approved.forEach(item => {
+    approvedEl.innerHTML += `
+      <div class="card ok">
+        <div class="card-header">
+          <div class="card-icon">${esc(item.icon)}</div>
+          <div>
+            <div class="card-title">${esc(item.title)}</div>
+            <div class="card-sub">${esc(item.sub)}</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="auth-box auth-ok">${esc(item.auth)}</div>
+          <div style="font-size:12px; color:var(--dgray); margin-top:8px;">${esc(item.detail)}</div>
+        </div>
+      </div>`;
+  });
+
+  D.vickyApprovals.waiting.forEach(item => {
+    waitingEl.innerHTML += `
+      <div class="card waiting">
+        <div class="card-header">
+          <div class="card-icon">${esc(item.icon)}</div>
+          <div>
+            <div class="card-title">${esc(item.title)}</div>
+            <div class="card-sub">${esc(item.sub)}</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="auth-box auth-wait">${esc(item.auth)}</div>
+          <div style="font-size:12px; color:var(--dgray); margin-top:8px;">${esc(item.detail)}</div>
+        </div>
+      </div>`;
+  });
+
+  // ── Tab 2: Payments ───────────────────────────────────────────────
+  const dueEl = document.getElementById('payments-due-now');
+  D.vickyPayments.dueNow.forEach(p => {
+    dueEl.innerHTML += `
+      <div class="card urgent">
+        <div class="card-header">
+          <div class="card-icon">${esc(p.icon)}</div>
+          <div>
+            <div class="card-title">${esc(p.title)}</div>
+            <div class="card-sub">${esc(p.sub)}</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pay-row">
+            <div class="pay-left">
+              <div class="pay-who">${esc(p.who)}</div>
+              <div class="pay-desc">${esc(p.desc)}</div>
+            </div>
+            <div class="pay-right">
+              <div class="pay-amt">${esc(p.amount)}</div>
+              <div class="pay-type">${esc(p.payType)}</div>
+            </div>
+          </div>
+          <div class="auth-box auth-ok">${esc(p.auth)}</div>
+        </div>
+      </div>`;
+  });
+
+  // Payments summary grid
+  const ps = D.vickyPayments.summary;
+  document.getElementById('payments-summary-grid').innerHTML = `
+    <div class="total-card" style="border-top:3px solid var(--red);">
+      <div class="total-label">Due Now</div>
+      <div class="total-val" style="color:var(--red);">${esc(ps.dueNow)}</div>
+      <div class="total-sub">${esc(ps.dueSub)}</div>
+    </div>
+    <div class="total-card" style="border-top:3px solid #F4B942;">
+      <div class="total-label">Workers Est.</div>
+      <div class="total-val" style="color:var(--dyellow);">${esc(ps.workers)}</div>
+      <div class="total-sub">${esc(ps.workersSub)}</div>
+    </div>
+    <div class="total-card" style="border-top:3px solid var(--blue);">
+      <div class="total-label">Paid to Date</div>
+      <div class="total-val">${esc(ps.paidToDate)}</div>
+      <div class="total-sub">All confirmed paid</div>
+    </div>
+    <div class="total-card" style="border-top:3px solid var(--green);">
+      <div class="total-label">ATM Limit</div>
+      <div class="total-val" style="color:var(--green);">${esc(ps.atmLimit)}</div>
+      <div class="total-sub">Per day. 2 days for &gt;€2K</div>
+    </div>`;
+
+  // ── Tab 4: Decisions ──────────────────────────────────────────────
+  const decEl = document.getElementById('decisions-list');
+  D.vickyDecisions.forEach(d => {
+    decEl.innerHTML += `
+      <div class="decision-card">
+        <div class="decision-q">${esc(d.q)}</div>
+        <div class="decision-body">${esc(d.body)}</div>
+        <div class="decision-status ${esc(d.statusClass)}">${esc(d.status)}</div>
+      </div>`;
+  });
+
+  // ── Tab 5: Overview ───────────────────────────────────────────────
+  // KPI grid: paid to date, due this week, budget, % complete
+  const kpis = D.kpis;
+  const fin  = D.financialSummary;
+  const paySummary = D.vickyPayments.summary;
+  document.getElementById('overview-kpis').innerHTML = `
+    <div class="total-card" style="border-top:3px solid var(--green);">
+      <div class="total-label">Total Paid</div>
+      <div class="total-val" style="color:var(--green);">${esc(paySummary.paidToDate)}</div>
+      <div class="total-sub">Feb–May 2026</div>
+    </div>
+    <div class="total-card" style="border-top:3px solid var(--red);">
+      <div class="total-label">Due This Cycle</div>
+      <div class="total-val" style="color:var(--red);">${esc(paySummary.dueNow)}</div>
+      <div class="total-sub">${esc(paySummary.dueSub)}</div>
+    </div>
+    <div class="total-card" style="border-top:3px solid var(--navy);">
+      <div class="total-label">Budget Est.</div>
+      <div class="total-val">${esc(kpis.totalBudget)}</div>
+      <div class="total-sub">Full project</div>
+    </div>
+    <div class="total-card" style="border-top:3px solid #F4B942;">
+      <div class="total-label">% Complete</div>
+      <div class="total-val" style="color:var(--dyellow);">~${esc(fin.progressPct)}%</div>
+      <div class="total-sub">By spend</div>
+    </div>`;
+
+  // Phase status
+  const phaseStatusCls = {
+    done:     'done-check',
+    ongoing:  'todo-check',
+    upcoming: 'todo-check',
+    blocked:  'urgent-check',
+  };
+  const phaseStatusIcon = {
+    done:     '✓',
+    ongoing:  '→',
+    upcoming: '→',
+    blocked:  '!',
+  };
+  const phaseEl = document.getElementById('overview-phases');
+  D.phases.forEach(p => {
+    const cls  = phaseStatusCls[p.status]  || 'todo-check';
+    const icon = phaseStatusIcon[p.status] || '→';
+    phaseEl.innerHTML += `
+      <div class="task-item">
+        <div class="task-check ${esc(cls)}">${esc(icon)}</div>
+        <div>
+          <div class="task-text">${esc(p.name)}</div>
+          <div class="task-who">${esc(p.detail)}</div>
+        </div>
+      </div>`;
+  });
+});
+</script>
+
+</body>
+</html>
