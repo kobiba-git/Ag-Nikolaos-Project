@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "19 May 2026",
-    weekOf:        "19–24 May 2026",
+    lastUpdated:   "20 May 2026",
+    weekOf:        "20–24 May 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
