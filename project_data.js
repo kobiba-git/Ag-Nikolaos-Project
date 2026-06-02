@@ -14,7 +14,7 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "1 June 2026",
+    lastUpdated:   "2 June 2026",
     weekOf:        "26 May – 1 June 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
@@ -135,7 +135,7 @@ const PROJECT_DATA = {
     { date: "May 25",     category: "Workers",    desc: "Meli Ice Cream — treat for workers team. Paid by Vicky from Kobi's funds.", vendor: "Meli Ice Cream", amount: "€50",   status: "paid" },
     { date: "May 23",     category: "Windows",    desc: "Aluminum window + balcony door — large storage unit (white aluminum, under iron door and window). Arrived with screen as requested. Window ~1 week delay.", vendor: "Aluminum supplier", amount: "€1,150", status: "paid" },
     { date: "May 19–23",  category: "Workers",    desc: "Workers wages (week May 19–23) — Mon €230 (3w+Meli), Tue €230 (3w+Meli), Wed €330 (3w+Meli+Contractor overlap), Thu €330 (3w+Meli+Contractor overlap), Fri €250 (3w+Contractor), Sat €250 (3w+Contractor)", vendor: "Workers + Managers", amount: "€1,620", status: "paid" },
-    { date: "Due now",    category: "Materials",  desc: "Kairis — remaining balance after €2,330 partial payment on May 26. Covers: containers €360 + upper floor materials €100 + roof panels/Ytong balance.", vendor: "Kairis", amount: "~€1,005", status: "due" },
+    { date: "Due now",    category: "Materials",  desc: "Kairis — running balance: €2,635 existing + €510 small storage roof (arriving this week) = €3,145 total. Kobi to settle personally on next Greece visit.", vendor: "Kairis", amount: "~€3,145", status: "due" },
     { date: "Approved",   category: "Electrical", desc: "Electrical work + materials — 2 apts + 2 storages + outdoor provisions", vendor: "Electricians", amount: "€9,500", status: "due" },
     { date: "Approved",   category: "Electrical", desc: "Electrical plans — submitted to electricity authority", vendor: "Electricians",       amount: "€1,000",      status: "upcoming" },
     { date: "Approved",   category: "Electrical", desc: "Three-phase meter (under Kobi's name)",                 vendor: "Electricians",       amount: "€750",        status: "upcoming" },
@@ -241,10 +241,10 @@ const PROJECT_DATA = {
         sub:    "€9,500 work + €1,000 plans + €750 three-phase meter = €11,250 total",
         auth:   "✅ KOBI APPROVED (May 23) — Proceed with full scope",
         detail: "Includes: sockets, spotlights, panels, all wiring from main panel to storages + entrances. Plans submitted to electricity authority. Meter: 1× three-phase (main apt+storage+roof garden) + 2× single-phase (downstairs apts). Upper floor deferred — no walls yet." },
-      { icon: "💳", title: "Pay Kairis — balance (updated €2,975)",
-        sub:    "€2,875 original + €100 upper floor materials + €360 containers = €3,335 total owed",
-        auth:   "✅ KOBI APPROVED — Pay once steel anchors confirmed",
-        detail: "30sqm roof panels €1,450 · 9sqm small storage roof €650 · Ytong €700 · finish coat €75 · containers €360 · upper floor materials €100. Cash as usual." },
+      { icon: "💳", title: "Kairis — running balance €3,145 (Kobi to settle personally)",
+        sub:    "€2,635 existing + €510 small storage roof (arriving this week) = €3,145 total",
+        auth:   "✅ KOBI APPROVED — Kobi to pay Kairis personally on next Greece visit. Vicky to confirm amount with Kairis.",
+        detail: "After this delivery (small storage roof panels), Vicky: 'After this we stop talking about roof panels!' Kobi will settle the full €3,145 balance in person. Do not pay through Vicky's running cash." },
       { icon: "🔨", title: "Electricians — Continue Apartment B",
         sub:    "Advance of €400 already paid. Continue full scope.",
         auth:   "✅ KOBI APPROVED — Proceed per agreed electrical scope",
@@ -281,15 +281,15 @@ const PROJECT_DATA = {
   // ── Vicky's payments tab ─────────────────────────────────────────
   vickyPayments: {
     dueNow: [
-      { icon: "🧱", title: "Kairis",                   sub: "Roof panels + Ytong + insulation",
-        who: "Kairis Materials", desc: "30sqm panels · small storage roof · Ytong · coat",
-        amount: "€2,875", payType: "💵 CASH", auth: "✅ Kobi approved — Pay when steel anchors confirmed" },
+      { icon: "🧱", title: "Kairis",                   sub: "Running balance — Kobi to settle personally on next visit",
+        who: "Kairis Materials", desc: "€2,635 existing balance + €510 small storage roof (this week) = €3,145 total. Vicky to visit Kairis to register the amount; Kobi pays on next Greece visit.",
+        amount: "€3,145", payType: "💵 CASH (Kobi personally)", auth: "✅ Kobi approved — Kobi to settle personally on Greece visit" },
       { icon: "🔩", title: "Blacksmith — Small Storage", sub: "Door + window + varnish installation",
         who: "Blacksmith", desc: "Small storage door + window (€500) + paint (€50)",
         amount: "€550",   payType: "💵 CASH", auth: "✅ Kobi approved — Pay on completion" },
     ],
     summary: {
-      dueNow:     "~€14,110",  dueSub:     "Kairis €3,335 + Electrician ~€8,500 + Blacksmith €550 + plans/meter €1,750",
+      dueNow:     "~€13,920",  dueSub:     "Kairis €3,145 + Electrician ~€8,500 + Blacksmith €550 + plans/meter €1,750",
       workers:    "€1,500",    workersSub: "3 workers @€50 + manager @€100/day (Mon–Sat)",
       paidToDate: "~€46K",
       atmLimit:   "€2K",
