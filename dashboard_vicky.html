@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Ag. Nikolaos — Vicky</title>
+<script src="project_data.js"></script>
+<style>
+  :root {
+    --navy:   #1F3864;
+    --gold:   #F4B942;
+    --green:  #2E7D32;
+    --lgreen: #E8F5E9;
+    --red:    #C62828;
+    --lred:   #FFEBEE;
+    --amber:  #F57F17;
+    --lamber: #FFF8E1;
+    --blue:   #2E75B6;
+    --lblue:  #D6E4F7;
+    --gray:   #9E9E9E;
+    --lgray:  #F5F5F5;
+    --dgray:  #616161;
+    --text:   #1A1A1A;
+    --bg:     #ECEFF1;
+    --white:  #FFFFFF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  /* ── Header ─────────────────────────────────────────────────────── */
+  .hdr {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    padding: 12px 14px 0;
+    border-bottom: 3px solid var(--gold);
+  }
+  .hdr-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .hdr-title { color: white; font-size: 15px; font-weight: 700; }
+  .hdr-sub { color: #aac8f0; font-size: 11px; margin-top: 2px; }
+  .badge-date {
+    background: var(--gold);
+    color: #1a1a1a;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+  .progress-wrap { background: rgba(255,255,255,0.15); border-radius: 3px; height: 5px; }
+  .progress-fill { height: 5px; border-radius: 3px; background: var(--gold); }
+  .progress-row { display: flex; justify-content: flex-end; padding: 3px 0 8px; }
+  .progress-pct { color: #aac8f0; font-size: 10px; }
+
+  /* ── Tabs ────────────────────────────────────────────────────────── */
+  .tabs {
+    display: flex;
+    background: var(--navy);
+    overflow-x: auto;
+    padding: 0 8px 10px;
+    gap: 5px;
+    scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex-shrink: 0;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    transition: background .15s;
+  }
+  .tab.active { background: var(--gold); color: #1a1a1a; }
+
+  /* ── Sections ────────────────────────────────────────────────────── */
+  .sec { display: none; padding: 12px 12px 80px; }
+  .sec.active { display: block; }
+
+  /* ── Divider label ───────────────────────────────────────────────── */
+  .div-lbl {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--dgray);
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    margin: 14px 0 8px;
+  }
+  .div-lbl:first-child { margin-top: 2px; }
+
+  /* ── Stat grid ───────────────────────────────────────────────────── */
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .stat {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 12px 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  .stat-lbl { font-size: 10px; text-transform: uppercase; letter-spacing: .5px; color: var(--dgray); }
+  .stat-val { font-size: 22px; font-weight: 800; margin: 4px 0 2px; }
+  .stat-sub { font-size: 10px; color: var(--dgray); }
+
+  /* ── Task grid ───────────────────────────────────────────────────── */
+  .task-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 12px; }
+  .task-tile {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 10px 10px 9px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border-top: 3px solid var(--lgray);
+  }
+  .task-tile.urgent { border-top-color: var(--red); }
+  .task-tile.normal { border-top-color: var(--blue); }
+  .task-icon  { font-size: 20px; margin-bottom: 5px; }
+  .task-label { font-size: 12px; font-weight: 700; color: var(--text); line-height: 1.3; }
+  .task-sub   { font-size: 10px; color: var(--dgray); margin-top: 3px; }
+
+  /* ── Phase rows ──────────────────────────────────────────────────── */
+  .phase-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    background: var(--white);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+  .dot.done    { background: var(--green); }
+  .dot.ongoing { background: var(--amber); }
+  .dot.upcoming{ background: var(--gray); }
+  .dot.blocked { background: var(--red); }
+  .phase-name  { font-size: 13px; flex: 1; color: var(--text); }
+  .phase-tag {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 9px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  .tag-done    { background: var(--lgreen); color: var(--green); }
+  .tag-ongoing { background: var(--lamber); color: var(--amber); }
+  .tag-upcoming{ background: var(--lgray);  color: var(--dgray); }
+  .tag-blocked { background: var(--lred);   color: var(--red); }
+
+  /* ── Pay cards ───────────────────────────────────────────────────── */
+  .pay-card {
+    background: var(--white);
+    border-radius: 10px;
+    margin-bottom: 7px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border-left: 4px solid var(--lgray);
+    gap: 10px;
+  }
+  .pay-card.due     { border-left-color: var(--red); }
+  .pay-card.pending { border-left-color: var(--amber); }
+  .pay-card.future  { border-left-color: var(--gray); opacity: .72; }
+  .pay-card.blocked-card { border-left-color: var(--red); opacity: .65; }
+  .pay-left { flex: 1; min-width: 0; }
+  .pay-who  { font-size: 13px; font-weight: 700; }
+  .pay-desc { font-size: 11px; color: var(--dgray); margin-top: 2px; line-height: 1.4; }
+  .pay-cond { font-size: 10px; color: var(--dgray); margin-top: 4px; font-style: italic; }
+  .pay-right { text-align: right; flex-shrink: 0; }
+  .pay-amt  { font-size: 17px; font-weight: 800; }
+  .pay-type { font-size: 10px; color: var(--dgray); margin-top: 2px; }
+  .c-red   { color: var(--red); }
+  .c-amber { color: var(--amber); }
+  .c-gray  { color: var(--gray); }
+  .c-green { color: var(--green); }
+
+  /* ── Decision rows ───────────────────────────────────────────────── */
+  .dec-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    background: var(--white);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .tl { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; margin-top: 3px; }
+  .tl.red   { background: var(--red); }
+  .tl.amber { background: var(--amber); }
+  .tl.green { background: var(--green); }
+  .dec-q   { font-size: 13px; font-weight: 700; color: var(--text); }
+  .dec-who { font-size: 11px; color: var(--dgray); margin-top: 3px; }
+  .dec-legend {
+    background: var(--lgray);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 11px;
+    color: var(--dgray);
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* ── Approval grid ───────────────────────────────────────────────── */
+  .appr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+  .appr-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 12px 10px 10px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .appr-icon  { font-size: 22px; margin-bottom: 6px; }
+  .appr-label { font-size: 11px; font-weight: 700; color: var(--text); line-height: 1.35; flex: 1; }
+  .appr-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-top: 7px;
+  }
+  .badge-go   { background: var(--lgreen); color: var(--green); }
+  .badge-wait { background: var(--lamber); color: var(--amber); }
+
+  /* ── Note cards ──────────────────────────────────────────────────── */
+  .note-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .note-head { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .note-body { font-size: 13px; color: var(--dgray); line-height: 1.6; }
+  .kobi-msg {
+    background: #E3F2FD;
+    border-left: 3px solid var(--blue);
+    border-radius: 0 12px 12px 0;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .kobi-from { font-weight: 700; color: var(--blue); font-size: 11px; margin-bottom: 5px; }
+
+  /* ── Bottom bar ──────────────────────────────────────────────────── */
+  .bottom-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--navy);
+    color: #aac8f0;
+    padding: 10px 14px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 200;
+  }
+  .btn-checklist {
+    background: var(--gold);
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<div class="hdr">
+  <div class="hdr-row">
+    <div>
+      <div class="hdr-title">🏠 Ag. Nikolaos — Site</div>
+      <div class="hdr-sub">Vicky &nbsp;·&nbsp; Agio Nikolaos, North Evia</div>
+    </div>
+    <div class="badge-date" id="last-updated">—</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+  </div>
+  <div class="progress-row">
+    <span class="progress-pct" id="progress-pct">—</span>
+  </div>
+</div>
+
+<!-- Tab bar -->
+<div class="tabs">
+  <button class="tab active" onclick="showTab('status',this)">📍 Status</button>
+  <button class="tab" onclick="showTab('pay',this)">💳 Pay</button>
+  <button class="tab" onclick="showTab('decide',this)">❓ Decide</button>
+  <button class="tab" onclick="showTab('approve',this)">✅ Approve</button>
+  <button class="tab" onclick="showTab('notes',this)">📝 Notes</button>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 1: STATUS
+══════════════════════════════════════════ -->
+<div class="sec active" id="tab-status">
+
+  <!-- KPI row -->
+  <div class="stat-grid" id="status-stats"></div>
+
+  <!-- This week task grid -->
+  <div class="div-lbl">This week</div>
+  <div class="task-grid" id="task-grid"></div>
+
+  <!-- Phase status -->
+  <div class="div-lbl">Phase status</div>
+  <div id="phase-list"></div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 2: PAY
+══════════════════════════════════════════ -->
+<div class="sec" id="tab-pay">
+
+  <div class="div-lbl">Pay now</div>
+  <div id="pay-due-now"></div>
+
+  <div class="div-lbl">Workers — send total to Kobi on Saturday</div>
+  <div class="pay-card pending" id="pay-workers"></div>
+
+  <div class="div-lbl">Do not pay yet</div>
+  <div id="pay-upcoming"></div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 3: DECIDE
+══════════════════════════════════════════ -->
+<div class="sec" id="tab-decide">
+  <div id="decisions-list"></div>
+  <div class="dec-legend">🔴 Urgent &nbsp;·&nbsp; 🟡 Waiting &nbsp;·&nbsp; 🟢 Decided</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 4: APPROVE
+══════════════════════════════════════════ -->
+<div class="sec" id="tab-approve">
+
+  <div class="div-lbl">Kobi approved — go ahead</div>
+  <div class="appr-grid" id="appr-approved"></div>
+
+  <div class="div-lbl">Waiting for Kobi</div>
+  <div class="appr-grid" id="appr-waiting"></div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 5: NOTES
+══════════════════════════════════════════ -->
+<div class="sec" id="tab-notes">
+
+  <div class="kobi-msg">
+    <div class="kobi-from">Kobi &amp; Yael say:</div>
+    You and the team are doing an incredible job Vicky 🙏. We're really excited about the progress. Please send photos whenever you can — it keeps us going! Send us the weekly report + payment total by Saturday.
+  </div>
+
+  <div class="note-card">
+    <div class="note-head">📦 Tiles — first order confirmed (May 8)</div>
+    <div class="note-body">
+      CANDIA SLAB IVORY NATURAL 9MM:<br>
+      • Floor B internal + balconies &amp; Floor A balconies: <strong>240 sqm @ 120×120</strong><br>
+      • Floor A internal: <strong>90 sqm @ 60×60</strong><br>
+      • Total: 330 sqm<br><br>
+      Confirm delivery date from supplier.<br>
+      Next orders: rooftop room (wood-like), veranda, bathrooms — TBD after micro-cement test.
+    </div>
+  </div>
+
+  <div class="note-card">
+    <div class="note-head">💰 Small storage — approved payments detail</div>
+    <div class="note-body">
+      • Kairis €2,875: 30sqm panels €1,450 + small storage roof €650 + Ytong €700 + coat €75. Cash. Pay when steel anchors confirmed.<br><br>
+      • Blacksmith €550: Small storage door €500 + varnish €50. Cash. Pay on completion.
+    </div>
+  </div>
+
+  <div class="note-card">
+    <div class="note-head">🏠 House insulation — what Kobi needs from you</div>
+    <div class="note-body">
+      Research method options: spray foam, rock wool, PIR rigid boards, etc. Get pricing and send a recommendation to Kobi before end of May. The dry season window is short — Kobi &amp; Yael want this done this summer.
+    </div>
+  </div>
+
+  <div class="note-card">
+    <div class="note-head">📷 WiFi cameras — what Kobi needs from you</div>
+    <div class="note-body">
+      Source 2–3 camera options with prices. Locations: entrance, main work area, storage. You can tell the workers that the owners want to see the work from Israel — which is true. Send options to Kobi for approval.
+    </div>
+  </div>
+
+  <div class="note-card">
+    <div class="note-head">📤 Saturday checklist — send to Kobi</div>
+    <div class="note-body">
+      1. 📸 Photos of progress<br>
+      2. 💰 Workers wages total (days × rates)<br>
+      3. 🧾 Any invoices or payments made<br>
+      4. ✅ What was completed this week<br>
+      5. ⚠️ Any new issues or unexpected expenses
+    </div>
+  </div>
+
+  <div class="note-card">
+    <div class="note-head">👷 Standard worker rates</div>
+    <div class="note-body">
+      • General laborer: €50/day<br>
+      • Skilled worker: €80/day<br>
+      • Cement mixer fuel: ~€30/week<br><br>
+      ATM limit: €2,000/day. For larger amounts: 2 days in a row.
+    </div>
+  </div>
+
+  <div class="note-card">
+    <div class="note-head">ℹ️ About this dashboard</div>
+    <div class="note-body">
+      Updated by Kobi using Claude (AI). When you send your weekly WhatsApp report, Kobi processes it and the dashboard refreshes automatically. Questions? WhatsApp the group 🙏
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     BOTTOM BAR
+══════════════════════════════════════════ -->
+<div class="bottom-bar">
+  <span>📤 Send report + photos to Kobi every Saturday</span>
+  <button class="btn-checklist" onclick="alert('Saturday checklist:\n1. Photos of progress\n2. Workers wages total\n3. Invoices / payments made\n4. What was completed\n5. New issues or expenses')">Checklist</button>
+</div>
+
+
+<script>
+// ── Tab switching ──────────────────────────────────────────────────
+function showTab(name, btn) {
+  document.querySelectorAll('.sec').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ── Helpers ────────────────────────────────────────────────────────
+const esc = s => String(s)
+  .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+// ── Render ─────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function () {
+  const D = PROJECT_DATA;
+  const F = D.financialSummary;
+  const PS = D.vickyPayments.summary;
+
+  // Header
+  document.getElementById('last-updated').textContent = D.meta.lastUpdated;
+  document.getElementById('progress-pct').textContent  = F.progressPct + '% complete';
+  document.getElementById('progress-fill').style.width = F.progressPct + '%';
+
+  // ── STATUS: KPI stats ──────────────────────────────────────────────
+  document.getElementById('status-stats').innerHTML = `
+    <div class="stat">
+      <div class="stat-lbl">Due now</div>
+      <div class="stat-val c-red">${esc(PS.dueNow)}</div>
+      <div class="stat-sub">${esc(PS.dueSub)}</div>
+    </div>
+    <div class="stat">
+      <div class="stat-lbl">Workers est.</div>
+      <div class="stat-val c-amber">${esc(PS.workers)}</div>
+      <div class="stat-sub">${esc(PS.workersSub)}</div>
+    </div>`;
+
+  // ── STATUS: Task grid ──────────────────────────────────────────────
+  const tgEl = document.getElementById('task-grid');
+  D.weekTasks.forEach(t => {
+    tgEl.innerHTML += `
+      <div class="task-tile ${t.urgent ? 'urgent' : 'normal'}">
+        <div class="task-icon">${esc(t.icon)}</div>
+        <div class="task-label">${esc(t.label)}</div>
+        <div class="task-sub">${esc(t.sub)}</div>
+      </div>`;
+  });
+
+  // ── STATUS: Phase list ─────────────────────────────────────────────
+  const phaseDotCls  = { done:'done', ongoing:'ongoing', upcoming:'upcoming', blocked:'blocked' };
+  const phaseTagCls  = { done:'tag-done', ongoing:'tag-ongoing', upcoming:'tag-upcoming', blocked:'tag-blocked' };
+  const phaseTagText = { done:'Done', ongoing:'In progress', upcoming:'Upcoming', blocked:'Blocked' };
+  const phEl = document.getElementById('phase-list');
+  D.phases.forEach(p => {
+    const dc = phaseDotCls[p.status]  || 'upcoming';
+    const tc = phaseTagCls[p.status]  || 'tag-upcoming';
+    const tt = phaseTagText[p.status] || p.status;
+    phEl.innerHTML += `
+      <div class="phase-row">
+        <div class="dot ${esc(dc)}"></div>
+        <div class="phase-name">${esc(p.name)}</div>
+        <span class="phase-tag ${esc(tc)}">${esc(tt)}</span>
+      </div>`;
+  });
+
+  // ── PAY: Due now ───────────────────────────────────────────────────
+  const dueEl = document.getElementById('pay-due-now');
+  D.vickyPayments.dueNow.forEach(p => {
+    // strip the "✅ Kobi approved — " prefix from auth for the condition line
+    const cond = p.auth.replace(/^[✅⏳]\s*(Kobi approved\s*—\s*)?/i, '');
+    dueEl.innerHTML += `
+      <div class="pay-card due">
+        <div class="pay-left">
+          <div class="pay-who">${esc(p.icon)} ${esc(p.title)}</div>
+          <div class="pay-desc">${esc(p.desc)}</div>
+          <div class="pay-cond">${esc(cond)}</div>
+        </div>
+        <div class="pay-right">
+          <div class="pay-amt c-red">${esc(p.amount)}</div>
+          <div class="pay-type">${esc(p.payType)}</div>
+        </div>
+      </div>`;
+  });
+
+  // ── PAY: Workers card ──────────────────────────────────────────────
+  document.getElementById('pay-workers').innerHTML = `
+    <div class="pay-left">
+      <div class="pay-who">👷 Workers wages</div>
+      <div class="pay-desc">${esc(PS.workersSub)}</div>
+      <div class="pay-cond">Send total to Kobi each Saturday for transfer</div>
+    </div>
+    <div class="pay-right">
+      <div class="pay-amt c-amber">${esc(PS.workers)}</div>
+      <div class="pay-type">Transfer</div>
+    </div>`;
+
+  // ── PAY: Upcoming (from main payments list, skip Workers + paid) ───
+  const upEl = document.getElementById('pay-upcoming');
+  D.payments
+    .filter(p => (p.status === 'upcoming' || p.status === 'blocked') && p.category !== 'Workers')
+    .forEach(p => {
+      const cls     = p.status === 'blocked' ? 'blocked-card' : 'future';
+      const amtCls  = p.status === 'blocked' ? 'c-red' : 'c-gray';
+      upEl.innerHTML += `
+        <div class="pay-card ${esc(cls)}">
+          <div class="pay-left">
+            <div class="pay-who">${esc(p.vendor || p.category)}</div>
+            <div class="pay-desc">${esc(p.desc)}</div>
+          </div>
+          <div class="pay-right">
+            <div class="pay-amt ${esc(amtCls)}">${esc(p.amount)}</div>
+            <div class="pay-type">${esc(p.date)}</div>
+          </div>
+        </div>`;
+    });
+
+  // ── DECIDE: Decision rows ──────────────────────────────────────────
+  const tlCls = { 'ds-urgent':'red', 'ds-waiting':'amber', 'ds-answered':'green' };
+  const decEl = document.getElementById('decisions-list');
+  D.vickyDecisions.forEach(d => {
+    const tl = tlCls[d.statusClass] || 'amber';
+    // Strip emoji + "URGENT —" prefix from status for who line
+    const who = d.status.replace(/^[🔴⏳✅]\s*(URGENT\s*—\s*)?/i, '');
+    decEl.innerHTML += `
+      <div class="dec-row">
+        <div class="tl ${esc(tl)}"></div>
+        <div>
+          <div class="dec-q">${esc(d.q)}</div>
+          <div class="dec-who">${esc(who)}</div>
+        </div>
+      </div>`;
+  });
+
+  // ── APPROVE: Approved grid ─────────────────────────────────────────
+  const apprEl = document.getElementById('appr-approved');
+  D.vickyApprovals.approved.forEach(item => {
+    apprEl.innerHTML += `
+      <div class="appr-card">
+        <div class="appr-icon">${esc(item.icon)}</div>
+        <div class="appr-label">${esc(item.title)}</div>
+        <span class="appr-badge badge-go">Go ✅</span>
+      </div>`;
+  });
+
+  // ── APPROVE: Waiting grid ──────────────────────────────────────────
+  const waitEl = document.getElementById('appr-waiting');
+  D.vickyApprovals.waiting.forEach(item => {
+    waitEl.innerHTML += `
+      <div class="appr-card">
+        <div class="appr-icon">${esc(item.icon)}</div>
+        <div class="appr-label">${esc(item.title)}</div>
+        <span class="appr-badge badge-wait">Pending ⏳</span>
+      </div>`;
+  });
+
+});
+</script>
+
+</body>
+</html>

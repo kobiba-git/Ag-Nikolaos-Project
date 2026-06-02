@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ag. Nikolaos Home — Project Dashboard</title>
+<script src="project_data.js"></script>
+<style>
+  :root {
+    --navy:   #1F3864;
+    --blue:   #2E75B6;
+    --lblue:  #D6E4F7;
+    --green:  #375623;
+    --lgreen: #E2EFDA;
+    --yellow: #FFF2CC;
+    --orange: #F4B942;
+    --red:    #C00000;
+    --lred:   #FCE4D6;
+    --gray:   #F2F2F2;
+    --white:  #FFFFFF;
+    --text:   #1a1a1a;
+    --muted:  #666;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; background: #eef2f7; color: var(--text); min-height: 100vh; }
+
+  .header { background: var(--navy); color: white; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-bottom: 4px solid var(--orange); }
+  .header-left h1 { font-size: 22px; font-weight: 700; }
+  .header-left p  { font-size: 12px; color: #aac8f0; margin-top: 4px; }
+  .header-right { text-align: right; }
+  .header-right .date    { font-size: 12px; color: #aac8f0; }
+  .header-right .updated { font-size: 11px; color: #7a9fc0; margin-top: 2px; }
+
+  .container { max-width: 1280px; margin: 0 auto; padding: 24px 20px; }
+
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 24px; }
+  .kpi-card { background: white; border-radius: 10px; padding: 18px 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 4px solid var(--blue); transition: transform .15s; }
+  .kpi-card:hover { transform: translateY(-2px); }
+  .kpi-card.green  { border-left-color: #4CAF50; }
+  .kpi-card.orange { border-left-color: var(--orange); }
+  .kpi-card.red    { border-left-color: var(--red); }
+  .kpi-card.purple { border-left-color: #7B68EE; }
+  .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+  .kpi-value { font-size: 26px; font-weight: 700; margin: 6px 0 2px; color: var(--navy); }
+  .kpi-sub   { font-size: 11px; color: var(--muted); }
+
+  .section-title { font-size: 14px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .8px; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--lblue); display: flex; align-items: center; gap: 8px; }
+
+  .two-col   { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  @media(max-width: 860px) { .two-col, .three-col { grid-template-columns: 1fr; } }
+
+  .card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+  .card h3 { font-size: 13px; color: var(--navy); font-weight: 700; margin-bottom: 14px; text-transform: uppercase; letter-spacing: .5px; }
+
+  .budget-bar-wrap { margin-bottom: 18px; }
+  .budget-bar-label { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px; color: var(--text); }
+  .budget-bar-label span:last-child { font-weight: 700; }
+  .budget-bar-bg { background: #e0e7f0; border-radius: 4px; height: 10px; overflow: hidden; }
+  .budget-bar-fill { height: 100%; border-radius: 4px; transition: width .6s ease; }
+  .bar-green  { background: #4CAF50; }
+  .bar-blue   { background: var(--blue); }
+  .bar-orange { background: var(--orange); }
+  .bar-red    { background: var(--red); }
+
+  .phase-list { display: flex; flex-direction: column; gap: 8px; }
+  .phase-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 6px; font-size: 12px; }
+  .phase-item.done     { background: var(--lgreen); }
+  .phase-item.ongoing  { background: var(--lblue); }
+  .phase-item.upcoming { background: var(--yellow); }
+  .phase-item.blocked  { background: var(--lred); }
+  .phase-icon { font-size: 15px; min-width: 20px; margin-top: 1px; }
+  .phase-name { font-weight: 700; color: var(--navy); }
+  .phase-detail { color: var(--muted); font-size: 11px; margin-top: 2px; }
+
+  .exp-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  .exp-table th { background: var(--navy); color: white; padding: 8px 10px; text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: .4px; }
+  .exp-table td { padding: 7px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
+  .exp-table tr:hover td { background: var(--lblue); }
+  .exp-table tr.paid td     { background: #f6fdf4; }
+  .exp-table tr.due td      { background: #fff5f5; }
+  .exp-table tr.upcoming td { background: #fffdf0; }
+  .exp-table tr.blocked td  { background: #fff5f5; }
+  .badge { display: inline-block; padding: 2px 7px; border-radius: 12px; font-size: 10px; font-weight: 700; }
+  .badge-paid     { background: #4CAF50; color: white; }
+  .badge-due      { background: var(--red); color: white; }
+  .badge-upcoming { background: var(--orange); color: white; }
+  .badge-pending  { background: #999; color: white; }
+  .amt { text-align: right; font-weight: 700; white-space: nowrap; }
+
+  .action-list { display: flex; flex-direction: column; gap: 8px; }
+  .action-item { display: flex; gap: 10px; padding: 10px 12px; border-radius: 6px; border-left: 3px solid; font-size: 12px; }
+  .action-item.critical { border-color: var(--red);    background: var(--lred); }
+  .action-item.high     { border-color: var(--orange); background: var(--yellow); }
+  .action-item.info     { border-color: var(--blue);   background: var(--lblue); }
+  .action-label { font-size: 10px; font-weight: 700; text-transform: uppercase; margin-bottom: 2px; }
+  .critical .action-label { color: var(--red); }
+  .high     .action-label { color: #c47a00; }
+  .info     .action-label { color: var(--blue); }
+
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .contact-card { padding: 10px 12px; border-radius: 6px; background: var(--gray); font-size: 11px; }
+  .contact-name { font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+  .contact-role { color: var(--muted); font-size: 10px; }
+
+  .legend-item { display: flex; align-items: center; gap: 7px; font-size: 11px; margin-bottom: 6px; }
+  .legend-dot  { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+
+  .footer { text-align: center; font-size: 11px; color: var(--muted); margin: 40px 0 20px; padding-top: 16px; border-top: 1px solid #dde4ee; }
+  .update-hint { background: var(--navy); color: white; border-radius: 8px; padding: 14px 20px; font-size: 12px; margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+  .update-hint strong { color: var(--orange); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>🏠 Ag. Nikolaos Home — Renovation Dashboard</h1>
+    <p>Agio Nikolaos, North Evia, Greece &nbsp;|&nbsp; Kobi & Yael Baruch &nbsp;|&nbsp; Project Manager: Vicky</p>
+  </div>
+  <div class="header-right">
+    <div class="date">📅 Last updated: <span id="last-updated"></span></div>
+    <div class="updated">Update by pasting new WhatsApp/emails to Claude</div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="update-hint">
+    💡 <span><strong>To update this dashboard:</strong> Open Claude Cowork → paste new WhatsApp messages, emails, or invoices → say "Update the dashboard with this." Claude edits <code>project_data.js</code> → both dashboards refresh automatically.</span>
+  </div>
+
+  <!-- KPIs -->
+  <div class="kpi-grid" id="kpi-grid"></div>
+
+  <!-- Budget + Phases -->
+  <div class="two-col">
+    <div class="card">
+      <h3>💰 Budget by Category — Spent vs. Planned</h3>
+      <div id="budget-bars"></div>
+      <div style="margin-top:14px; padding:10px; background:var(--gray); border-radius:6px; font-size:11px; color:var(--muted);">
+        📌 Budget estimates are indicative. Major items (Antonis, tiles, windows) require formal quotes. Total paid figure based on WhatsApp records through <span id="budget-note-date"></span>.
+      </div>
+    </div>
+    <div class="card">
+      <h3>🗓️ Project Phases — Current Status</h3>
+      <div class="phase-list" id="phase-list"></div>
+    </div>
+  </div>
+
+  <!-- Action Items -->
+  <div class="section-title">🚨 Open Action Items &amp; Decisions Needed</div>
+  <div class="card">
+    <div class="action-list" id="action-items"></div>
+  </div>
+
+  <!-- Payments Table -->
+  <div class="section-title">💳 Recent &amp; Upcoming Payments</div>
+  <div class="card" style="overflow-x:auto;">
+    <table class="exp-table">
+      <thead>
+        <tr>
+          <th>Date</th><th>Category</th><th>Description</th><th>Vendor</th>
+          <th style="text-align:right">Amount</th><th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="payment-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- Contacts + Design -->
+  <div class="two-col" style="margin-top:24px;">
+    <div class="card">
+      <h3>👥 Key Project Contacts</h3>
+      <div class="contact-grid" id="contacts-grid"></div>
+    </div>
+    <div class="card">
+      <h3>🎨 Design Decisions Log</h3>
+      <div style="font-size:12px; display:flex; flex-direction:column; gap:8px;" id="design-decisions"></div>
+    </div>
+  </div>
+
+  <!-- Financial Summary -->
+  <div class="section-title">📊 Financial Summary</div>
+  <div class="three-col">
+
+    <div class="card">
+      <h3>💵 Paid to Date (Confirmed)</h3>
+      <div style="font-size:12px; display:flex; flex-direction:column; gap:6px;" id="fin-paid-rows"></div>
+    </div>
+
+    <div class="card">
+      <h3>🔮 Major Items Ahead (Estimates)</h3>
+      <div style="font-size:12px; display:flex; flex-direction:column; gap:6px;" id="fin-ahead-rows"></div>
+    </div>
+
+    <div class="card">
+      <h3>📈 Overall Progress</h3>
+      <div style="text-align:center; padding:10px 0;">
+        <svg viewBox="0 0 200 200" width="160" height="160" style="display:block;margin:0 auto;">
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#e0e7f0" stroke-width="20"/>
+          <circle id="donut-paid" cx="100" cy="100" r="80" fill="none" stroke="#4CAF50" stroke-width="20" transform="rotate(-90 100 100)"/>
+          <circle id="donut-due"  cx="100" cy="100" r="80" fill="none" stroke="#F4B942" stroke-width="20" transform="rotate(-90 100 100)"/>
+          <circle id="donut-rem"  cx="100" cy="100" r="80" fill="none" stroke="#FCE4D6" stroke-width="20" transform="rotate(-90 100 100)"/>
+          <text id="donut-pct" x="100" y="95" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F3864"></text>
+          <text x="100" y="113" text-anchor="middle" font-size="10" fill="#666">Spent</text>
+        </svg>
+        <div style="display:flex; flex-direction:column; gap:5px; margin-top:12px; font-size:11px; text-align:left; padding: 0 10px;">
+          <div class="legend-item"><div class="legend-dot" style="background:#4CAF50"></div><span id="legend-paid"></span></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#F4B942"></div><span id="legend-due"></span></div>
+          <div class="legend-item"><div class="legend-dot" style="background:#FCE4D6"></div><span id="legend-rem"></span></div>
+        </div>
+        <div style="font-size:10px; color:var(--muted); margin-top:8px;">Total project estimate: <span id="donut-range"></span><br>(final scope dependent on Antonis contract)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bank Transfers & Greek Account (owner only) -->
+  <div class="section-title">🏦 Funds Transferred — Israel → Greek Account (Owner Only)</div>
+  <div class="three-col">
+
+    <div class="card">
+      <h3>📤 Transfer History</h3>
+      <table class="exp-table" id="transfer-table">
+        <thead><tr><th>Date</th><th style="text-align:right">Amount</th></tr></thead>
+        <tbody id="transfer-tbody"></tbody>
+      </table>
+      <div style="margin-top:10px; font-size:11px; color:var(--muted);" id="transfer-note"></div>
+    </div>
+
+    <div class="card">
+      <h3>⚖️ Account Balance Reconciliation</h3>
+      <div style="font-size:12px; display:flex; flex-direction:column; gap:10px;" id="transfer-reconcile"></div>
+    </div>
+
+    <div class="card">
+      <h3>💡 Runway Estimate</h3>
+      <div style="font-size:12px; display:flex; flex-direction:column; gap:10px;" id="transfer-runway"></div>
+    </div>
+
+  </div>
+
+  <!-- Communications Panel -->
+  <div class="section-title">📡 Communication Hub — You ↔ Vicky</div>
+  <div class="two-col">
+    <div class="card">
+      <h3>📱 What Vicky's Dashboard Shows (her phone)</h3>
+      <div style="font-size:12px; display:flex; flex-direction:column; gap:8px;">
+        <div style="padding:9px 12px; background:var(--lred); border-radius:6px; border-left:3px solid var(--red);"><strong>Tab 1 — Approvals</strong><br>What she needs from Kobi before acting. Clearly marked ✅ (go ahead) or ⏳ (waiting).</div>
+        <div style="padding:9px 12px; background:var(--yellow); border-radius:6px; border-left:3px solid var(--orange);"><strong>Tab 2 — Payments</strong><br>Who to pay, how much, cash/card, whether Kobi has authorized. ATM limits noted.</div>
+        <div style="padding:9px 12px; background:var(--lblue); border-radius:6px; border-left:3px solid var(--blue);"><strong>Tab 3 — This Week's Tasks</strong><br>Worker plan, tradespeople, what to follow up. Includes a Saturday report checklist.</div>
+        <div style="padding:9px 12px; background:var(--lgreen); border-radius:6px; border-left:3px solid var(--green);"><strong>Tab 4 — Decisions Needed</strong><br>Design choices, quotes to confirm, items waiting on Kobi & Yael. Open items include insulation + cameras.</div>
+        <div style="padding:9px 12px; background:var(--gray); border-radius:6px;"><strong>Tab 5 — Overview</strong><br>Phase status + brief financial summary (no full budget detail).</div>
+        <div style="background:var(--navy); color:white; border-radius:8px; padding:10px 12px; font-size:12px; margin-top:4px;">
+          📤 <strong>How to send:</strong> Both dashboards share <code style="background:rgba(255,255,255,0.15);padding:1px 4px;border-radius:3px;">project_data.js</code> — edit the data file → open either dashboard → data is fresh. WhatsApp <code style="background:rgba(255,255,255,0.15);padding:1px 4px;border-radius:3px;">dashboard_vicky.html</code> + <code style="background:rgba(255,255,255,0.15);padding:1px 4px;border-radius:3px;">project_data.js</code> together to Vicky.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>🔄 Sync Workflow</h3>
+      <div style="font-size:12px; display:flex; flex-direction:column; gap:10px;">
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div style="background:var(--navy); color:white; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; flex-shrink:0;">1</div>
+          <div><strong>Vicky sends her Saturday report</strong> (WhatsApp, as always — photos, payments, updates)</div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div style="background:var(--navy); color:white; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; flex-shrink:0;">2</div>
+          <div><strong>You paste her messages to Claude</strong> → say "Update the project with this week's report from Vicky"</div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div style="background:var(--navy); color:white; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; flex-shrink:0;">3</div>
+          <div><strong>Claude edits <code>project_data.js</code> only</strong> — one file, both dashboards update instantly on next open</div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div style="background:var(--navy); color:white; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; flex-shrink:0;">4</div>
+          <div><strong>WhatsApp both files to Vicky</strong> — <code>dashboard_vicky.html</code> + <code>project_data.js</code> — she opens the HTML in her phone browser</div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div style="background:var(--navy); color:white; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; flex-shrink:0;">5</div>
+          <div><strong>Repeat weekly.</strong> The dashboard becomes the shared language between Israel and Greece.</div>
+        </div>
+        <div style="padding:10px 12px; background:var(--lgreen); border-radius:8px; border-left:3px solid var(--green); margin-top:4px;">
+          💡 <strong>Tip:</strong> Both files must be in the same folder for the data link to work. Always send both together.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vicky's Current Open Items -->
+  <div class="card" style="margin-top:0;">
+    <h3>📋 Vicky's Current Open Items (Quick Reference)</h3>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:10px; font-size:12px;">
+      <div>
+        <div style="font-weight:700; color:var(--red); margin-bottom:6px; font-size:11px; text-transform:uppercase;">🔴 She's Waiting on You (Kobi)</div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div style="padding:6px 10px; background:var(--lred); border-radius:6px;">Window/door color — black or not?</div>
+          <div style="padding:6px 10px; background:var(--lred); border-radius:6px;">Entrance gate quote — approve when it arrives</div>
+          <div style="padding:6px 10px; background:var(--lred); border-radius:6px;">Property division structure for Notary</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:700; color:var(--orange); margin-bottom:6px; font-size:11px; text-transform:uppercase;">🟠 She Needs to Action</div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Chase community water connection (URGENT)</div>
+          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Push Vasiliki / Notary on land registry</div>
+          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Pay Kairis €2,875 when anchors arrive</div>
+          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Get gate quote from blacksmith → send to you</div>
+          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Confirm tile delivery date</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:700; color:var(--green); margin-bottom:6px; font-size:11px; text-transform:uppercase;">✅ Already Authorized</div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">Weekly worker wages (pre-approved)</div>
+          <div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">Electricians Apt B — continue (advance paid)</div>
+          <div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">Small storage aluminum door + window</div>
+          <div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">Blacksmith small storage door €550</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Ag. Nikolaos Home — Renovation Dashboard &nbsp;|&nbsp; Generated by Claude (Cowork) &nbsp;|&nbsp; Last updated: <span id="footer-date"></span></p>
+    <p style="margin-top:5px;">To update: paste new WhatsApp messages / invoices / emails to Claude and say <em>"Update the dashboard."</em></p>
+    <p style="margin-top:5px;">📂 Data file: <code>project_data.js</code> &nbsp;|&nbsp; Budget: <code>Budget/Ag_Nikolaos_Budget_Plan.xlsx</code> &nbsp;|&nbsp; Log: <code>Updates/project_log.md</code></p>
+  </div>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const D = PROJECT_DATA;
+  const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const fmt = n => (n == null) ? '0' : Number(n).toLocaleString();
+
+  // ── Meta
+  document.getElementById('last-updated').textContent   = D.meta.lastUpdated;
+  document.getElementById('budget-note-date').textContent = D.meta.lastUpdated;
+  document.getElementById('footer-date').textContent    = D.meta.lastUpdated;
+
+  // ── KPIs
+  document.getElementById('kpi-grid').innerHTML = `
+    <div class="kpi-card blue">
+      <div class="kpi-label">Total Budget (Est.)</div>
+      <div class="kpi-value">${esc(D.kpis.totalBudget)}</div>
+      <div class="kpi-sub">${esc(D.kpis.totalBudgetSub)}</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">Paid to Date</div>
+      <div class="kpi-value">${esc(D.kpis.paidToDate)}</div>
+      <div class="kpi-sub">${esc(D.kpis.paidSub)}</div>
+    </div>
+    <div class="kpi-card orange">
+      <div class="kpi-label">Due / Pending</div>
+      <div class="kpi-value">${esc(D.kpis.duePending)}</div>
+      <div class="kpi-sub">${esc(D.kpis.dueSub)}</div>
+    </div>
+    <div class="kpi-card red">
+      <div class="kpi-label">Big Items Remaining</div>
+      <div class="kpi-value">${esc(D.kpis.bigItems)}</div>
+      <div class="kpi-sub">${esc(D.kpis.bigItemsSub)}</div>
+    </div>
+    <div class="kpi-card purple">
+      <div class="kpi-label">Project Start</div>
+      <div class="kpi-value">${esc(D.meta.projectStart)}</div>
+      <div class="kpi-sub">WhatsApp group created 14/2/26</div>
+    </div>
+    <div class="kpi-card blue">
+      <div class="kpi-label">Est. Completion</div>
+      <div class="kpi-value">${esc(D.meta.estCompletion)}</div>
+      <div class="kpi-sub">Pending Antonis permit &amp; contract</div>
+    </div>`;
+
+  // ── Budget bars
+  document.getElementById('budget-bars').innerHTML = D.budgetBars.map(b => {
+    const sl = b.spentLabel || ('€' + fmt(b.spent));
+    const bl = b.budgetLabel || ('€' + fmt(b.budget));
+    return `<div class="budget-bar-wrap">
+      <div class="budget-bar-label"><span>${esc(b.label)}</span><span>${sl} / ${bl}</span></div>
+      <div class="budget-bar-bg"><div class="budget-bar-fill ${b.cls}" style="width:${b.pct}%"></div></div>
+    </div>`;
+  }).join('');
+
+  // ── Phases
+  document.getElementById('phase-list').innerHTML = D.phases.map(p => `
+    <div class="phase-item ${p.status}">
+      <div class="phase-icon">${p.icon}</div>
+      <div>
+        <div class="phase-name">${esc(p.name)}</div>
+        <div class="phase-detail">${esc(p.detail)}</div>
+      </div>
+    </div>`).join('');
+
+  // ── Action items
+  document.getElementById('action-items').innerHTML = D.actionItems.map(a => `
+    <div class="action-item ${a.priority}">
+      <div>
+        <div class="action-label">${esc(a.label)}</div>
+        <strong>${esc(a.title)}</strong> — ${esc(a.desc)}
+      </div>
+    </div>`).join('');
+
+  // ── Payments table
+  const badgeCls  = { paid:'badge-paid', due:'badge-due', upcoming:'badge-upcoming', blocked:'badge-pending' };
+  const badgeTxt  = { paid:'PAID',       due:'DUE',       upcoming:'UPCOMING',       blocked:'BLOCKED'       };
+  document.getElementById('payment-tbody').innerHTML = D.payments.map(p => `
+    <tr class="${p.status}">
+      <td>${esc(p.date)}</td><td>${esc(p.category)}</td><td>${esc(p.desc)}</td>
+      <td>${esc(p.vendor)}</td><td class="amt">${esc(p.amount)}</td>
+      <td><span class="badge ${badgeCls[p.status]}">${badgeTxt[p.status]}</span></td>
+    </tr>`).join('');
+
+  // ── Contacts
+  document.getElementById('contacts-grid').innerHTML = D.contacts.map(c => `
+    <div class="contact-card">
+      <div class="contact-name">${esc(c.name)}</div>
+      <div class="contact-role">${esc(c.role)}</div>
+      <div style="font-size:10px;color:#555;margin-top:3px;">${esc(c.detail)}</div>
+    </div>`).join('');
+
+  // ── Design decisions
+  document.getElementById('design-decisions').innerHTML = D.designDecisions.map(d => `
+    <div style="padding:9px 12px; background:var(--${d.color}); border-radius:6px;">
+      <strong>${esc(d.title)}</strong><br>${d.bodyHtml}
+    </div>`).join('');
+
+  // ── Financial summary — paid
+  const fs = D.financialSummary;
+  document.getElementById('fin-paid-rows').innerHTML =
+    fs.paid.map(r => `<div style="display:flex;justify-content:space-between;"><span>${esc(r.label)}</span><strong>${esc(r.amount)}</strong></div>`).join('') +
+    `<hr style="margin:4px 0; border-color:#eee;">
+     <div style="display:flex;justify-content:space-between; font-size:14px;"><strong>TOTAL PAID</strong><strong style="color:var(--navy)">${esc(fs.totalPaid)}</strong></div>
+     <div style="font-size:10px; color:var(--muted); margin-top:2px;">+ Kairis DUE = ${esc(fs.totalCommitted)} total committed</div>`;
+
+  // ── Financial summary — ahead
+  document.getElementById('fin-ahead-rows').innerHTML =
+    fs.ahead.map(r => `<div style="display:flex;justify-content:space-between;"><span>${esc(r.label)}</span><strong>${esc(r.amount)}</strong></div>`).join('') +
+    `<hr style="margin:4px 0; border-color:#eee;">
+     <div style="display:flex;justify-content:space-between; font-size:14px;"><strong>EST. REMAINING</strong><strong style="color:var(--red)">${esc(fs.remaining)}</strong></div>
+     <div style="font-size:10px; color:var(--muted);">+ 10% contingency ${esc(fs.contingency)}</div>`;
+
+  // ── Donut chart
+  document.getElementById('donut-paid').setAttribute('stroke-dasharray', `${fs.paidSegment} 423`);
+  document.getElementById('donut-paid').setAttribute('stroke-dashoffset', fs.paidOffset);
+  document.getElementById('donut-due').setAttribute('stroke-dasharray',  `${fs.dueSegment} 423`);
+  document.getElementById('donut-due').setAttribute('stroke-dashoffset',  fs.dueOffset);
+  document.getElementById('donut-rem').setAttribute('stroke-dasharray',  `${fs.remSegment} 423`);
+  document.getElementById('donut-rem').setAttribute('stroke-dashoffset',  fs.remOffset);
+  document.getElementById('donut-pct').textContent  = fs.pctLabel;
+  document.getElementById('donut-range').textContent = fs.totalRange;
+  document.getElementById('legend-paid').textContent = `Paid to date ${fs.totalCommitted} (${fs.progressPct}%)`;
+  document.getElementById('legend-due').textContent  = 'Committed/Due ~€3K (1%)';
+  document.getElementById('legend-rem').textContent  = `Remaining est. ${fs.remaining} (${100 - fs.progressPct - 1}%)`;
+
+  // ── Bank transfers section (owner only)
+  if (D.bankTransfers) {
+    const bt = D.bankTransfers;
+    const fmtEur = n => '€' + Number(n).toLocaleString();
+
+    // Transfer history table
+    let tRows = bt.transfers.map(t =>
+      `<tr><td>${esc(t.date)}</td><td class="amt">${fmtEur(t.amount)}</td></tr>`
+    ).join('');
+    tRows += `<tr style="border-top:2px solid #ccc;">
+      <td><strong>Total Transferred</strong></td>
+      <td class="amt"><strong>${fmtEur(bt.totalTransferred)}</strong></td>
+    </tr>`;
+    document.getElementById('transfer-tbody').innerHTML = tRows;
+    document.getElementById('transfer-note').textContent = bt.note;
+
+    // Reconciliation card
+    const implied   = bt.totalTransferred - bt.totalKnownExpenses;
+    const diff      = bt.greekAccountBalance - implied;
+    const diffLabel = diff >= 0
+      ? `+${fmtEur(diff)} above implied (expenses may be under-logged)`
+      : `${fmtEur(diff)} below implied (expenses not yet logged?)`;
+    const diffColor = Math.abs(diff) < 3000 ? '#4CAF50' : '#F4B942';
+
+    document.getElementById('transfer-reconcile').innerHTML = `
+      <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--lgreen);border-radius:6px;">
+        <span>💸 Total transferred</span><strong>${fmtEur(bt.totalTransferred)}</strong>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--lred);border-radius:6px;">
+        <span>📋 Known expenses logged</span><strong>−${fmtEur(bt.totalKnownExpenses)}</strong>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--gray);border-radius:6px;">
+        <span>🧮 Implied balance</span><strong>${fmtEur(implied)}</strong>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--lblue);border-radius:6px;border:2px solid var(--blue);">
+        <span>🏦 Actual Greek acct balance<br><small style="color:var(--muted)">as of ${esc(bt.balanceAsOf)}</small></span>
+        <strong style="font-size:16px;">${fmtEur(bt.greekAccountBalance)}</strong>
+      </div>
+      <div style="padding:8px 10px;background:var(--yellow);border-radius:6px;font-size:11px;color:var(--muted);">
+        <span style="color:${diffColor};font-weight:700;">Δ ${diffLabel}</span>
+      </div>`;
+
+    // Runway card
+    const duePending   = 12695;   // from kpis.duePending (approximate)
+    const afterPending = bt.greekAccountBalance - duePending;
+    document.getElementById('transfer-runway').innerHTML = `
+      <div style="padding:10px 12px;background:var(--lblue);border-radius:6px;">
+        <div style="font-weight:700;margin-bottom:4px;">Current Greek balance</div>
+        <div style="font-size:20px;font-weight:700;color:var(--navy);">${fmtEur(bt.greekAccountBalance)}</div>
+        <div style="font-size:10px;color:var(--muted);">as of ${esc(bt.balanceAsOf)}</div>
+      </div>
+      <div style="padding:10px 12px;background:var(--yellow);border-radius:6px;">
+        <div style="font-weight:700;margin-bottom:4px;">After paying all due/pending (~€12,695)</div>
+        <div style="font-size:18px;font-weight:700;color:${afterPending > 10000 ? '#375623' : '#C00000'};">${fmtEur(afterPending)}</div>
+        <div style="font-size:10px;color:var(--muted);">Kairis ~€3,145 + metalworker €550 + electrician ~€8,500</div>
+      </div>
+      <div style="padding:10px 12px;background:var(--lred);border-radius:6px;">
+        <div style="font-weight:700;margin-bottom:4px;">⚠️ Upcoming large commitments</div>
+        <div style="font-size:11px;color:var(--muted);">Antonis Phase 1: €25–30K<br>Electrical full house: ~€20K<br>Tiles + install: ~€25K<br>Windows & doors: ~€18.7K<br>Plumbing balance: ~€7.2K</div>
+        <div style="margin-top:6px;font-size:11px;font-weight:700;color:var(--red);">→ Further transfers from Israel will be needed</div>
+      </div>`;
+  }
+});
+</script>
+</body>
+</html>
