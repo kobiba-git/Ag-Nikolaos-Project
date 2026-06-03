@@ -315,6 +315,7 @@
   <button class="tab" onclick="showTab('pay',this)">💳 Pay</button>
   <button class="tab" onclick="showTab('decide',this)">❓ Decide</button>
   <button class="tab" onclick="showTab('approve',this)">✅ Approve</button>
+  <button class="tab" onclick="showTab('comms',this)">📡 Comms</button>
   <button class="tab" onclick="showTab('notes',this)">📝 Notes</button>
 </div>
 
@@ -379,7 +380,47 @@
 
 
 <!-- ══════════════════════════════════════════
-     TAB 5: NOTES
+     TAB 5: COMMS
+══════════════════════════════════════════ -->
+<div class="sec" id="tab-comms">
+
+  <!-- Message from Kobi -->
+  <div class="kobi-msg" id="comms-kobi-msg">
+    <div class="kobi-from">Kobi &amp; Yael say:</div>
+    <span id="comms-kobi-text"></span>
+  </div>
+
+  <!-- Open items quick reference -->
+  <div class="div-lbl">She's waiting on Kobi</div>
+  <div id="comms-waiting-kobi"></div>
+
+  <div class="div-lbl">Vicky must action</div>
+  <div id="comms-vicky-action"></div>
+
+  <div class="div-lbl">Already authorized — go ahead</div>
+  <div id="comms-authorized"></div>
+
+  <!-- Key contacts -->
+  <div class="div-lbl">Key contacts</div>
+  <div id="comms-contacts"></div>
+
+  <!-- Saturday report reminder -->
+  <div class="note-card" style="margin-top:10px;">
+    <div class="note-head">📤 Saturday — send to Kobi</div>
+    <div class="note-body">
+      1. 📸 Photos of progress<br>
+      2. 💰 Workers wages total (days × rates)<br>
+      3. 🧾 Any invoices or payments made<br>
+      4. ✅ What was completed this week<br>
+      5. ⚠️ Any new issues or unexpected expenses
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     TAB 6: NOTES
 ══════════════════════════════════════════ -->
 <div class="sec" id="tab-notes">
 
@@ -615,6 +656,56 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="appr-icon">${esc(item.icon)}</div>
         <div class="appr-label">${esc(item.title)}</div>
         <span class="appr-badge badge-wait">Pending ⏳</span>
+      </div>`;
+  });
+
+  // ── COMMS: Message from Kobi ───────────────────────────────────────
+  const C = D.vickyComms;
+  document.getElementById('comms-kobi-text').textContent = C.kobMessage;
+
+  // ── COMMS: Waiting on Kobi ────────────────────────────────────────
+  const cwkEl = document.getElementById('comms-waiting-kobi');
+  C.waitingOnKobi.forEach(item => {
+    cwkEl.innerHTML += `
+      <div class="pay-card" style="border-left-color:var(--red); margin-bottom:6px;">
+        <div class="pay-left">
+          <div class="pay-who" style="font-size:12px;">🔴 ${esc(item)}</div>
+        </div>
+      </div>`;
+  });
+
+  // ── COMMS: Vicky must action ──────────────────────────────────────
+  const cvaEl = document.getElementById('comms-vicky-action');
+  C.vickyMustAction.forEach(item => {
+    cvaEl.innerHTML += `
+      <div class="pay-card" style="border-left-color:var(--amber); margin-bottom:6px;">
+        <div class="pay-left">
+          <div class="pay-who" style="font-size:12px;">🟠 ${esc(item)}</div>
+        </div>
+      </div>`;
+  });
+
+  // ── COMMS: Authorized ─────────────────────────────────────────────
+  const caEl = document.getElementById('comms-authorized');
+  C.authorized.forEach(item => {
+    caEl.innerHTML += `
+      <div class="pay-card" style="border-left-color:var(--green); margin-bottom:6px;">
+        <div class="pay-left">
+          <div class="pay-who" style="font-size:12px;">✅ ${esc(item)}</div>
+        </div>
+      </div>`;
+  });
+
+  // ── COMMS: Contacts ───────────────────────────────────────────────
+  const ccEl = document.getElementById('comms-contacts');
+  D.contacts.forEach(c => {
+    ccEl.innerHTML += `
+      <div class="pay-card" style="border-left-color:var(--blue); margin-bottom:6px;">
+        <div class="pay-left">
+          <div class="pay-who" style="font-size:12px;">${esc(c.name)}</div>
+          <div class="pay-desc">${esc(c.role)}</div>
+          <div class="pay-cond">${esc(c.detail)}</div>
+        </div>
       </div>`;
   });
 
