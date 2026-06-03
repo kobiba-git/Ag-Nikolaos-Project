@@ -25,6 +25,7 @@ const PROJECT_DATA = {
   weekTasks: [
     { icon: "🏠", label: "House Insulation — URGENT",      sub: "Summer dry season window — don't delay", urgent: true  },
     { icon: "⚡",  label: "Electricity counters — URGENT",  sub: "Electrician needs electricity company counters to continue to next stage", urgent: true  },
+    { icon: "🔲", label: "Tiles — 2nd Order URGENT",       sub: "Confirm next tile order with ABM Hellas (Candia). Contact Ioannis Tsanais. Rooftop room + veranda + bathrooms TBD.", urgent: true  },
     { icon: "🔧", label: "Kairis balance ~€3,145",         sub: "Kobi to settle personally on next Greece visit (€2,635 + €510 small storage roof this week)", urgent: false },
     { icon: "🔨", label: "Metalworker — small storage",    sub: "Pay €550 on completion of door + window install", urgent: false },
     { icon: "⚡",  label: "Electrician advance €1,000",    sub: "Reimbursement for 130m piping pre-purchased. Approved.", urgent: false },
@@ -311,6 +312,32 @@ const PROJECT_DATA = {
     // implied balance = totalTransferred - totalKnownExpenses = 44,414
     // actual balance 49,500 → ~€5,086 unaccounted (may be expenses not yet logged)
     note: "Greek bank: NBG — GR18 0110 3180 0000 3180 0400 611",
+  },
+
+  // ── Vicky's communication tab ────────────────────────────────────
+  // Used by both dashboard_vicky.html (Comms tab) and dashboard.html (Communication Hub)
+  // Update this section each run when open items / contact details change
+  vickyComms: {
+    kobMessage: "Vicky, you and the team are doing an amazing job 🙏. Please send photos whenever you can — it keeps us going! Send us the weekly report + payment total by Saturday.",
+    waitingOnKobi: [
+      "Window/door color — black or not?",
+      "Entrance gate quote — approve when it arrives",
+      "Property division structure for Notary",
+    ],
+    vickyMustAction: [
+      "Tiles — 2nd order: contact ABM Hellas (Ioannis Tsanais) for rooftop + veranda + bathroom tiles",
+      "Chase community water connection (URGENT)",
+      "Push Vasiliki / Notary on land registry",
+      "House insulation — research options + prices, send to Kobi ASAP",
+      "Get gate quote from blacksmith → send to Kobi",
+      "WiFi cameras — source options + quote → send to Kobi",
+    ],
+    authorized: [
+      "Weekly worker wages (pre-approved)",
+      "Electricians GF + storages — full scope (€11,250 total)",
+      "Small storage blacksmith door + window (€550 on completion)",
+      "Kairis balance ~€3,145 — Kobi to settle personally on next visit",
+    ],
   },
 
   // ── Vicky's decisions tab ────────────────────────────────────────
