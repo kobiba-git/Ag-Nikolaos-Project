@@ -1,103 +1,78 @@
-# Ag. Nikolaos Home – Project Log
+# Ag. Nikolaos Home — Project Log
+**Location:** Agio Nikolaos, North Evia, Greece  
+**Owners:** Kobi & Yaela (Yael) Baruch  
+**Project Manager:** Vicky (Architect, on-site Evia)  
+**Main Contractor:** Antonis (signed contract, pending permit)  
+**Log covers:** Feb 14, 2026 → May 18, 2026  
+**Source:** WhatsApp group "Evia HOME" + project records  
 
 ---
 
-## June 2–6, 2026 — 3rd Floor Structure Complete, Meli Returns, Septic Upgraded
+## Pre-Project Background (from email records)
 
-This was a milestone week. The 3rd floor structure is officially complete as of June 6 — Vicky announced "The third floor opens to the public today" with only the roof remaining. The week also brought Meli back from surgery leave, who has officially resumed charge of the site. Workers are starting at 06:30 daily due to summer heat reaching 35°C on the roof — Vicky noted with relief that nobody suffered heatstroke working on concrete formwork in the sun.
+### Property Purchase — Sep–Oct 2025
 
-The septic tank for Yael's unit was upgraded from the concrete-blocks design (planned last week) to precast concrete rings. After a week of observation, Vicky saw the soil retains water at ~1.90m depth near a seasonal winter channel. She decided precast rings are stronger (can withstand heavy vehicle loads without settlement), cost the same (~€650), and save a full day of labor — the crane places the rings, freeing workers to finish the ceiling of Yael's house. With this, Yael's unit is estimated to be fully ready within 12 days.
+- **Sep 25 (email from Vasiliki):** Sent draft pre-agreement (ANAGNOSTOU - PROKATAVOLH.docx) with seller Anagnostou family. Kobi reviewed and accepted with 4 comments. Purchase pre-agreement: Kobi & Yael to pay **€18,500 advance** to Anagnostou (IBAN: GR02 0110 3570 0000 3576 1445 861, National Bank of Greece). Kobi & Yael's Greek bank: GR18 0110 3180 0000 3180 0400 611, National Bank of Greece.
+- **Sep 26 (Vasiliki):** Anagnostou and family's internal pre-agreements now in place. Anagnostou ready to notarise. Vasiliki to send final clean version for signature.
+- **Oct 16 (Vasiliki):** Vasiliki (vkiapekaki@gmail.com) sent engineering documents from engineer. Kobi forwarded to Antonis and Vicky for review — confirmed all documents match the plans.
+- **Oct 20 (Vasiliki):** Contracts from the notary (Kyriaki Mavri, kuriakimauri@yahoo.gr) sent to Kobi.
 
-Big news on the structural front: Antonis is confirmed to come for a site visit next Saturday (June 13) and start structural work from June 15. This had been blocked since February; clearing this blocker was a major project milestone.
+### Design Kick-Off — Nov–Dec 2025
 
-Vicky also noted she will go to Chalkida to purchase toilets and washbasins. On shower design, she recommends a half-glass screen with a marble threshold — simple and effective. She shared a tile supplier for review: ravenna.gr, from whom anything can be shipped directly to the site.
-
-### Payments (Week of June 2–6, 2026)
-
-| Item | Amount | Method | Notes |
-|---|---|---|---|
-| Workers wages — Mon–Sat (4–5 workers/day, Meli back in charge) | EUR 1,780 | Cash | Mon/Tue/Fri/Sat: 4p @280; Wed/Thu: 5p @330. Meli back at 100/day. |
-| Precast concrete septic rings + cover — Yael's unit | ~EUR 650 | Cash | Crane placement. Stronger than concrete blocks; same cost; saves 1 day labour. |
-| Kairis — 1 construction waste container | EUR 125 | Cash | Debris removal. |
-| Fuel (site) | EUR 50 | Cash | Weekly site fuel. |
-| Old mattress removal from front area | EUR 50 | Cash | Vicky: "I simply could not stand looking at them anymore!" |
-| Total this week | EUR 2,655 | | |
-
-Running total paid to date: ~EUR 58,300
-
-### Decisions
-- Precast concrete septic tank chosen over concrete-block build (stronger, same cost, saves labour day).
-- Meli officially back in charge of site. Replacement foreman no longer needed.
-- Shower design: half-glass screen + marble threshold (no full enclosure needed).
-- Antonis confirmed to start structural work from June 15.
-
-### Open items
-- Vicky to go to Chalkida to purchase toilets and washbasins.
-- Tile selection from ravenna.gr — Kobi/Yael to review and choose.
-- Kairis balance ~EUR 3,145 — Vicky to settle in person at Kairis (Kobi's funds, still outstanding).
-- Metalworker: pay EUR 550 on completion of small storage door + window (still pending).
-- Electrician: pay EUR 1,000 advance for 130m piping pre-purchased (still pending).
-- Land registry — push Vasiliki (unblocks Antonis permit formally).
-- Community water connection — chase utility office.
+- **Dec 2–5 (Zoom meetings):** Kobi and Vicky held design meetings. Vicky sent design drafts; asked Kobi & Yael to review before arrival so Antonis can start cost estimating. House labelled "KOBY" in DWG files.
+- **Dec 5 (email):** Kobi & Yael sent wish list PDF (in English and Greek) to Vicky and Antonis (info.adimas@yahoo.com).
 
 ---
 
-## June 5, 2026 — Progress Photos, Dashboard System Live, Kairis Correction
+## Project Overview
 
-Vicky sent five progress photos from the site first thing in the morning — she captioned them simply "Unstoppable." Yael echoed with "Absolutely unstoppable!!! Amazing progress" — the tone from site is very positive and the team is clearly moving fast. (Photos in WhatsApp group, not archived here.)
+Multi-floor residential renovation of an existing house structure:
+- **Ground Floor:** 2 apartments (A & B) — brickwork, plumbing, electrical, tiles
+- **Floor 2 (Upper Floor):** Main residence
+- **Floor 3 / Roof Garden:** Rooftop living space + garden
+- **Storage Buildings:** Large (~12.5m²) and small storage unit on plot
+- **Plot Infrastructure:** 160m access road, landscaping, 2 water wells, entry gate
 
-No new financial items were recorded today. The session was notable for two things: first, a data correction to the dashboard; second, Vicky's first interaction with the AI dashboard system.
-
-Dashboard correction — Kairis payment attribution: The previous AI run had incorrectly entered the Kairis EUR 3,145 balance as "Kobi to settle personally on next Greece visit." Vicky caught this and asked: "3145 you want to pay personally?" Kobi clarified: "NO. This is a classic AI mistake. It's actually you who is doing the personal payment." The dashboard has been corrected — all references now state Vicky to settle in person at Kairis (Kobi's funds), which is the correct arrangement: Vicky physically visits Kairis to pay, using Kobi's project money.
-
-Dashboard workflow explained to Vicky: Vicky asked how she should add daily expenses. Kobi explained the system: she doesn't need to do anything differently — just keep communicating via WhatsApp as normal, and the AI agent picks up messages daily and integrates them into the dashboard. Vicky's response: "I love it! What an era we live in!!!" The workflow is confirmed as WhatsApp to AI agent to dashboard update cycle.
-
-### Open items (carried forward)
-- Vicky to visit Kairis in person to settle ~EUR 3,145 balance
-- Metalworker: pay EUR 550 on completion of small storage door + window
-- Electrician: pay EUR 1,000 advance for 130m piping pre-purchased
-- Septic tank at Yael's unit — completion this week
-- 3rd floor upper roof — completion this week
-- Push Vasiliki on land registry (blocks Antonis permit)
-- Chase community water connection (blocks plumbing pressure test)
+Vicky's estimate: **1,000–1,050 €/m²** for internal renovation (structure already exists). Full project expected to significantly exceed original €200K target.
 
 ---
 
-## May 26–28, 2026
+## Chronological Summary
 
-### Infrastructure & Plumbing
+### February 2026 — Project Launch & Contract Signing
 
-Yael's Unit (= the Large Storage) — Septic Solution:
-The required 10% slope cannot be maintained to connect Yael's unit to the main septic tank. Decision made to build a small open-type septic pit using concrete blocks. This is a creative and resourceful solution given the available materials.
+- **Feb 3 (email):** Vicky sends design proposals to Kobi & Yael — "let's discuss before your arrival so Antonis can calculate total cost." All his studies will be based on these plans.
+- **Feb 12 (email):** Vicky sends Antonis contract for review (`Works_Contract_Kobi_Dimas_Aidipsos_EN.docx`). Contract location: Aidipsos.
+- **Feb 13 (email):** ABM Hellas SA (Candia tile distributor) sends tile offers to Vicky with 5 categories: (A) Mega Slabs for roof terrace, (B) Mini Slabs for exterior, (C) Medium-Mega Slabs for interiors, (D) eCANDIA invisible induction cooktop + Mega Slabs for kitchen counter (1.60×3.20 format → 6.40 linear meters of bench), (E) BAUER Germany adhesives/grout.
+- **Feb 14:** WhatsApp group "Evia HOME" created by Vicky. Kobi shares initial budget spreadsheet via Google Sheets.
+- **Feb 14:** Initial discussion on budget — Vicky estimates ~1,000 €/m² inclusive of walls, plumbing, electrical, kitchen, bathrooms, tiles. Total estimate ~250K for house + 25K roof garden + 25K exterior.
+- **Feb 14:** Decision to sign Antonis contract. Vicky confirms Antonis will give "his soul" to the project.
+- **Feb 14–17:** Several Zoom meeting attempts scheduled to review budget in detail.
+- **Feb 15 (email):** Kobi signs Antonis contract and returns to Antonis (info.adimas@yahoo.com). Kobi fills personal details; Antonis to countersign and fill location details.
+- **Feb 21 (email):** Vicky forwards LINEA ARMADI Italian kitchen offer (sales@linea-armadi.gr). Note from Vicky: "if you want to proceed with them (cash no VAT) I will tell them to proceed on changing the oven." Yael replies: "Let's schedule a meeting after your vacation to discuss." Meeting not yet held as of May 2026.
+- **Feb 21 (email):** Vicky sends final pre-construction DWG floor plan "KOBY FINAL ALL.dwg" to Kobi & Yael ("last before finalizing").
 
-Plot Infrastructure Layout:
-- Lower side of plot: All plumbing pipes
-- Upper side of plot: All electrical lines
-- Channels being dug for both simultaneously. Plumber worked 3 days non-stop, corner to corner, sealing all pipes with no leaks.
+### March 2026 — Site Prep, Storage Begins, Plans Finalized
 
-### Electrical
+- **Mar 19 (email):** Vicky sends complete set of plans to Kobi: apothikiA.pdf (storage A), KOBY A FLOOR.pdf (Floor A), KOBY APARTMENTS.pdf, KOBY FINAL ALL.pdf + .dwg, opsi.pdf (elevation/perspective view).
 
-- Electrician is proceeding. Will give electricity to Yael's unit (large storage) imminently.
-- Action needed: Provide electrician with the electricity company counters.
+- **Mar 4:** Vicky recovering from caterpillar allergy. Antonis beginning design work. Permit approval from authorities pending (up to 1 month delay expected).
+- **Mar 5:** Vicky shares initial design sketches/updates. Kobi shares Adobe Acrobat plan link.
+- **Mar 6:** Vicky proposes building storage with Ytong blocks instead of light construction boards (cheaper, better insulated). Agreed. Storage dimensions: 58m² walls, 11m³ Ytong needed. **Cost approved: €2,200 materials + €400 labor + €1,200 roof = ~€3,800 total.**
+- **Mar 7:** Vicky withdraws €1,500 to order Ytong from Kairis. Work starts Monday.
+- **Mar 10:** Electrical panel temporarily relocated for safety during excavation. Power cut needed during excavator passes.
+- **Mar 10:** Kobi obtains Greek SIM via Zoe (cost: €50). Must top up €20 every 2–3 months.
+- **Mar 10–12:** **Excavation & road works:** 8 gravel trucks (8 × €350 = €2,800) + 2 days excavator (2 × €400 = €800) + electrical channel trench (€100) = **€3,700 total.** Road is 160m long, 3–4.5m wide. Connects both house and storage.
+- **Mar 12:** Electrician + materials: €600. Electrical pipes (2 × 50m = 100m) with 3 intersections laid underground.
+- **Mar 13:** Municipality earthworks fee: **€350** (paid by Vicky via gov.gr, Kobi to reimburse).
+- **Mar 14:** Workers wages week of Mar 10–14: **€840** (Mon €130, Tue €130, Wed €150, Thu €150, Fri €100, Sat €180).
+- **Mar 14:** Storage footprint confirmed: **12.5m² net internal area.**
+- **Mar 14:** Kairis materials total to date: Ytong + glue = **€2,216.**
+- **Mar 14:** Workers insurance Jan–Feb discussed: ~€2,200 due by Mar 10. Workers agreed to self-pay via EFKA using their own AFM, then be reimbursed. Receipts pending.
+- **Mar 14:** Kobi raises funding application (Exoikonomw program) in May — needs property division (notary) to be ready. Land registry certificate from Vasiliki needed first.
+- **Mar 17:** Kobi confirms Greek SIM active. Vicky to collect SIM from Zoe.
+- **Mar 19:** Vicky sends documents to reliable Notary. Notary will also push Chalcis Land Registry. Notary to call next week after reviewing contracts.
+- **Mar 21:** Materials from Kairis: roof insulation, roof steel, fiberboards, half installation materials — **€500 advance to Kairis.** Glass blocks + installation: **€75.** Gardener fee (April): **€200.** Zoe SIM reimbursement: **€50.** Week total: ~**€1,525.**
+- **Mar 24:** Bricks and insulation delivered (110m² of walls). Workers build Thu–Sat.
 
-### Site & Team
-
-- Meli is still active as team leader despite being on recovery leave. Already caught a wrong roof panel order on delivery.
-- Replacement contractor continues to support on site.
-- Summer strategy: All exterior works to be completed before peak heat (45 degrees). Site does not stop.
-
-### Design Discussion
-
-- Central staircase walls: Idea raised to cover all staircase walls with a natural stone/raw texture treatment. Contrast with wood and/or steel (staircase fence/railing) and a black long window as accent. No final decision yet.
-
-### Payments (this period)
-
-| Item | Amount | Method | Notes |
-|---|---|---|---|
-| Plumber — materials and pipes | EUR 300 | Cash | Infrastructure pipes |
-| Excavator — channel opening + closing | EUR 600 | Cash | Both passes included |
-| Plumber — labor (3 days) | EUR 1,000 | Cash | From deal money |
-| Electrician — advance | EUR 1,000 | Cash | Needs counters to continue |
-| Total this period | EUR 2,900 | | |
-
----
+- **Apr 3 (email):
