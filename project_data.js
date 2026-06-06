@@ -23,27 +23,25 @@ const PROJECT_DATA = {
   // ── This week's task grid (Vicky Status tab) ──────────────────────
   // urgent: true = red top border, false = blue top border
   weekTasks: [
-    { icon: "🏠", label: "House Insulation — URGENT",      sub: "Summer dry season window — don't delay. Vicky to research method + price.", urgent: true  },
-    { icon: "⚡",  label: "Electricity counters — URGENT",  sub: "Electrician needs electricity company counters to continue to next stage", urgent: true  },
-    { icon: "🔲", label: "Tiles — 2nd Order URGENT",       sub: "Confirm next tile order with ABM Hellas (Candia). Also review ravenna.gr for additional choices.", urgent: true  },
-    { icon: "🏗️", label: "Antonis starts June 15 🎉",      sub: "Site visit June 13 (Saturday). Structural work begins June 15. Major milestone!", urgent: true  },
-    { icon: "🔧", label: "Kairis balance ~€3,145",         sub: "Vicky to visit Kairis in person to settle (Kobi's funds). Small storage roof should have arrived.", urgent: false },
-    { icon: "🔨", label: "Metalworker — small storage",    sub: "Pay €550 on completion of door + window install", urgent: false },
-    { icon: "⚡",  label: "Electrician advance €1,000",    sub: "Reimbursement for 130m piping pre-purchased. Approved.", urgent: false },
-    { icon: "🚽", label: "Toilets & washbasins",           sub: "Vicky to go to Chalkida to purchase. Shower: half-glass screen + marble threshold.", urgent: false },
-    { icon: "🔲", label: "Tile selection from ravenna.gr", sub: "Kobi/Yael to review and choose. Any item can be shipped directly to site.", urgent: false },
-    { icon: "🏛️", label: "Columns — starting next week",   sub: "Vicky shifting focus to columns from Monday June 8", urgent: false },
-    { icon: "📋", label: "Land registry",                  sub: "Push Vasiliki — formal cert needed for Antonis permit", urgent: false },
+    { icon: "🏗️", label: "Antonis starts June 15 — PREPARE",  sub: "Antonis arriving Sat June 13, structural work begins June 15. Coordinate with Vicky + Antonis.", urgent: true  },
+    { icon: "🏠", label: "House Insulation — URGENT",          sub: "Summer dry season window — don't delay. Vicky to research options + prices.", urgent: true  },
+    { icon: "⚡",  label: "Electricity counters — URGENT",      sub: "Electrician needs electricity company counters to continue to next stage.", urgent: true  },
+    { icon: "🔲", label: "Tiles — 2nd Order URGENT",           sub: "Confirm next tile order with ABM Hellas (Candia). Contact Ioannis Tsanais. Rooftop room + veranda + bathrooms TBD.", urgent: true  },
+    { icon: "🚿", label: "Yael's unit — Choose toilets + washbasins", sub: "Kobi to select from ravenna.gr (link in WhatsApp). Shower: half-glass screen + marble threshold (Vicky recommends).", urgent: false },
+    { icon: "✅", label: "3rd floor structural work — DONE",   sub: "All formwork + concrete complete. Apt C opens to the public! Only roof layer remains.", urgent: false },
+    { icon: "✅", label: "Meli officially back as site manager", sub: "Returned from surgery leave. Took charge June 6. Workers starting 06:30 due to summer heat.", urgent: false },
+    { icon: "🔧", label: "Kairis balance ~€3,145",             sub: "Vicky to visit Kairis in person to settle (Kobi's funds).", urgent: false },
+    { icon: "🔨", label: "Metalworker €550 + Electrician advance €1,000", sub: "Both approved by Kobi. Pay on completion / per schedule.", urgent: false },
   ],
 
   // ── KPI row (owner dashboard top) ────────────────────────────────
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "~€58,300",
+    paidToDate:     "~€58,241",
     paidSub:        "~21% of total estimate",
-    duePending:     "~€12,195",
-    dueSub:         "Kairis ~€3,145 + metalworker €550 + electrician ~€8,500 remaining",
+    duePending:     "~€12,695",
+    dueSub:         "Kairis ~€3,145 + metalworker €550 + electrician ~€8,500 (incl. advance €1,000)",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
   },
@@ -52,7 +50,7 @@ const PROJECT_DATA = {
   // spent/budget are numbers; use spentLabel/budgetLabel to override display text
   budgetBars: [
     { label: "A. Site Works (excavation, 160m road, trenching, municipality fee)",  spent: 5300,  budget: 6000,  pct: 88, cls: "bar-green"  },
-    { label: "B. Storage Buildings",                             spent: 8111,  budget: 13200, pct: 61, cls: "bar-blue"   },
+    { label: "B. Storage Buildings",                             spent: 8761,  budget: 13200, pct: 66, cls: "bar-blue"   },
     { label: "C. Ground Floor + Materials",                      spent: 8420,  budget: 11000, pct: 77, cls: "bar-blue"   },
     { label: "D. Plumbing (all floors)",                         spent: 3960,  budget: 9000,  pct: 44, cls: "bar-orange" },
     { label: "E. Electrical (all floors)",                       spent: 2000,  budgetLabel: "€11,250 approved (GF+storage) + upper TBD", pct: 18, cls: "bar-orange" },
@@ -73,13 +71,13 @@ const PROJECT_DATA = {
     { icon: "✅", status: "done",     name: "Phase 1 — Site Preparation",
       detail: "Road (160m), excavation, asbestos removal — COMPLETE" },
     { icon: "🔨", status: "ongoing",  name: "Phase 2 — Storage Buildings",
-      detail: "Large storage = Yael's unit. WATER ✅ + ELECTRICITY ✅ fully operational. 2-LAYER DOOR/WINDOW SYSTEM ✅. Epoxy floor coating ✅. Septic tank: PRECAST CONCRETE RINGS being placed (June 6, crane + workers). Stronger than concrete blocks; seasonal water channel at ~1.90m depth. ~12 days until Yael's unit fully complete. Small storage: steel door + window installation (€550) by metalworker — still pending completion." },
+      detail: "Large storage = Yael's unit. WATER ✅ + ELECTRICITY ✅ — fully operational as of June 1! 2-LAYER DOOR/WINDOW SYSTEM: iron/steel outer layer ✅ + aluminum inner layer ✅ (with screen, paid €1,150). 3-component epoxy coating on floor ✅ (permanent moisture barrier). Septic tank under construction. Small storage: steel door + window ONLY (no aluminum) — installation by metalworker (€550) approved." },
     { icon: "🔨", status: "ongoing",  name: "Phase 3 — Ground Floor Renovation",
       detail: "Brickwork complete ✅. Apt A installation DONE ✅. Plastering started (rain). WATER CONNECTED ✅ — plumber brought water to lower apartments and every corner of the building (June 1). Electrical approved (€11,250) — GF + storage scope." },
-    { icon: "🔨", status: "ongoing",  name: "Phase 4 — Antonis Main Contract",
-      detail: "UNBLOCKED 🎉 Antonis site visit: June 13 (Saturday). Structural work starts: June 15. Land registry formal cert still pending (Vasiliki) — but Antonis proceeding. First focus: foundations and structural beams." },
+    { icon: "🔜", status: "upcoming", name: "Phase 4 — Antonis Main Contract",
+      detail: "🚀 STARTING SOON: Antonis arriving June 13 (Sat) — work begins June 15! Land registry + permit resolved. Vicky mediating relationship. Roof design change + slab cut scope to be finalized with Antonis on site." },
     { icon: "🔨", status: "ongoing",  name: "Phase 5 — Upper Floors & Roof",
-      detail: "3RD FLOOR STRUCTURE COMPLETE ✅ (June 6). 'Opens to the public today!' — only the roof remains. Workers endured 35°C heat building formwork on the roof — nobody got heatstroke. 3rd floor roof panels ✅. Next: columns work starting week of June 8. ROOF SLAB CUT — 100% CONFIRMED: crack discovered in couch/living area under old covering. Steel beams to be added. Antonis to start structural work from June 15 🎉." },
+      detail: "3RD FLOOR STRUCTURAL WORK COMPLETE ✅ (June 6) — Apt C upper roof formwork + concrete done. Open for inspection! Dimensions: 6.60m × 3.70m+. Only roof layer remains. Next week: COLUMNS. ROOF SLAB CUT — 100% CONFIRMED: crack discovered in couch/living area. Slab will be cut + steel beams added when Antonis arrives. Steel frame for 3rd floor ordered May 26. Concrete demolition blocks kept for yard benches." },
     { icon: "⏳", status: "upcoming", name: "Phase 6 — Finishing (Tiles, Insulation, Doors, Kitchen)",
       detail: "First tile order placed May 8 (330 sqm CANDIA SLAB IVORY). Insulation method/pricing needed urgently this summer. Windows/doors TBD (color). Kitchen selection pending." },
     { icon: "🔴", status: "blocked",  name: "Phase 7 — Legal & Funding",
@@ -89,12 +87,12 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
-    { priority: "critical", label: "🎉 Critical — Milestone",        title: "Antonis Starts June 15",
-      desc: "CONFIRMED: Antonis site visit Saturday June 13. Structural work begins June 15. This was blocked since February — major project milestone. First focus: foundations and structural beams." },
     { priority: "critical", label: "🔴 Critical — Action Needed",    title: "Electricity Counters — Provide to Electrician",
-      desc: "Electrician is ready to proceed. He needs the electricity company counters to continue to the next stage. Provide ASAP." },
+      desc: "Electrician is ready to proceed and is giving power to Yael's unit (large storage) now. He needs the electricity company counters to continue to the next stage. Provide ASAP." },
     { priority: "critical", label: "🔴 Critical — Blocking",        title: "Land Registry Certificate",
-      desc: "Vasiliki has temporary cert; formal cert with Notary must be issued ASAP. Needed for Antonis permit AND property funding application (Exoikonomw)." },
+      desc: "Vasiliki has temporary cert; formal cert with Notary must be issued ASAP. This unblocks Antonis permit AND property funding application." },
+    { priority: "critical", label: "🚀 Starting June 15 — Prepare",  title: "Antonis Arriving June 13 — Work Starts June 15",
+      desc: "Antonis confirmed: arriving Saturday June 13 to survey, structural work beginning June 15. Ensure funds available (Phase 1 deposit ~€25K–€30K). Confirm roof design change + slab cut scope with Antonis on first visit." },
     { priority: "critical", label: "🔴 Critical — Money",           title: "Water Network Connection",
       desc: "Plumber cannot pressure-test pipes or close trenches until community connects water supply. Application submitted; no response yet. Follow up urgently." },
     { priority: "high",     label: "🟠 High Priority",              title: "Kairis Balance ~€3,145 — Vicky to settle in person",
@@ -105,12 +103,12 @@ const PROJECT_DATA = {
       desc: "First order placed May 8: 240 sqm CANDIA SLAB 120×120 IVORY (Floor B + Floor A balconies) + 90 sqm 60×60 IVORY (Floor A internal) = 330 sqm total. Confirm delivery date with supplier. Next: rooftop room tiles, veranda, bathroom tiles (after micro-cement decision)." },
     { priority: "critical", label: "🔴 Critical — Summer Deadline", title: "House Insulation — Must Complete This Dry Season",
       desc: "Insulation work must be done before autumn rains. Vicky to research method options (spray foam, rock wool, PIR boards, etc.), get pricing, and submit for Kobi's approval before scheduling. Do not delay — dry season window is limited." },
+    { priority: "high",     label: "🟠 High Priority — Kobi Action", title: "Choose Toilets + Washbasins for Yael's Unit",
+      desc: "Vicky shared ravenna.gr as supplier. Kobi to browse and select models. Also decide on shower: Vicky recommends half-glass screen + marble threshold (no separate enclosure). Confirm so Vicky can go to Chalkida to purchase." },
     { priority: "high",     label: "🟠 High Priority",              title: "WiFi Site Cameras",
       desc: "Install cameras for remote monitoring (Kobi & Yael watching from Israel). Vicky to source options, get quote (~€500–1,500 estimated), present to workers as owner request. 2–3 cameras: entrance, main work area, storage. Await Kobi approval on quote." },
-    { priority: "high",     label: "🟠 High Priority",              title: "Toilets & Washbasins — Vicky to Chalkida",
-      desc: "Vicky going to Chalkida to purchase toilets and washbasins. Shower design confirmed: half-glass screen + marble threshold (no full enclosure needed). Also: tile selection from ravenna.gr — Kobi/Yael to review and choose (any item ships to site)." },
     { priority: "high",     label: "🟠 High Priority",              title: "Transfer Funds for Upcoming Expenses",
-      desc: "Large spend coming: Antonis deposit (€25K–30K), tiles, windows, plumbing balance ~€7k, electricals. Requires 3–4 day processing from pension savings." },
+      desc: "Large spend coming (Antonis deposit, tiles, windows, plumbing balance ~€7k, electricals). Requires 3–4 day processing from pension savings." },
     { priority: "high",     label: "🟠 High Priority",              title: "Property Division / Building Split (Notary)",
       desc: "Required before funding application. Notary asked for more plans + Antonis must sign. Coordinate with Vasiliki and Notary." },
     { priority: "info",     label: "🔵 Info / Ongoing",             title: "Aluminum Windows & Doors",
@@ -126,11 +124,11 @@ const PROJECT_DATA = {
   // ── Payment schedule ──────────────────────────────────────────────
   // status: "paid" | "due" | "upcoming" | "blocked"
   payments: [
-    { date: "Jun 6",      category: "Workers",    desc: "Workers wages — 4–5 workers/day Mon–Sat (week June 2–7). Mon/Tue/Fri/Sat: 4p @€280; Wed/Thu: 5p @€330. Meli officially back in charge. Workers start 06:30 due to summer heat.", vendor: "Workers + Meli", amount: "€1,780", status: "paid" },
-    { date: "Jun 6",      category: "Plumbing",   desc: "Precast concrete septic tank rings + cover — Yael's unit. Crane placement. Stronger than concrete blocks; soil retains water at ~1.90m depth. Same cost as blocks, saves 1 day of labour.", vendor: "Supplier", amount: "~€650", status: "paid" },
-    { date: "Jun 6",      category: "Waste Removal", desc: "Kairis — 1 construction waste container for debris removal.", vendor: "Kairis", amount: "€125", status: "paid" },
-    { date: "Jun 6",      category: "Equipment",  desc: "Site fuel for week of June 2–6.", vendor: "Fuel station", amount: "€50", status: "paid" },
-    { date: "Jun 6",      category: "Other",      desc: "Old mattress removal from front area of property.", vendor: "Removal service", amount: "€50", status: "paid" },
+    { date: "Jun 2–6",    category: "Workers",    desc: "Workers wages week Jun 2–6. Mon €280 (4ppl) + Tue €280 + Wed €330 (5ppl) + Thu €330 + Fri €280 + Sat €280. Meli officially back as site manager (€80/day). Replacement stayed Wed+Thu for formwork handover. Start time 06:30 (summer heat).", vendor: "Workers + Meli", amount: "€1,780", status: "paid" },
+    { date: "Jun 6",      category: "Materials - Structure", desc: "Septic tank — 2 precast concrete rings + cover + crane placement (Yael's unit). Vicky's decision: same cost as concrete blocks but saves 1 day labor + more durable. Crane places rings; workers finish ceiling.", vendor: "Supplier", amount: "~€650", status: "paid" },
+    { date: "Jun 6",      category: "Waste Removal", desc: "Kairis — 1 construction waste container", vendor: "Kairis", amount: "€125", status: "paid" },
+    { date: "Jun 6",      category: "Equipment",    desc: "Fuel — cement mixer + site equipment (week Jun 2–6)", vendor: "Gas station", amount: "€50", status: "paid" },
+    { date: "Jun 6",      category: "Other",        desc: "Mattress removal from front area. Vicky paid to clear the entrance of old mattresses.", vendor: "Removal service", amount: "€50", status: "paid" },
     { date: "Jun 1",      category: "Workers",    desc: "Workers wages — 4 workers/day Mon–Sat (week May 26–31). Daily €250 (3 workers @€50 + manager @€100). On site 07:00–14:00.", vendor: "Workers + Manager", amount: "€1,500", status: "paid" },
     { date: "Jun 1",      category: "Materials - Other", desc: "3-component epoxy coating — YAEL unit floor (entire area). Permanent moisture barrier incl. installation. Eliminates additional insulation layer.", vendor: "Supplier", amount: "€400", status: "paid" },
     { date: "Upcoming",   category: "Subcontractor - Other", desc: "Metalworker — small storage door + window installation. Agreed amount.", vendor: "Metalworker", amount: "€550", status: "due" },
@@ -207,7 +205,7 @@ const PROJECT_DATA = {
   financialSummary: {
     paid: [
       { label: "Site Works (excavation, 160m road, trenching, municipality fee)",  amount: "€5,300"   },
-      { label: "Storage Buildings",        amount: "€8,111"   },
+      { label: "Storage Buildings",        amount: "€8,761"   },
       { label: "Ground Floor Materials",   amount: "€8,420"   },
       { label: "Plumbing",                 amount: "€3,960"   },
       { label: "Electrical",               amount: "€2,000"   },
@@ -217,8 +215,8 @@ const PROJECT_DATA = {
       { label: "Roof Garden (materials)",  amount: "€1,450"   },
       { label: "Windows & Doors",          amount: "€1,150"   },
     ],
-    totalPaid:      "~€58,300",
-    totalCommitted: "~€62,400",
+    totalPaid:      "~€58,241",
+    totalCommitted: "~€62,341",
 
     ahead: [
       { label: "Antonis — Phase 1 (foundations & beams)", amount: "€25K–€30K" },
@@ -299,9 +297,9 @@ const PROJECT_DATA = {
         amount: "€550",   payType: "💵 CASH", auth: "✅ Kobi approved — Pay on completion" },
     ],
     summary: {
-      dueNow:     "~€12,195",  dueSub:     "Kairis €3,145 + Electrician ~€8,500 remaining + Blacksmith €550",
-      workers:    "€1,780",    workersSub: "4–5 workers/day (Mon–Sat). Meli back in charge @€100/day. Start time: 06:30 (summer heat).",
-      paidToDate: "~€46K",
+      dueNow:     "~€13,920",  dueSub:     "Kairis €3,145 + Electrician ~€8,500 + Blacksmith €550 + plans/meter €1,750",
+      workers:    "€1,780",    workersSub: "Meli back (€80/day) + workers (€50/day). Mon–Sat, starting 06:30. Replacement stayed Wed+Thu for formwork handover.",
+      paidToDate: "~€58K",
       atmLimit:   "€2K",
     },
   },
@@ -317,9 +315,9 @@ const PROJECT_DATA = {
     totalTransferred:    100000,
     greekAccountBalance: 49500,   // actual balance as of Jun 2, 2026
     balanceAsOf:         "June 2, 2026",
-    totalKnownExpenses:  58300,   // from expense tracking (project records)
-    // implied balance = totalTransferred - totalKnownExpenses = 44,414
-    // actual balance 49,500 → ~€5,086 unaccounted (may be expenses not yet logged)
+    totalKnownExpenses:  58241,   // from expense tracking (project records)
+    // implied balance = totalTransferred - totalKnownExpenses = 41,759
+    // actual balance 49,500 → ~€7,741 unaccounted (may be expenses not yet logged)
     note: "Greek bank: NBG — GR18 0110 3180 0000 3180 0400 611",
   },
 
@@ -328,10 +326,12 @@ const PROJECT_DATA = {
   // Update this section each run when open items / contact details change
   vickyComms: {
     // Message from Kobi to Vicky (update when there's something specific to say)
-    kobMessage: "Vicky, you and the team are doing an amazing job 🙏. The 3rd floor is a huge milestone! Antonis starting June 15 is amazing news. Please send photos whenever you can and your weekly report + payment total by Saturday.",
+    kobMessage: "Vicky, you and the team are doing an amazing job 🙏. Please send photos whenever you can — it keeps us going! Send us the weekly report + payment total by Saturday.",
 
     // Items Vicky is waiting on from Kobi — update when decisions are made
     waitingOnKobi: [
+      "Choose toilets + washbasins from ravenna.gr (link sent June 6)",
+      "Confirm shower design: half-glass screen + marble threshold? (Vicky's recommendation)",
       "Window/door color — black or not?",
       "Entrance gate quote — approve when it arrives",
       "Property division structure for Notary",
@@ -339,15 +339,16 @@ const PROJECT_DATA = {
 
     // Items Vicky must action herself — update each run
     vickyMustAction: [
+      "Coordinate Antonis arrival June 13 + work start June 15",
+      "Go to Chalkida for toilets + washbasins once Kobi selects models from ravenna.gr",
       "Tiles — 2nd order: contact ABM Hellas (Ioannis Tsanais) for rooftop + veranda + bathroom tiles",
-      "Go to Chalkida to purchase toilets and washbasins",
-      "Coordinate Antonis site visit June 13 + work start June 15",
       "Chase community water connection (URGENT)",
-      "Push Vasiliki / Notary on land registry",
       "House insulation — research options + prices, send to Kobi ASAP",
+      "Settle Kairis balance ~€3,145 — visit in person (Kobi's funds)",
+      "Pay metalworker €550 on completion (small storage door + window)",
+      "Pay electrician advance €1,000 (approved)",
       "Get gate quote from blacksmith → send to Kobi",
       "WiFi cameras — source options + quote → send to Kobi",
-      "Kairis balance ~€3,145 — visit in person to settle (Kobi's funds)",
     ],
 
     // Items Kobi has already authorized — update when new approvals given
@@ -356,8 +357,6 @@ const PROJECT_DATA = {
       "Electricians GF + storages — full scope (€11,250 total)",
       "Small storage blacksmith door + window (€550 on completion)",
       "Kairis balance ~€3,145 — Vicky to settle in person at Kairis (Kobi's funds)",
-      "Precast concrete septic tank rings + cover for Yael's unit (~€650) ✅ paid Jun 6",
-      "Antonis structural work — site visit Jun 13, work starts Jun 15",
     ],
   },
 
@@ -372,6 +371,4 @@ const PROJECT_DATA = {
       statusClass: "ds-waiting", status: "⏳ Antonis reviewing — Vicky to follow up" },
     { q: "3. House Insulation — method and schedule",
       body: "Insulation work must be done this summer (dry season). Kobi & Yael need Vicky to research method options, compare prices, and send a recommendation. Options to consider: spray foam, rock wool, PIR rigid boards, or other. This affects budget and timeline significantly.",
-      statusClass: "ds-urgent",  status: "🔴 URGENT — Summer window. Vicky to submit options + prices ASAP" },
-    { q: "4. WiFi cameras — which system?",
-      body: "Kobi & Yael want 2–3 cameras installed on site so they can f
+      statusClass: "ds-urgent",  status: "🔴 URGENT — Summer window. Vicky to 
