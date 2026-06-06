@@ -286,38 +286,10 @@
     </div>
   </div>
 
-  <!-- Vicky's Current Open Items -->
+  <!-- Vicky's Current Open Items — rendered from vickyComms in project_data.js -->
   <div class="card" style="margin-top:0;">
     <h3>📋 Vicky's Current Open Items (Quick Reference)</h3>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:10px; font-size:12px;">
-      <div>
-        <div style="font-weight:700; color:var(--red); margin-bottom:6px; font-size:11px; text-transform:uppercase;">🔴 She's Waiting on You (Kobi)</div>
-        <div style="display:flex;flex-direction:column;gap:4px;">
-          <div style="padding:6px 10px; background:var(--lred); border-radius:6px;">Window/door color — black or not?</div>
-          <div style="padding:6px 10px; background:var(--lred); border-radius:6px;">Entrance gate quote — approve when it arrives</div>
-          <div style="padding:6px 10px; background:var(--lred); border-radius:6px;">Property division structure for Notary</div>
-        </div>
-      </div>
-      <div>
-        <div style="font-weight:700; color:var(--orange); margin-bottom:6px; font-size:11px; text-transform:uppercase;">🟠 She Needs to Action</div>
-        <div style="display:flex;flex-direction:column;gap:4px;">
-          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Chase community water connection (URGENT)</div>
-          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Push Vasiliki / Notary on land registry</div>
-          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Pay Kairis €2,875 when anchors arrive</div>
-          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Get gate quote from blacksmith → send to you</div>
-          <div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">Confirm tile delivery date</div>
-        </div>
-      </div>
-      <div>
-        <div style="font-weight:700; color:var(--green); margin-bottom:6px; font-size:11px; text-transform:uppercase;">✅ Already Authorized</div>
-        <div style="display:flex;flex-direction:column;gap:4px;">
-          <div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">Weekly worker wages (pre-approved)</div>
-          <div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">Electricians Apt B — continue (advance paid)</div>
-          <div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">Small storage aluminum door + window</div>
-          <div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">Blacksmith small storage door €550</div>
-        </div>
-      </div>
-    </div>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:10px; font-size:12px;" id="vicky-open-items"></div>
   </div>
 
   <div class="footer">
@@ -495,8 +467,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <span style="color:${diffColor};font-weight:700;">Δ ${diffLabel}</span>
       </div>`;
 
-    // Runway card
-    const duePending   = 12695;   // from kpis.duePending (approximate)
+    // Runway card — parse duePending from kpis string (strip ~€ and commas)
+    const duePending   = parseInt((D.kpis.duePending || '0').replace(/[^0-9]/g, ''), 10) || 12695;
     const afterPending = bt.greekAccountBalance - duePending;
     document.getElementById('transfer-runway').innerHTML = `
       <div style="padding:10px 12px;background:var(--lblue);border-radius:6px;">
@@ -505,9 +477,9 @@ document.addEventListener('DOMContentLoaded', function() {
         <div style="font-size:10px;color:var(--muted);">as of ${esc(bt.balanceAsOf)}</div>
       </div>
       <div style="padding:10px 12px;background:var(--yellow);border-radius:6px;">
-        <div style="font-weight:700;margin-bottom:4px;">After paying all due/pending (~€12,695)</div>
+        <div style="font-weight:700;margin-bottom:4px;">After paying all due/pending (${esc(D.kpis.duePending)})</div>
         <div style="font-size:18px;font-weight:700;color:${afterPending > 10000 ? '#375623' : '#C00000'};">${fmtEur(afterPending)}</div>
-        <div style="font-size:10px;color:var(--muted);">Kairis ~€3,145 + metalworker €550 + electrician ~€8,500</div>
+        <div style="font-size:10px;color:var(--muted);">${esc(D.kpis.dueSub)}</div>
       </div>
       <div style="padding:10px 12px;background:var(--lred);border-radius:6px;">
         <div style="font-weight:700;margin-bottom:4px;">⚠️ Upcoming large commitments</div>
@@ -515,6 +487,28 @@ document.addEventListener('DOMContentLoaded', function() {
         <div style="margin-top:6px;font-size:11px;font-weight:700;color:var(--red);">→ Further transfers from Israel will be needed</div>
       </div>`;
   }
+
+  // ── Vicky's open items (rendered from vickyComms — auto-updates with project_data.js)
+  const C2 = D.vickyComms;
+  document.getElementById('vicky-open-items').innerHTML = `
+    <div>
+      <div style="font-weight:700; color:var(--red); margin-bottom:6px; font-size:11px; text-transform:uppercase;">🔴 She's Waiting on You (Kobi)</div>
+      <div style="display:flex;flex-direction:column;gap:4px;">
+        ${C2.waitingOnKobi.map(i => `<div style="padding:6px 10px; background:var(--lred); border-radius:6px;">${esc(i)}</div>`).join('')}
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:700; color:var(--orange); margin-bottom:6px; font-size:11px; text-transform:uppercase;">🟠 She Needs to Action</div>
+      <div style="display:flex;flex-direction:column;gap:4px;">
+        ${C2.vickyMustAction.map(i => `<div style="padding:6px 10px; background:var(--yellow); border-radius:6px;">${esc(i)}</div>`).join('')}
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:700; color:var(--green); margin-bottom:6px; font-size:11px; text-transform:uppercase;">✅ Already Authorized</div>
+      <div style="display:flex;flex-direction:column;gap:4px;">
+        ${C2.authorized.map(i => `<div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">${esc(i)}</div>`).join('')}
+      </div>
+    </div>`;
 });
 </script>
 </body>
