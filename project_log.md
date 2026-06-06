@@ -2,6 +2,27 @@
 
 ---
 
+## June 5, 2026 — Progress Photos, Dashboard System Live, Kairis Correction
+
+Vicky sent five progress photos from the site first thing in the morning — she captioned them simply "Unstoppable." Yael echoed with "Absolutely unstoppable!!! Amazing progress 👏" — the tone from site is very positive and the team is clearly moving fast. (Photos in WhatsApp group, not archived here.)
+
+No new financial items were recorded today. The session was notable for two things: first, a data correction to the dashboard; second, Vicky's first interaction with the AI dashboard system.
+
+**Dashboard correction — Kairis payment attribution:** The previous AI run had incorrectly entered the Kairis €3,145 balance as "Kobi to settle personally on next Greece visit." Vicky caught this and asked: *"3145 you want to pay personally?"* Kobi clarified: *"NO. This is a classic AI mistake. It's actually you who is doing the personal payment."* The dashboard has been corrected — all references now state **Vicky to settle in person at Kairis (Kobi's funds)**, which is the correct arrangement: Vicky physically visits Kairis to pay, using Kobi's project money.
+
+**Dashboard workflow explained to Vicky:** Vicky asked how she should add daily expenses. Kobi explained the system: she doesn't need to do anything differently — just keep communicating via WhatsApp as normal, and the AI agent picks up messages daily and integrates them into the dashboard. Vicky's response: *"I love it! What an era we live in!!!"* The workflow is confirmed as WhatsApp → AI agent → dashboard update cycle.
+
+### Open items (carried forward)
+- Vicky to visit Kairis in person to settle ~€3,145 balance (small storage roof panels expected to arrive this week, adds €510)
+- Metalworker: pay €550 on completion of small storage door + window
+- Electrician: pay €1,000 advance for 130m piping pre-purchased
+- Septic tank at Yael's unit — completion this week
+- 3rd floor upper roof — completion this week
+- Push Vasiliki on land registry (blocks Antonis permit)
+- Chase community water connection (blocks plumbing pressure test)
+
+---
+
 ## Update: May 26–28, 2026
 
 ### 🔧 Infrastructure & Plumbing
@@ -12,43 +33,4 @@ The required 10% slope cannot be maintained to connect Yael's unit (the large st
 **Plot Infrastructure Layout:**
 - **Lower side of plot** → All plumbing pipes
 - **Upper side of plot** → All electrical lines
-- Channels being dug for both simultaneously. Plumber worked 3 days non-stop, corner to corner, sealing all pipes with no leaks.
-
-### ⚡ Electrical
-
-- Electrician is proceeding. Will give electricity to Yael's unit (large storage) imminently.
-- **Action needed:** Provide electrician with the electricity company counters.
-
-### 🏗️ Site & Team
-
-- **Meli** is still active as team leader despite being on recovery leave — coordinating workers, speaking their language, and maintaining quality control. Already caught a wrong roof panel order on delivery (roof panels need special dimensions, more insulated than standard).
-- Meli should **not climb stairs** — needs to be managed carefully.
-- **Replacement contractor** continues to support on site.
-- Summer strategy: All **exterior works to be completed before peak heat (45°C)**. Site does not stop.
-
-### 🏠 Design Discussion
-
-- **Central staircase walls**: Idea raised to cover all staircase walls with a natural stone/raw texture treatment. Discussed positively — to be considered with contrasting materials: **wood and/or steel** (staircase fence/railing) and the **black long window** as an accent element. No final decision yet.
-
-### 📋 Open Items / Action Required
-
-| Item | Status | Notes |
-|------|--------|-------|
-| Tiles order | Following up | Vicky calling tiles company |
-| Insulation | Pending decision | Must finalize during dry season (summer) |
-| Electricity counters | Action needed | Electrician needs them to proceed |
-| Excavator – close channels | Upcoming | ~2 days after opening (same contractor, included in €600) |
-| Staircase design | Under discussion | Stone texture + wood/steel + black window |
-| Septic pit (Yael's unit / large storage) | In progress | Concrete blocks, open-type |
-
-### 💶 Payments (this period)
-
-| Item | Amount | Method | Notes |
-|------|--------|--------|-------|
-| Plumber – materials & pipes | €300 | Cash | Infrastructure pipes |
-| Excavator – channel opening + closing | €600 | Cash | Both passes included |
-| Plumber – labor (3 days) | €1,000 | Cash | From deal money |
-| Electrician – advance | €1,000 | Cash | Needs counters to continue |
-| **Total this period** | **€2,900** | | |
-
----
+- Channels being dug for both simultaneously. Plumber worked 3 days non-stop, corner to corner, sealing all pipes 

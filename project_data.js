@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "3 June 2026",
-    weekOf:        "26 May – 1 June 2026",
+    lastUpdated:   "5 June 2026",
+    weekOf:        "2–5 June 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -26,7 +26,7 @@ const PROJECT_DATA = {
     { icon: "🏠", label: "House Insulation — URGENT",      sub: "Summer dry season window — don't delay", urgent: true  },
     { icon: "⚡",  label: "Electricity counters — URGENT",  sub: "Electrician needs electricity company counters to continue to next stage", urgent: true  },
     { icon: "🔲", label: "Tiles — 2nd Order URGENT",       sub: "Confirm next tile order with ABM Hellas (Candia). Contact Ioannis Tsanais. Rooftop room + veranda + bathrooms TBD.", urgent: true  },
-    { icon: "🔧", label: "Kairis balance ~€3,145",         sub: "Kobi to settle personally on next Greece visit (€2,635 + €510 small storage roof this week)", urgent: false },
+    { icon: "🔧", label: "Kairis balance ~€3,145",         sub: "Vicky to visit Kairis in person to settle (Kobi's funds). €2,635 + €510 small storage roof.", urgent: false },
     { icon: "🔨", label: "Metalworker — small storage",    sub: "Pay €550 on completion of door + window install", urgent: false },
     { icon: "⚡",  label: "Electrician advance €1,000",    sub: "Reimbursement for 130m piping pre-purchased. Approved.", urgent: false },
     { icon: "🚿", label: "Septic tank — Yael's unit",      sub: "Completion scheduled this week", urgent: false },
@@ -95,8 +95,8 @@ const PROJECT_DATA = {
       desc: "Once permit is issued + 10 dry days, Antonis starts structural work. Vicky mediating relationship. Ask Antonis to review roof design change (less insulation area = saving)." },
     { priority: "critical", label: "🔴 Critical — Money",           title: "Water Network Connection",
       desc: "Plumber cannot pressure-test pipes or close trenches until community connects water supply. Application submitted; no response yet. Follow up urgently." },
-    { priority: "high",     label: "🟠 High Priority",              title: "Kairis Balance ~€3,145 — Kobi to settle personally",
-      desc: "Running total owed to Kairis: €3,145 (€2,635 existing + €510 small storage roof arriving this week). Vicky will personally go to Kairis to settle the debt. After this delivery, roof panel chapter with Kairis closes." },
+    { priority: "high",     label: "🟠 High Priority",              title: "Kairis Balance ~€3,145 — Vicky to settle in person",
+      desc: "Running total owed to Kairis: €3,145 (€2,635 existing + €510 small storage roof arriving this week). Vicky will personally go to Kairis to settle the debt (Kobi's funds). After this delivery, roof panel chapter with Kairis closes." },
     { priority: "high",     label: "🟠 High Priority",              title: "Electrician Outstanding ~€7,500",
       desc: "GF + storages electrical approved (€9,500 scope). Paid to date: €400 (May 16) + €1,000 (May 28) = €1,400. Outstanding: ~€7,500 + €1,000 plans + €750 3-phase meter. Electrician currently active — giving power to Yael's unit (large storage)." },
     { priority: "high",     label: "🟠 High Priority",              title: "Tile Delivery Confirmation",
@@ -136,7 +136,7 @@ const PROJECT_DATA = {
     { date: "May 25",     category: "Workers",    desc: "Meli Ice Cream — treat for workers team. Paid by Vicky from Kobi's funds.", vendor: "Meli Ice Cream", amount: "€50",   status: "paid" },
     { date: "May 23",     category: "Windows",    desc: "Aluminum inner door + window — LARGE STORAGE ONLY (inner layer of 2-layer system: iron/steel outer + aluminum inner with screen). White aluminum. Small storage has steel only — no aluminum.", vendor: "Aluminum supplier", amount: "€1,150", status: "paid" },
     { date: "May 19–23",  category: "Workers",    desc: "Workers wages (week May 19–23) — Mon €230 (3w+Meli), Tue €230 (3w+Meli), Wed €330 (3w+Meli+Contractor overlap), Thu €330 (3w+Meli+Contractor overlap), Fri €250 (3w+Contractor), Sat €250 (3w+Contractor)", vendor: "Workers + Managers", amount: "€1,620", status: "paid" },
-    { date: "Due now",    category: "Materials",  desc: "Kairis — running balance: €2,635 existing + €510 small storage roof (arriving this week) = €3,145 total. Kobi to settle personally on next Greece visit.", vendor: "Kairis", amount: "~€3,145", status: "due" },
+    { date: "Due now",    category: "Materials",  desc: "Kairis — running balance: €2,635 existing + €510 small storage roof (arriving this week) = €3,145 total. Vicky to settle in person at Kairis (Kobi's funds).", vendor: "Kairis", amount: "~€3,145", status: "due" },
     { date: "Approved",   category: "Electrical", desc: "Electrical work + materials — 2 apts + 2 storages + outdoor provisions", vendor: "Electricians", amount: "€9,500", status: "due" },
     { date: "Approved",   category: "Electrical", desc: "Electrical plans — submitted to electricity authority", vendor: "Electricians",       amount: "€1,000",      status: "upcoming" },
     { date: "Approved",   category: "Electrical", desc: "Three-phase meter (under Kobi's name)",                 vendor: "Electricians",       amount: "€750",        status: "upcoming" },
@@ -242,10 +242,10 @@ const PROJECT_DATA = {
         sub:    "€9,500 work + €1,000 plans + €750 three-phase meter = €11,250 total",
         auth:   "✅ KOBI APPROVED (May 23) — Proceed with full scope",
         detail: "Includes: sockets, spotlights, panels, all wiring from main panel to storages + entrances. Plans submitted to electricity authority. Meter: 1× three-phase (main apt+storage+roof garden) + 2× single-phase (downstairs apts). Upper floor deferred — no walls yet." },
-      { icon: "💳", title: "Kairis — running balance €3,145 (Kobi to settle personally)",
+      { icon: "💳", title: "Kairis — running balance €3,145 (Vicky to settle in person)",
         sub:    "€2,635 existing + €510 small storage roof (arriving this week) = €3,145 total",
-        auth:   "✅ KOBI APPROVED — Kobi to pay Kairis personally on next Greece visit. Vicky to confirm amount with Kairis.",
-        detail: "After this delivery (small storage roof panels), Vicky: 'After this we stop talking about roof panels!' Kobi will settle the full €3,145 balance in person. Do not pay through Vicky's running cash." },
+        auth:   "✅ KOBI APPROVED — Vicky to go to Kairis in person and settle the full balance (Kobi's funds, not Kobi's personal visit).",
+        detail: "After this delivery (small storage roof panels), Vicky: 'After this we stop talking about roof panels!' Vicky will go to Kairis in person to pay. Do not pay through Vicky's running cash — this is a direct settlement visit." },
       { icon: "🔨", title: "Electricians — Continue Apartment B",
         sub:    "Advance of €400 already paid. Continue full scope.",
         auth:   "✅ KOBI APPROVED — Proceed per agreed electrical scope",
@@ -282,9 +282,9 @@ const PROJECT_DATA = {
   // ── Vicky's payments tab ─────────────────────────────────────────
   vickyPayments: {
     dueNow: [
-      { icon: "🧱", title: "Kairis",                   sub: "Running balance — Kobi to settle personally on next visit",
-        who: "Kairis Materials", desc: "€2,635 existing balance + €510 small storage roof (this week) = €3,145 total. Vicky to visit Kairis to register the amount; Kobi pays on next Greece visit.",
-        amount: "€3,145", payType: "💵 CASH (Kobi personally)", auth: "✅ Kobi approved — Kobi to settle personally on Greece visit" },
+      { icon: "🧱", title: "Kairis",                   sub: "Running balance — Vicky to settle in person at Kairis (Kobi's funds)",
+        who: "Kairis Materials", desc: "€2,635 existing balance + €510 small storage roof (this week) = €3,145 total. Vicky goes to Kairis in person to settle the full amount.",
+        amount: "€3,145", payType: "💵 CASH (Vicky in person, Kobi's funds)", auth: "✅ Kobi approved — Vicky to settle at Kairis in person" },
       { icon: "🔩", title: "Blacksmith — Small Storage", sub: "Door + window + varnish installation",
         who: "Blacksmith", desc: "Small storage door + window (€500) + paint (€50)",
         amount: "€550",   payType: "💵 CASH", auth: "✅ Kobi approved — Pay on completion" },
@@ -318,12 +318,17 @@ const PROJECT_DATA = {
   // Used by both dashboard_vicky.html (Comms tab) and dashboard.html (Communication Hub)
   // Update this section each run when open items / contact details change
   vickyComms: {
+    // Message from Kobi to Vicky (update when there's something specific to say)
     kobMessage: "Vicky, you and the team are doing an amazing job 🙏. Please send photos whenever you can — it keeps us going! Send us the weekly report + payment total by Saturday.",
+
+    // Items Vicky is waiting on from Kobi — update when decisions are made
     waitingOnKobi: [
       "Window/door color — black or not?",
       "Entrance gate quote — approve when it arrives",
       "Property division structure for Notary",
     ],
+
+    // Items Vicky must action herself — update each run
     vickyMustAction: [
       "Tiles — 2nd order: contact ABM Hellas (Ioannis Tsanais) for rooftop + veranda + bathroom tiles",
       "Chase community water connection (URGENT)",
@@ -332,11 +337,13 @@ const PROJECT_DATA = {
       "Get gate quote from blacksmith → send to Kobi",
       "WiFi cameras — source options + quote → send to Kobi",
     ],
+
+    // Items Kobi has already authorized — update when new approvals given
     authorized: [
       "Weekly worker wages (pre-approved)",
       "Electricians GF + storages — full scope (€11,250 total)",
       "Small storage blacksmith door + window (€550 on completion)",
-      "Kairis balance ~€3,145 — Kobi to settle personally on next visit",
+      "Kairis balance ~€3,145 — Vicky to settle in person at Kairis (Kobi's funds)",
     ],
   },
 
@@ -372,7 +379,4 @@ const PROJECT_DATA = {
       statusClass: "ds-waiting", status: "⏳ Quote incoming — send to Kobi immediately on receipt" },
     { q: "10. Yael's Greek SIM card",
       body: "Kobi has a Greek number (+30 6948471034 via Zoe). Yael does not have one yet. A Greek number helps with online approvals and government portals.",
-      statusClass: "ds-waiting", status: "⏳ Kobi to decide if needed before next visit" },
-  ],
-
-};
+      statusClass: "ds-waiting", status:
