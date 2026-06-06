@@ -299,7 +299,7 @@ const PROJECT_DATA = {
     summary: {
       dueNow:     "~€13,920",  dueSub:     "Kairis €3,145 + Electrician ~€8,500 + Blacksmith €550 + plans/meter €1,750",
       workers:    "€1,780",    workersSub: "Meli back (€80/day) + workers (€50/day). Mon–Sat, starting 06:30. Replacement stayed Wed+Thu for formwork handover.",
-      paidToDate: "~€58K",
+      paidToDate: "~€46K",
       atmLimit:   "€2K",
     },
   },
@@ -313,22 +313,16 @@ const PROJECT_DATA = {
       { date: "Apr 26, 2026",  amount: 70000 },
     ],
     totalTransferred:    100000,
-    greekAccountBalance: 49500,   // actual balance as of Jun 2, 2026
+    greekAccountBalance: 49500,
     balanceAsOf:         "June 2, 2026",
-    totalKnownExpenses:  58241,   // from expense tracking (project records)
-    // implied balance = totalTransferred - totalKnownExpenses = 41,759
-    // actual balance 49,500 → ~€7,741 unaccounted (may be expenses not yet logged)
+    totalKnownExpenses:  58241,
     note: "Greek bank: NBG — GR18 0110 3180 0000 3180 0400 611",
   },
 
   // ── Vicky's communication tab ────────────────────────────────────
-  // Used by both dashboard_vicky.html (Comms tab) and dashboard.html (Communication Hub)
-  // Update this section each run when open items / contact details change
   vickyComms: {
-    // Message from Kobi to Vicky (update when there's something specific to say)
     kobMessage: "Vicky, you and the team are doing an amazing job 🙏. Please send photos whenever you can — it keeps us going! Send us the weekly report + payment total by Saturday.",
 
-    // Items Vicky is waiting on from Kobi — update when decisions are made
     waitingOnKobi: [
       "Choose toilets + washbasins from ravenna.gr (link sent June 6)",
       "Confirm shower design: half-glass screen + marble threshold? (Vicky's recommendation)",
@@ -337,7 +331,6 @@ const PROJECT_DATA = {
       "Property division structure for Notary",
     ],
 
-    // Items Vicky must action herself — update each run
     vickyMustAction: [
       "Coordinate Antonis arrival June 13 + work start June 15",
       "Go to Chalkida for toilets + washbasins once Kobi selects models from ravenna.gr",
@@ -351,7 +344,6 @@ const PROJECT_DATA = {
       "WiFi cameras — source options + quote → send to Kobi",
     ],
 
-    // Items Kobi has already authorized — update when new approvals given
     authorized: [
       "Weekly worker wages (pre-approved)",
       "Electricians GF + storages — full scope (€11,250 total)",
@@ -361,7 +353,6 @@ const PROJECT_DATA = {
   },
 
   // ── Vicky's decisions tab ────────────────────────────────────────
-  // statusClass: "ds-waiting" | "ds-answered" | "ds-urgent"
   vickyDecisions: [
     { q: "1. Aluminum windows & doors — what color?",
       body: "Black is preferred by Kobi & Yael but means a 2-month wait and higher cost. Other colors are available sooner and cheaper. This decision affects the entire design language of the house.",
@@ -371,4 +362,28 @@ const PROJECT_DATA = {
       statusClass: "ds-waiting", status: "⏳ Antonis reviewing — Vicky to follow up" },
     { q: "3. House Insulation — method and schedule",
       body: "Insulation work must be done this summer (dry season). Kobi & Yael need Vicky to research method options, compare prices, and send a recommendation. Options to consider: spray foam, rock wool, PIR rigid boards, or other. This affects budget and timeline significantly.",
-      statusClass: "ds-urgent",  status: "🔴 URGENT — Summer window. Vicky to 
+      statusClass: "ds-urgent",  status: "🔴 URGENT — Summer window. Vicky to submit options + prices ASAP" },
+    { q: "4. WiFi cameras — which system?",
+      body: "Kobi & Yael want 2-3 cameras installed on site so they can follow progress from Israel. You can tell the workers that the owners asked for cameras to watch the build — which is completely true. Please suggest a simple WiFi system and get a price.",
+      statusClass: "ds-waiting", status: "⏳ Vicky to source options → Kobi approves" },
+    { q: "5. Electrical — meter separation and future bills",
+      body: "Electrical plan approved May 23. Setup: 1x three-phase meter (main apt + storage + roof garden incl. pool provisions) + 2x single-phase meters (2 downstairs apartments, enabling separate rental billing). Upper floor deferred until walls exist. Separate plans also enable future legal building division.",
+      statusClass: "ds-answered", status: "✅ ANSWERED — Kobi approved May 23. Scope: €9,500 + €1,000 plans + €750 meter = €11,250 total." },
+    { q: "6. Kitchen — final design selection",
+      body: "Several inspiration options shared (natural materials, modern Greek aesthetic). No final decision made. Kobi & Yael need to confirm style, layout, and brand before ordering.",
+      statusClass: "ds-waiting", status: "⏳ Kobi & Yael deciding — when ready, coordinate with Vicky" },
+    { q: "7. Bathroom tiles & sanitary ware",
+      body: "Tile selection and sanitary fixtures (toilets, sinks, taps) not yet chosen. Vicky needs this to plan the finishing timeline. Micro-cement vs. tiles also not fully decided for bathrooms.",
+      statusClass: "ds-waiting", status: "⏳ To be decided — needed before tile installation can begin" },
+    { q: "8. Property / building division structure",
+      body: "Which floor/unit does each owner take? Does the land also need to be split? Notary needs this information to proceed with the property division act. Kobi & Yael must provide clear instructions.",
+      statusClass: "ds-urgent",  status: "🔴 URGENT — Notary is waiting. Unblocks the funding application (Exoikonomw)." },
+    { q: "9. Entrance gate — approve blacksmith quote",
+      body: "Once the blacksmith provides his price for the 5m sliding gate, Vicky needs Kobi's go-ahead before work starts. Expected within the week.",
+      statusClass: "ds-waiting", status: "⏳ Quote incoming — send to Kobi immediately on receipt" },
+    { q: "10. Yael's Greek SIM card",
+      body: "Kobi has a Greek number (+30 6948471034 via Zoe). Yael does not have one yet. A Greek number helps with online approvals and government portals.",
+      statusClass: "ds-waiting", status: "⏳ Kobi to decide if needed before next visit" },
+  ],
+
+};
