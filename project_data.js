@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "6 June 2026 (afternoon)",
-    weekOf:        "2–6 June 2026",
+    lastUpdated:   "8 June 2026",
+    weekOf:        "7–13 June 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -29,7 +29,7 @@ const PROJECT_DATA = {
     { icon: "🔲", label: "Tiles — 2nd Order URGENT",           sub: "Confirm next tile order with ABM Hellas (Candia). Contact Ioannis Tsanais. Rooftop room + veranda + bathrooms TBD.", urgent: true  },
     { icon: "🚿", label: "Yael's unit — Bathroom ordered ✅", sub: "Toilet, sink, faucet, shower system ordered from Diamantopoulos. €614 paid via Wise. Delivery Thursday Jun 11/12. All-microcement confirmed.", urgent: false },
     { icon: "✅", label: "3rd floor structural work — DONE",   sub: "All formwork + concrete complete. Apt C opens to the public! Only roof layer remains.", urgent: false },
-    { icon: "✅", label: "Meli officially back as site manager", sub: "Returned from surgery leave. Took charge June 6. Workers starting 06:30 due to summer heat.", urgent: false },
+    { icon: "✅", label: "Meli officially back as site manager", sub: "Returned from surgery leave. Took charge June 6. Workers starting 06:30 due to summer heat. Meli also came in Sunday Jun 7 voluntarily with 1 more worker.", urgent: false },
     { icon: "🔧", label: "Kairis balance ~€2,045",             sub: "€2,000 partial payment made Jun 6 (cash, Vicky). Running balance: €4,045 total - €2,000 = €2,045 remaining.", urgent: false },
     { icon: "🔨", label: "Metalworker €550 + Electrician advance €1,000", sub: "Both approved by Kobi. Pay on completion / per schedule.", urgent: false },
   ],
@@ -300,7 +300,7 @@ const PROJECT_DATA = {
     ],
     summary: {
       dueNow:     "~€11,145",  dueSub:     "Kairis ~€2,045 + Electrician ~€8,500 + Blacksmith €550 + transport ~€45",
-      workers:    "€1,780",    workersSub: "Meli back (€80/day) + workers (€50/day). Mon–Sat, starting 06:30. Replacement stayed Wed+Thu for formwork handover.",
+      workers:    "~€1,910",   workersSub: "Meli back (€80/day) + workers (€50/day). Mon–Sat Jun 2–6 = €1,780. Meli + 1 worker also came in Sunday Jun 7 (+€130). Total owed: ~€1,910.",
       paidToDate: "~€61K",
       atmLimit:   "€2K",
     },
@@ -322,7 +322,7 @@ const PROJECT_DATA = {
 
   // ── Vicky's communication tab ─────────────────────────────────────
   vickyComms: {
-    kobMessage: "Vicky, you and the team are doing an amazing job 🙏. Please send photos whenever you can — it keeps us going! Send us the weekly report + payment total by Saturday.",
+    kobMessage: "Vicky — Yael is visiting June 27–July 1! 🎉 She will come to the house to see everything in person. Please plan for a full site walk with her. Can you confirm if Yael's unit will be comfortable enough to sleep in by June 27, or should she book a hotel room at Moshe's? Keep sending photos — we love them!\n\nThank you for the quick update after the 5.4 earthquake — very relieved the house is fine. We love you and the whole team 🙏",
     waitingOnKobi: [
       "Approve concealed-wall toilet brand for main house (Vicky recommends GROHE ~€780 for long-term maintenance; Kobi open to €400–500 range — discuss)",
       "Window/door color — black or not?",
@@ -332,7 +332,7 @@ const PROJECT_DATA = {
     ],
     vickyMustAction: [
       "Coordinate Antonis arrival June 13 + work start June 15",
-      "Pay workers wages (week Jun 2–6, ~€1,780) — due Sunday Jun 7 or Monday Jun 8",
+      "Pay workers wages (Jun 2–7 incl. Sunday) — total ~€1,910 (Meli + 1 worker also came in Sunday Jun 7). Pay ASAP.",
       "Settle remaining Kairis balance ~€2,045 — visit in person (Kobi's funds)",
       "Tiles — 2nd order: contact ABM Hellas (Ioannis Tsanais) for rooftop + veranda + bathroom tiles. ABM reply due Monday.",
       "Chase community water connection (URGENT)",
@@ -381,10 +381,4 @@ const PROJECT_DATA = {
       statusClass: "ds-urgent",  status: "🔴 URGENT — Notary is waiting. Unblocks the funding application (Exoikonomw)." },
     { q: "9. Entrance gate — approve blacksmith quote",
       body: "Once the blacksmith provides his price for the 5m sliding gate, Vicky needs Kobi's go-ahead before work starts. Expected within the week.",
-      statusClass: "ds-waiting", status: "⏳ Quote incoming — send to Kobi immediately on receipt" },
-    { q: "10. Yael's Greek SIM card",
-      body: "Kobi has a Greek number (+30 6948471034 via Zoe). Yael does not have one yet. A Greek number helps with online approvals and government portals.",
-      statusClass: "ds-waiting", status: "⏳ Kobi to decide if needed before next visit" },
-  ],
-
-};
+      statu
