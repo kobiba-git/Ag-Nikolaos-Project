@@ -14,5 +14,14 @@
 | 2026-06-06 | Confirm shower design for Yael's unit — P-trap toilet, open cement cabinet (1.20×0.50), 120×85 shower + static glass panel | Kobi | Done ✅ |
 | 2026-06-06 | Go to Chalkida to buy toilets + washbasins once Kobi selects models | Vicky | Done ✅ (ordered remotely from Diamantopoulos) |
 | 2026-06-06 | Antonis arriving June 13 (Sat) — confirm arrangements; work starts June 15 | Vicky | Open |
-| 2026-06-06 | Find POA contract (notary: Natasha Sidiropoulou, Aidipsos) to revoke Zoe's Power of Attorney | Kobi + Yael | Open |
-| 2026-06-06 | Pay transportation invoice for bathroom fixtures
+| 2026-06-06 | Pay transportation invoice for bathroom fixtures delivery (~€35–50, Istiaia transport company) | Kobi | Open |
+| 2026-06-06 | Pay workers wages (Jun 2–7 incl. Sunday Jun 7) — total ~€1,910 (Meli + 1 worker also came in Sunday Jun 7, €130 extra). Pay ASAP. | Vicky | Open |
+| 2026-06-06 | Visit microcement supplier next week — inspect quality, bring video back for Kobi+Yael | Vicky | Open |
+| 2026-06-06 | Follow up ABM Hellas tile contact (Ioannis Tsanais) — 2nd tile order, response due Monday | Vicky | Open |
+| 2026-06-06 | Visit NBG branch to activate IRIS instant payments on Kobi's account | Kobi | Open |
+| 2026-06-07 | Book car rental for Yael's Evia trip — June 27–July 1, ~€150 for 5 days | Kobi | Open |
+| 2026-06-07 | Coordinate Yael's house site visit with Vicky — confirm date/time (week of Jun 27) | Kobi | Open |
+| 2026-06-07 | Schedule POA cancellation appointment with notary Natasha Sidiropoulou in Aidipsos | Kobi/Yael | Open |
+| 2026-06-07 | Confirm with Vasiliki what Yael needs to bring to NBG Istiaia for IRIS activation | Kobi | Open |
+| 2026-06-07 | Confirm Zoe visit + check Vasiliki availability during Yael's Jun 27–Jul 1 trip | Kobi | Open |
+| 2026-06-07 | Confirm if Yael's unit is ready for sleeping (vs. Moshe's hotel) by June 27 | Vicky | Open |
