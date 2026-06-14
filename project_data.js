@@ -26,7 +26,8 @@ const PROJECT_DATA = {
     { icon: "🏗️", label: "Antonis arrived ✅ — Work begins June 15",  sub: "Antonis arrived Sat June 13 for site survey. Structural work begins Monday June 15. Phase 4 is unlocked! Ensure funds available (Phase 1 deposit ~€25K–€30K). Confirm roof design change + slab cut scope.", urgent: true  },
     { icon: "🏠", label: "House Insulation — URGENT",          sub: "Summer dry season window — don't delay. Vicky to research options + prices.", urgent: true  },
     { icon: "⚡",  label: "Electricity counters — URGENT",      sub: "Electrician needs electricity company counters to continue to next stage.", urgent: true  },
-    { icon: "🔲", label: "Tiles — 2nd Order: waiting on Italy production", sub: "Vicky called ABM Jun 13: 95 sqm 120×60 available now. 120×120 (correct texture) in production in Italy — not yet in stock. Vicky insists on original tile. ABM manager to call MONDAY with Italy timeline.", urgent: true  },
+    { icon: "🚪🛏️", label: "Building/Buying Furnitures", sub: "Meli to build a standard double bed for Yael's Unit. Wood and steel. Approved by Kobi. Pay on completion / per schedule.", urgent: true },
+	{ icon: "🔲", label: "Tiles — 2nd Order: waiting on Italy production", sub: "Vicky called ABM Jun 13: 95 sqm 120×60 available now. 120×120 (correct texture) in production in Italy — not yet in stock. Vicky insists on original tile. ABM manager to call MONDAY with Italy timeline.", urgent: true  },
     { icon: "🏠", label: "4 more roof layers — next week",     sub: "Last 4 roof layers scheduled week of Jun 15. Building permit requires full roof closure + photos before Antonis can formally proceed. 1 small storage panel still missing (delivery 10–15 days, non-blocking).", urgent: true  },
     { icon: "🚜", label: "Excavator due Mon/Tue Jun 15–16 — €600", sub: "60-ton road roller to compact all roads. €600 owed to excavator contractor. Vicky requested Mon/Tue arrival.", urgent: false },
     { icon: "🚿", label: "Yael's unit — Bathroom delivered ✅", sub: "Bathroom fixtures ordered Jun 6 (€614 Wise). Transport from Athens paid Jun 13 (€45). Septic tank COMPLETE ✅. Meli to BUILD wood+steel bed (approved Jun 13). Room target: ready Jun 28 for Yael's visit.", urgent: false },
@@ -34,6 +35,7 @@ const PROJECT_DATA = {
     { icon: "✅", label: "Workers paid through Jun 13 ✅",       sub: "Week Jun 8–13: €2,580 total (6 days, crew inc. ESAT + Ilir). Vicky withdrew €3,000 cash Jun 13; total expenses €3,355; €355 deferred → Kairis tab.", urgent: false },
     { icon: "🔧", label: "Kairis balance ~€2,400",             sub: "Previous balance €2,045 + Jun 8–13 materials €450 added + €355 deferred Jun 13 = ~€2,400 net outstanding. Vicky to settle in person.", urgent: false },
     { icon: "🔨", label: "Metalworker €550 + Electrician advance €1,000", sub: "Both approved by Kobi. Pay on completion / per schedule.", urgent: false },
+
   ],
 
   // ── KPI row (owner dashboard top) ────────────────────────────────
