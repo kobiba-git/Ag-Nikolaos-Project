@@ -3,7 +3,6 @@
 //
 //  Single source of truth for BOTH dashboards.
 //  Edit this file → both dashboard.html and dashboard_vicky.html
-//  Integrity-verified rebuild: 2026-06-15
 //  update automatically when opened in a browser.
 //
 //  HOW TO UPDATE:
@@ -355,11 +354,11 @@ const PROJECT_DATA = {
       { date: "Apr 26, 2026",  amount: 70000 },
     ],
     totalTransferred:    100000,
-    greekAccountBalance: 49500,   // actual balance as of Jun 2, 2026
-    balanceAsOf:         "June 2, 2026",
+    greekAccountBalance: 40500,   // actual balance as of Jun 15, 2026
+    balanceAsOf:         "June 15, 2026",
     totalKnownExpenses:  66000,   // from expense tracking (project records)
-    // implied balance = totalTransferred - totalKnownExpenses = 44,414
-    // actual balance 49,500 → ~€5,086 unaccounted (may be expenses not yet logged)
+    // implied balance = totalTransferred - totalKnownExpenses = 34,000
+    // actual balance 40,500 → ~€6,500 higher than implied (some expenses may not be logged)
     note: "Greek bank: NBG — GR18 0110 3180 0000 3180 0400 611",
   },
 
@@ -445,7 +444,7 @@ const PROJECT_DATA = {
       statusClass: "ds-waiting", status: "⏳ Quote incoming — send to Kobi immediately on receipt" },
     { q: "10. Yael's Greek SIM card",
       body: "Kobi has a Greek number (+30 6948471034 via Zoe). Yael does not have one yet. A Greek number helps with online approvals and government portals.",
-      statusClass: "ds-waiting", status: "⏳ Kobi to decide if needed before next visit" },
+      statusClass: "ds-waiting", status: "⏳ Kobi to decide if needed before next visit" }
   ],
 
 };
