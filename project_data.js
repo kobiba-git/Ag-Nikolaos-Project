@@ -3,6 +3,7 @@
 //
 //  Single source of truth for BOTH dashboards.
 //  Edit this file → both dashboard.html and dashboard_vicky.html
+//  Integrity-verified rebuild: 2026-06-15
 //  update automatically when opened in a browser.
 //
 //  HOW TO UPDATE:
