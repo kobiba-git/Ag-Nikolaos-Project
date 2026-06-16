@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fs.paid.map(r => `<div style="display:flex;justify-content:space-between;"><span>${esc(r.label)}</span><strong>${esc(r.amount)}</strong></div>`).join('') +
     `<hr style="margin:4px 0; border-color:#eee;">
      <div style="display:flex;justify-content:space-between; font-size:14px;"><strong>TOTAL PAID</strong><strong style="color:var(--navy)">${esc(fs.totalPaid)}</strong></div>
-     <div style="font-size:10px; color:var(--muted); margin-top:2px;">+ Kairis DUE = ${esc(fs.totalCommitted)} total committed</div>`;
+     <div style="font-size:10px; color:var(--muted); margin-top:2px;">+ Due &amp; outstanding: ${esc(D.kpis.duePending)} — ${esc(D.kpis.dueSub)}</div>`;
 
   // ── Financial summary — ahead
   document.getElementById('fin-ahead-rows').innerHTML =
@@ -421,8 +421,8 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('donut-rem').setAttribute('stroke-dashoffset',  fs.remOffset);
   document.getElementById('donut-pct').textContent  = fs.pctLabel;
   document.getElementById('donut-range').textContent = fs.totalRange;
-  document.getElementById('legend-paid').textContent = `Paid to date ${fs.totalCommitted} (${fs.progressPct}%)`;
-  document.getElementById('legend-due').textContent  = 'Committed/Due ~€3K (1%)';
+  document.getElementById('legend-paid').textContent = `Paid to date ${fs.totalPaid} (${fs.progressPct}%)`;
+  document.getElementById('legend-due').textContent  = `Due & committed ${D.kpis.duePending} (~4%)`;
   document.getElementById('legend-rem').textContent  = `Remaining est. ${fs.remaining} (${100 - fs.progressPct - 1}%)`;
 
   // ── Bank transfers section (owner only)
@@ -538,8 +538,4 @@ document.addEventListener('DOMContentLoaded', function() {
       <div style="display:flex;flex-direction:column;gap:4px;">
         ${C2.authorized.map(i => `<div style="padding:6px 10px; background:var(--lgreen); border-radius:6px;">${esc(i)}</div>`).join('')}
       </div>
-    </div>`;
-});
-</script>
-</body>
-</html>
+    </div>`
