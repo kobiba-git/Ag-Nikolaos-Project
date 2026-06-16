@@ -14,7 +14,7 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "15 June 2026",
+    lastUpdated:   "16 June 2026",
     weekOf:        "15–21 June 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
@@ -28,7 +28,7 @@ const PROJECT_DATA = {
     { icon: "🏠", label: "House Insulation — URGENT",          sub: "Summer dry season window — don't delay. Vicky to research options + prices.", urgent: true  },
     { icon: "⚡",  label: "Electricity counters — URGENT",      sub: "Electrician needs electricity company counters to continue to next stage.", urgent: true  },
     { icon: "🚪🛏️", label: "Yael's unit — Aluminum door + window + bed", sub: "Aluminum balcony door: being installed Jun 15–16 (Meli motivated by Yael's arrival). Window: arriving MONDAY June 22. Bed (1.6×2m pine+steel): Meli building — target ready Jun 28.", urgent: true },
-    { icon: "🔲", label: "Tiles — 2nd Order: waiting on Italy production", sub: "Vicky called ABM Jun 13: 95 sqm 120×60 available now. 120×120 (correct texture) in production in Italy — not yet in stock. Vicky insists on original tile. ABM manager to call MONDAY with Italy timeline.", urgent: true  },
+    { icon: "🔲", label: "Tiles — 2nd Order CONFIRMED ✅ — Deposit Payment Needed", sub: "ABM Hellas confirmed Jun 16: CANDIA ITALY MEGA SLABS order accepted by factory. Delivery ~mid-July 2026 to Athens. ACTION: Check Jun 16 email from ABM, review Word doc for deposit amount, pay Casa Brava (Piraeus IBAN GR89-0172-1150-0051-1502-0852-321 or Optima IBAN GR10-0340-0160-0160-0382-3027-197).", urgent: true  },
     { icon: "🚜", label: "Excavator due Mon/Tue Jun 15–16 — €600", sub: "60-ton road roller to compact all roads. €600 owed to excavator contractor. Vicky requested Mon/Tue arrival.", urgent: false },
     { icon: "🚿", label: "Yael's unit — Bathroom delivered ✅", sub: "Bathroom fixtures (€614 Wise Jun 6). Transport paid €45 (Jun 13). Septic tank COMPLETE ✅. Aluminum door: installation underway. Window: Jun 22. Bed: Meli building. Room target: ready Jun 28.", urgent: false },
     { icon: "✅", label: "Workers paid through Jun 13 ✅",       sub: "Week Jun 8–13: €2,580 total. Vicky withdrew €3,000 cash Jun 13; total expenses €3,355; €355 deferred → Kairis tab.", urgent: false },
@@ -111,8 +111,8 @@ const PROJECT_DATA = {
       desc: "Excavator owed €600. Vicky requested excavator arrive Monday/Tuesday June 15–16 with a 60-ton road roller to compact all roads. Approve and confirm date with Vicky." },
     { priority: "high",     label: "🟠 High Priority",              title: "Electrician Outstanding ~€7,500",
       desc: "GF + storages electrical approved (€9,500 scope). Paid to date: €400 (May 16) + €1,000 (May 28) = €1,400. Outstanding: ~€7,500 + €1,000 plans + €750 3-phase meter. Electrician currently active — giving power to Yael's unit (large storage)." },
-    { priority: "high",     label: "🟠 High Priority",              title: "Tiles — Waiting on Italy Production (120×120)",
-      desc: "First order (330 sqm CANDIA SLAB IVORY) placed May 8. Jun 13: Vicky called ABM — 95 sqm 120×60 in stock now; 120×120 (correct texture) in production in Italy, not yet available. Available 120×120 stock lacks the selected texture. Vicky insists on original tile. ABM manager to call Vicky MONDAY with Italy production timeline. Next: confirm delivery date once Italy production ships." },
+    { priority: "critical", label: "🔴 Critical — Pay to Confirm",  title: "Tiles — 2nd Order: Deposit Required (CANDIA ITALY MEGA SLABS)",
+      desc: "ABM Hellas (Candia) confirmed June 16: factory accepted the order for CANDIA MEDIUM-LARGE-MEGA SLABS (50% marble dust, Italy). Materials expected at ABM Athens in ~1 month (mid-July 2026). ACTION: Review Word doc attachment in Jun 16 email from ABM Hellas to confirm deposit amount, then pay to Casa Brava — Piraeus Bank IBAN GR89-0172-1150-0051-1502-0852-321 or Optima Bank IBAN GR10-0340-0160-0160-0382-3027-197. Without payment, factory slot is not secured." },
     { priority: "critical", label: "🔴 Critical — Summer Deadline", title: "House Insulation — Must Complete This Dry Season",
       desc: "Insulation work must be done before autumn rains. Vicky to research method options (spray foam, rock wool, PIR boards, etc.), get pricing, and submit for Kobi's approval before scheduling. Do not delay — dry season window is limited." },
     { priority: "info",     label: "✅ Done June 6",                  title: "Yael's Unit Bathroom — Ordered",
@@ -371,6 +371,7 @@ const PROJECT_DATA = {
 
     // Items Vicky is waiting on from Kobi — update when decisions are made
     waitingOnKobi: [
+      "🔴 Tile deposit — review Jun 16 email from ABM Hellas (Word doc attached: LALPE DI SIUSI order). Confirm deposit amount and pay Casa Brava to lock the CANDIA ITALY MEGA SLABS order. Factory slot not secured until paid.",
       "Approve concealed-wall toilet brand for main house (Vicky recommends GROHE ~€780 for long-term maintenance; Kobi open to €400–500 range — discuss)",
       "Window/door color — black or not?",
       "Entrance gate quote — approve when it arrives",
@@ -390,7 +391,7 @@ const PROJECT_DATA = {
       "Excavator — confirm Mon/Tue Jun 15–16 with 60-ton road roller to compact all roads (€600 owed)",
       "Kairis — withdraw €2,000 and pay (approved by Yael Jun 15). Remaining balance ~€400 to settle in person.",
       "Meli to BUILD wood+steel bed for Yael's unit — 1.6×2m, pine+steel frame (approved Jun 13). Room target: ready Jun 28.",
-      "Tiles — confirm Italy production timeline for 120×120 with ABM manager (call was Monday Jun 16).",
+      "✅ Tiles — ABM Hellas call done (Jun 16): order confirmed with factory. MEGA SLABS delivery ~mid-July 2026 to Athens. NEXT: review Word doc in Jun 16 email for deposit amount, then pay Casa Brava to lock order.",
       "Chase community water connection (URGENT) — plumbing COMPLETE ✅; only community connection blocking pressure test",
       "House insulation — research options + prices, send to Kobi ASAP",
       "Visit microcement supplier — inspect quality, bring video for Kobi+Yael",
@@ -440,9 +441,9 @@ const PROJECT_DATA = {
       body: "Which floor/unit does each owner take? Does the land also need to be split? Notary needs this information to proceed with the property division act. Kobi & Yael must provide clear instructions.",
       statusClass: "ds-urgent",  status: "🔴 URGENT — Notary is waiting. Unblocks the funding application (Exoikonomw)." },
     { q: "9. Entrance gate — approve blacksmith quote",
-      body: "Once the blacksmith provides his price for the 5m sliding gate, Vicky needs Kobi's go-ahead before work starts. Expected within the week.",
+      body: "Once the blacksmith provides his price for the 5m sliding gate, Vicky needs Kobi’s go-ahead before work starts. Expected within the week.",
       statusClass: "ds-waiting", status: "⏳ Quote incoming — send to Kobi immediately on receipt" },
-    { q: "10. Yael's Greek SIM card",
+    { q: "10. Yael’s Greek SIM card",
       body: "Kobi has a Greek number (+30 6948471034 via Zoe). Yael does not have one yet. A Greek number helps with online approvals and government portals.",
       statusClass: "ds-waiting", status: "⏳ Kobi to decide if needed before next visit" }
   ],
