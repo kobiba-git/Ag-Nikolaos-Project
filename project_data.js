@@ -93,8 +93,8 @@ const PROJECT_DATA = {
   actionItems: [
     { priority: "critical", label: "✈️ Confirmed — June 27–Jul 1",   title: "Yael's Site Visit — Arriving June 27",
       desc: "Yael flying Blue Bird Airways (BZ702) TLV→ATH Jun 27, 09:15–11:25. Returns Jul 1 (BZ703) 20:30. Entering North Evia via Arkitsa–Loutra Edipsou ferry. Trip objectives: (1) full house inspection with Vicky; (2) NBG bank Istiaia — activate IRIS payments; (3) Notary Aidipsos — cancel Zoe's POA; (4) Visit Zoe + possibly Vasiliki. Action needed: book car rental ~€150/5 days. Accommodation: Yael's unit if ready, else Moshe's hotel." },
-    { priority: "high",     label: "🚗 Book Now",                   title: "Car Rental for Yael — June 27–July 1",
-      desc: "Approximately €150 for 5 days. Pick up at Athens Airport (ATH) on June 27 after landing 11:25. Return at Athens Airport before the 20:30 flight on July 1. Book ASAP — summer availability is limited." },
+    { priority: "info",     label: "🚗 Booked ✅",                  title: "Car Rental for Yael — CONFIRMED",
+      desc: "Avance (Athens Airport). Mazda 2 or similar, Automatic. Confirmation: 631776593 (Booking.com). Pick-up: Jun 27 · 11:30 · Arrivals Hall ATH · +30 6943550004. Drop-off: Jul 1 · 18:30 · ATH. Cost: €145.59 (paid). ⚠️ Note: drop-off 18:30 vs flight 20:30 — only 2 hrs. Return car immediately on arrival at airport." },
     { priority: "high",     label: "📋 Legal — Decide Before Jun 27",      title: "POA Revocation — Timing Decision Needed",
       desc: "Vicky advises Kobi + Yael go TOGETHER to the notary in Aidipsos — saves ~€250 (est. €250/visit). Options: (A) Yael signs her part alone Jun 27–Jul 1; Kobi signs later separately → costs ~€500 total. (B) Wait until both can come → costs ~€250 but delays revocation. Call notary to understand procedure. Original notary: Natasha Sidiropoulou, Aidipsos." },
     { priority: "critical", label: "🔴 Critical — Action Needed",    title: "Electricity Counters — Provide to Electrician",
