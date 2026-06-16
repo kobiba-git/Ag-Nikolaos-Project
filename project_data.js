@@ -274,6 +274,7 @@ const PROJECT_DATA = {
 
     // SVG donut chart values
     progressPct: 23, pctLabel: "23%",
+    duePct: 4,   // % of total committed/due now (Kairis ~€400 + etc ~€10K / ~€275K)
     paidSegment: 80,  paidOffset: 0,
     dueSegment:  10,  dueOffset:  -80,
     remSegment:  333, remOffset:  -90,
@@ -342,6 +343,9 @@ const PROJECT_DATA = {
       workers:    "✅ Paid Jun 13 + Kairis €2,000 Jun 15", workersSub: "Workers Jun 8–13 (€2,580). Kairis €2,000 approved by Yael Jun 15 (reduces balance to ~€400).",
       paidToDate: "~€46K",
       atmLimit:   "€2K",
+      laborerRate: "€50/day",
+      skilledRate: "€80/day",
+      fuelWeekly:  "~€30/week",
     },
   },
 

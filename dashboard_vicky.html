@@ -443,7 +443,7 @@
 
   <div class="note-card">
     <div class="note-head">💰 Small storage — payments status</div>
-    <div class="note-body">
+    <div class="note-body" id="note-body-kairis">
       • Kairis — nearly paid ✅: original balance ~€2,875 reduced through multiple payments. Jun 15: Yael approved additional €2,000. Remaining balance ~€400. Vicky to settle in person.<br><br>
       • Blacksmith €550: Small storage door €500 + varnish €50. Cash. Pay on completion.
     </div>
@@ -476,7 +476,7 @@
 
   <div class="note-card">
     <div class="note-head">👷 Standard worker rates</div>
-    <div class="note-body">
+    <div class="note-body" id="note-body-worker-rates">
       • General laborer: €50/day<br>
       • Skilled worker: €80/day<br>
       • Cement mixer fuel: ~€30/week<br><br>
@@ -706,4 +706,31 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="pay-desc">${esc(c.role)}</div>
           <div class="pay-cond">${esc(c.detail)}</div>
         </div>
-      </div
+      </div>`;
+  });
+
+  // —— NOTES: Dynamic note cards ———————————————————————————————————————————————————————————————————————
+  // Kairis note card: pull live from vickyPayments.dueNow
+  const kairisEntry = D.vickyPayments.dueNow.find(p => p.title && p.title.includes('Kairis'));
+  const kairisEl = document.getElementById('note-body-kairis');
+  if (kairisEl && kairisEntry) {
+    kairisEl.innerHTML =
+      `• ${esc(kairisEntry.title)} — ${esc(kairisEntry.amount)}: ${esc(kairisEntry.sub)}<br><br>` +
+      `• Blacksmith — ${esc((D.vickyPayments.dueNow.find(p=>p.title&&p.title.includes('Blacksmith'))||{amount:'€550',sub:'Door + varnish'}).amount)}: ` +
+      `${esc((D.vickyPayments.dueNow.find(p=>p.title&&p.title.includes('Blacksmith'))||{sub:'Small storage door + window. Cash. Pay on completion.'}).sub)}`;
+  }
+
+  // Worker rates note card: pull from vickyPayments.summary
+  const wrEl = document.getElementById('note-body-worker-rates');
+  if (wrEl) {
+    wrEl.innerHTML =
+      `• General laborer: ${esc(PS.laborerRate)}<br>` +
+      `• Skilled worker: ${esc(PS.skilledRate)}<br>` +
+      `• Cement mixer fuel: ${esc(PS.fuelWeekly)}<br><br>` +
+      `ATM limit: ${esc(PS.atmLimit)}/day. For larger amounts: 2 days in a row.`;
+  }
+
+});
+</script>
+</body>
+</html>

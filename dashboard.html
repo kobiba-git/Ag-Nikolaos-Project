@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ── Financial summary — ahead
   document.getElementById('fin-ahead-rows').innerHTML =
-    fs.ahead.map(r => `<div style="display:flex;justify-content:space-between;"><span>${esc(r.label)}</span><strong>${esc(r.amount)}</strong></div>`).join('') +
+    fs.ahead.filter(r => r.amount !== 'TBD').map(r => `<div style="display:flex;justify-content:space-between;"><span>${esc(r.label)}</span><strong>${esc(r.amount)}</strong></div>`).join('') +
     `<hr style="margin:4px 0; border-color:#eee;">
      <div style="display:flex;justify-content:space-between; font-size:14px;"><strong>EST. REMAINING</strong><strong style="color:var(--red)">${esc(fs.remaining)}</strong></div>
      <div style="font-size:10px; color:var(--muted);">+ 10% contingency ${esc(fs.contingency)}</div>`;
@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('donut-pct').textContent  = fs.pctLabel;
   document.getElementById('donut-range').textContent = fs.totalRange;
   document.getElementById('legend-paid').textContent = `Paid to date ${fs.totalPaid} (${fs.progressPct}%)`;
-  document.getElementById('legend-due').textContent  = `Due & committed ${D.kpis.duePending} (~4%)`;
+  document.getElementById('legend-due').textContent  = `Due & committed ${D.kpis.duePending} (~${fs.duePct}%)`;
   document.getElementById('legend-rem').textContent  = `Remaining est. ${fs.remaining} (${100 - fs.progressPct - 1}%)`;
 
   // ── Bank transfers section (owner only)
