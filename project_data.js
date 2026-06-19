@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "17 June 2026",
-    weekOf:        "15–21 June 2026",
+    lastUpdated:   "19 June 2026",
+    weekOf:        "18–19 June 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -28,7 +28,12 @@ const PROJECT_DATA = {
     { icon: "🏠", label: "House Insulation — URGENT",          sub: "Summer dry season window — don't delay. Vicky to research options + prices.", urgent: true  },
     { icon: "⚡",  label: "Electricity counters — URGENT",      sub: "Electrician needs electricity company counters to continue to next stage.", urgent: true  },
     { icon: "🚪🛏️", label: "Yael's unit — Aluminum door + window + bed", sub: "Aluminum balcony door: being installed Jun 15–16 (Meli motivated by Yael's arrival). Window: arriving MONDAY June 22. Bed (1.6×2m pine+steel): Meli building — target ready Jun 28.", urgent: true },
-    { icon: "🔲", label: "Tiles — 2nd Order: Questions Sent to Vicky (Jun 16) — Waiting Response", sub: "ABM Hellas confirmed factory order Jun 16. Kobi sent 4 questions to Vicky (Jun 16 eve): (1) tile size mismatch — 60×60 vs 60×120 for Floor A interior 90 sqm; (2) 'Ivory' variant confirmation; (3) pallet charges €278 (€223+€55) — what are these?; (4) price too high (€28–30/sqm incl. VAT vs expected ~€20). Asked Vicky to push ABM on price. NO DEPOSIT UNTIL RESOLVED.", urgent: true  },
+    { icon: "🛍️", label: "Athens Shopping — Yael's Unit Fit-out DONE ✅ Jun 18", sub: "Vicky went to Athens Jun 18 (NBG Istiaia has no POS). Total: €972.55 (Receipt 1 €336.90 + Receipt 2 €635.65). Bought: interior door 70×214 cm, door frame, PVC window 70×75 + insect screen 100×120, Pyramis electric water heater 40L 3500W (electricity-only), 9000 BTU AC + outdoor unit, bathroom accessories (soap dish, toothbrush holder, waste bin, towel holder, Gedy hooks, bamboo curtain, misc). Also: large demolition hammer drill ~€380 (Antonis account). Vicky paid with her card — reimburse from Greek account.", urgent: true  },
+    { icon: "🛏️", label: "Yael's Unit — Mattress Ordered (€400) + Bed Frame Ready Thu Jun 25", sub: "Custom mattress 195×170 cm, 30cm thick, from local manufacturer, €400. Bed frame (Meli building, pine+steel) will be ready Thursday June 25. Room target: ready for Yael's arrival June 27.", urgent: true  },
+    { icon: "🪨", label: "Spanish Tiles Approved! — 'Crosscut Marfil' 60×60, 25.88 m², €286 ✅", sub: "Vicky found surplus Spanish tiles (€11/m² vs normal €15). 25.88 m² available now; more with next order at €15. Total €286. Yael approved Jun 18. Supplier: Tsintonis Leonidas Nikolaos, IBAN GR0501102910000029100837714. Samples arriving before Yael's Jun 27 visit. Pay by bank transfer ASAP.", urgent: true  },
+    { icon: "🔲", label: "Tiles — Italian MEGA SLABS: 4 Questions Sent to Vicky (Jun 16) — Waiting Response", sub: "ABM Hellas confirmed factory order Jun 16. Kobi sent 4 questions to Vicky (Jun 16 eve): (1) tile size mismatch — 60×60 vs 60×120 for Floor A interior 90 sqm; (2) 'Ivory' variant confirmation; (3) pallet charges €278 (€223+€55) — what are these?; (4) price too high (€28–30/sqm incl. VAT vs expected ~€20). Asked Vicky to push ABM on price. NO DEPOSIT UNTIL RESOLVED.", urgent: true  },
+    { icon: "💧", label: "Wall Opening — Decayed Pipes + Mice Nests Found Jun 19", sub: "Walls opened during reinforcement — found severely rusted water pipes in old masonry + mice nests (entered via door/window gaps). Team now: cleaning nests, removing rotten iron (would crack new walls if left), reshaping structure before rebuilding. Column inspected from inside: structurally sound ('miracle'). New hammer drill arrived and in use.", urgent: true },
+    { icon: "🔨", label: "New Demolition Hammer Drill on Site ✅", sub: "Old drill died. New large hammer drill arrived Jun 19 (€380, charged to Antonis account). 'Big guy' — expected lifespan 2–3 months at this intensity.", urgent: false },
     { icon: "🚜", label: "Excavator due Mon/Tue Jun 15–16 — €600", sub: "60-ton road roller to compact all roads. €600 owed to excavator contractor. Vicky requested Mon/Tue arrival.", urgent: false },
     { icon: "🚿", label: "Yael's unit — Bathroom delivered ✅", sub: "Bathroom fixtures (€614 Wise Jun 6). Transport paid €45 (Jun 13). Septic tank COMPLETE ✅. Aluminum door: installation underway. Window: Jun 22. Bed: Meli building. Room target: ready Jun 28.", urgent: false },
     { icon: "✅", label: "Workers paid through Jun 13 ✅",       sub: "Week Jun 8–13: €2,580 total. Vicky withdrew €3,000 cash Jun 13; total expenses €3,355; €355 deferred → Kairis tab.", urgent: false },
@@ -42,10 +47,10 @@ const PROJECT_DATA = {
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "~€66,000",
-    paidSub:        "~24% of total estimate",
-    duePending:     "~€10,050",
-    dueSub:         "Kairis ~€400 + metalworker €550 + electrician ~€8,500 (incl. advance €1,000) + excavator €600",
+    paidToDate:     "~€67,000",
+    paidSub:        "~24% of total estimate (incl. Athens shopping €972 Jun 18)",
+    duePending:     "~€11,350",
+    dueSub:         "Kairis ~€400 + metalworker €550 + electrician ~€8,500 + excavator €600 + tiles €286 + mattress €400 + Vicky card reimbursement €972",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
   },
@@ -97,6 +102,12 @@ const PROJECT_DATA = {
       desc: "Avance (Athens Airport). Mazda 2 or similar, Automatic. Confirmation: 631776593 (Booking.com). Pick-up: Jun 27 · 11:30 · Arrivals Hall ATH · +30 6943550004. Drop-off: Jul 1 · 18:30 · ATH. Cost: €145.59 (paid). ⚠️ Note: drop-off 18:30 vs flight 20:30 — only 2 hrs. Return car immediately on arrival at airport." },
     { priority: "high",     label: "📋 Legal — Decide Before Jun 27",      title: "POA Revocation — Timing Decision Needed",
       desc: "Vicky advises Kobi + Yael go TOGETHER to the notary in Aidipsos — saves ~€250 (est. €250/visit). Options: (A) Yael signs her part alone Jun 27–Jul 1; Kobi signs later separately → costs ~€500 total. (B) Wait until both can come → costs ~€250 but delays revocation. Call notary to understand procedure. Original notary: Natasha Sidiropoulou, Aidipsos." },
+    { priority: "critical", label: "🔴 Transfer NOW — Tiles",         title: "Pay €286 for Spanish Tiles — Crosscut Marfil 60×60",
+      desc: "Yael approved Jun 18. Vicky found surplus Spanish tiles at €11/m² (vs normal €15). 25.88 m² = €286. Bank transfer to: Tsintonis Leonidas Nikolaos, IBAN GR0501102910000029100837714. Samples arriving before Yael's Jun 27 visit. Order now before the stock is gone." },
+    { priority: "critical", label: "🔴 Reimburse Vicky — Jun 18",     title: "Reimburse Vicky €972.55 — Athens Shopping Card Spend",
+      desc: "Vicky bought all of Yael's unit fit-out in Athens on Jun 18, paid with her own card (NBG Istiaia has no POS). Total: €972.55 (Receipt 1 €336.90 + Receipt 2 €635.65). Includes: door, window, water heater, AC, bathroom accessories. Also includes hammer drill ~€380 → deduct from Antonis account. Reimburse Vicky's net balance from Greek account or Wise." },
+    { priority: "high",     label: "🟠 Confirm — Mattress Delivery",   title: "Yael's Unit Mattress — Custom Order €400, Ready ~Jun 25",
+      desc: "Custom mattress ordered: 195×170 cm, 30 cm thick, from local manufacturer. Price €400. Bed frame (Meli building) also due Thursday Jun 25. Confirm delivery date with Vicky — room must be ready by Jun 27 for Yael's arrival." },
     { priority: "critical", label: "🔴 Critical — Action Needed",    title: "Electricity Counters — Provide to Electrician",
       desc: "Electrician is ready to proceed and is giving power to Yael's unit (large storage) now. He needs the electricity company counters to continue to the next stage. Provide ASAP." },
     { priority: "critical", label: "🔴 Critical — Blocking",        title: "Land Registry Certificate",
@@ -148,6 +159,9 @@ const PROJECT_DATA = {
   // ── Payment schedule ──────────────────────────────────────────────
   // status: "paid" | "due" | "upcoming" | "blocked"
   payments: [
+    { date: "Jun 18",     category: "Materials - Yael Unit", desc: "Athens shopping — Yael's unit fit-out (Jun 18). Door 70×214 + frame, PVC window 70×75, insect screen 100×120, Pyramis electric water heater 40L 3500W, 9000 BTU AC + outdoor unit, bathroom accessories (soap dish, toothbrush holder, waste bin, towel holder, Gedy hooks, bamboo curtain + misc). Vicky paid by card — reimburse from Greek account. Hammer drill ~€380 in this amount: charge to Antonis account.", vendor: "Athens suppliers (Vicky card)", amount: "€972.55", status: "paid" },
+    { date: "Upcoming",   category: "Materials - Yael Unit", desc: "Mattress for Yael's unit — custom order, 195×170 cm, 30 cm thick. From local manufacturer. Ready ~Jun 25.", vendor: "Local mattress manufacturer", amount: "€400", status: "due" },
+    { date: "Upcoming",   category: "Materials - Tiles",     desc: "Spanish tiles 'Crosscut Marfil' 60×60 — 25.88 m² available stock. €11/m² (vs normal €15). Approved by Yael Jun 18. Samples arriving before Jun 27. Bank transfer to: Tsintonis Leonidas Nikolaos, IBAN GR0501102910000029100837714.", vendor: "Tsintonis Leonidas Nikolaos", amount: "€286", status: "due" },
     { date: "Jun 15",     category: "Materials - Structure", desc: "Kairis — partial payment to reduce running debt. Vicky requested withdrawal; approved by Yael Jun 15. Reduces Kairis balance from ~€2,400 → ~€400.", vendor: "Kairis", amount: "€2,000", status: "paid" },
     { date: "Jun 8–13",   category: "Labor",          desc: "Workers wages week Jun 8–13 (Mon–Sat). Mon €280 (4w+Meli) + Tue €280 + Wed €330 (4w+Meli+ESAT foreman) + Thu €330 + Fri €680 (5w+Meli+ESAT+Ilir 2 roof welds €300) + Sat €680. ESAT joined from Wed; Ilir (roof welder) Fri–Sat.", vendor: "Workers + Meli + ESAT + Ilir", amount: "€2,580", status: "paid" },
     { date: "Jun 13",     category: "Materials - Plumbing", desc: "Transport — bathroom supplies from Athens (Diamantopoulos Istiaia order for Yael's unit). Closes pending transport item.", vendor: "Istiaia transport", amount: "€45", status: "paid" },
@@ -252,9 +266,10 @@ const PROJECT_DATA = {
       { label: "Landscaping",              amount: "€375"     },
       { label: "Roof Garden (materials)",  amount: "€1,450"   },
       { label: "Windows & Doors",          amount: "€1,150"   },
+      { label: "Yael's Unit Fit-out (Athens Jun 18)", amount: "€972"  },
     ],
-    totalPaid:      "~€66,000",
-    totalCommitted: "~€62,955",
+    totalPaid:      "~€67,000",
+    totalCommitted: "~€63,927",
 
     ahead: [
       { label: "Antonis — Phase 1 (foundations & beams)", amount: "€25K–€30K" },
@@ -328,6 +343,15 @@ const PROJECT_DATA = {
   // ── Vicky's payments tab ─────────────────────────────────────────
   vickyPayments: {
     dueNow: [
+      { icon: "🪨", title: "Spanish Tiles — Transfer €286 NOW",  sub: "Crosscut Marfil 60×60, 25.88 m². Yael approved Jun 18.",
+        who: "Tsintonis Leonidas Nikolaos", desc: "Bank transfer: IBAN GR0501102910000029100837714. €11/m² (vs normal €15). Samples arriving before Jun 27.",
+        amount: "€286", payType: "🏦 BANK TRANSFER", auth: "✅ Yael approved Jun 18 — Transfer immediately" },
+      { icon: "💳", title: "Reimburse Vicky — Athens Card Spend", sub: "€972.55 total (Jun 18). Includes Yael's unit door, window, water heater, AC, accessories.",
+        who: "Vicky", desc: "Vicky paid by card at Athens stores. Receipt 1 €336.90 + Receipt 2 €635.65. Confirm method: Greek account or Wise.",
+        amount: "€972.55", payType: "💵 CASH or WISE — confirm with Vicky", auth: "✅ Kobi instructed / in progress — awaiting reimbursement method" },
+      { icon: "🛏️", title: "Mattress — Yael's Unit",             sub: "Custom order, 195×170 cm, 30cm thick, €400. Ready ~Jun 25.",
+        who: "Local mattress manufacturer", desc: "Custom mattress ordered Jun 18. Delivery expected ~Jun 25 — before Yael's arrival Jun 27.",
+        amount: "€400", payType: "💵 CASH or CARD", auth: "✅ Kobi approved — pay on delivery/ready" },
       { icon: "🧱", title: "Kairis",                   sub: "Remaining balance ~€400 (after €2,000 paid Jun 15)",
         who: "Kairis Materials", desc: "Vicky requested + Yael approved €2,000 withdrawal Jun 15. Reduces running balance from ~€2,400 → ~€400. Vicky to settle remainder in person.",
         amount: "~€400", payType: "💵 CASH (Vicky in person, Kobi's funds)", auth: "✅ Yael approved Jun 15 — €2,000 withdrawn. Remaining ~€400 to settle." },
@@ -339,7 +363,7 @@ const PROJECT_DATA = {
         amount: "€550",   payType: "💵 CASH", auth: "✅ Kobi approved — Pay on completion" },
     ],
     summary: {
-      dueNow:     "~€10,050",  dueSub:     "Kairis ~€400 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600",
+      dueNow:     "~€11,350",  dueSub:     "Kairis ~€400 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600 + Tiles €286 + Mattress €400 + Vicky reimbursement €972",
       workers:    "✅ Paid Jun 13 + Kairis €2,000 Jun 15", workersSub: "Workers Jun 8–13 (€2,580). Kairis €2,000 approved by Yael Jun 15 (reduces balance to ~€400).",
       paidToDate: "~€46K",
       atmLimit:   "€2K",
@@ -360,9 +384,9 @@ const PROJECT_DATA = {
     totalTransferred:    100000,
     greekAccountBalance: 40500,   // actual balance as of Jun 15, 2026
     balanceAsOf:         "June 15, 2026",
-    totalKnownExpenses:  66000,   // from expense tracking (project records)
-    // implied balance = totalTransferred - totalKnownExpenses = 34,000
-    // actual balance 40,500 → ~€6,500 higher than implied (some expenses may not be logged)
+    totalKnownExpenses:  67000,   // from expense tracking (project records)
+    // implied balance = totalTransferred - totalKnownExpenses = 33,000
+    // actual balance 40,500 as of Jun 15 → spending ~€973 more since then
     note: "Greek bank: NBG — GR18 0110 3180 0000 3180 0400 611",
   },
 
@@ -371,11 +395,14 @@ const PROJECT_DATA = {
   // Update this section each run when open items / contact details change
   vickyComms: {
     // Message from Kobi to Vicky (update when there's something specific to say)
-    kobMessage: "Vicky — thank you for everything, and for pushing through 7 weeks without a weekend. You and the team are incredible. Please take care of yourself — and please have Meli check his knee!\n\nYael is visiting June 27–July 1 🎉. She will walk through the entire house with you. The aluminum door looks amazing — thank you. The solar panel infrastructure answer was perfect, exactly what we needed to hear. We love you all 🙏",
+    kobMessage: "Vicky — the Athens trip was incredible, thank you for getting everything done in one day! 🙏 The tiles at €11/m² are a great find — we're sending the €286 transfer now.\n\nYael arrives June 27. The room absolutely must be ready — mattress + bed frame + door + window + water heater + AC. Please confirm readiness by June 25.\n\nAlso: please let us know how to reimburse your card spend (€972.55 — Greek account or Wise?). And tell us the insurance situation — is the €3,858 for Apr–Jun already paid or pending?\n\nWe love you and the team 🏠❤️",
 
     // Items Vicky is waiting on from Kobi — update when decisions are made
     waitingOnKobi: [
-      "🔴 Tile questions — respond to Kobi's Jun 16 email: (1) 60×60 vs 60×120 for Floor A interior? (2) Is quote the IVORY variant? (3) What are the €278 pallet charges? (4) Push ABM for better price (~€20/sqm expected). Kobi will not pay deposit until these are resolved.",
+      "🔴 Italian tile questions — respond to Kobi's Jun 16 email: (1) 60×60 vs 60×120 for Floor A interior? (2) Is quote the IVORY variant? (3) What are the €278 pallet charges? (4) Push ABM for better price (~€20/sqm expected). Kobi will not pay deposit until these are resolved.",
+      "🔴 Spanish tiles €286 (Crosscut Marfil) — Yael approved Jun 18. Bank transfer to Tsintonis Leonidas Nikolaos IBAN GR0501102910000029100837714. Confirm once sent.",
+      "🔴 Reimburse Vicky's Athens card spend €972.55 — confirm payment method (Greek account or Wise)",
+      "Confirm Yael's unit room readiness by Jun 25 — mattress + bed frame + door + window + water heater + AC all installed",
       "Approve concealed-wall toilet brand for main house (Vicky recommends GROHE ~€780 for long-term maintenance; Kobi open to €400–500 range — discuss)",
       "Window/door color — black or not?",
       "Entrance gate quote — approve when it arrives",
@@ -386,20 +413,19 @@ const PROJECT_DATA = {
 
     // Items Vicky must action herself — update each run
     vickyMustAction: [
+      "⭐ Yael's unit ROOM READINESS — confirm by Jun 25 that room is sleep-ready (mattress + bed frame + door + window + water heater + AC all installed). Yael arrives Jun 27!",
       "⭐ Prepare for Yael's visit June 27–July 1 — plan full house site walk with her",
-      "Confirm if Yael's unit is sleep-ready by June 27 — send Kobi update by June 20",
-      "🚀 Phase 4 ACTIVE — Structural reinforcement started Jun 17: 3 Athens workers Mon–Fri doing RC jacket on columns+beams. Monitor progress, update Kobi weekly.",
-      "Roof layers (Jun 15–17) — building permit needs full roof closure + photos (needed for Antonis permit)",
-      "Tiles — respond to Kobi's 4 questions (Jun 16 email): size mismatch, ivory variant, pallet charges, price push. Push ABM for ~€20/sqm. Kobi won't pay deposit until resolved.",
-      "Aluminum balcony door (Yael's unit) — complete installation by Jun 16. Window arriving MONDAY June 22.",
-      "⚠️ Check on Meli's knee — he fell on his surgery knee Sunday Jun 14. Ensure he's OK to continue.",
-      "Excavator — confirm Mon/Tue Jun 15–16 with 60-ton road roller to compact all roads (€600 owed)",
-      "Kairis — withdraw €2,000 and pay (approved by Yael Jun 15). Remaining balance ~€400 to settle in person.",
-      "Meli to BUILD wood+steel bed for Yael's unit — 1.6×2m, pine+steel frame (approved Jun 13). Room target: ready Jun 28.",
-      "Tiles — answer Kobi's 4 questions (Jun 16 email) + negotiate ABM price before deposit is authorized.",
+      "🚀 Phase 4 ACTIVE — Structural reinforcement: monitor wall rebuild after mice nests + decayed pipes removed. Old iron removed, reshaping walls before pouring new. Update Kobi.",
+      "🔴 Spanish tiles — confirm order placed with Tsintonis Leonidas Nikolaos. Samples must arrive before Jun 27. Kobi sending €286 bank transfer.",
+      "🔴 Confirm how to reimburse €972.55 card spend (Athens Jun 18) — Greek account or Wise?",
+      "Confirm worker insurance payment status: Apr–Jun €3,858 (€1,286/month × 3) — paid or pending?",
+      "Italian tiles — answer Kobi's 4 questions (Jun 16 email): size mismatch, ivory variant, pallet charges €278, push ABM for ~€20/sqm. No deposit until resolved.",
+      "Mattress delivery — confirm date from local manufacturer (should be ~Jun 25)",
+      "Bed frame (Meli building) — confirm ready by Thu Jun 25",
+      "Window for Yael's unit — arriving Mon Jun 22. Ensure installation ready.",
+      "Kairis remaining balance ~€400 — settle in person.",
       "Chase community water connection (URGENT) — plumbing COMPLETE ✅; only community connection blocking pressure test",
       "House insulation — research options + prices, send to Kobi ASAP",
-      "Visit microcement supplier — inspect quality, bring video for Kobi+Yael",
       "Pay metalworker €550 on completion (small storage door + window)",
       "Pay electrician advance €1,000 (approved)",
       "Get gate quote from blacksmith → send to Kobi",
@@ -413,8 +439,10 @@ const PROJECT_DATA = {
       "Small storage blacksmith door + window (€550 on completion)",
       "Kairis — €2,000 payment approved by Yael Jun 15. Withdraw and pay. Remaining balance ~€400 to follow.",
       "Excavator — €600, Mon/Tue Jun 15–16 with 60-ton road roller to compact all roads (Kobi approved)",
-      "Bed for Yael's unit (Kobi approved Jun 13) — Meli to BUILD a custom wood+steel bed (1.6×2m, pine+steel frame). Room must be ready by Jun 28 for Yael's visit (Jun 28–Jul 1).",
+      "Bed for Yael's unit (Kobi approved Jun 13) — Meli to BUILD a custom wood+steel bed (1.6×2m, pine+steel frame). Room must be ready by Jun 27 for Yael's visit.",
       "Yael's unit bathroom fixtures ✅ DONE — €614 paid via Wise (Jun 6). All-microcement confirmed.",
+      "Athens shopping ✅ DONE Jun 18 — €972.55 (Vicky's card). Door, window, water heater, AC, bathroom accessories for Yael's unit. Reimbursement pending.",
+      "Spanish tiles 'Crosscut Marfil' 60×60 — 25.88 m², €286 APPROVED by Yael Jun 18. Transfer to Tsintonis Leonidas Nikolaos IBAN GR0501102910000029100837714.",
     ],
   },
 
@@ -446,9 +474,9 @@ const PROJECT_DATA = {
       body: "Which floor/unit does each owner take? Does the land also need to be split? Notary needs this information to proceed with the property division act. Kobi & Yael must provide clear instructions.",
       statusClass: "ds-urgent",  status: "🔴 URGENT — Notary is waiting. Unblocks the funding application (Exoikonomw)." },
     { q: "9. Entrance gate — approve blacksmith quote",
-      body: "Once the blacksmith provides his price for the 5m sliding gate, Vicky needs Kobi’s go-ahead before work starts. Expected within the week.",
+      body: "Once the blacksmith provides his price for the 5m sliding gate, Vicky needs Kobi's go-ahead before work starts. Expected within the week.",
       statusClass: "ds-waiting", status: "⏳ Quote incoming — send to Kobi immediately on receipt" },
-    { q: "10. Yael’s Greek SIM card",
+    { q: "10. Yael's Greek SIM card",
       body: "Kobi has a Greek number (+30 6948471034 via Zoe). Yael does not have one yet. A Greek number helps with online approvals and government portals.",
       statusClass: "ds-waiting", status: "⏳ Kobi to decide if needed before next visit" }
   ],
