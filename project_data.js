@@ -384,12 +384,13 @@ const PROJECT_DATA = {
       { date: "Feb 8, 2026",   amount: 20000 },
       { date: "Apr 26, 2026",  amount: 70000 },
     ],
-    totalTransferred:    100000,
-    greekAccountBalance: 40500,   // actual balance as of Jun 15, 2026
-    balanceAsOf:         "June 15, 2026",
-    totalKnownExpenses:  67000,   // from expense tracking (project records)
-    // implied balance = totalTransferred - totalKnownExpenses = 33,000
-    // actual balance 40,500 as of Jun 15 → spending ~€973 more since then
+    totalTransferred:     100000,
+    greekAccountBalance:  35200,   // actual balance as of Jun 24, 2026 (confirmed by Kobi)
+    balanceAsOf:          "June 24, 2026",
+    totalKnownExpenses:   72000,   // from expense tracking (project records, as of Jun 24)
+    israelDirectPayments: 973,     // paid direct from Israeli bank (not via NBG): Vicky reimbursement Jun 24
+    // estimated Greek balance = totalTransferred − (totalKnownExpenses − duePending − israelDirectPayments)
+    // = 100,000 − (72,000 − 10,600 − 973) ≈ €39,573 estimated; actual 35,200 → ~€4,373 unlogged
     note: "Greek bank: NBG — GR18 0110 3180 0000 3180 0400 611",
   },
 

@@ -442,13 +442,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('transfer-note').textContent = bt.note;
 
     // Declare all computed vars first (used by both reconciliation and runway cards)
-    // estimatedBalance = totalTransferred - (totalKnownExpenses - duePending)
-    // totalKnownExpenses includes committed/approved items not yet paid, so we add duePending back
-    // to get only what has actually left the Greek account.
-    const duePending       = parseInt((D.kpis.duePending || '0').replace(/[^0-9]/g, ''), 10) || 0;
-    const dueSub           = D.kpis.dueSub || '';
-    const actuallyPaid     = bt.totalKnownExpenses - duePending;
-    const estimatedBalance = bt.totalTransferred - actuallyPaid;
+    // estimatedBalance = totalTransferred - (totalKnownExpenses - duePending - israelDirectPayments)
+    // totalKnownExpenses includes committed/approved items not yet paid, so we add duePending back.
+    // israelDirectPayments = paid from Israeli bank directly (not via NBG), so subtract from Greek outflows.
+    const duePending         = parseInt((D.kpis.duePending || '0').replace(/[^0-9]/g, ''), 10) || 0;
+    const dueSub             = D.kpis.dueSub || '';
+    const israelDirect       = bt.israelDirectPayments || 0;
+    const actuallyPaid       = bt.totalKnownExpenses - duePending - israelDirect;
+    const estimatedBalance   = bt.totalTransferred - actuallyPaid;
 
     // Reconciliation card
     const reconcDiff      = bt.greekAccountBalance - estimatedBalance;
@@ -467,8 +468,11 @@ document.addEventListener('DOMContentLoaded', function() {
       <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--yellow);border-radius:6px;">
         <span>⏳ Due/pending (not yet paid)</span><strong>+${fmtEur(duePending)}</strong>
       </div>
+      ${israelDirect > 0 ? `<div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--lblue);border-radius:6px;">
+        <span>✈️ Paid direct from Israel (not via NBG)</span><strong>+${fmtEur(israelDirect)}</strong>
+      </div>` : ''}
       <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--gray);border-radius:6px;border:2px solid var(--blue);">
-        <span>🧮 Estimated balance</span><strong style="font-size:15px;">${fmtEur(estimatedBalance)}</strong>
+        <span>🧮 Estimated NBG balance</span><strong style="font-size:15px;">${fmtEur(estimatedBalance)}</strong>
       </div>
       <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--lblue);border-radius:6px;">
         <span>🏦 Last actual balance<br><small style="color:var(--muted)">as of ${esc(bt.balanceAsOf)}</small></span>
