@@ -14,7 +14,7 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "25 June 2026",
+    lastUpdated:   "25 June 2026 (balance sheet sync)",
     weekOf:        "19–25 June 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
@@ -42,10 +42,10 @@ const PROJECT_DATA = {
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "~€72,000",
-    paidSub:        "~26% of total estimate (incl. week Jun 16–21 workers + Kairis materials + Jun 24 withdrawal)",
-    duePending:     "~€10,600",
-    dueSub:         "Kairis ~€195 + metalworker €550 + electrician ~€8,500 + excavator €600 + mattress €400 + Vicky card reimbursement €155 + Vicky Wise reimbursement €972 pending",
+    paidToDate:     "€73,551",
+    paidSub:        "~26.7% of total estimate — balance sheet precise total as of 25 Jun 2026 (incl. mattress €400 picked up Jun 25)",
+    duePending:     "~€18,600",
+    dueSub:         "Electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3,858 + metalworker €550 + excavator €600 + Kairis remaining €195 + Vicky reimbursements ~€1,127 pending",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
   },
@@ -164,7 +164,7 @@ const PROJECT_DATA = {
     { date: "Jun 22",     category: "Furniture - Yael Unit", desc: "Iron bed frame + black matte bedside tables + bed slats (Yael's unit).", vendor: "Supplier", amount: "€350", status: "paid" },
     { date: "Jun 22",     category: "Furnishings - Yael Unit", desc: "Bedding, pillows, bedspread (Yael's unit). Vicky paid herself — to deduct from window amount.", vendor: "Vicky (card)", amount: "€155", status: "paid" },
     { date: "Jun 22",     category: "Equipment",             desc: "Fuel — site operations week Jun 16–21.", vendor: "Gas station", amount: "€40", status: "paid" },
-    { date: "Jun 25",     category: "Furniture - Yael Unit", desc: "Mattress for Yael's unit — 30cm thick, 195×170 cm. Pickup Jun 25. Cash price €400 (reduced from €650).", vendor: "Local mattress manufacturer", amount: "€400", status: "due" },
+    { date: "Jun 25",     category: "Furniture - Yael Unit", desc: "Mattress for Yael's unit — 30cm thick, 195×170 cm. Picked up Jun 25. Cash price €400 (reduced from €650).", vendor: "Local mattress manufacturer", amount: "€400", status: "paid" },
     { date: "Jun 19",     category: "Materials - Tiles",     desc: "Spanish tiles 'Crosscut Marfil' 60×60 — 25.88 m², €11/m². Paid via Wise Jun 19 (NBG blocked). Shipped from Patras Jun 19, arriving before Jun 27. Samples included.", vendor: "Tsintonis Leonidas Nikolaos", amount: "€286", status: "paid" },
     { date: "Jun 15",     category: "Materials - Structure", desc: "Kairis — partial payment to reduce running debt. Vicky requested withdrawal; approved by Yael Jun 15. Reduces Kairis balance from ~€2,400 → ~€400.", vendor: "Kairis", amount: "€2,000", status: "paid" },
     { date: "Jun 8–13",   category: "Labor",          desc: "Workers wages week Jun 8–13 (Mon–Sat). Mon €280 (4w+Meli) + Tue €280 + Wed €330 (4w+Meli+ESAT foreman) + Thu €330 + Fri €680 (5w+Meli+ESAT+Ilir 2 roof welds €300) + Sat €680. ESAT joined from Wed; Ilir (roof welder) Fri–Sat.", vendor: "Workers + Meli + ESAT + Ilir", amount: "€2,580", status: "paid" },
@@ -274,7 +274,7 @@ const PROJECT_DATA = {
       { label: "Tiles (Spanish Crosscut Marfil, Jun 19)", amount: "€286" },
       { label: "Yael's Unit Furnishings (bed frame, bedding, mattress)", amount: "~€905" },
     ],
-    totalPaid:      "~€72,000",
+    totalPaid:      "€73,551",
     totalCommitted: "~€63,927",
 
     ahead: [
@@ -380,14 +380,17 @@ const PROJECT_DATA = {
   // OWNER ONLY — not shown on Vicky's dashboard
   bankTransfers: {
     transfers: [
-      { date: "Jan 10, 2026",  amount: 10000 },
+      { date: "Sep 28, 2025",  amount: 25000 },
+      { date: "Sep 28, 2025",  amount: 15000 },
+      { date: "Oct 12, 2025",  amount: 130000 },
+      { date: "Jan 11, 2026",  amount: 10000 },
       { date: "Feb 8, 2026",   amount: 20000 },
       { date: "Apr 26, 2026",  amount: 70000 },
     ],
-    totalTransferred:     100000,
-    greekAccountBalance:  35200,   // actual balance as of Jun 24, 2026 (confirmed by Kobi)
-    balanceAsOf:          "June 24, 2026",
-    totalKnownExpenses:   72000,   // from expense tracking (project records, as of Jun 24)
+    totalTransferred:     270000, // all 6 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
+    greekAccountBalance:  35202.94, // per official NBG statement, ties to the cent, 25-Jun-2026
+    balanceAsOf:          "June 25, 2026",
+    totalKnownExpenses:   73551,   // renovation paid per balance sheet as of Jun 25 2026
     israelDirectPayments: 973,     // paid direct from Israeli bank (not via NBG): Vicky reimbursement Jun 24
     // estimated Greek balance = totalTransferred − (totalKnownExpenses − duePending − israelDirectPayments)
     // = 100,000 − (72,000 − 10,600 − 973) ≈ €39,573 estimated; actual 35,200 → ~€4,373 unlogged
