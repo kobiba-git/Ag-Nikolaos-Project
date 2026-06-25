@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "24 June 2026",
-    weekOf:        "19–24 June 2026",
+    lastUpdated:   "25 June 2026",
+    weekOf:        "19–25 June 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -417,6 +417,7 @@ const PROJECT_DATA = {
 
     // Items Vicky must action herself — update each run
     vickyMustAction: [
+      "🔴 URGENT — Pay property insurance. Confirm amount due and pay immediately. Send Kobi proof of payment.",
       "⭐ YAEL ARRIVES JUN 27 — Room must be 100% ready: mattress (pickup Wed Jun 25 ✅), bedding (arriving by Jun 27), bed frame ✅, door ✅, window ✅, water heater ✅, AC ✅. Fix bedside tables to bed frame per Yael's request.",
       "⭐ Prepare for Yael's visit June 27–July 1 — full house site walk, help with NBG Istiaia visit, POA notary appointment",
       "🚀 Foundation depth — update Kobi: how deep is the column foundation? If >2.5m, prepare basement concept sketch.",
