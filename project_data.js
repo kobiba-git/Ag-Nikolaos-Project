@@ -14,7 +14,7 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "25 June 2026 (balance sheet sync)",
+    lastUpdated:   "26 June 2026 (insurance urgent)",
     weekOf:        "19–25 June 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
@@ -23,6 +23,7 @@ const PROJECT_DATA = {
   // ── This week's task grid (Vicky Status tab) ──────────────────────
   // urgent: true = red top border, false = blue top border
   weekTasks: [
+    { icon: "🚨", label: "INSURANCE — PAY NOW ⚠️ URGENT", sub: "Property insurance must be paid immediately. Confirm amount due and pay. Send Kobi proof of payment via WhatsApp. This notice will be removed once Kobi confirms payment received.", urgent: true },
     { icon: "🏗️", label: "Structural Reinforcement — RC jackets ongoing + Foundation Deeper Than Expected!", sub: "Week Jun 19–24: Work on first of two large columns — foundation was expected at 0.5m but is NOT there. Depth may exceed 2.5m — if so, Vicky proposed designing a basement! Team monitoring. Slab cut DEFERRED. Carpenter (35yo from Karpathos) on site for furniture/woodwork. Sika used to seal damaged beam (no further treatment needed).", urgent: true  },
     { icon: "🏠", label: "House Insulation — URGENT",          sub: "Summer dry season window — don't delay. Vicky to research options + prices.", urgent: true  },
     { icon: "⚡",  label: "Electricity counters — URGENT",      sub: "Electrician needs electricity company counters to continue to next stage.", urgent: true  },
@@ -349,6 +350,9 @@ const PROJECT_DATA = {
   // ── Vicky's payments tab ─────────────────────────────────────────
   vickyPayments: {
     dueNow: [
+      { icon: "🚨", title: "⚠️ INSURANCE — PAY NOW",             sub: "Property insurance payment is overdue. Pay immediately and send Kobi proof of payment via WhatsApp.",
+        who: "Insurance provider", desc: "Confirm the amount due with your insurance company and pay immediately. Send Kobi photo/screenshot of payment proof via WhatsApp. This item will be removed once confirmed.",
+        amount: "❗ Confirm", payType: "💵 URGENT", auth: "🔴 NOT YET CONFIRMED — Pay and report to Kobi" },
       { icon: "💳", title: "Confirm Vicky Wise €972.55 Received",   sub: "Praktiker/Athens card reimbursement sent to Revolut LT853250002013391261.",
         who: "Vicky", desc: "Kobi sent Wise transfer Jun 22. Please confirm received. Also: bedding €155 (Vicky card, Jun 22) to be deducted from window amount.",
         amount: "€972.55", payType: "💵 WISE — confirm received", auth: "✅ Wise transfer sent — pending confirmation" },
