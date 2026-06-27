@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yael's Evia Trip — June 27–July 1, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; max-width: 720px; margin: auto; padding: 0; font-size: 16px; background: #f9f9f9; }
+
+  /* ── TABS ── */
+  .tab-bar { display: flex; position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 2px solid #ddd; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+  .tab-btn { flex: 1; padding: 14px 8px; border: none; background: transparent; font-size: 1em; font-weight: bold; cursor: pointer; color: #888; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all .2s; }
+  .tab-btn.active { color: #1a73e8; border-bottom-color: #1a73e8; }
+  .tab-btn:hover:not(.active) { color: #555; background: #f5f5f5; }
+
+  .tab-content { display: none; padding: 16px; }
+  .tab-content.active { display: block; }
+
+  /* ── GUIDE TAB ── */
+  h1 { font-size: 1.4em; margin-top: 8px; }
+  h2 { font-size: 1.15em; border-bottom: 2px solid #ccc; padding-bottom: 4px; margin-top: 28px; }
+  h3 { font-size: 1em; margin-top: 18px; color: #333; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  td, th { border: 1px solid #bbb; padding: 7px 10px; vertical-align: top; font-size: 0.95em; }
+  th { background: #f0f0f0; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: #1a73e8; }
+  .warn { color: #c0392b; font-weight: bold; }
+  .note { background: #fff8e1; border-left: 4px solid #f9a825; padding: 8px 12px; margin: 10px 0; }
+  .pack-list { list-style: none; padding-left: 4px; }
+  .pack-list li { margin-bottom: 10px; }
+  .pack-list label { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; line-height: 1.4; }
+  .pack-list input[type="checkbox"] { margin-top: 3px; width: 20px; height: 20px; flex-shrink: 0; accent-color: #1a73e8; cursor: pointer; }
+  .pack-list input[type="checkbox"]:checked + span { text-decoration: line-through; color: #aaa; }
+  .reset-btn { margin-top: 10px; padding: 8px 16px; background: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 0.9em; }
+
+  /* ── DIARY TAB ── */
+  #tab-diary { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 40%, #a8edea 100%); min-height: 100vh; padding: 20px 16px; }
+  .diary-header { text-align: center; margin-bottom: 24px; }
+  .diary-header h2 { font-family: 'Caveat', cursive; font-size: 2em; color: #5a3e28; border: none; background: none; border-bottom: none; }
+  .diary-header p { font-family: 'Caveat', cursive; font-size: 1.2em; color: #7a5c40; margin: 4px 0; }
+
+  .new-entry-btn { display: block; width: 100%; padding: 14px; background: #ff7043; color: white; border: none; border-radius: 50px; font-size: 1.1em; font-weight: bold; cursor: pointer; box-shadow: 0 4px 12px rgba(255,112,67,.4); margin-bottom: 20px; transition: transform .15s, box-shadow .15s; }
+  .new-entry-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(255,112,67,.5); }
+
+  .entry-form { background: rgba(255,255,255,.92); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,.12); display: none; }
+  .entry-form.open { display: block; }
+  .entry-form textarea { width: 100%; min-height: 120px; border: 2px solid #fcb69f; border-radius: 10px; padding: 12px; font-family: 'Caveat', cursive; font-size: 1.2em; resize: vertical; outline: none; background: #fffdf8; }
+  .entry-form textarea:focus { border-color: #ff7043; }
+  .entry-form .form-date { font-family: 'Caveat', cursive; font-size: 1em; color: #888; margin-bottom: 8px; }
+  .photo-label { display: inline-block; margin-top: 12px; padding: 8px 18px; background: #a8edea; color: #2d7a78; border-radius: 50px; cursor: pointer; font-weight: bold; font-size: 0.95em; border: 2px solid #7dcfcc; }
+  .photo-label:hover { background: #7dcfcc; }
+  #photo-input { display: none; }
+  .photo-preview { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .photo-preview img { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,.2); }
+  .form-actions { display: flex; gap: 10px; margin-top: 14px; }
+  .save-btn { flex: 1; padding: 12px; background: #43a047; color: white; border: none; border-radius: 50px; font-size: 1em; font-weight: bold; cursor: pointer; }
+  .cancel-btn { padding: 12px 20px; background: #eee; color: #555; border: none; border-radius: 50px; font-size: 1em; cursor: pointer; }
+
+  /* Entry cards */
+  .entries-container { display: flex; flex-direction: column; gap: 20px; }
+  .entry-card { background: #fffdf4; border-radius: 12px; padding: 18px; box-shadow: 0 4px 16px rgba(0,0,0,.1); position: relative; border-top: 5px solid #ff7043; }
+  .entry-card:nth-child(3n+1) { border-top-color: #ff7043; transform: rotate(-0.4deg); }
+  .entry-card:nth-child(3n+2) { border-top-color: #42a5f5; transform: rotate(0.3deg); }
+  .entry-card:nth-child(3n+3) { border-top-color: #66bb6a; transform: rotate(-0.2deg); }
+  .entry-date { font-family: 'Caveat', cursive; font-size: 0.95em; color: #999; margin-bottom: 8px; }
+  .entry-text { font-family: 'Caveat', cursive; font-size: 1.25em; color: #3a2a1a; line-height: 1.5; white-space: pre-wrap; }
+  .entry-photos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .entry-photos img { width: calc(50% - 4px); border-radius: 8px; object-fit: cover; border: 4px solid white; box-shadow: 0 2px 8px rgba(0,0,0,.15); cursor: pointer; }
+  .entry-photos img:only-child { width: 100%; max-height: 280px; }
+  .delete-btn { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 1.1em; cursor: pointer; color: #ccc; }
+  .delete-btn:hover { color: #e53935; }
+
+  .empty-diary { text-align: center; padding: 40px 20px; font-family: 'Caveat', cursive; color: #7a5c40; }
+  .empty-diary .big-emoji { font-size: 3.5em; display: block; margin-bottom: 12px; }
+  .empty-diary p { font-size: 1.3em; }
+  .photo-row { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .photo-add-btn { display: flex; flex-direction: column; align-items: center; padding: 10px 16px; border-radius: 50px; cursor: pointer; font-weight: bold; font-size: 0.9em; border: 2px solid; gap: 2px; }
+  .photo-add-btn small { font-weight: normal; font-size: 0.75em; opacity: .75; }
+  .btn-gallery { background: #a8edea; color: #2d7a78; border-color: #7dcfcc; }
+  .btn-camera  { background: #ffd6b0; color: #a05010; border-color: #ffb570; }
+
+  /* Lightbox */
+  .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.85); z-index: 999; align-items: center; justify-content: center; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 95vw; max-height: 90vh; border-radius: 8px; object-fit: contain; }
+  .lightbox-close { position: fixed; top: 16px; right: 20px; color: white; font-size: 2em; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<!-- TAB BAR -->
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="showTab('guide')">&#x2708;&#xFE0F; Trip Guide</button>
+  <button class="tab-btn" onclick="showTab('diary')">&#x1F4D4; Trip Diary</button>
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB 1: TRIP GUIDE
+═══════════════════════════════════════════ -->
+<div id="tab-guide" class="tab-content active">
+
+<h1>&#x2708;&#xFE0F; Yael's Evia Trip &mdash; June 27&ndash;July 1, 2026</h1>
+
+<hr>
+
+<h2>&#x2705; PRE-FLIGHT CHECKLIST</h2>
+<ul>
+  <li>&#x1F381; <strong>Buy presents</strong> for Vicky, Shula, and the Anagnostou family</li>
+  <li>&#x1F4DE; <strong>Sync with Kobi</strong> about:
+    <ul>
+      <li>Vicky's architect fee &mdash; amount, whether to give something now</li>
+      <li>NBG / IRIS activation &mdash; what docs to bring</li>
+      <li>Zoe POA cancellation &mdash; notary appointment confirmed?</li>
+      <li>Vasiliki &mdash; meeting or just a call?</li>
+    </ul>
+  </li>
+  <li>&#x1F310; <strong>Online check-in</strong> &mdash; opens <strong>June 26 at 09:15</strong>, closes <strong>June 27 at 04:15</strong><br>
+    &rarr; <a href="https://my.bluebirdair.com/login">my.bluebirdair.com/login</a> &nbsp;|&nbsp; PNR: <strong>3055ECEF</strong></li>
+  <li>&#x1F4B3; <strong>Pack international card</strong> &mdash; use for all Euro payments in Greece</li>
+  <li>&#x1F4B5; <strong>Kobi to arrange Greek card access via Vicky</strong> &mdash; for &euro;3,000 withdrawal (Thailand)</li>
+  <li>&#x1F4F1; <strong>Buy a cellular package</strong> for Greece &mdash; local SIM or international roaming plan before departure</li>
+</ul>
+
+<hr>
+
+<h2>&#x2708;&#xFE0F; FLIGHT DETAILS</h2>
+<table>
+  <tr><th></th><th>Outbound</th><th>Return</th></tr>
+  <tr><td><strong>Flight</strong></td><td>BZ702</td><td>BZ703</td></tr>
+  <tr><td><strong>Route</strong></td><td>TLV (T3) &rarr; ATH</td><td>ATH &rarr; TLV</td></tr>
+  <tr><td><strong>Date</strong></td><td>Sat, June 27</td><td>Wed, July 1</td></tr>
+  <tr><td><strong>Time</strong></td><td>09:15 &rarr; 11:25</td><td>20:30 &rarr; 22:30</td></tr>
+  <tr><td><strong>PNR</strong></td><td colspan="2"><strong>3055ECEF</strong></td></tr>
+  <tr><td><strong>Check-in window</strong></td><td>Jun 26 09:15 &rarr; Jun 27 04:15</td><td>Jun 30 20:30 &rarr; Jul 1 15:30</td></tr>
+  <tr><td><strong>Check-in link</strong></td><td colspan="2"><a href="https://my.bluebirdair.com/login">my.bluebirdair.com/login</a></td></tr>
+</table>
+<p>&#x1F9F3; <strong>Luggage:</strong> 1 trolley (cabin bag) + 1 small personal bag. No checked luggage needed.</p>
+
+<hr>
+
+<h2>&#x1F697; CAR RENTAL</h2>
+<table>
+  <tr><td><strong>Company</strong></td><td>Avance Car Rental</td></tr>
+  <tr><td><strong>Confirmation</strong></td><td>631776593 (Booking.com)</td></tr>
+  <tr><td><strong>Car</strong></td><td>Mazda 2 or similar &mdash; Automatic, A/C</td></tr>
+  <tr><td><strong>Pick-up</strong></td><td>June 27 at <strong>11:30</strong> &mdash; ATH Arrivals Hall (19019 Spata)</td></tr>
+  <tr><td><strong>Drop-off</strong></td><td>July 1 &mdash; ATH (same location) &mdash; <span class="warn">arrive by 18:00</span> (booking window 18:30 but must be there by 18:00)</td></tr>
+  <tr><td><strong>Cost</strong></td><td>&euro;145.59 (paid)</td></tr>
+  <tr><td><strong>WhatsApp</strong></td><td><a href="https://wa.me/306943550004">+30 6943550004</a></td></tr>
+  <tr><td><strong>Phone</strong></td><td>+30 2103533088</td></tr>
+</table>
+<div class="note">
+  &#x26A0;&#xFE0F; <span class="warn">BUY INSURANCE AT THE COUNTER</span> &mdash; do not skip this.<br><br>
+  &#x1F4F8; <span class="warn">BEFORE DRIVING OFF:</span> Walk around the car and take photos + a short video of all sides, including any existing scratches or dents. This is your evidence if they try to charge you for prior damage. If you spot damage, report it to the agent immediately before leaving the parking area &mdash; do not drive away without it being noted.<br><br>
+  &#x26A0;&#xFE0F; <span class="warn">Tight return:</span> Must be at airport by 18:00 for 20:30 flight. Leave Aidipsos by 13:30 &mdash; 4.5 hrs travel. Return car immediately on arrival.<br>
+  &#x1F4CD; <a href="https://www.google.com/maps/dir/Arkitsa+Port,+Dafnousia,+Greece/Hertz+Car+Return,+Attiki+Odos,+Spata+190+04,+Greece/@37.9393507,23.9467414,840m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0x14a0c797d651d20f:0xe289c84d3444bcfc!2m2!1d23.0248845!2d38.751552!1m5!1m1!1s0x14a191a050639b37:0xb23c3a1f93764b33!2m2!1d23.9486913!2d37.9404837?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D">Navigate: Arkitsa &rarr; Hertz car return at ATH &rarr;</a>
+</div>
+
+<hr>
+
+<h2>&#x1F5FA;&#xFE0F; ROUTE: AIRPORT &rarr; EVIA</h2>
+<p><strong>Athens Airport &rarr; Arkitsa &rarr; Ferry &rarr; Loutra Edipsou &rarr; Agio Nikolaos</strong></p>
+<p>&#x1F4CD; <a href="https://www.google.com/maps/dir/Athens+International+Airport+%22Eleftherios+Venizelos%22,+Spata,+Greece/Arkitsa+Ferry+Terminal,+Arkitsa,+Greece">Directions: ATH Airport &rarr; Arkitsa Ferry &rarr;</a></p>
+<ul>
+  <li>Airport to Arkitsa: ~170 km, ~1.5&ndash;2 hrs</li>
+  <li>Ferry Arkitsa &rarr; Loutra Edipsou: ~30 min, ~&euro;10/car. Every 30&ndash;60 min &mdash; no booking needed</li>
+</ul>
+
+<hr>
+
+<h2>&#x1F3E8; ACCOMMODATION</h2>
+<p>Yael's unit at the property (water &#x2705;, electricity &#x2705;, epoxy floor &#x2705;) &mdash; <em>if Vicky confirms sleep-ready by ~Jun 20.</em> Backup: <strong><a href="https://maps.app.goo.gl/EssXDyfExfBJhcaQ8">Moshe's Hotel</a></strong>. Kobi will confirm.</p>
+
+<hr>
+
+<h2>&#x1F5FA;&#xFE0F; LOCATIONS IN EVIA</h2>
+<ul>
+  <li>&#x1F3E0; <a href="https://maps.app.goo.gl/mkYeVT7kVfRr2Q2n7">Our home (Agio Nikolaos)</a></li>
+  <li>&#x1F469;&#x200D;&#x1F4BC; <a href="https://maps.app.goo.gl/WuG9NEfV6uMrV7bV7">Vicky's house</a></li>
+  <li>&#x1F3E8; <a href="https://maps.app.goo.gl/EssXDyfExfBJhcaQ8">Moshe's Hotel</a></li>
+  <li>&#x1F3D6;&#xFE0F; <a href="https://maps.app.goo.gl/BG9CWL3EzJ3itNrL6">Shortcut road from home to beach</a></li>
+  <li>&#x1F3E2; <a href="https://maps.app.goo.gl/oVDQ8BV19hn5HEds9">Erez Apt. Aidipsos</a></li>
+  <li>&#x2696;&#xFE0F; <a href="https://maps.app.goo.gl/1HKUco63bpyR74417">Zoe's office</a></li>
+  <li>&#x1F3E6; <a href="https://maps.app.goo.gl/GWc2iUyo7SuUPK9h6">Istiaia NBG Bank</a></li>
+  <li>&#x26F4;&#xFE0F; <a href="https://maps.app.goo.gl/Ne5Y84FEe2T1gGXGA">Arkitsa Port</a></li>
+  <li>&#x26F4;&#xFE0F; <a href="https://maps.app.goo.gl/QQM9f5UbLGqKo1tL6">Aidipsos Port</a></li>
+</ul>
+
+<hr>
+
+<h2>&#x1F3AF; TRIP OBJECTIVES</h2>
+
+<h3>&#x1F3E0; Site Walk with Vicky</h3>
+<p>Full walk of the property &mdash; ground floor, Yael's unit, 3rd floor, storage buildings, road, garden. Take photos. Note open questions for Kobi.</p>
+<p><em>Current progress:</em> Brickwork &#x2705;, plastering underway, Yael's unit ~complete, 3rd floor structure done, Antonis on site since Jun 15.</p>
+
+<h3>&#x1F33F; Quality Time with Vicky</h3>
+<p>Lunch or dinner together &mdash; an important relationship moment. Topics:</p>
+<ul>
+  <li>Total project cost estimate &mdash; Vicky's current view</li>
+  <li>Timeline to completion &mdash; realistic expectations</li>
+  <li>Vicky's architect fee &mdash; acknowledge her work; maybe give her something now</li>
+  <li>Any concerns she wants to raise directly (beyond WhatsApp updates)</li>
+</ul>
+
+<h3>&#x1F4AC; Important Discussions with Vicky</h3>
+<p>Agenda items for Yael's conversations with Vicky during the stay:</p>
+<ul>
+  <li>&#x1F6E1;&#xFE0F; <strong>Workers insurance</strong> &mdash; confirm it's been paid. Who, how much, and when?</li>
+  <li>&#x1F9F1; <strong>Insulation</strong> &mdash; urgent summer item. When is it happening, how is it being done, and how much will it cost? Vicky to have a plan.</li>
+  <li>&#x26A1; <strong>Energy Performance Certificate (EPC) / funding request</strong> &mdash; submitting the grant/funding application. What's the status? Do we have any answers from the notary on the procedure? When can we submit?</li>
+  <li>&#x1F4B3; <strong>Load debit card to Google Wallet</strong> &mdash; help Vicky set this up so she can use the NBG card via Google Wallet for payments.</li>
+</ul>
+
+<h3>&#x1F3E6; NBG Istiaia &mdash; Activate IRIS + Release Account Block</h3>
+<div class="note">
+  &#x26A0;&#xFE0F; <span class="warn">CRITICAL: Account is blocked for money transfers.</span> The bank requires missing profile information to be completed before the account can be released. <strong>Vicky and Yael must visit the bank together.</strong> Call ahead to find out exactly which documents / information are needed so you arrive prepared.
+</div>
+<p><strong>Objectives at the bank:</strong></p>
+<ul>
+  <li>Complete missing profile information &mdash; ask the branch what's needed before you go</li>
+  <li>Get the account released for outgoing transfers</li>
+  <li>Activate IRIS instant payments</li>
+</ul>
+<p>Bring: passport + Greek bank card. Vicky comes with you.<br>
+&#x1F4CD; <a href="https://maps.app.goo.gl/GWc2iUyo7SuUPK9h6">Istiaia NBG Bank &rarr;</a></p>
+
+<h3>&#x2696;&#xFE0F; POA &mdash; Zoe, Vasiliki &amp; Natasha</h3>
+<div class="note">
+  &#x1F4CC; <strong>POA revocation is deferred</strong> to the next joint visit when Kobi and Yael are together in Aidipsos. Nothing to sign this trip.
+</div>
+<p><strong>This trip &mdash; smooth things over:</strong></p>
+<ul>
+  <li>&#x1F91D; <strong>Meet Zoe</strong> &mdash; warm, friendly visit. The upcoming revocation is legal/practical, not personal. Keep the relationship good.<br>
+  &#x1F4CD; <a href="https://maps.app.goo.gl/1HKUco63bpyR74417">Zoe's office &rarr;</a></li>
+  <li>&#x1F4DE; <strong>Meet or call Vasiliki</strong> &mdash; Lawyer, Chalkida. +30 6977685028 / vkiapekaki@gmail.com<br>
+  Topics: land registry status, property division, legal blockers. Update on where things stand.</li>
+  <li>&#x1F4DD; <strong>If possible: meet Natasha</strong> (Notary, Aidipsos) &mdash; informal meeting to prepare the grounds for the revocation. No signing yet, just groundwork.<br>
+  +30 6977982511 / sidirana@otenet.gr</li>
+</ul>
+
+<h3>&#x1F4B5; Withdraw &euro;3,000 Cash</h3>
+<p>Via Greek card (Kobi arranges access via Vicky). Bring cash back for Thailand. ATMs in Loutra Edipsou and Istiaia.</p>
+
+<h3>&#x1F6A2; Departure &mdash; July 1</h3>
+<div class="note">
+  &#x23F0; <span class="warn">Leave Aidipsos/Loutra Edipsou no later than 13:30.</span><br>
+  The trip back takes ~4.5 hrs (ferry + drive). You must be at the airport by <strong>18:00</strong> for your 20:30 flight.<br>
+  Breakdown: ~30 min to Aidipsos port &rarr; ferry ~30 min &rarr; drive Arkitsa to ATH ~2 hrs &rarr; allow buffer = <strong>depart by 13:30 at the latest.</strong>
+</div>
+<ul>
+  <li><strong>13:30</strong> &mdash; Leave accommodation, head to Aidipsos port &#x1F4CD; <a href="https://maps.app.goo.gl/QQM9f5UbLGqKo1tL6">Aidipsos Port &rarr;</a></li>
+  <li>Ferry Aidipsos &rarr; Arkitsa (~30 min), then drive to Athens (~2 hrs) &#x1F4CD; <a href="https://www.google.com/maps/dir/Arkitsa+Port,+Dafnousia,+Greece/Hertz+Car+Return,+Attiki+Odos,+Spata+190+04,+Greece/@37.9393507,23.9467414,840m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0x14a0c797d651d20f:0xe289c84d3444bcfc!2m2!1d23.0248845!2d38.751552!1m5!1m1!1s0x14a191a050639b37:0xb23c3a1f93764b33!2m2!1d23.9486913!2d37.9404837?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D">(map &rarr;)</a></li>
+  <li><strong>18:00</strong> &mdash; Arrive airport, return car at Hertz drop-off</li>
+  <li><strong>20:30</strong> &mdash; Flight BZ703 home &rarr; land TLV 22:30</li>
+</ul>
+
+<hr>
+
+<h2>&#x1F4B3; MONEY</h2>
+<ul>
+  <li>&#x2705; Use <strong>international card</strong> for all Euro payments</li>
+  <li>&#x1F4B5; Withdraw <strong>&euro;3,000 cash</strong> via Greek card (Kobi arranges via Vicky) &mdash; bring back for Thailand</li>
+  <li>&#x1F3E7; ATMs in Loutra Edipsou and Istiaia</li>
+</ul>
+
+<hr>
+
+<h2>&#x1F9F3; PACKING LIST</h2>
+<p>&#x1F324;&#xFE0F; <strong>Weather:</strong> Late June in Evia is hot and sunny &mdash; daytime ~27&ndash;32&deg;C, nights ~22&ndash;25&deg;C. Virtually no rain. Sea ~26&deg;C (great for swimming). Pack light.</p>
+
+<h3>Clothing</h3>
+<ul class="pack-list">
+  <li><label><input type="checkbox" id="p1"><span>Light summer tops / t-shirts (3&ndash;4)</span></label></li>
+  <li><label><input type="checkbox" id="p2"><span>Shorts and/or light linen trousers (2&ndash;3)</span></label></li>
+  <li><label><input type="checkbox" id="p3"><span>Light dress or smart-casual outfit (for dinner with Vicky)</span></label></li>
+  <li><label><input type="checkbox" id="p4"><span>Light cardigan or wrap &mdash; evenings can still use a layer</span></label></li>
+  <li><label><input type="checkbox" id="p5"><span>Swimsuit</span></label></li>
+  <li><label><input type="checkbox" id="p6"><span>Comfortable walking shoes / trainers &mdash; site walk involves uneven terrain</span></label></li>
+  <li><label><input type="checkbox" id="p7"><span>Sandals / flip-flops</span></label></li>
+  <li><label><input type="checkbox" id="p8"><span>Sun hat</span></label></li>
+  <li><label><input type="checkbox" id="p9"><span>Sunglasses &#x1F60E;</span></label></li>
+  <li><label><input type="checkbox" id="p10"><span>&#x1F3C3; Running gear (shoes, top, shorts)</span></label></li>
+</ul>
+
+<h3>Toiletries &amp; Health</h3>
+<ul class="pack-list">
+  <li><label><input type="checkbox" id="p11"><span>Toothbrush + toothpaste</span></label></li>
+  <li><label><input type="checkbox" id="p12"><span>Skincare (SPF 50 sunscreen essential &mdash; strong sun)</span></label></li>
+  <li><label><input type="checkbox" id="p13"><span>After-sun / moisturizer</span></label></li>
+  <li><label><input type="checkbox" id="p14"><span>Medications &mdash; regular prescriptions + basic kit (paracetamol, antihistamine, ibuprofen, band-aids)</span></label></li>
+  <li><label><input type="checkbox" id="p15"><span>Insect repellent (useful in Evia evenings)</span></label></li>
+</ul>
+
+<h3>Tech &amp; Documents</h3>
+<ul class="pack-list">
+  <li><label><input type="checkbox" id="p16"><span>Laptop + charger</span></label></li>
+  <li><label><input type="checkbox" id="p17"><span>Phone + charger</span></label></li>
+  <li><label><input type="checkbox" id="p18"><span>Passport (needed for bank + notary)</span></label></li>
+  <li><label><input type="checkbox" id="p19"><span>Greek bank card (NBG) &mdash; for IRIS activation + &euro;3,000 withdrawal</span></label></li>
+  <li><label><input type="checkbox" id="p20"><span>International card (for all Euro payments)</span></label></li>
+  <li><label><input type="checkbox" id="p21"><span>Car rental confirmation (631776593) &mdash; screenshot or printout</span></label></li>
+  <li><label><input type="checkbox" id="p22"><span>Flight PNR: 3055ECEF &mdash; have boarding pass ready</span></label></li>
+</ul>
+
+<h3>Other</h3>
+<ul class="pack-list">
+  <li><label><input type="checkbox" id="p23"><span>&#x1F381; Presents for Vicky, Shula, and the Anagnostou family</span></label></li>
+  <li><label><input type="checkbox" id="p24"><span>&#x1F4D6; Book</span></label></li>
+  <li><label><input type="checkbox" id="p25"><span>Small day bag / backpack for site walk</span></label></li>
+  <li><label><input type="checkbox" id="p26"><span>Reusable water bottle &mdash; it's hot, stay hydrated</span></label></li>
+  <li><label><input type="checkbox" id="p27"><span>&#x1F3A7; Earphones with microphone &mdash; for calls with Kobi, Vasiliki, and music/podcasts on the drive</span></label></li>
+  <li><label><input type="checkbox" id="p28"><span>&#x1F50C; USB cables: USB-A to C + USB-C to C &mdash; for charging in the car</span></label></li>
+  <li><label><input type="checkbox" id="p29"><span>&#x1F9F2; Car magnet / phone mount for navigation</span></label></li>
+</ul>
+<button class="reset-btn" onclick="resetPacking()">&#x21BA; Reset all</button>
+
+<hr>
+
+<h2>&#x1F4DE; KEY CONTACTS</h2>
+<table>
+  <tr><th>Person</th><th>Role</th><th>Contact</th></tr>
+  <tr><td>Vicky Tsalkitzi</td><td>Architect / PM</td><td>+30 6951269323 / tsalkitv@yahoo.gr</td></tr>
+  <tr><td>Natasha Sidiropoulou</td><td>Notary (Aidipsos)</td><td>+30 6977982511 / sidirana@otenet.gr</td></tr>
+  <tr><td>Vasiliki Kiapekaki</td><td>Lawyer (Chalkida)</td><td>+30 6977685028 / vkiapekaki@gmail.com</td></tr>
+  <tr><td>Moshe Reis</td><td>Hotel host</td><td>+972-50-699-9948 / <a href="https://maps.app.goo.gl/EssXDyfExfBJhcaQ8">Hotel location</a></td></tr>
+  <tr><td>Zoe Koliou</td><td>Local rep</td><td>+30 6937583078 / <a href="https://maps.app.goo.gl/1HKUco63bpyR74417">Office location</a></td></tr>
+  <tr><td>Avance Car Rental</td><td>Car pickup/return</td><td>+30 2103533088 / <a href="https://wa.me/306943550004">WhatsApp</a></td></tr>
+  <tr><td>Kobi</td><td>Husband / project owner</td><td>&#x1F4F1;</td></tr>
+</table>
+
+<p style="color:#888;font-size:0.85em;margin-top:24px;">Last updated: June 27, 2026</p>
+
+</div><!-- end tab-guide -->
+
+
+<!-- ══════════════════════════════════════════
+     TAB 2: TRIP DIARY
+═══════════════════════════════════════════ -->
+<div id="tab-diary" class="tab-content">
+
+  <div class="diary-header">
+    <h2>&#x1F30A; Yael's Evia Diary &#x1F33C;</h2>
+    <p>June 27 – July 1, 2026 &nbsp;&#x2600;&#xFE0F;&nbsp; North Evia, Greece</p>
+  </div>
+
+  <button class="new-entry-btn" onclick="toggleForm()">&#x270F;&#xFE0F; &nbsp; New entry</button>
+
+  <div class="entry-form" id="entry-form">
+    <div class="form-date" id="form-date"></div>
+    <textarea id="entry-text" placeholder="What happened today? Write anything — a moment, a feeling, something funny...&#10;&#10;The sea was so blue today..."></textarea>
+    <div class="photo-row">
+      <label class="photo-add-btn btn-gallery" for="photo-input">
+        &#x1F5BC;&#xFE0F; Gallery / Google Photos
+        <small>tap to pick from your library</small>
+      </label>
+      <input type="file" id="photo-input" accept="image/*" multiple onchange="previewPhotos(this)">
+      <label class="photo-add-btn btn-camera" for="photo-camera">
+        &#x1F4F8; Camera
+        <small>take a new photo</small>
+      </label>
+      <input type="file" id="photo-camera" accept="image/*" capture="environment" onchange="previewPhotos(this)">
+    </div>
+    <div class="photo-preview" id="photo-preview"></div>
+    <div class="form-actions">
+      <button class="save-btn" onclick="saveEntry()">&#x1F4BE; Save</button>
+      <button class="cancel-btn" onclick="toggleForm()">Cancel</button>
+    </div>
+  </div>
+
+  <div class="entries-container" id="entries-container"></div>
+
+  <div class="empty-diary" id="empty-msg">
+    <span class="big-emoji">&#x1F33B;</span>
+    <p>Your diary is waiting for its first story!</p>
+    <p style="font-size:1em;color:#a07850;margin-top:8px;">Tap "New entry" to start &#x1F4DD;</p>
+  </div>
+
+</div><!-- end tab-diary -->
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+// ── TAB SWITCHING ──
+function showTab(name) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+  localStorage.setItem('yael_tab', name);
+}
+
+// ── PACKING CHECKBOXES ──
+const IDS = Array.from({length: 29}, (_, i) => 'p' + (i + 1));
+function savePacking() {
+  const state = {};
+  IDS.forEach(id => { state[id] = document.getElementById(id).checked; });
+  localStorage.setItem('yael_packing', JSON.stringify(state));
+}
+function loadPacking() {
+  const saved = localStorage.getItem('yael_packing');
+  if (!saved) return;
+  const state = JSON.parse(saved);
+  IDS.forEach(id => { if (state[id]) document.getElementById(id).checked = true; });
+}
+function resetPacking() {
+  if (!confirm('Clear all ticks?')) return;
+  IDS.forEach(id => { document.getElementById(id).checked = false; });
+  localStorage.removeItem('yael_packing');
+}
+IDS.forEach(id => document.getElementById(id).addEventListener('change', savePacking));
+
+// ── DIARY ──
+let pendingPhotos = []; // array of base64 strings
+
+function getEntries() {
+  const local = JSON.parse(localStorage.getItem('yael_diary') || '[]');
+  const seeded = (typeof SEEDED_ENTRIES !== 'undefined') ? SEEDED_ENTRIES : [];
+  const localIds = new Set(local.map(e => e.id));
+  const merged = [...local, ...seeded.filter(e => !localIds.has(e.id))];
+  return merged.sort((a, b) => b.id - a.id);
+}
+function saveEntries(entries) {
+  // Only save locally-created entries to localStorage; seeded ones live in the HTML
+  const local = entries.filter(e => !(typeof SEEDED_ENTRIES !== 'undefined' && SEEDED_ENTRIES.some(s => s.id === e.id)));
+  try { localStorage.setItem('yael_diary', JSON.stringify(local)); }
+  catch(e) { alert('Storage full — try adding fewer or smaller photos.'); }
+}
+
+function toggleForm() {
+  const form = document.getElementById('entry-form');
+  form.classList.toggle('open');
+  if (form.classList.contains('open')) {
+    const now = new Date();
+    document.getElementById('form-date').textContent =
+      now.toLocaleDateString('en-GB', {weekday:'long', day:'numeric', month:'long', year:'numeric'}) +
+      ' · ' + now.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'});
+    document.getElementById('entry-text').focus();
+  } else {
+    clearForm();
+  }
+}
+
+function previewPhotos(input) {
+  const preview = document.getElementById('photo-preview');
+  const files = Array.from(input.files);
+  files.forEach(file => {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      resizeImage(e.target.result, 1200, function(resized) {
+        pendingPhotos.push(resized);
+        const img = document.createElement('img');
+        img.src = resized;
+        preview.appendChild(img);
+      });
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+function resizeImage(dataUrl, maxW, callback) {
+  const img = new Image();
+  img.onload = function() {
+    const scale = Math.min(1, maxW / img.width);
+    const canvas = document.createElement('canvas');
+    canvas.width = img.width * scale;
+    canvas.height = img.height * scale;
+    canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+    callback(canvas.toDataURL('image/jpeg', 0.82));
+  };
+  img.src = dataUrl;
+}
+
+function saveEntry() {
+  const text = document.getElementById('entry-text').value.trim();
+  if (!text && pendingPhotos.length === 0) { alert('Write something or add a photo first!'); return; }
+  const entries = getEntries();
+  entries.unshift({
+    id: Date.now(),
+    date: document.getElementById('form-date').textContent,
+    text: text,
+    photos: [...pendingPhotos]
+  });
+  saveEntries(entries);
+  renderEntries();
+  toggleForm();
+}
+
+function clearForm() {
+  document.getElementById('entry-text').value = '';
+  document.getElementById('photo-preview').innerHTML = '';
+  document.getElementById('photo-input').value = '';
+  pendingPhotos = [];
+}
+
+function deleteEntry(id) {
+  if (!confirm('Delete this entry?')) return;
+  const entries = getEntries().filter(e => e.id !== id);
+  saveEntries(entries);
+  renderEntries();
+}
+
+
+function renderEntries() {
+  const entries = getEntries();
+  const container = document.getElementById('entries-container');
+  const emptyMsg = document.getElementById('empty-msg');
+  container.innerHTML = '';
+  emptyMsg.style.display = entries.length ? 'none' : 'block';
+  entries.forEach(entry => {
+    const card = document.createElement('div');
+    card.className = 'entry-card';
+    card.innerHTML = `
+      <button class="delete-btn" onclick="deleteEntry(${entry.id})">&#x1F5D1;</button>
+      <div class="entry-date">${entry.date}</div>
+      ${entry.text ? `<div class="entry-text">${escHtml(entry.text)}</div>` : ''}
+      ${entry.photos.length ? `<div class="entry-photos">${entry.photos.map(p =>
+        `<img src="${p}" onclick="openLightbox(this)" alt="">`).join('')}</div>` : ''}
+    `;
+    container.appendChild(card);
+  });
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ── LIGHTBOX ──
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+// ── SEEDED ENTRIES (injected by update-yael-diary skill) ──
+// Do not edit this block manually — it is overwritten on each skill run.
+const SEEDED_ENTRIES = [
+  {
+    "id": 1782535082000,
+    "date": "Saturday Jun 27, 07:38",
+    "text": "At the airport — did some shopping before the flight. Photographed the rental car. Picked up 2 power banks for 40.",
+    "photos": []
+  },
+  {
+    "id": 1782537467000,
+    "date": "Saturday Jun 27, 08:17",
+    "text": "Thinking of buying this for Shula 🛍️",
+    "photos": []
+  },
+  {
+    "id": 1782538828000,
+    "date": "Saturday Jun 27, 08:40",
+    "text": "After the bathroom, on the bus to the plane — paid in dollars! 🚌",
+    "photos": []
+  },
+  {
+    "id": 1782539863000,
+    "date": "Saturday Jun 27, 08:57",
+    "text": "Talk to you later ✈️🇬🇷",
+    "photos": []
+  }
+];
+// END SEEDED ENTRIES
+
+// ── INIT ──
+loadPacking();
+renderEntries();
+const savedTab = localStorage.getItem('yael_tab');
+if (savedTab === 'diary') {
+  document.getElementById('tab-guide').classList.remove('active');
+  document.getElementById('tab-diary').classList.add('active');
+  document.querySelectorAll('.tab-btn')[1].classList.add('active');
+  document.querySelectorAll('.tab-btn')[0].classList.remove('active');
+}
+</script>
+
+</body>
+</html>
