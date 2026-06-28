@@ -22,6 +22,12 @@ const PROJECT_DATA = {
 
   // ── This week's task grid (Vicky Status tab) ──────────────────────
   // urgent: true = red top border, false = blue top border
+  // weekTasks schema — REQUIRED fields for each entry:
+  //   icon:   string  — emoji shown on card (e.g. "🏗️")
+  //   label:  string  — bold title line
+  //   sub:    string  — smaller description text
+  //   urgent: bool    — true = red top border, false = blue top border
+  // DO NOT use {task, status} — those fields are ignored by the dashboard.
   weekTasks: [
     { icon: "🎉", label: "Yael's Unit — COMPLETE ✅",
       sub: "Yael arrived Jun 27 and is very happy. Bathroom (microcement + marble sink from original house), bedroom (bed + custom bedside tables + mattress), kitchenette outside. Epoxy floor color 031N-1. Team worked until 21:30 on Jun 26 to finish.",
