@@ -35,9 +35,9 @@ const PROJECT_DATA = {
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "€78,191",
-    paidSub:        "EUR 78,191 of EUR 275K (28.4%)",
-    duePending:     "€17,453",
+    paidToDate:     "€73,701",
+    paidSub:        "EUR 73,701 of EUR 275K (26.8%)",
+    duePending:     "€22,093",
     dueSub:         "Electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3,858 + metalworker €550 + excavator €600 + Kairis remaining €195 + Vicky reimbursements ~€1,127 pending",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
@@ -182,12 +182,12 @@ const PROJECT_DATA = {
     { date: "Jun 6",      category: "Other",        desc: "Mattress removal from front area. Vicky paid to clear the entrance of old mattresses.", vendor: "Removal service", amount: "€50", status: "paid" },
     { date: "Jun 1",      category: "Workers",    desc: "Workers wages — 4 workers/day Mon–Sat (week May 26–31). Daily €250 (3 workers @€50 + manager @€100). On site 07:00–14:00.", vendor: "Workers + Manager", amount: "€1,500", status: "paid" },
     { date: "Jun 1",      category: "Materials - Other", desc: "3-component epoxy coating — YAEL unit floor (entire area). Permanent moisture barrier incl. installation. Eliminates additional insulation layer.", vendor: "Supplier", amount: "€400", status: "paid" },
-    { date: "Jun 28",    category: "Materials", desc: "Materials – week Jun 25–28 (Yael unit completion)", vendor: "Kairis", amount: "€1,500", status: "paid" },
-    { date: "Jun 28",    category: "Plumbing", desc: "Plumber – Yael unit completion", vendor: "Plumber", amount: "€200", status: "paid" },
-    { date: "Jun 28",    category: "Labour",   desc: "Carpenter – bedside tables, bathroom countertop, door modification & installation (Yael unit)", vendor: "Carpenter", amount: "€250", status: "paid" },
-    { date: "Jun 28",    category: "Materials", desc: "Marble for shower – Yael unit (from existing house stone)", vendor: "Supplier", amount: "€50", status: "paid" },
+    { date: "Jun 28",    category: "Materials", desc: "Materials – week Jun 25–28 (Yael unit completion)", vendor: "Kairis", amount: "€1,500", status: "pending" },
+    { date: "Jun 28",    category: "Plumbing", desc: "Plumber – Yael unit completion", vendor: "Plumber", amount: "€200", status: "pending" },
+    { date: "Jun 28",    category: "Labour",   desc: "Carpenter – bedside tables, bathroom countertop, door modification & installation (Yael unit)", vendor: "Carpenter", amount: "€250", status: "pending" },
+    { date: "Jun 28",    category: "Materials", desc: "Marble for shower – Yael unit (from existing house stone)", vendor: "Supplier", amount: "€50", status: "pending" },
     { date: "Jun 28",    category: "Fuel",     desc: "Site fuel – week Jun 25–28", vendor: "Vicky", amount: "€40", status: "paid" },
-    { date: "Jun 28",    category: "Labour",   desc: "Workers week Jun 25–28 (Yael unit completion + site work – team worked until 21:30 on Jun 26)", vendor: "Workers", amount: "€2,600", status: "paid" },
+    { date: "Jun 28",    category: "Labour",   desc: "Workers week Jun 25–28 (Yael unit completion + site work – team worked until 21:30 on Jun 26)", vendor: "Workers", amount: "€2,600", status: "pending" },
     { date: "Upcoming",   category: "Subcontractor - Other", desc: "Metalworker — small storage door + window installation. Agreed amount.", vendor: "Metalworker", amount: "€550", status: "due" },
     { date: "Upcoming",   category: "Subcontractor - Electrician", desc: "Electrician advance — reimbursement for 130m electrical supply piping pre-purchased by electrician.", vendor: "Electricians", amount: "€1,000", status: "due" },
     { date: "May 28",     category: "Plumbing",   desc: "Plumber — materials and pipes for infrastructure work",                                                                                         vendor: "Plumber",              amount: "€300",   status: "paid" },
@@ -277,8 +277,8 @@ const PROJECT_DATA = {
       { label: "Tiles (Spanish Crosscut Marfil, Jun 19)", amount: "€286" },
       { label: "Yael's Unit Furnishings (bed frame, bedding, mattress)", amount: "~€905" },
     ],
-    totalPaid:    "€78,191",
-    totalCommitted: "€17,453",
+    totalPaid:      "€73,701",
+    totalCommitted: "€22,093",
 
     ahead: [
       { label: "Antonis — Phase 1 (foundations & beams)", amount: "€25K–€30K" },
@@ -374,7 +374,7 @@ const PROJECT_DATA = {
     summary: {
       dueNow:     "~€10,600",  dueSub:     "Kairis ~€195 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600 + Mattress €400 + Vicky reimbursements ~€1,100",
       workers:    "✅ Paid Jun 22 + Kairis Jun 24", workersSub: "Workers Jun 16–21 (€2,280 cash). Kairis €1,800 paid Jun 24. Running total ~€72K.",
-      paidToDate:     "€78,191",
+      paidToDate:     "€73,701",
       atmLimit:   "€2K",
       laborerRate: "€50/day",
       skilledRate: "€80/day",
@@ -396,7 +396,7 @@ const PROJECT_DATA = {
     totalTransferred: 272000, // all 6 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
     greekAccountBalance:  35202.94, // per official NBG statement, ties to the cent, 25-Jun-2026
     balanceAsOf:          "June 25, 2026",
-    totalKnownExpenses:   78191,   // renovation paid per balance sheet as of Jun 25 2026
+    totalKnownExpenses:   73701,   // renovation paid per balance sheet as of Jun 25 2026
     israelDirectPayments: 973,     // paid direct from Israeli bank (not via NBG): Vicky reimbursement Jun 24
     // estimated Greek balance = totalTransferred − (totalKnownExpenses − duePending − israelDirectPayments)
     // = 100,000 − (72,000 − 10,600 − 973) ≈ €39,573 estimated; actual 35,200 → ~€4,373 unlogged
