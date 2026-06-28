@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated:   "26 June 2026 (insurance urgent)",
-    weekOf:        "19–25 June 2026",
+    lastUpdated:    "2026-06-28",
+    weekOf:         "Week of Jun 28, 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -23,29 +23,21 @@ const PROJECT_DATA = {
   // ── This week's task grid (Vicky Status tab) ──────────────────────
   // urgent: true = red top border, false = blue top border
   weekTasks: [
-    { icon: "🚨", label: "INSURANCE — PAY NOW ⚠️ URGENT", sub: "Property insurance must be paid immediately. Confirm amount due and pay. Send Kobi proof of payment via WhatsApp. This notice will be removed once Kobi confirms payment received.", urgent: true },
-    { icon: "🏗️", label: "Structural Reinforcement — RC jackets ongoing + Foundation Deeper Than Expected!", sub: "Week Jun 19–24: Work on first of two large columns — foundation was expected at 0.5m but is NOT there. Depth may exceed 2.5m — if so, Vicky proposed designing a basement! Team monitoring. Slab cut DEFERRED. Carpenter (35yo from Karpathos) on site for furniture/woodwork. Sika used to seal damaged beam (no further treatment needed).", urgent: true  },
-    { icon: "🏠", label: "House Insulation — URGENT",          sub: "Summer dry season window — don't delay. Vicky to research options + prices.", urgent: true  },
-    { icon: "⚡",  label: "Electricity counters — URGENT",      sub: "Electrician needs electricity company counters to continue to next stage.", urgent: true  },
-    { icon: "🛏️", label: "Yael's Unit — Room Ready for Jun 27 Arrival ✅", sub: "Bed frame (Meli built, pine+steel) ready Jun 25. Mattress pickup Wed Jun 25 (€400, local manufacturer). Bedding ordered (arriving before Jun 27). Spanish tiles samples arriving before Jun 27. Window + aluminum door installed. Polished cement finish DONE ✅.", urgent: true  },
-    { icon: "🪨", label: "Spanish Tiles PAID ✅ Jun 19 — 'Crosscut Marfil' 60×60, 25.88 m², €286", sub: "Paid via Wise Jun 19 (NBG blocked the transfer — gov.gr login issue). Tiles shipped from Patras Jun 19, arriving before Jun 27. Samples included. Tsintonis Leonidas Nikolaos, IBAN GR0501102910000029100837714.", urgent: false },
-    { icon: "🏦", label: "NBG Blocked — Using Wise Until Resolved", sub: "NBG blocked transfers: need gov.gr login update (password changed by accountant?). Vicky visiting accountant Jun 24. Yael to help at Istiaia branch Jun 27. Kobi using Wise in the meantime.", urgent: true  },
-    { icon: "🔲", label: "Tiles — Italian MEGA SLABS: 4 Questions Sent to Vicky (Jun 16) — Waiting Response", sub: "ABM Hellas confirmed factory order Jun 16. Kobi sent 4 questions (Jun 16 eve): (1) tile size 60×60 vs 60×120 for Floor A; (2) 'Ivory' variant confirmation; (3) pallet charges €278; (4) price too high (~€28–30/sqm vs expected €20). NO DEPOSIT UNTIL RESOLVED.", urgent: true  },
-    { icon: "💧", label: "Wall Rebuilding in Progress — Old Pipes + Rotten Iron Removed", sub: "Walls opened Jun 19: severely rusted pipes + mice nests found + rotten iron removed. Wall reshaping and rebuilding ongoing. One column inspected and found structurally sound ('miracle').", urgent: false },
-    { icon: "💰", label: "Week Jun 16–21 Expenses: €5,372.55 total", sub: "Workers €2,280 (incl. polished cement Yael unit) + Kairis materials €1,175 + Bed frame €350 + Bedding €155 + Mattress €400 + Fuel €40 + Praktiker €972 (Vicky card, reimbursed via Wise). Cash withdrawal Jun 22: €3,000. Jun 24: additional €2,000 (Kairis balance €1,800 + beam €125 + tools).", urgent: false },
-    { icon: "🚜", label: "Excavator due Mon/Tue Jun 15–16 — €600", sub: "60-ton road roller to compact all roads. €600 owed to excavator contractor.", urgent: false },
-    { icon: "🔧", label: "Kairis balance ~€195 (mostly settled)", sub: "Kairis materials Jun 15–21: €1,175. New beam + rendering: €420. Jun 24 payment: €1,800 toward Kairis debt. Remaining: ~€195. Old Kairis balance of ~€400 was also included in Jun 24 payment.", urgent: false },
-    { icon: "🔨", label: "Metalworker €550 + Electrician advance €1,000", sub: "Both approved by Kobi. Pay on completion / per schedule.", urgent: false },
-    { icon: "🌞", label: "Solar panels — Infrastructure ready (no action now)", sub: "Electrical installation already designed for future solar/heat pump. No immediate action.", urgent: false },
+    { task: "Yael unit complete: bathroom (microcement/marble sink), bedroom, kitchenette", status: "done" },
+    { task: "Carpenter: bedside tables, bathroom countertop, door installation – Yael unit", status: "done" },
+    { task: "Workers until 21:30 on Jun 26 to finish Yael unit for arrival", status: "done" },
+    { task: "Yael arrived Jun 27, inspected unit – very happy with result", status: "done" },
+    { task: "Tiles (Spanish Crosscut Marfil) still pending – arriving Mon Jun 29", status: "in-progress" },
+    { task: "Workers insurance €3,858 – Vicky to pay by Jun 26 (status unconfirmed)", status: "in-progress" },
   ],
 
   // ── KPI row (owner dashboard top) ────────────────────────────────
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "€73,551",
-    paidSub:        "~26.7% of total estimate — balance sheet precise total as of 25 Jun 2026 (incl. mattress €400 picked up Jun 25)",
-    duePending:     "~€18,600",
+    paidToDate:     "€78,191",
+    paidSub:        "EUR 78,191 of EUR 275K (28.4%)",
+    duePending:     "€17,453",
     dueSub:         "Electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3,858 + metalworker €550 + excavator €600 + Kairis remaining €195 + Vicky reimbursements ~€1,127 pending",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
@@ -75,8 +67,8 @@ const PROJECT_DATA = {
   phases: [
     { icon: "✅", status: "done",     name: "Phase 1 — Site Preparation",
       detail: "Road (160m), excavation, asbestos removal — COMPLETE" },
-    { icon: "🔨", status: "ongoing",  name: "Phase 2 — Storage Buildings",
-      detail: "Large storage = Yael's unit. WATER ✅ + ELECTRICITY ✅ — fully operational as of June 1! 2-LAYER DOOR/WINDOW SYSTEM: iron/steel outer layer ✅ + aluminum inner layer ✅ (with screen, paid €1,150). 3-component epoxy coating on floor ✅ (permanent moisture barrier). Septic tank COMPLETE ✅ (Jun 13). Bathroom fixtures delivered ✅. Meli to BUILD wood+steel bed (1.6×2m, approved Jun 13) — room target ready Jun 28 for Yael's visit. Small storage: steel door + window ONLY (no aluminum) — installation by metalworker (€550) approved." },
+    { icon: "✅", status: "done",     name: "Phase 2 — Storage Buildings",
+      detail: "Large storage = Yael's unit. COMPLETE ✅ — Yael arrived Jun 27 and is very happy with the result! Bathroom (microcement finish, marble sink from original house), bedroom (bed + bedside tables + custom mattress), kitchenette outside the unit. Marble shower complete. Small storage: steel door + window ONLY (no aluminum) — installation by metalworker (€550) approved, pending." },
     { icon: "🔨", status: "ongoing",  name: "Phase 3 — Ground Floor Renovation",
       detail: "Brickwork complete ✅. Apt A installation DONE ✅. Plastering started (rain). PLUMBING COMPLETE ✅ (Jun 13) — entire water supply system for house + garden done. Only upper floor connections remaining (future). ELECTRICAL: conduits installed, boxes/outlets/switches installed in both apts, distribution panels provisioned — ready for cable pulling. Electrical approved (€11,250 GF+storage scope)." },
     { icon: "🔨", status: "ongoing",  name: "Phase 4 — Antonis Main Contract",
@@ -92,6 +84,10 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
+    { item: "Confirm workers insurance €3,858 paid (Vicky committed Jun 25)", owner: "Vicky", status: "open", date: "2026-06-28" },
+    { item: "Tiles arriving Mon Jun 29 – confirm receipt and start tiling", owner: "Vicky", status: "open", date: "2026-06-28" },
+    { item: "NBG gov.gr login – Yael to help at Istiaia branch during visit", owner: "Yael/Kobi", status: "open", date: "2026-06-28" },
+    { item: "POA revocation – Yael to visit notary Sidiropoulou during Jun 27–Jul 1 stay", owner: "Yael", status: "open", date: "2026-06-28" },
     { priority: "critical", label: "✈️ Confirmed — June 27–Jul 1",   title: "Yael's Site Visit — Arriving June 27",
       desc: "Yael flying Blue Bird Airways (BZ702) TLV→ATH Jun 27, 09:15–11:25. Returns Jul 1 (BZ703) 20:30. Entering North Evia via Arkitsa–Loutra Edipsou ferry. Trip objectives: (1) full house inspection with Vicky; (2) NBG bank Istiaia — activate IRIS payments; (3) Notary Aidipsos — cancel Zoe's POA; (4) Visit Zoe + possibly Vasiliki. Action needed: book car rental ~€150/5 days. Accommodation: Yael's unit if ready, else Moshe's hotel." },
     { priority: "info",     label: "🚗 Booked ✅",                  title: "Car Rental for Yael — CONFIRMED",
@@ -186,6 +182,12 @@ const PROJECT_DATA = {
     { date: "Jun 6",      category: "Other",        desc: "Mattress removal from front area. Vicky paid to clear the entrance of old mattresses.", vendor: "Removal service", amount: "€50", status: "paid" },
     { date: "Jun 1",      category: "Workers",    desc: "Workers wages — 4 workers/day Mon–Sat (week May 26–31). Daily €250 (3 workers @€50 + manager @€100). On site 07:00–14:00.", vendor: "Workers + Manager", amount: "€1,500", status: "paid" },
     { date: "Jun 1",      category: "Materials - Other", desc: "3-component epoxy coating — YAEL unit floor (entire area). Permanent moisture barrier incl. installation. Eliminates additional insulation layer.", vendor: "Supplier", amount: "€400", status: "paid" },
+    { date: "Jun 28",    category: "Materials", desc: "Materials – week Jun 25–28 (Yael unit completion)", vendor: "Kairis", amount: "€1,500", status: "paid" },
+    { date: "Jun 28",    category: "Plumbing", desc: "Plumber – Yael unit completion", vendor: "Plumber", amount: "€200", status: "paid" },
+    { date: "Jun 28",    category: "Labour",   desc: "Carpenter – bedside tables, bathroom countertop, door modification & installation (Yael unit)", vendor: "Carpenter", amount: "€250", status: "paid" },
+    { date: "Jun 28",    category: "Materials", desc: "Marble for shower – Yael unit (from existing house stone)", vendor: "Supplier", amount: "€50", status: "paid" },
+    { date: "Jun 28",    category: "Fuel",     desc: "Site fuel – week Jun 25–28", vendor: "Vicky", amount: "€40", status: "paid" },
+    { date: "Jun 28",    category: "Labour",   desc: "Workers week Jun 25–28 (Yael unit completion + site work – team worked until 21:30 on Jun 26)", vendor: "Workers", amount: "€2,600", status: "paid" },
     { date: "Upcoming",   category: "Subcontractor - Other", desc: "Metalworker — small storage door + window installation. Agreed amount.", vendor: "Metalworker", amount: "€550", status: "due" },
     { date: "Upcoming",   category: "Subcontractor - Electrician", desc: "Electrician advance — reimbursement for 130m electrical supply piping pre-purchased by electrician.", vendor: "Electricians", amount: "€1,000", status: "due" },
     { date: "May 28",     category: "Plumbing",   desc: "Plumber — materials and pipes for infrastructure work",                                                                                         vendor: "Plumber",              amount: "€300",   status: "paid" },
@@ -266,7 +268,7 @@ const PROJECT_DATA = {
       { label: "Ground Floor Materials",   amount: "~€10,015" },
       { label: "Plumbing",                 amount: "€3,960"   },
       { label: "Electrical",               amount: "€2,000"   },
-      { label: "Workers & Labour",         amount: "~€22,400" },
+      { label: "Workers & Labour",         amount: "~€25,630" },
       { label: "Legal / Admin",            amount: "€3,000"   },
       { label: "Landscaping",              amount: "€375"     },
       { label: "Roof Garden (materials)",  amount: "€1,450"   },
@@ -275,8 +277,8 @@ const PROJECT_DATA = {
       { label: "Tiles (Spanish Crosscut Marfil, Jun 19)", amount: "€286" },
       { label: "Yael's Unit Furnishings (bed frame, bedding, mattress)", amount: "~€905" },
     ],
-    totalPaid:      "€73,551",
-    totalCommitted: "~€63,927",
+    totalPaid:    "€78,191",
+    totalCommitted: "€17,453",
 
     ahead: [
       { label: "Antonis — Phase 1 (foundations & beams)", amount: "€25K–€30K" },
@@ -372,7 +374,7 @@ const PROJECT_DATA = {
     summary: {
       dueNow:     "~€10,600",  dueSub:     "Kairis ~€195 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600 + Mattress €400 + Vicky reimbursements ~€1,100",
       workers:    "✅ Paid Jun 22 + Kairis Jun 24", workersSub: "Workers Jun 16–21 (€2,280 cash). Kairis €1,800 paid Jun 24. Running total ~€72K.",
-      paidToDate: "~€72K",
+      paidToDate:     "€78,191",
       atmLimit:   "€2K",
       laborerRate: "€50/day",
       skilledRate: "€80/day",
@@ -391,10 +393,10 @@ const PROJECT_DATA = {
       { date: "Feb 8, 2026",   amount: 20000 },
       { date: "Apr 26, 2026",  amount: 70000 },
     ],
-    totalTransferred:     270000, // all 6 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
+    totalTransferred: 272000, // all 6 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
     greekAccountBalance:  35202.94, // per official NBG statement, ties to the cent, 25-Jun-2026
     balanceAsOf:          "June 25, 2026",
-    totalKnownExpenses:   73551,   // renovation paid per balance sheet as of Jun 25 2026
+    totalKnownExpenses:   78191,   // renovation paid per balance sheet as of Jun 25 2026
     israelDirectPayments: 973,     // paid direct from Israeli bank (not via NBG): Vicky reimbursement Jun 24
     // estimated Greek balance = totalTransferred − (totalKnownExpenses − duePending − israelDirectPayments)
     // = 100,000 − (72,000 − 10,600 − 973) ≈ €39,573 estimated; actual 35,200 → ~€4,373 unlogged
@@ -410,34 +412,16 @@ const PROJECT_DATA = {
 
     // Items Vicky is waiting on from Kobi — update when decisions are made
     waitingOnKobi: [
-      "🔴 Italian tile questions — respond to Kobi's Jun 16 email: (1) 60×60 vs 60×120 for Floor A interior? (2) Is quote the IVORY variant? (3) What are the €278 pallet charges? (4) Push ABM for better price (~€20/sqm expected). Kobi will not pay deposit until these are resolved.",
-      "🔴 Confirm Vicky received Wise transfer €972.55 (sent to Revolut LT853250002013391261). Also bedding €155 to be deducted from window amount.",
-      "Bedside tables to be fixed to bed frame (Yael's request Jun 24) — please confirm done before Jun 27",
-      "Foundation depth: first big column excavation shows foundation much deeper than 0.5m. If >2.5m, propose basement design. Update Kobi on depth findings.",
-      "Approve concealed-wall toilet brand for main house (Vicky recommends GROHE ~€780; Kobi open to €400–500 range)",
-      "Window/door color — black or not?",
-      "Entrance gate quote — approve when it arrives",
-      "Property division structure for Notary",
-      "Confirm when to order toilets + washbasins for the main house",
-      "POA revocation — Yael to sign alone Jun 27–Jul 1 (Kobi sent email to notary Jun 23). Help Yael with appointment.",
+      "🟡 Italian tile order — 4 open questions (Jun 16 email): 60×60 vs 60×120 for Floor A, confirm IVORY variant, €278 pallet charges, price €28-30 vs expected €20. Do NOT pay Casa Brava until resolved.",
+      "🟡 Basement under Apt A — team found foundation deeper than expected; decide if basement is wanted",
     ],
 
     // Items Vicky must action herself — update each run
     vickyMustAction: [
-      "🔴 URGENT — Pay property insurance. Confirm amount due and pay immediately. Send Kobi proof of payment.",
-      "⭐ YAEL ARRIVES JUN 27 — Room must be 100% ready: mattress (pickup Wed Jun 25 ✅), bedding (arriving by Jun 27), bed frame ✅, door ✅, window ✅, water heater ✅, AC ✅. Fix bedside tables to bed frame per Yael's request.",
-      "⭐ Prepare for Yael's visit June 27–July 1 — full house site walk, help with NBG Istiaia visit, POA notary appointment",
-      "🚀 Foundation depth — update Kobi: how deep is the column foundation? If >2.5m, prepare basement concept sketch.",
-      "🏦 NBG Istiaia — help Yael resolve account issue at bank Jun 27–Jul 1 (fix personal details + IRIS setup)",
-      "🔴 POA revocation — help Yael get appointment with notary Sidiropoulou in Aidipsos during Jun 27–Jul 1 visit",
-      "Italian tiles — answer Kobi's 4 questions (Jun 16 email): size mismatch, ivory variant, pallet charges €278, push ABM for ~€20/sqm. No deposit until resolved.",
-      "Kairis remaining balance ~€195 — settle in person.",
-      "Chase community water connection (URGENT) — plumbing COMPLETE ✅; only community connection blocking pressure test",
-      "House insulation — research options + prices, send to Kobi ASAP",
-      "Pay metalworker €550 on completion (small storage door + window)",
-      "Pay electrician advance €1,000 (approved)",
-      "Get gate quote from blacksmith → send to Kobi",
-      "WiFi cameras — source options + quote → send to Kobi",
+      "🔴 Confirm workers insurance €3,858 paid (committed Jun 25 to pay by Jun 26 — unconfirmed)",
+      "🟡 Tiles (Spanish Crosscut Marfil) arriving Mon Jun 29 — confirm receipt and start tiling",
+      "🟡 Italian tile deposit ON HOLD — respond to Kobi's 4 questions before Casa Brava payment",
+      "🟡 NBG gov.gr login issue — help Yael & Kobi resolve at Istiaia branch during visit",
     ],
 
     // Items Kobi has already authorized — update when new approvals given
