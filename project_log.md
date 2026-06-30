@@ -551,4 +551,332 @@ The worker crew ramped up significantly this week. The regular team (4 workers +
 
 On the expenses side: the long-pending transport charge for Yael's bathroom supplies (shipped from Athens) came in at €45, closing that open item. Vicky purchased a tarpaulin to protect materials from rain (€75) and concrete roof anchors with 2-component resin (€80). Additional Kairis materials (€450) were ordered. The septic tank (Yael's unit) is **fully complete** ✅.
 
-**Total
+**Total expenses this week: €3,355.** Vicky withdrew €3,000 cash today; the €355 shortfall is deferred to tomorrow and added to the Kairis running tab. **New Kairis balance: €2,045 + €355 = €2,400.**
+
+In the afternoon Kobi confirmed: **pine bed for Yael's unit** — approved.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Workers wages Mon Jun 8 — 5 workers (4×€50 + Meli €80) | €280 | Cash | |
+| Workers wages Tue Jun 9 — 5 workers | €280 | Cash | |
+| Workers wages Wed Jun 10 — 5 workers + ESAT (foreman) | €330 | Cash | ESAT joins from Wed |
+| Workers wages Thu Jun 11 — 5 workers + ESAT | €330 | Cash | |
+| Workers wages Fri Jun 12 — 6 workers + ESAT + Ilir (2 roof welding jobs, €300) | €680 | Cash | Ilir: roof welder |
+| Workers wages Sat Jun 13 — same as Friday | €680 | Cash | |
+| **Workers sub-total** | **€2,580** | | |
+| Transport — bathroom supplies from Athens (Diamantopoulos order) | €45 | Cash | Closes pending transport item |
+| Fuel — cement mixer + site equipment | €40 | Cash | |
+| Kairis materials | €450 | Cash | Settled against running account |
+| Extension cable | €75 | Cash | |
+| Tarpaulin (rain protection for materials) | €75 | Cash | |
+| Concrete roof anchors with 2-component resin | €80 | Cash | |
+| **Expenses sub-total** | **€775** | | Vicky's stated total |
+| **GRAND TOTAL** | **€3,355** | | Vicky withdrew €3,000; €355 deferred → added to Kairis tab |
+
+### Decisions
+- **Bed for Yael's unit — Meli to build it.** Vicky proposed (voice message, ~15:28) that Meli build a custom wood-and-steel bed for Yael's unit rather than buying one. Kobi approved. Spec: double bed, 1.6×2m, pine wood with steel frame, to complement the cement floor. Vicky confirmed the room will be **ready for Yael's visit Jun 28–Jul 1**.
+- **Antonis on site** — Phase 4 structural work begins June 15.
+
+### Open items
+- **Excavator: €600 owed.** Vicky asked excavator to come Mon/Tue (Jun 15/16) with 60-ton road roller to compact all roads.
+- **Kairis: €355 deferred** → new running balance €2,400. Vicky to settle in person.
+- **4 more roof layers** scheduled next week → enables building permit photos for Antonis.
+- Shower slope still needed in Apt B.
+- **Yael's unit target: ready by Jun 28** for Yael's visit (Jun 28–Jul 1).
+
+**Running total spent:** ~€64,000 of est. €275K (€3,000 cash paid today; €355 deferred to Kairis tab)
+
+*(Note: An earlier automated log entry in this session recorded "no new WhatsApp activity on Jun 13" — this was incorrect; the WhatsApp bridge was offline at the time. The full Jun 13 activity is captured above.)*
+
+---
+
+## June 13, 2026 — Evening Update (Plumbing Complete, Electrical Ready, Tiles Status)
+
+**Running total spent:** ~€64,000 of est. €275K (no new payments Jun 13 evening; €355 deferred to Kairis tab)
+
+Kobi followed up with Vicky in the evening with questions on tiles, plumbing/electrical, and the Vasiliki document. Three significant updates emerged.
+
+**Plumbing is complete** for the ground floor and all areas of the building, including the garden. The entire water supply system has been installed corner-to-corner; only upper floor connections remain, to be done when those floors are ready. The community water connection is the last open item before the plumber can pressure-test and close the trenches.
+
+**Electrical is ahead of schedule**: all underground conduits have been installed and are ready for cable pulling. Inside both ground-floor apartments, electrical boxes, outlets, and switches are in place, and provisions for the distribution panels have been made. Awaiting electricity company counters before cables can be pulled.
+
+**Tiles (2nd order)**: Vicky called ABM Hellas (Candia) today. The 120×60 cm tiles are in stock now (95 sqm available). However, the 120×120 cm tiles with the correct texture are currently in production in Italy — the tiles in stock at ABM are the same base tile but without the selected texture. Vicky insisted on the original chosen tile. The ABM manager will call Vicky on **Monday** to discuss the Italy production timeline.
+
+**Vasiliki document**: The status of the temporary land registry certificate will be confirmed once Antonis formally applies for his building permit.
+
+### Open items
+- ABM Hellas (Candia) tile call — Monday. Confirm Italy production timeline for 120×120 correct texture.
+- Community water connection — once connected, plumber can pressure-test and close.
+- Electrician cable pull — awaiting electricity company counters.
+
+---
+
+## June 15, 2026 — Steel Beams In, Aluminum Door Going Up, Meli Injured, Kairis €2,000 Paid
+
+A productive but eventful day. **Meli and three workers worked on Sunday June 14 as well** — seven 7-meter hollow steel beams were installed on the 3rd floor roof using anchors, resin, and welding. Each beam is galvanized, 8×12 cm section, 5 mm thick — Vicky described them as "absolute beasts." This was major structural progress. The main focus for Monday (Jun 15), Tuesday (Jun 16), and Wednesday (Jun 17) remains the roof.
+
+However, there was an accident on site: **Meli fell and landed on his surgery knee** (the knee he had operated on before returning to the job). Vicky sent a photo and mentioned the fall in the group. This is concerning given his post-surgery status — Yael responded with worry, and the group expressed sympathy for Vicky's relentless pace (7 weeks without a single weekend off).
+
+On a positive note: **Meli began installing the aluminum balcony door** for Yael's unit today (Jun 15), motivated by Yael's upcoming visit. Vicky noted: "He felt very responsible of Yael's arrival — he just figured out that you Koby will not arrive with her so… alone today." The door is expected to be installed by tomorrow (June 16). The window for Yael's unit will arrive **next Monday, June 22**.
+
+Kobi's morning message raised the question of solar panels for the veranda roof. Vicky's response was excellent and detailed: the electrical installation was already designed from the start with provisions for solar, heat pump, and any future additions. There is a dedicated ~15 sqm area on the 3rd floor terrace for solar water heaters and AC units. For photovoltaic panels (~65–70 sqm needed), a section of the yard near the road could be used. Vicky also flagged that a heat pump (for winter heating) would be more valuable than solar cooling in summer. The electrician she chose is, in her words, "one of the best professionals in the entire region of Euboea" — specifically selected for future-proofing. No immediate action needed; the infrastructure is ready.
+
+On the POA revocation front: Vicky clarified the notary process. Estimated cost is ~€250 per visit. She strongly recommends Kobi and Yael go **together** so the procedure is done in one appointment. If Yael goes alone first, she can sign her part, but Kobi will have to return for his part — paying twice. Given Yael's trip is June 27–July 1 and Kobi doesn't currently plan to come, a decision is needed.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Kairis — partial payment to reduce debt | €2,000 | Cash (Vicky withdraw) | Vicky asked permission; Yael approved "Yes, please." Reduces Kairis running balance from ~€2,400 → ~€400. |
+| **Total** | **€2,000** | | |
+
+### Decisions
+- **Kairis €2,000 payment approved** (Yael Jun 15): Vicky to withdraw and pay. Running balance reduces to ~€400.
+- **Solar/heat pump infrastructure confirmed ready**: Electrician already designed the installation for future expansion. No decision needed now; just confirm when ready to add.
+- **POA revocation**: Vicky estimates ~€250/visit. Recommends both Kobi and Yael attend together. If Yael goes alone, she signs her part now; Kobi signs later (but pays twice). Coordinate timing.
+
+### Open items
+- Meli's knee injury — confirm he can continue working; monitor recovery.
+- Window for Yael's unit — arriving Monday June 22. Ensure site is prepared.
+- POA timing — decide: (a) Yael signs alone Jun 27–Jul 1 + Kobi comes later, or (b) delay until both can come together (saves ~€250 but delays).
+- Antonis schedule — to be reviewed later this week once roof work complete + photos taken.
+- Roof: 3 more work days (Jun 15–17) focused on roof completion → building permit photos.
+
+**Running total spent:** ~€66,000 of est. €275K (Kairis €2,000 approved Jun 15)
+
+---
+
+## June 16, 2026 — Tile Order Confirmed by Factory, Deposit Payment Required
+
+No on-site payment activity today. The main development was an email from ABM Hellas (Candia), forwarded by Vicky, confirming that the second tile order has been formally placed with the Italian factory. The tiles — **CANDIA MEDIUM-LARGE-MEGA SLABS (50% marble dust, ex-factory Italy)** — have been accepted by the factory, and materials are expected to be available at ABM Hellas's Athens facility in approximately one month (mid-July 2026). This is the order Vicky pushed for specifically: the 120×120 cm tiles with the correct selected texture (the stock tiles lacked the correct texture).
+
+ABM Hellas (through their billing entity **Casa Brava**) is requesting a payment deposit to officially confirm the order. The order document is in a Word file attached to the email ("LALPE DI SIUSI — Order for Evia Home, 15.06.26") — the specific deposit amount is in that document and needs to be confirmed. Payment can be made to Casa Brava via Piraeus Bank (IBAN: GR89-0172-1150-0051-1502-0852-321) or Optima Bank (IBAN: GR10-0340-0160-0160-0382-3027-197).
+
+On WhatsApp, Vicky's evening messages were social: "Your house takes my days, Yael's bed takes my nights 😂" — a reflection on how consumed she is by the project and the custom bed Meli is building. She also shared an image of a design she wants to replicate for Yael's unit (design TBD, image not yet reviewed), and signed off with "Love you too, good night."
+
+### Open items
+- **Review the attached order document** (email Jun 16 from ABM Hellas) — confirm the deposit amount.
+- **Pay deposit to Casa Brava (ABM Hellas)** to lock in the Candia Italy MEGA SLABS order. Without payment, the factory slot is not secured.
+- **Review image Vicky shared** of design idea for Yael's unit (WhatsApp, Jun 15 23:11).
+
+**Running total spent:** ~€66,000 of est. €275K (no new payments Jun 16)
+
+---
+
+## June 17, 2026 — Structural Reinforcement Begins; Tile Deposit On Hold Pending Clarifications
+
+A significant milestone: **structural reinforcement of the columns and beams has officially begun.** Vicky opened the morning with a burst of 7 photos and 2 videos from the site, followed by "Just saying good morning." Kobi and Yael responded with delight. Vicky's teaser — "AND….. guess what we start to do …." — set the stage for a detailed technical explanation of what is now underway.
+
+Three workers from Athens are joining the site team and will work **Monday through Friday**. The reinforcement process — which applies to all columns and beams throughout the structure — follows this sequence:
+
+1. **Shore and support** all critical points (beams and slabs)
+2. **Excavate around each column** down to the foundation footing
+3. **Excavate and drill** into the upper part of the same column (at upper slab level)
+4. **Install reinforcement steel bars and stirrups** to create a reinforced concrete jacket — a larger column built around the existing one and structurally tied to it
+5. **Pour special grout-type cement** (a bulk factory order that Vicky will personally arrange, delivered in bags)
+6. **Repeat** for all columns and beams throughout the structure
+
+Importantly, Vicky confirmed that **the cost of strengthening works and all related materials will be deducted from Antonis' contract price** — this is not an additional expense outside the contract.
+
+On the question of the **roof slab cut** (previously confirmed at 100%), Vicky walked back to a more measured position: it is in the owners' best interest to wait until the team reaches and exposes the **main column** (which supports the 2nd and 3rd floors). Once its interior condition can be clearly assessed, a final decision can be made. This is a prudent engineering approach — defer a costly structural intervention until you have complete information. Kobi agreed: "Sounds like the right approach to get the best result."
+
+On the **tiles front**, Kobi replied to the Jun 16 ABM Hellas email on the evening of June 16 with four questions before authorizing the deposit:
+1. **Tile size mismatch**: The May 8 email specified 60×60 for Floor A interior (90 sqm), but the ABM quote shows 60×120. Which is correct?
+2. **"Ivory" variant**: The original spec said *LALPE DI SIUSI IVORY* NATURAL STRUCTURE; the quote just says NATURAL STRUCTURE — is it the same tile?
+3. **Pallet charges**: Two line items for pallets (€223 for 4× 120×120 pallets, €55 for 2× 60×120 pallets = €278 total) — what are these?
+4. **Price**: At €28.21/sqm (60×120) and €30.22/sqm (120×120) incl. VAT, the quote is above expectations (~€20/sqm was anticipated). Kobi asked Vicky to push ABM for a better price given the order volume.
+
+No deposit will be paid until Vicky responds to these questions. The factory slot is technically reserved but not financially locked.
+
+### Work status
+- Structural reinforcement campaign launched: 3 Athens workers on site Mon–Fri
+- Column/beam RC jacket process underway (see methodology above)
+- Slab cut deferred pending main column exposure and assessment
+- Roof work continues (Jun 15–17 focus week)
+
+### Decisions
+- **Slab cut deferred**: Final decision moved to when main column is exposed and its condition can be assessed. Kobi agreed with Vicky's recommendation.
+- **Structural work costs included in Antonis contract**: Materials + labor for reinforcement deducted from contract price — no additional scope.
+
+### Open items
+- **Vicky**: Respond to Kobi's 4 tile questions (email Jun 16 from Kobi to tsalkitv@yahoo.gr): size confirmation, ivory variant, pallets explanation, and push ABM on price
+- **Kobi**: Once Vicky resolves questions and negotiates price, authorize tile deposit to Casa Brava
+- Structural reinforcement ongoing — monitor progress week by week
+
+**Running total spent:** ~€66,000 of est. €275K (no new payments Jun 17)
+
+---
+
+## June 18–19, 2026 — Athens Shopping Day; Wall Condition Reveals Old Pipes and Mice Nests
+
+### June 18 — Athens Shopping Trip (Yael's Unit)
+
+Vicky made a full-day trip to Athens to purchase everything needed for Yael's unit and studio space. The reason for the trip: the local NBG branch in Istiaia has no POS terminal, so items had to be bought in Athens where Vicky could pay by card. She came back with everything in two receipts totaling **€972.55**.
+
+The haul covers the bulk of Yael's room and bathroom fit-out: a new interior door (foil-coated, 70×214 cm), door frame, PVC window (70×75 cm) with insect screen (100×120 cm), a Pyramis electric water heater (40L, 3500W — electricity-only; solar is not justified for the small unit), a 9,000 BTU air conditioner with outdoor unit, and bathroom accessories (soap dish, toothbrush holder, waste bin, towel holder, Gedy hooks). Misc items round out the receipts: WD-40, door handle, door stopper, velcro, bamboo curtain, felt pads, and a Wellio "Penguin" AC accessory. The shopping also included a large demolition hammer drill (~€380) which Kobi requested be charged to Antonis's account.
+
+Separately, a custom mattress has been ordered from a local manufacturer — 195×170 cm, 30 cm thick, €400. The **bed frame (being built by Meli) will be ready Thursday June 25**.
+
+In the evening, Vicky surfaced a tile opportunity she had been chasing for 10 days: Spanish "Crosscut Marfil" tiles in 60×60 cm format, 25.88 m² of available stock at **€11/m²** (normal price €15). Total for the full batch: **€286**. The supplier will send samples that should arrive before Yael's June 27 visit. Yael approved immediately: "For this price we should order anyway." Bank details shared: **GR0501102910000029100837714 (Tsintonis Leonidas Nikolaos)**. The tiles can be used in a bathroom or the storage/utility area if not needed elsewhere.
+
+Vicky also confirmed that after the Athens shopping trip the worker insurance is running at €1,286/month for the last three months (April–June), totaling **€3,858** for the period. She noted she had delayed formally announcing the ongoing demolition work to the insurance authority, which kept the premium lower.
+
+### June 19 (Morning) — Wall Opening Reveals Decayed Pipes and Mice Nests
+
+On site this morning, the team opened walls as part of the structural reinforcement and found **severely rusted water pipes** embedded in the old masonry. Photos and videos shared. Mice had also entered the interior wall cavities via old door/window frame gaps — nests are being cleaned out now. Vicky's assessment: the iron reinforcement in the old walls is also rotten and must be removed before the new walls are poured, otherwise it would cause swelling and crack the new masonry. Team is removing nests, extracting old iron, and reshaping the wall structure before rebuilding. One of the old columns was praised as a "miracle" — structurally intact from the inside despite the age of the house.
+
+The new demolition hammer drill arrived on site today and was introduced with characteristic Vicky energy: "Hello big guy. Welcome to our project."
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Athens shopping — Yael's unit fit-out (door, window, water heater, AC, bathroom accessories + misc) | €972.55 | Card (Vicky's card, to be reimbursed) | Receipt 1 €336.90 + Receipt 2 €635.65. Includes hammer drill ~€380 → charge to Antonis account. |
+| Mattress for Yael's unit (custom order) | €400 | TBD | 195×170 cm, 30 cm thick. Local manufacturer. Not yet delivered. |
+| Spanish tiles "Crosscut Marfil" 60×60, 25.88 m² | €286 | Bank transfer to Tsintonis Leonidas Nikolaos (GR0501102910000029100837714) | Approved by Yael Jun 18. Samples arriving before Jun 27. |
+| Worker insurance Apr–Jun (€1,286/month × 3) | €3,858 | TBD | Operational running cost. Vicky managing; delayed notification to state re: demolitions. |
+| **Total new spend (confirmed + approved)** | **~€5,517** | | |
+
+### Decisions
+- **Athens shopping approved**: Vicky to be reimbursed €972.55 (card spend Jun 18) + hammer drill (€380) portion vs. Antonis account.
+- **Water heater — electricity only**: For Yael's small unit, solar is not justified. Pyramis 40L 3500W (electric) purchased.
+- **Spanish tiles approved (Yael Jun 18)**: Order Crosscut Marfil 60×60, 25.88 m² for €286. Transfer to Tsintonis Leonidas Nikolaos IBAN.
+- **Old rotten iron + mice nests**: Remove from walls before rebuilding. Vicky's team handling.
+
+### Open items
+- Reimburse Vicky card spend €972.55 (Athens Jun 18) — clarify mechanism (from Greek account vs. Wise)
+- Transfer €286 to Tsintonis Leonidas Nikolaos (GR0501102910000029100837714) for Spanish tiles
+- Mattress delivery — confirm date from local manufacturer (~Jun 25?)
+- Worker insurance €3,858 (Apr–Jun) — confirm payment status with Vicky
+- Tile samples arriving before Jun 27 — review with Yael during her visit
+
+**Running total spent (confirmed):** ~€67,000 of est. €275K (€972.55 Athens + ongoing)
+
+---
+
+## June 19–24, 2026 — Spanish Tiles Paid, Week Expenses Logged, Kairis Debt Settled, Foundation Deeper Than Expected
+
+### June 19 — Tiles Paid, NBG Blocked
+
+Kobi transferred €286 to Tsintonis Leonidas Nikolaos via **Wise** (not NBG) for the Spanish "Crosscut Marfil" tiles. NBG unexpectedly blocked the transfer — the bank requires updated personal details submitted via gov.gr, but Kobi cannot log in to gov.gr (password/username issue, possibly changed by the accountant). Vicky visited the accountant Mon–Tue to try to resolve this. Tiles were shipped from Patras Thursday Jun 19 morning and are expected to arrive in Evia next week before Yael's Jun 27 visit. Tile samples included with the shipment. Work on site: all wall openings are now as planned.
+
+### June 21 — Plumbing Change + Structural Progress
+
+Vicky made a field decision on bathroom plumbing: rather than raising the floor level 4–5 cm (which was not feasible in that space), the pipes will be dug deeper. Structural reinforcement work continues with photos and video showing the house taking shape. "We gave shapes," Vicky noted. The team is progressing well.
+
+### June 22 — Full Week Expense Report + NBG Backup Plan
+
+Vicky submitted the week's expense list (for Jun 16–21) totaling **€5,372.55**:
+- Workers (full week including polished cement finish in Yael's unit): **€2,280**
+- Kairis materials (structural reinforcement period): **€1,175**
+- Iron bed frame + black matte bedside tables + slats (Yael unit): **€350**
+- Bedding/pillows/bedspread (Vicky paid): **€155** — to be deducted from window amount
+- Mattress 30cm (confirmed cash price €400, reduced from €650): **€400** (pickup Wednesday Jun 25)
+- Fuel: **€40**
+- Praktiker materials/finishing details (Vicky card — reimbursement from Kobi): **€972.55** ← same as Athens shopping already logged
+
+Vicky requested Kobi transfer €972.55 via Wise to her Revolut IBAN (LT853250002013391261) to reimburse her card spend. Kobi agreed to use Wise until NBG issue is resolved.
+
+Separately, Vicky withdrew **€3,000 cash** from the Greek account (Kobi approved Jun 22 at 12:47) to cover cash expenses for the week.
+
+On the NBG issue: Kobi has been speaking with NBG support multiple times since Thursday with no resolution — they say the issue can only be fixed at the branch in Istiaia. Vicky suggested Yael can resolve it when she arrives Jun 27.
+
+### June 23 — Structural Work, Sika Treatment, POA Email Sent
+
+Vicky sent photos showing structural progress. A damaged beam is being treated with **Sika** (special sealing material) that requires no further special treatment. The house is "sooner every time" as Vicky put it. Kobi sent the POA revocation email to notary Anastasia Sidiropoulou (sidirana@otenet.gr) cc'ing Yael, Protasi Real Estate, and Vicky Kiapekaki — requesting appointment to revoke POA No. 8865 during Yael's Jun 27–Jul 1 visit.
+
+### June 24 — Carpenter on Site, Foundation Deeper Than Expected, Kairis Debt Settled
+
+A skilled carpenter (35yo from Karpathos island) is on site working on furniture/woodwork — Vicky's description: "A star felt on our area." Yael requested bedside tables fixed to the bed frame.
+
+More significant: while excavating to support one of the two large structural columns, the team found the **foundation is much deeper than expected** — they thought 0.5m but it wasn't there. If the depth exceeds 2.5m, Vicky proposed designing a basement. Kobi reacted with surprise; this is being monitored.
+
+Vicky requested withdrawal of **€2,000 cash** to settle outstanding Kairis debt and cover new materials:
+- Kairis outstanding (covers running balance + materials from week): **€1,800**
+- One beam: **€125**
+- Two tools: **~€75**
+
+Kobi approved. Vicky confirmed she also received the Wise transfer for the Praktiker reimbursement.
+
+Vicky's full Kairis reconciliation: 1,175 (week materials) + 420 (beam + rendering materials) = 1,595 + 400 (mattress) = €1,995 — approximately the €2,000 cash withdrawal.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Workers week Jun 16–21 (incl. polished cement Yael unit) | €2,280 | cash | Vicky paid from Greek account withdrawal |
+| Kairis materials (week Jun 15–21) | €1,175 | cash | Running Kairis account |
+| Iron bed frame + black matte bedside tables + slats | €350 | cash | For Yael's unit |
+| Bedding/pillows/bedspread | €155 | Vicky card | Paid by Vicky; to be deducted from window amount |
+| Mattress 30cm Yael unit | €400 | cash | Pickup Jun 25. Reduced from €650 (cash price). |
+| Fuel (site operations) | €40 | cash | |
+| Spanish tiles "Crosscut Marfil" (Tsintonis) | €286 | Wise | Jun 19. NBG blocked; paid via Wise instead. |
+| Vicky Praktiker reimbursement | €972.55 | Wise | Transferred to Vicky Revolut LT853250002013391261 |
+| Kairis payment (debt settlement Jun 24) | €1,800 | cash | Kobi approved Jun 24 cash withdrawal €2,000 |
+| Beam + rendering materials (Jun 24) | €125 + ~€295 | cash | Part of Jun 24 €2,000 withdrawal |
+| **Total new spend (Jun 19–24)** | **~€7,478** | | excl. Vicky reimbursement which was already counted |
+
+### Decisions
+- **NBG blocked**: Using Wise for transfers until branch visit in Istiaia resolves the issue (Yael to help Jun 27)
+- **Plumbing height**: Pipes dug deeper rather than raising bathroom floor level (Vicky field decision Jun 21)
+- **Bedside tables**: To be fixed to bed frame (Yael request Jun 24)
+- **Cash withdrawal €3,000 Jun 22**: Approved by Kobi
+- **Cash withdrawal €2,000 Jun 24**: Approved by Kobi
+
+### Open items
+- **NBG gov.gr login**: Vicky visiting accountant Jun 24. Yael to help at Istiaia branch Jun 27–Jul 1
+- **Mattress pickup**: Vicky to collect Wednesday Jun 25
+- **Bedding delivery**: Ordered; arriving before end of week (Jun 27)
+- **Tiles arrival**: Shipped Jun 19 from Patras; arriving before Jun 27
+- **Foundation depth**: Monitor — if >2.5m, Vicky will propose basement design
+- **POA revocation**: Email sent Jun 23 to notary Sidiropoulou. Yael to visit notary Jun 27–Jul 1
+- **Sula gift**: To be decided (food/alcohol preferred; Kobi suggested getting at local store in Ag. Nikolaos)
+
+**Running total spent:** ~€72,000 of est. €275K (~26%)
+
+---
+
+## June 25–28, 2026 — Yael's Unit Completed, Yael Arrives, Weekly Expenses €4,640
+
+### Overview
+
+The week culminated in a milestone: Yael's unit (the large storage building) was completed just in time for Yael's arrival on Friday June 27. The team, led by Vicky, worked brutal hours — including until 21:30 on June 26 — to finish all final details. Yael arrived by car from Athens airport in the early afternoon of Jun 27, reaching the site around 18:15. A burst of photos and video messages followed (both in the group and Vicky's direct chat with Kobi), with Vicky having deliberately kept it a surprise. Vicky later confirmed: "She is happy."
+
+The unit that greeted Yael included a fully tiled microcement bathroom with a marble sink salvaged from the original house materials ("We had an awesome marble sink — 2 actually, I had to use them"), a bedroom with bed and custom bedside tables, and a kitchenette outside the unit. The epoxy floor color used is 031N-1. The overall finish exceeded expectations. Vicky was characteristically effusive: "Don't be shocked, miracles are happening."
+
+On the broader site, work continues on Apartments A and B, and the Spanish "Crosscut Marfil" tiles were still en route as of Thursday Jun 26 — expected to arrive Monday June 29. Vicky has been buying the crew daily breakfast from a local bakery (local sheep cheese + fresh bread) to keep spirits and energy high.
+
+A potential basement discovery under Apt A (foundation deeper than expected) remains an open question — the team needs to dig further before a decision is made.
+
+The workers insurance payment (€3,858, Apr–Jun) was flagged as urgent on Jun 25. Vicky committed to paying by the following day, but no confirmation has been received yet.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Cleaning materials – Yael unit (Jun 27) | €150 | cash (NBG) | Confirmed paid |
+| Materials – week Jun 25–28 (Yael unit) | €1,500 | cash | **PENDING** – reported by Vicky, not yet withdrawn |
+| Plumber – Yael unit completion | €200 | cash | **PENDING** |
+| Carpenter – bedside tables, bathroom countertop, door | €250 | cash | **PENDING** |
+| Marble for shower | €50 | cash | **PENDING** |
+| Fuel – week Jun 25–28 | €40 | cash | **PENDING** |
+| Workers week Jun 25–28 | €2,600 | cash | **PENDING** – team incl. overtime Jun 26 |
+| **Paid (confirmed)** | **€150** | | |
+| **Pending (Vicky report, not yet withdrawn)** | **€4,640** | | |
+
+### Decisions
+- **Yael's unit declared complete** (Jun 27): Yael inspected and approved; all elements done
+- **Epoxy floor color confirmed**: 031N-1
+- **Marble sinks from original house**: repurposed for Yael's unit bathroom (no extra cost)
+
+### Open items
+- **Workers insurance €3,858** (Apr–Jun): Vicky committed to pay by Jun 26 — confirm receipt
+- **Tiles arrival**: Crosscut Marfil expected Mon Jun 29 — confirm delivery and begin tiling
+- **Italian tile deposit (Casa Brava)**: still on hold pending Kobi's 4 questions to Vicky
+- **POA revocation**: Yael to visit notary Sidiropoulou during Jun 27–Jul 1 stay
+- **NBG gov.gr login**: Yael & Kobi to resolve at Istiaia branch during visit
+- **Basement under Apt A**: monitor as excavation continues
+
+**Running total spent:** ~€78,191 of est. €275K (~28%)
