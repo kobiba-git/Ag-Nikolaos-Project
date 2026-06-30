@@ -114,7 +114,7 @@ const PROJECT_DATA = {
     { item: "Confirm workers insurance €3,858 paid (Vicky committed Jun 25)", owner: "Vicky", status: "open", date: "2026-06-28" },
     { item: "Vicky to send updated DWG file — Kobi's copy is outdated (has side window in Apt B, old kitchen layout, 2.60m opening vs current 2.25m)", owner: "Vicky", status: "open", date: "2026-06-29" },
     { item: "New potential property (2 small houses, 1000–1500 sqm plot, same village) — Vicky to confirm price by ~Jul 2–3", owner: "Vicky", status: "open", date: "2026-06-29" },
-    { item: "Balance €1,640 from week Jun25-28 expenses to be withdrawn from NBG next time", owner: "Vicky", status: "open", date: "2026-06-29" },
+    { item: "Balance €1,640 from week Jun25-28 expenses withdrawn and paid ✅", owner: "Vicky", status: "done", date: "2026-06-29" },
     { item: "Tiles (Spanish Crosscut Marfil) arrived Jun 29 – tiling underway ✅", owner: "Vicky", status: "done", date: "2026-06-28" },
     { item: "NBG gov.gr login – Yael to help at Istiaia branch during visit", owner: "Yael/Kobi", status: "open", date: "2026-06-28" },
     { item: "POA revocation – Yael to visit notary Sidiropoulou during Jun 27–Jul 1 stay", owner: "Yael", status: "open", date: "2026-06-28" },
@@ -430,8 +430,8 @@ const PROJECT_DATA = {
       { date: "Apr 26, 2026",  amount: 70000 },
     ],
     totalTransferred: 270000, // all 6 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
-    greekAccountBalance:  35202.94, // per official NBG statement, ties to the cent, 25-Jun-2026
-    balanceAsOf:          "June 25, 2026",
+    greekAccountBalance:  30411.02, // confirmed by Kobi 30-Jun-2026 (after €3,000 + €1,640 Jun25-28 withdrawals)
+    balanceAsOf:          "June 30, 2026",
     totalKnownExpenses:   78341,   // renovation paid per balance sheet as of Jun 25 2026
     israelDirectPayments: 973,     // paid direct from Israeli bank (not via NBG): Vicky reimbursement Jun 24
     // estimated Greek balance = totalTransferred − (totalKnownExpenses − duePending − israelDirectPayments)
