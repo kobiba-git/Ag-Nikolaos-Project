@@ -29,21 +29,21 @@ const PROJECT_DATA = {
   //   urgent: bool    — true = red top border, false = blue top border
   // DO NOT use {task, status} — those fields are ignored by the dashboard.
   weekTasks: [
-    { icon: "⚡", label: "Electrical Panel — Started Jun 29",
-      sub: "Electrician started work on the main electrical panel. Antonis also recommended reinforcing walls next to columns for earthquake stability — adds strength by keeping columns straight.",
+    { icon: "🚨", label: "SikaGrout 340 — ~€20,000 Estimated Material Cost",
+      sub: "Special non-shrink structural grout for column reinforcement casting. ~70 bags/column, ~€40/bag, ~500 bags total across all columns (foundation to 2nd floor slab). Vicky negotiating supplier price. NOT yet in committed budget.",
+      urgent: true },
+    { icon: "💰", label: "Week Jun29–Jul5 Expenses: €4,300 Approved & Mostly Paid",
+      sub: "Sand/gravel €150, fuel €40, wall bond beam steel €400, Kairis column materials €1,800, workers €1,910. Kobi approved Jul 6. €3,000 withdrawn same day; ~€1,300 still to withdraw.",
       urgent: false },
-    { icon: "🚪", label: "Balcony Door — Being Enlarged Jun 29",
-      sub: "Large balcony door to front yard being broken open and enlarged: opening going from 1.25m → 2.20m. Vicky confirms space will be full of light and wind.",
+    { icon: "🏗️", label: "Antonis Fee Renegotiated Downward",
+      sub: "Antonis approved Vicky self-managing structural reinforcement (specialist contractors unavailable until Sept). His fee becomes a one-off payment for technical support + completed studies — likely below original €25–30K estimate.",
       urgent: false },
-    { icon: "🧱", label: "Tiles (Spanish Crosscut Marfil) — Confirmed Arrived",
-      sub: "Tiles arrived Mon Jun 29. Start tiling now underway.",
-      urgent: false },
+    { icon: "📵", label: "Zoom Call Cut Short — Reconvene Needed",
+      sub: "Kobi, Yael, Vicky met Jul 6 evening to review the structural reinforcement plan and cost; call ended when Vicky's phone died. To be continued next week.",
+      urgent: true },
     { icon: "⚠️", label: "Workers Insurance €3,858 — UNCONFIRMED",
       sub: "Vicky committed to paying Jun 25 but still no confirmation received. Check ASAP.",
       urgent: true },
-    { icon: "💰", label: "Week Jun 25–28 Expenses: €4,640 PAID ✅",
-      sub: "Vicky withdrew €3,000 on Jun 29 (workers €2,600, materials €1,500, plumber €200, carpenter €250, marble €50, fuel €40). Remaining €1,640 to be withdrawn next time.",
-      urgent: false },
     { icon: "🏦", label: "NBG gov.gr Login — Resolve at Istiaia Branch",
       sub: "Yael to help Kobi resolve during Jun 27–Jul 1 visit. Needed to unblock NBG transfers.",
       urgent: true },
@@ -53,17 +53,14 @@ const PROJECT_DATA = {
     { icon: "🔲", label: "Italian Tiles (Casa Brava) — On Hold",
       sub: "4 questions sent Jun 16 to Vicky: (1) 60×60 vs 60×120 for Floor A, (2) Ivory variant, (3) pallet charges €278, (4) price €28–30 vs expected €20. No deposit until resolved.",
       urgent: true },
-    { icon: "🏗️", label: "Basement Under Apt A — Decision Pending",
-      sub: "Foundation deeper than expected (>0.5m, possibly >2.5m). Vicky proposed designing a basement. Team continues excavating. Decide before structural work resumes.",
-      urgent: false },
   ],
 
   // ── KPI row (owner dashboard top) ────────────────────────────────
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "€78,341",
-    paidSub:        "EUR 78,341 of EUR 275K (28.5%)",
+    paidToDate:     "€82,641",
+    paidSub:        "EUR 82,641 of EUR 275K (30.1%)",
     duePending:     "€17,453",
     dueSub:         "Electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3,858 + metalworker €550 + excavator €600 + Kairis remaining €195 + Vicky reimbursements ~€1,127 pending",
     bigItems:       "€147K+",
@@ -111,7 +108,11 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
-    { item: "Cash withdrawal €3,000 (Jul 6) — get itemization from Vicky before logging in balance sheet", owner: "Vicky", status: "open", date: "2026-07-06" },
+    { item: "SikaGrout 340 structural grout — ~500 bags (~€20,000 est.) for column reinforcement. Vicky negotiating price. Confirm final cost.", owner: "Vicky → Kobi", status: "open", date: "2026-07-06" },
+    { item: "Reconvene Zoom call with Vicky to finish reviewing structural reinforcement plan (cut short Jul 6, phone died)", owner: "Kobi + Yael + Vicky", status: "open", date: "2026-07-06" },
+    { item: "Finalize Antonis's renegotiated one-off fee (replacing original Phase 1 contract)", owner: "Vicky", status: "open", date: "2026-07-06" },
+    { item: "Withdraw remaining ~€1,300 for week Jun29-Jul5 expenses", owner: "Vicky", status: "open", date: "2026-07-06" },
+    { item: "Cash withdrawal €3,000 (Jul 6) — itemized: week Jun29-Jul5 expenses €4,300 approved by Kobi ✅", owner: "Vicky", status: "done", date: "2026-07-06" },
     { item: "Confirm workers insurance €3,858 paid (Vicky committed Jun 25)", owner: "Vicky", status: "open", date: "2026-06-28" },
     { item: "Vicky to send updated DWG file — Kobi's copy is outdated (has side window in Apt B, old kitchen layout, 2.60m opening vs current 2.25m)", owner: "Vicky", status: "open", date: "2026-06-29" },
     { item: "New potential property (2 small houses, 1000–1500 sqm plot, same village) — Vicky to confirm price by ~Jul 2–3", owner: "Vicky", status: "open", date: "2026-06-29" },
@@ -314,7 +315,7 @@ const PROJECT_DATA = {
       { label: "Tiles (Spanish Crosscut Marfil, Jun 19)", amount: "€286" },
       { label: "Yael's Unit Furnishings (bed frame, bedding, mattress)", amount: "~€905" },
     ],
-    totalPaid:      "€78,341",
+    totalPaid:      "€82,641",
     totalCommitted: "€22,093",
 
     ahead: [
@@ -411,7 +412,7 @@ const PROJECT_DATA = {
     summary: {
       dueNow:     "~€10,600",  dueSub:     "Kairis ~€195 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600 + Mattress €400 + Vicky reimbursements ~€1,100",
       workers:    "✅ Paid Jun 22 + Kairis Jun 24", workersSub: "Workers Jun 16–21 (€2,280 cash). Kairis €1,800 paid Jun 24. Running total ~€72K.",
-      paidToDate:     "€78,341",
+      paidToDate:     "€82,641",
       atmLimit:   "€2K",
       laborerRate: "€50/day",
       skilledRate: "€80/day",
