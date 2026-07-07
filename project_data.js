@@ -14,7 +14,7 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated: "2026-06-30",
+    lastUpdated: "2026-07-07",
     weekOf: "Week of Jun 29 – Jul 5, 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
@@ -111,6 +111,7 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
+    { item: "Cash withdrawal €3,000 (Jul 6) — get itemization from Vicky before logging in balance sheet", owner: "Vicky", status: "open", date: "2026-07-06" },
     { item: "Confirm workers insurance €3,858 paid (Vicky committed Jun 25)", owner: "Vicky", status: "open", date: "2026-06-28" },
     { item: "Vicky to send updated DWG file — Kobi's copy is outdated (has side window in Apt B, old kitchen layout, 2.60m opening vs current 2.25m)", owner: "Vicky", status: "open", date: "2026-06-29" },
     { item: "New potential property (2 small houses, 1000–1500 sqm plot, same village) — Vicky to confirm price by ~Jul 2–3", owner: "Vicky", status: "open", date: "2026-06-29" },

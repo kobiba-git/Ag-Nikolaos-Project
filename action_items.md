@@ -73,3 +73,6 @@
 | 2026-06-28 | Resolve NBG gov.gr login at Istiaia branch | Yael/Kobi | Open |
 | 2026-06-28 | POA revocation — visit notary Sidiropoulou during Yael's stay | Yael | Open |
 | 2026-06-28 | Basement under Apt A — assess depth and decide if basement wanted | Vicky/Kobi | Open |
+| 2026-06-29 | Vicky to send updated DWG file — Kobi's copy outdated (side window in Apt B, old kitchen layout, 2.60m opening instead of 2.25m) | Vicky | Open |
+| 2026-06-29 | New potential property (2 small houses, 1000–1500 sqm plot, same village) — Vicky to confirm price by ~Jul 2–3 | Vicky | Open |
+| 2026-06-29 | Withdraw remaining €1,640 (balance of week Jun25-28 expenses) from NBG next withdrawal | Vicky | Done ✅ |
