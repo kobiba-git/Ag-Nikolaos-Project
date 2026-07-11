@@ -122,6 +122,7 @@ const PROJECT_DATA = {
     { item: "Two-month expense forecast requested by Kobi (needed before Thailand trip Jul 21) — Vicky to provide within 6-7 days", owner: "Vicky → Kobi", status: "open", date: "2026-07-09" },
     { item: "Confirm whether Jul 10 €1,700 Kairis payment already applies against the new €3,520 outstanding balance, or is separate (re-asked by Yael Jul 11, still unanswered)", owner: "Vicky → Kobi", status: "open", date: "2026-07-10" },
     { item: "Next grout order — APPROVED by Yael Jul 11: 200 more bags (€7,040) + 20 steel bars (€700) ≈ €7,740. Logged as Committed. Vicky to place order.", owner: "Vicky", status: "open", date: "2026-07-11" },
+    { item: "€907.92 unexplained gap between the ledger's projected NBG balance and the reported €23,505.02 (Jul 11) — likely cash-float (ATM withdrawal ahead of itemized expenses) or unreported spending. Ask Vicky to confirm.", owner: "Vicky → Kobi", status: "open", date: "2026-07-11" },
     { item: "Confirm workers insurance €3,858 paid (Vicky committed Jun 25)", owner: "Vicky", status: "open", date: "2026-06-28" },
     { item: "Vicky to send updated DWG file — Kobi's copy is outdated (has side window in Apt B, old kitchen layout, 2.60m opening vs current 2.25m)", owner: "Vicky", status: "open", date: "2026-06-29" },
     { item: "New potential property (2 small houses, 1000–1500 sqm plot, same village) — Vicky to confirm price by ~Jul 2–3", owner: "Vicky", status: "open", date: "2026-06-29" },
@@ -444,8 +445,8 @@ const PROJECT_DATA = {
       { date: "Apr 26, 2026",  amount: 70000 },
     ],
     totalTransferred: 270000, // all 6 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
-    greekAccountBalance:  30411.02, // confirmed by Kobi 30-Jun-2026 (after €3,000 + €1,640 Jun25-28 withdrawals)
-    balanceAsOf:          "June 30, 2026",
+    greekAccountBalance:  23505.02, // confirmed by Kobi 11-Jul-2026
+    balanceAsOf:          "July 11, 2026",
     totalKnownExpenses:   78341,   // renovation paid per balance sheet as of Jun 25 2026
     israelDirectPayments: 973,     // paid direct from Israeli bank (not via NBG): Vicky reimbursement Jun 24
     // estimated Greek balance = totalTransferred − (totalKnownExpenses − duePending − israelDirectPayments)
