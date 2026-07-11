@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated: "2026-07-07",
-    weekOf: "Week of Jun 29 – Jul 5, 2026",
+    lastUpdated: "2026-07-10",
+    weekOf: "Week of Jul 7 – 10, 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -29,12 +29,15 @@ const PROJECT_DATA = {
   //   urgent: bool    — true = red top border, false = blue top border
   // DO NOT use {task, status} — those fields are ignored by the dashboard.
   weekTasks: [
-    { icon: "🚨", label: "SikaGrout 340 — ~€20,000 Estimated Material Cost",
-      sub: "Special non-shrink structural grout for column reinforcement casting. ~70 bags/column, ~€40/bag, ~500 bags total across all columns (foundation to 2nd floor slab). Vicky negotiating supplier price. NOT yet in committed budget.",
-      urgent: true },
-    { icon: "💰", label: "Week Jun29–Jul5 Expenses: €4,300 Approved (€3,000 Paid, €1,300 Committed)",
-      sub: "Sand/gravel €150, fuel €40, wall bond beam steel €400, Kairis column materials €1,800, workers €1,910 — all approved by Kobi Jul 6, logged as Committed until bank-confirmed. €3,000 actually withdrawn Jul 6 (logged as Paid); ~€1,300 still to withdraw before the batch is fully disbursed.",
+    { icon: "💪", label: "SikaGrout Confirmed — €35.20/bag, ~400 Bags (~€14,080)",
+      sub: "First column poured Jul 10 with SikaGrout — extremely strong non-shrink structural grout (used for wind turbine anchoring). Scope now confirmed: 3 columns + 4 beams, ~400 bags total (down from ~500 est.). Price negotiated to €35.20/bag (down from ~€40). Total material cost now ~€14,080 vs the ~€20,000 Jul 6 estimate.",
       urgent: false },
+    { icon: "✅", label: "Week Jun29–Jul5 Batch Fully Paid — €4,300",
+      sub: "Remaining ~€1,300 withdrawn Jul 10 (part of a €3,000 cash withdrawal), completing this batch. All 5 items now confirmed Paid — bank-withdrawal fully accounted for.",
+      urgent: false },
+    { icon: "💰", label: "New Kairis Balance — €3,520 Outstanding",
+      sub: "Covers first 100 bags of grout received + first reinforcing steel + resins. €1,700 paid toward it Jul 10 (same €3,000 withdrawal). Possible next order floated: 200 more bags (€7,040) + 20 steel bars (€700) — not yet placed, confirm before committing.",
+      urgent: true },
     { icon: "🏗️", label: "Antonis Fee Renegotiated Downward",
       sub: "Antonis approved Vicky self-managing structural reinforcement (specialist contractors unavailable until Sept). His fee becomes a one-off payment for technical support + completed studies — likely below original €25–30K estimate.",
       urgent: false },
@@ -59,9 +62,9 @@ const PROJECT_DATA = {
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "€81,341",
-    paidSub:        "EUR 81,341 of EUR 275K (29.6%)",
-    duePending:     "€21,753",
+    paidToDate:     "€84,341",
+    paidSub:        "EUR 84,341 of EUR 275K (30.7%)",
+    duePending:     "€17,453",
     dueSub:         "Electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3,858 + metalworker €550 + excavator €600 + Kairis remaining €195 + Vicky reimbursements ~€1,127 pending",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
@@ -108,11 +111,14 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
-    { item: "SikaGrout 340 structural grout — ~500 bags (~€20,000 est.) for column reinforcement. Vicky negotiating price. Confirm final cost.", owner: "Vicky → Kobi", status: "open", date: "2026-07-06" },
+    { item: "SikaGrout structural grout — CONFIRMED Jul 10: €35.20/bag, ~400 bags total (3 columns + 4 beams) ≈ €14,080 ✅", owner: "Vicky → Kobi", status: "done", date: "2026-07-06" },
     { item: "Reconvene Zoom call with Vicky to finish reviewing structural reinforcement plan (cut short Jul 6, phone died)", owner: "Kobi + Yael + Vicky", status: "open", date: "2026-07-06" },
     { item: "Finalize Antonis's renegotiated one-off fee (replacing original Phase 1 contract)", owner: "Vicky", status: "open", date: "2026-07-06" },
-    { item: "Withdraw remaining ~€1,300 for week Jun29-Jul5 expenses (€3,000 of €4,300 withdrawn/paid so far; remainder logged as Committed, not yet bank-confirmed)", owner: "Vicky", status: "open", date: "2026-07-06" },
+    { item: "Withdraw remaining ~€1,300 for week Jun29-Jul5 expenses — DONE Jul 10, batch of €4,300 now fully Paid ✅", owner: "Vicky", status: "done", date: "2026-07-06" },
     { item: "Cash withdrawal €3,000 (Jul 6) — itemized: week Jun29-Jul5 expenses €4,300 approved by Kobi ✅", owner: "Vicky", status: "done", date: "2026-07-06" },
+    { item: "Two-month expense forecast requested by Kobi (needed before Thailand trip Jul 21) — Vicky to provide within 6-7 days", owner: "Vicky → Kobi", status: "open", date: "2026-07-09" },
+    { item: "Confirm whether Jul 10 €1,700 Kairis payment already applies against the new €3,520 outstanding balance, or is separate", owner: "Vicky → Kobi", status: "open", date: "2026-07-10" },
+    { item: "Possible next grout order: 200 more bags (€7,040) + 20 steel bars (€700) — not yet placed, confirm before committing", owner: "Vicky", status: "open", date: "2026-07-10" },
     { item: "Confirm workers insurance €3,858 paid (Vicky committed Jun 25)", owner: "Vicky", status: "open", date: "2026-06-28" },
     { item: "Vicky to send updated DWG file — Kobi's copy is outdated (has side window in Apt B, old kitchen layout, 2.60m opening vs current 2.25m)", owner: "Vicky", status: "open", date: "2026-06-29" },
     { item: "New potential property (2 small houses, 1000–1500 sqm plot, same village) — Vicky to confirm price by ~Jul 2–3", owner: "Vicky", status: "open", date: "2026-06-29" },
@@ -185,6 +191,8 @@ const PROJECT_DATA = {
   // ── Payment schedule ──────────────────────────────────────────────
   // status: "paid" | "due" | "upcoming" | "blocked"
   payments: [
+    { date: "Jul 10",     category: "Materials - Structure", desc: "Week Jun29-Jul5 batch (sand/gravel, fuel, wall bond beam steel, Kairis column reinforcement materials, workers' wages) — fully bank-confirmed Jul 10 with the withdrawal of the remaining €1,300 (€3,000 was withdrawn Jul 6). All 5 items flipped from Committed to Paid.", vendor: "Kairis / Suppliers / Workers", amount: "€4,300", status: "paid" },
+    { date: "Jul 10",     category: "Materials - Structure", desc: "Kairis — SikaGrout/reinforcement materials, partial payment toward new €3,520 balance (first 100 bags grout + first reinforcing steel + resins). Part of same €3,000 cash withdrawal.", vendor: "Kairis", amount: "€1,700", status: "paid" },
     { date: "Jun 18",     category: "Materials - Yael Unit", desc: "Athens shopping — Yael's unit fit-out (Jun 18). Door 70×214 + frame, PVC window 70×75, insect screen 100×120, Pyramis electric water heater 40L 3500W, 9000 BTU AC + outdoor unit, bathroom accessories (soap dish, toothbrush holder, waste bin, towel holder, Gedy hooks, bamboo curtain + misc). Vicky paid by card — reimburse from Greek account. Hammer drill ~€380 in this amount: charge to Antonis account.", vendor: "Athens suppliers (Vicky card)", amount: "€972.55", status: "paid" },
     { date: "Jun 24",     category: "Materials - Structure", desc: "Kairis — cash payment Jun 24 (covers old balance ~€400 + week materials + partial new). Kobi approved €2,000 withdrawal: €1,800 Kairis + €125 beam + ~€75 tools.", vendor: "Kairis", amount: "€1,800", status: "paid" },
     { date: "Jun 24",     category: "Materials - Structure", desc: "Beam (structural column support) + rendering materials. Part of Jun 24 €2,000 cash withdrawal.", vendor: "Kairis / Supplier", amount: "€420", status: "paid" },
@@ -306,7 +314,7 @@ const PROJECT_DATA = {
       { label: "Ground Floor Materials",   amount: "~€10,015" },
       { label: "Plumbing",                 amount: "€3,960"   },
       { label: "Electrical",               amount: "€2,000"   },
-      { label: "Workers & Labour",         amount: "~€25,630" },
+      { label: "Workers & Labour",         amount: "~€27,540" },
       { label: "Legal / Admin",            amount: "€3,000"   },
       { label: "Landscaping",              amount: "€375"     },
       { label: "Roof Garden (materials)",  amount: "€1,450"   },
@@ -314,9 +322,10 @@ const PROJECT_DATA = {
       { label: "Yael's Unit Fit-out (Athens Jun 18)", amount: "€972"  },
       { label: "Tiles (Spanish Crosscut Marfil, Jun 19)", amount: "€286" },
       { label: "Yael's Unit Furnishings (bed frame, bedding, mattress)", amount: "~€905" },
+      { label: "Structural Reinforcement Materials (Kairis — grout/steel/sand, week Jun29-Jul10)", amount: "€4,050" },
     ],
-    totalPaid:      "€81,341",
-    totalCommitted: "€22,093",
+    totalPaid:      "€84,341",
+    totalCommitted: "€17,453",
 
     ahead: [
       { label: "Antonis — Phase 1 (foundations & beams)", amount: "€25K–€30K" },
@@ -399,9 +408,9 @@ const PROJECT_DATA = {
       { icon: "🛏️", title: "Mattress Pickup — Wed Jun 25",          sub: "Custom 195×170 cm, 30cm thick, €400 cash price (reduced from €650).",
         who: "Local mattress manufacturer", desc: "Vicky picking up Wednesday Jun 25. Bedside tables to be fixed to bed frame (Yael's request). Room must be fully ready Jun 27.",
         amount: "€400", payType: "💵 CASH", auth: "✅ Kobi approved — Vicky collecting Jun 25" },
-      { icon: "🧱", title: "Kairis — ~€195 remaining",              sub: "Jun 24: €1,800 paid (Kobi approved €2,000 withdrawal). Small balance remaining.",
-        who: "Kairis Materials", desc: "Kairis total owed: €400 old + €1,175 week materials + €420 new = ~€1,995. Paid €1,800 Jun 24. Remaining ~€195.",
-        amount: "~€195", payType: "💵 CASH", auth: "✅ Jun 24 withdrawal approved — settle remainder" },
+      { icon: "🧱", title: "Kairis — €3,520 grout/reinforcement balance",  sub: "€1,700 paid toward it Jul 10 (part of €3,000 withdrawal). Confirm remaining balance with Kobi.",
+        who: "Kairis Materials", desc: "Covers first 100 bags SikaGrout received + first reinforcing steel (4.65m column + 4.40m beam) + resins. €1,700 already paid Jul 10 as partial payment — confirm how much (if any) remains outstanding.",
+        amount: "€3,520 (partial €1,700 paid)", payType: "💵 CASH", auth: "⏳ Confirm remaining balance with Kobi" },
       { icon: "🚜", title: "Excavator — Road Compaction €600",      sub: "60-ton road roller to compact all roads.",
         who: "Excavator contractor", desc: "Approved. Vicky to confirm date and pay.",
         amount: "€600", payType: "💵 CASH", auth: "✅ Kobi approved" },
@@ -412,7 +421,7 @@ const PROJECT_DATA = {
     summary: {
       dueNow:     "~€10,600",  dueSub:     "Kairis ~€195 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600 + Mattress €400 + Vicky reimbursements ~€1,100",
       workers:    "✅ Paid Jun 22 + Kairis Jun 24", workersSub: "Workers Jun 16–21 (€2,280 cash). Kairis €1,800 paid Jun 24. Running total ~€72K.",
-      paidToDate:     "€81,341",
+      paidToDate:     "€84,341",
       atmLimit:   "€2K",
       laborerRate: "€50/day",
       skilledRate: "€80/day",
@@ -446,7 +455,7 @@ const PROJECT_DATA = {
   // Update this section each run when open items / contact details change
   vickyComms: {
     // Message from Kobi to Vicky (update when there's something specific to say)
-    kobMessage: "Vicky — huge week! Thank you for everything 🙏 We can't wait to see the house on June 27!\n\nThe Wise transfer for €972.55 is sent to your Revolut IBAN — please confirm you received it. Tiles paid Jun 19 via Wise. Jun 22 withdrawal €3,000 ✅. Jun 24 withdrawal €2,000 ✅.\n\nYael is very excited! Please make sure mattress (Wed Jun 25) + bedding are in place, and the bedside tables are fixed to the bed frame per her request.\n\nLooking forward to Yael's visit — take care! 🏠❤️",
+    kobMessage: "Vicky — the SikaGrout results look incredible, well done! 🙏 Great news getting the price down to €35.20/bag and confirming the ~400-bag scope.\n\nJul 10 withdrawal (€3,000) received and understood — €1,300 completed last week's batch, €1,700 toward the new Kairis grout balance. Could you confirm whether that €1,700 already applies against the €3,520 outstanding balance you mentioned?\n\nAlso — please send the two-month expense forecast when you can, ideally by ~Jul 16-17, so I can arrange the next transfer before we fly to Thailand on Jul 21. Thank you for everything! 🏠❤️",
 
     // Items Vicky is waiting on from Kobi — update when decisions are made
     waitingOnKobi: [
@@ -460,6 +469,8 @@ const PROJECT_DATA = {
       "🟡 Tiles (Spanish Crosscut Marfil) arriving Mon Jun 29 — confirm receipt and start tiling",
       "🟡 Italian tile deposit ON HOLD — respond to Kobi's 4 questions before Casa Brava payment",
       "🟡 NBG gov.gr login issue — help Yael & Kobi resolve at Istiaia branch during visit",
+      "🟡 Send two-month expense forecast (requested Jul 9, needed by ~Jul 16-17 before Kobi's Thailand trip)",
+      "🟡 Clarify Kairis €3,520 balance — confirm if Jul 10 €1,700 payment already applies against it",
     ],
 
     // Items Kobi has already authorized — update when new approvals given
@@ -476,6 +487,7 @@ const PROJECT_DATA = {
       "Cash withdrawal Jun 22 €3,000 ✅ — Kobi approved. Covers week Jun 16–21 expenses.",
       "Cash withdrawal Jun 24 €2,000 ✅ — Kobi approved. Kairis €1,800 + beam €125 + tools.",
       "Wise transfer €972.55 to Vicky Revolut LT853250002013391261 — Praktiker reimbursement. Confirm received.",
+      "Cash withdrawal Jul 10 €3,000 ✅ — completed Jun29-Jul5 batch (€1,300) + Kairis grout partial payment (€1,700).",
     ],
   },
 
