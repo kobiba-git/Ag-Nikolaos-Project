@@ -98,7 +98,9 @@
 | 2026-07-11 | Scope of structural reinforcement now ~double the original Antonis contract per Vicky — needs a real budget conversation, not yet quantified beyond grout material costs already tracked | Vicky + Kobi | Open |
 | 2026-07-11 | Antonis racing Sika to find a cheaper compound for connection beams — follow up on outcome | Vicky | Open |
 | 2026-07-20 | Worker wages for week Jul 13–19 not yet reported (site paused Jul 13–16, resumed Jul 17) — Vicky hasn't posted an expense breakdown for this stub week yet | Vicky → Kobi | Done ✅ (Vicky sent report Jul 20: €985 total — logged as Committed) |
-| 2026-07-20 | Confirm labor payment €985 (week Jul13-19) has actually been withdrawn/paid | Vicky | Open |
-| 2026-07-20 | Pay worker insurance €3,858 — accountant confirmed figures, Vicky cleared to proceed | Vicky | Open |
+| 2026-07-20 | Confirm labor payment €985 (week Jul13-19) has actually been withdrawn/paid | Vicky | Done ✅ (paid Jul 20, part of €3,000 withdrawal) |
+| 2026-07-20 | Pay worker insurance €3,858 — accountant confirmed figures, Vicky cleared to proceed | Vicky | Partial ✅ (€1,865 paid Jul 20; €1,993 remaining) |
 | 2026-07-20 | Order lime + sand for Apt B plastering — Kairis wants cash | Vicky | Open |
 | 2026-07-20 | Confirm Kairis materials delivery (expected tomorrow, Jul 21 morning) | Vicky | Open |
+| 2026-07-20 | Finish remaining €1,993 insurance balance — Vicky uncertain she can withdraw again tomorrow (card/ATM limits) | Vicky | Open |
+| 2026-07-20 | Decide on alternative micro-concrete mix for beams (~1/4 price of SikaGrout) — contingent on specialist joining on-site | Vicky + Kobi | Open |

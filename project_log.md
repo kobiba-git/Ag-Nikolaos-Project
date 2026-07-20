@@ -1106,3 +1106,29 @@ Vicky sent her weekly report late, apologizing again for the delay caused by her
 - Kairis materials delivery tomorrow morning (Jul 21) — confirm receipt
 
 **Running total spent (confirmed Paid only):** ~€86,491 of est. €275K (~31.5%). Committed ~€32,168. NBG balance ~€70,000 (Jul 13, post-transfer).
+
+---
+
+## July 20, 2026 (evening) — €3,000 Withdrawal Reconciled, Alternative Mix Discussion
+
+Kobi and Vicky spent the evening discussing a cost-comparison document for an alternative self-compacting micro-concrete mix (~1/4 the price of SikaGrout) as a possible substitute for some of the structural work. Vicky is firm that she won't experiment on the central columns given how much is riding on them, but is open to trying the alternative on beams — on the condition that the specialist who proposed it comes on-site personally to oversee it ("stay there and leave the site like us smelling cement"). Nothing decided yet.
+
+Separately, Kobi noticed Vicky had withdrawn €3,000 today and asked her to itemize it. She confirmed: €985 covered last week's outstanding labor (Jul 13–19, previously logged as Committed), €150 went to Kairis toward the small remaining balance, and the last €1,865 went toward the €3,858 EFKA worker-insurance debt — leaving €1,993 still owed. She also withdrew a separate €4,800 today, but clarified this was for a different, unrelated client's project (Moran's/Kimmel new build) — not chargeable to Ag. Nikolaos.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Workers wages week Jul13-19 (converted from Committed) | €985 | cash | Confirmed paid Jul 20 |
+| Kairis — partial payment (ATM shortfall) | €150 | cash | Reduces Kairis remaining balance to €45 |
+| Worker insurance (EFKA) — partial payment | €1,865 | cash | Of €3,858 total; €1,993 remains Committed |
+| **Total** | **€3,000** | | |
+
+### Decisions
+- No decision yet on the alternative micro-concrete mix — under evaluation, contingent on the specialist being physically present for beam work
+
+### Open items
+- Insurance: €1,993 still owed — Vicky uncertain she can withdraw again tomorrow due to card/ATM limits
+- Alternative mix for beams — awaiting specialist's availability decision
+
+**Running total spent (confirmed Paid only):** ~€89,491 of est. €275K (~32.5%). Committed ~€29,168. NBG balance ~€70,000 (Jul 13, post-transfer, before today's €3,000+€4,800 withdrawals — note the €4,800 is not an Ag. Nikolaos expense).

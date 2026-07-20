@@ -47,19 +47,22 @@ const PROJECT_DATA = {
     { icon: "🧱", label: "Plastering Apt B Ceiling — In Progress",
       sub: "Kairis materials arrived, delivery tomorrow — but extreme heat means SikaGrout work is paused until temps drop next week. Team shifting to plastering Apt B ceiling in the meantime; lime + sand still to be ordered (Kairis wants cash).",
       urgent: false },
-    { icon: "🧾", label: "Insurance Payment — Accountant Confirmed",
-      sub: "Accountant confirmed the exact social security (EFKA) figures for prior months — Vicky can now proceed with the €3,858 payment. Not yet paid.",
+    { icon: "🧾", label: "Insurance — €1,865 Paid, €1,993 Remaining",
+      sub: "Vicky withdrew €3,000 today (Jul 20): €985 covered last week's labor, €150 to Kairis, and €1,865 applied to the EFKA insurance debt. €1,993 still owed — she's unsure she can withdraw again tomorrow (card/ATM limits).",
       urgent: true },
+    { icon: "🧪", label: "Alternative Micro-Concrete Mix Under Discussion",
+      sub: "Kobi shared a cost/complexity analysis of a self-compacting micro-concrete alternative to SikaGrout (~1/4 the price, €280–405/m³ materials vs. much higher installed cost). Vicky won't experiment on columns but is open to trying it on beams — only if the specialist personally joins on-site. Not yet decided.",
+      urgent: false },
   ],
 
   // ── KPI row (owner dashboard top) ────────────────────────────────
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "€86,491",
-    paidSub:        "EUR 86,491 of EUR 275K (31.5%)",
-    duePending:     "€32,168",
-    dueSub:         "Kairis €13,730 (materials + next order) + electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3,858 + metalworker €550 + excavator €600 + Kairis remaining €195 + last week's labor Jul13-19 €985",
+    paidToDate:     "€89,491",
+    paidSub:        "EUR 89,491 of EUR 275K (32.5%)",
+    duePending:     "€29,168",
+    dueSub:         "Kairis €13,730 (materials + next order) + electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) remaining €1,993 + metalworker €550 + excavator €600 + Kairis remaining €45",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
   },
@@ -328,7 +331,7 @@ const PROJECT_DATA = {
       { label: "Yael's Unit Furnishings (bed frame, bedding, mattress)", amount: "~€905" },
       { label: "Structural Reinforcement Materials (Kairis — grout/steel/sand, week Jun29-Jul10)", amount: "€4,050" },
     ],
-    totalPaid:      "€86,491",
+    totalPaid:      "€89,491",
     totalCommitted: "€31,183",
 
     ahead: [
@@ -425,7 +428,7 @@ const PROJECT_DATA = {
     summary: {
       dueNow:     "~€10,600",  dueSub:     "Kairis ~€195 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600 + Mattress €400 + Vicky reimbursements ~€1,100",
       workers:    "✅ Paid Jun 22 + Kairis Jun 24", workersSub: "Workers Jun 16–21 (€2,280 cash). Kairis €1,800 paid Jun 24. Running total ~€72K.",
-      paidToDate:     "€86,491",
+      paidToDate:     "€89,491",
       atmLimit:   "€2K",
       laborerRate: "€50/day",
       skilledRate: "€80/day",
