@@ -163,6 +163,9 @@ L=[
 ("2026-07-05","Labour","Workers wages - week Jun29-Jul5","Workers",1910.00,"cash","Yes","Paid","2026-07-10"),
 ("2026-07-10","Materials","Kairis - SikaGrout/reinforcement materials (partial payment toward new balance)","Kairis",1700.00,"cash","Yes","Paid","2026-07-10"),
 ("2026-07-12","Labour","Workers wages - week Jul7-12","Workers",2150.00,"cash","Yes","Paid","2026-07-12"),
+("2026-07-19","Labour","Workers wages Mon-Wed - week Jul13-19","Workers",900.00,"cash","Yes","Committed",""),
+("2026-07-19","Equipment","Concrete mixer - week Jul13-19","Site",20.00,"cash","Yes","Committed",""),
+("2026-07-19","Materials","Binding wire and steel-tying materials - week Jul13-19","Supplier",65.00,"cash","Yes","Committed",""),
 # committed / upcoming (approved)
 ("2026-06-28","Materials","Materials - week Jun25-28 (Yael unit completion)","Kairis",1500.00,"cash","Yes","Paid","2026-06-29"),
 ("2026-06-28","Plumbing","Plumber - Yael unit completion","Plumber",200.00,"cash","Yes","Paid","2026-06-29"),

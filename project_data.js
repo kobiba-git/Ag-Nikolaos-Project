@@ -44,6 +44,12 @@ const PROJECT_DATA = {
     { icon: "⚡", label: "Electrician — Work Ongoing",
       sub: "Electrical panel work underway. Insurance, electrician scope, and plumbing balances still to be settled from the new NBG funding.",
       urgent: false },
+    { icon: "🧱", label: "Plastering Apt B Ceiling — In Progress",
+      sub: "Kairis materials arrived, delivery tomorrow — but extreme heat means SikaGrout work is paused until temps drop next week. Team shifting to plastering Apt B ceiling in the meantime; lime + sand still to be ordered (Kairis wants cash).",
+      urgent: false },
+    { icon: "🧾", label: "Insurance Payment — Accountant Confirmed",
+      sub: "Accountant confirmed the exact social security (EFKA) figures for prior months — Vicky can now proceed with the €3,858 payment. Not yet paid.",
+      urgent: true },
   ],
 
   // ── KPI row (owner dashboard top) ────────────────────────────────
@@ -52,8 +58,8 @@ const PROJECT_DATA = {
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
     paidToDate:     "€86,491",
     paidSub:        "EUR 86,491 of EUR 275K (31.5%)",
-    duePending:     "€31,183",
-    dueSub:         "Electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3,858 + metalworker €550 + excavator €600 + Kairis remaining €195 + Vicky reimbursements ~€1,127 pending",
+    duePending:     "€32,168",
+    dueSub:         "Kairis €13,730 (materials + next order) + electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3,858 + metalworker €550 + excavator €600 + Kairis remaining €195 + last week's labor Jul13-19 €985",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
   },

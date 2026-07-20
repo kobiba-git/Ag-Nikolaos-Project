@@ -1080,3 +1080,29 @@ As of Jul 20: no further financial updates or work reports since Vicky's return 
 - **Antonis scope review** — structural work now roughly double the original contract; no revised budget agreement yet
 
 **Running total spent (confirmed Paid only):** ~€86,491 of est. €275K (~31.5%). Committed ~€31,183. NBG balance ~€70,000 (Jul 13, post-transfer).
+
+---
+
+## July 20, 2026 — Vicky's Delayed Weekly Report (Week of Jul 13–19)
+
+Vicky sent her weekly report late, apologizing again for the delay caused by her daughter's situation. Kairis's materials have arrived and will be delivered tomorrow morning, but the extreme summer heat means the SikaGrout structural work can't proceed under current temperatures — they're pausing until next week when it cools down. Vicky frames this as a silver lining: it gives the team time to catch up on prep work. In the meantime the crew is shifting to plastering the ceiling of Apartment B, working area by area. She'll also order the remaining plastering materials (lime and sand) — Kairis wants cash for everything. Separately, the accountant has now confirmed the exact social security (EFKA) figures for the prior months, so Vicky can proceed with that payment once cash is available.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Workers wages Mon–Wed, week Jul 13–19 | €900 | cash | Committed — not yet confirmed paid |
+| Concrete mixer | €20 | cash | Committed |
+| Binding wire / steel-tying materials | €65 | cash | Committed |
+| **Total** | **€985** | | |
+
+### Decisions
+- Structural SikaGrout work paused until temperatures drop next week; team redirected to plastering Apt B ceiling in the meantime
+
+### Open items
+- Confirm labor payment (€985) has actually been withdrawn/paid — logged as Committed pending confirmation
+- Insurance €3,858 — accountant confirmed figures, Vicky cleared to pay; still not yet paid
+- Order lime + sand for plastering (Kairis, cash)
+- Kairis materials delivery tomorrow morning (Jul 21) — confirm receipt
+
+**Running total spent (confirmed Paid only):** ~€86,491 of est. €275K (~31.5%). Committed ~€32,168. NBG balance ~€70,000 (Jul 13, post-transfer).
