@@ -880,3 +880,203 @@ The workers insurance payment (€3,858, Apr–Jun) was flagged as urgent on Jun
 - **Basement under Apt A**: monitor as excavation continues
 
 **Running total spent:** ~€78,191 of est. €275K (~28%)
+
+---
+
+## June 29, 2026
+
+Yael is on site for her June 27–July 1 visit, and the house is buzzing with activity. On the structural side, Antonis has recommended reinforcing the walls adjacent to the structural columns — the logic being that these added walls prevent the columns from "dancing" in an earthquake, keeping the structure rigid. This is underway alongside the electrical work: the electrician has started on the main electrical panel. The large balcony door to the front yard is also being broken open and enlarged from 1.25m to 2.20m, which will dramatically open up the space. Vicky's summary of the house's existing issues was characteristically clear: three past mistakes (poor roof waterproofing, low-quality aggregate in the concrete, and the metal fabricator who drilled through without waterproofing) are all being corrected. She's confident the house will stand for another hundred years.
+
+Vicky confirmed the week Jun 25–28 expenses total €4,640 (reported Sunday Jun 28). She withdrew €3,000 from the NBG account on Jun 29 to cover these — the remaining €1,640 will be withdrawn next time. All items now logged as Paid.
+
+On the design front, two decisions were locked in: no side window in Apt B (Vicky covered the openings intentionally — the space gets ample light and air from other directions, and it saves on window cost), and the kitchen sits on the central interior wall. Kobi also requested an updated DWG file — his copy still has the old layout (side window in Apt B, 2.60m opening instead of 2.25m, different kitchen/living arrangement).
+
+Vicky also shared photos of a potential new property in the same village: 2 small houses on a 1,000–1,500 sqm plot. Kobi is intrigued. Vicky will have price information by around July 2–3.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Materials week Jun25-28 | €1,500 | cash | Confirmed paid Jun 29 |
+| Workers week Jun25-28 | €2,600 | cash | Confirmed paid Jun 29 |
+| Carpenter (bedside tables, countertop, door) | €250 | cash | Confirmed paid Jun 29 |
+| Plumber – Yael unit | €200 | cash | Confirmed paid Jun 29 |
+| Fuel week Jun25-28 | €40 | cash | Confirmed paid Jun 29 |
+| Marble for shower | €50 | cash | Confirmed paid Jun 29 |
+| **Total (this week)** | **€4,640** | | €3,000 withdrawn now; €1,640 to follow |
+
+### Decisions
+- **Apt B — no side window**: confirmed. Kitchen on central/interior wall. Layout locked.
+- **Balcony door enlarged**: 1.25m → 2.20m opening, work started Jun 29
+- **Column reinforcement**: Antonis-recommended wall reinforcement next to columns for earthquake stability — approved and underway
+- **Tiles arrived**: Spanish Crosscut Marfil tiles confirmed arrived Mon Jun 29, tiling now starting
+
+### Open items
+- **Vicky to send updated DWG file** — old file has side window in Apt B, old kitchen layout, 2.60m opening
+- **Workers insurance €3,858** (Apr–Jun): still unconfirmed — check ASAP
+- **New property** — Vicky to share price info by ~Jul 2–3
+- **NBG balance €1,640** — Vicky to withdraw for remaining Jun 25–28 expenses
+
+**Running total spent:** ~€78,341 of est. €275K (~28.5%)
+
+---
+
+## June 30 – July 6, 2026 — Week's Expenses Approved, Major Structural Cost Surfaces (SikaGrout 340)
+
+Quiet on-site week (photos of site visits from tourists, general banter) until Vicky's Monday morning report on July 6, which turned out to be significant. She itemized last week's expenses (€150 sand/gravel, €40 fuel, €400 steel for wall bond beams above door openings, €1,800 to Kairis for column reinforcement steel/cement/resin anchors, €1,910 workers' wages — total €4,300) and Kobi approved all of them that morning ("Please go ahead with all the payments"). Vicky withdrew **€3,000 cash** from NBG the same day to cover the bulk of it — consistent with the same partial-withdrawal pattern as the Jun 25–28 week, meaning roughly **€1,300 remains to be withdrawn** to fully cover this batch.
+
+The bigger news: Vicky flagged that the material needed to cast the reinforced structural columns — **SikaGrout 340**, a special non-shrink grout that cures to near-granite strength and can only be mixed with water — is going to be a major cost. Each column requires ~70 bags (at ~€4.6m height, foundation to 2nd floor slab), current price ~€40/bag, and she estimates **~500 bags total across all columns needing this treatment — roughly €20,000 in material alone**, before accounting for the extra workers, mixers, and vibration equipment needed for the continuous same-day pour once casting starts. She's negotiating directly with the supplier for a better price given the volume.
+
+On the plus side, **Antonis has given Vicky the green light to manage the reinforcement work herself** rather than bringing in a specialized contractor — those teams aren't available before September, which would have stalled the whole site for ~2 months. Antonis will still receive continuous photo documentation and visit to inspect, but his fee is being renegotiated down to a one-off, "low and reasonable" payment covering his technical support and the structural studies/calculations already completed — meaning his total fee will likely come in **below** the original €25–30K contract estimate.
+
+Yael pushed back with good questions in the group (are the workers actually qualified? how many columns are we talking about?) — Vicky pointed to a hotel in Aedipsos where the same team did this work and the building survived a major earthquake a week after completion. A Zoom call was held the evening of Jul 6 between Kobi, Yael and Vicky to go through the numbers, but it was cut short when Vicky's phone died. They agreed to reconvene the following week to finish the discussion.
+
+### Payments
+
+**Accounting note (precision fix, Jul 7):** only €3,000 of this €4,300 batch has actually left the NBG account so far. The 5 items below are logged as **Committed** (approved by Kobi, reported by Vicky, not yet individually confirmed as bank-paid), and a separate €3,000 **Paid** placeholder line records the actual cash withdrawal against the batch — since it isn't yet known which specific item(s) that €3,000 covers. Once the remaining ~€1,300 is withdrawn and/or Vicky confirms the split, the 5 items will flip to Paid and the placeholder will be removed to avoid double-counting.
+
+| Item | Amount | Method | Status | Notes |
+|---|---|---|---|---|
+| Sand and gravel (week Jun29–Jul5) | €150 | cash | Committed | |
+| Fuel — concrete mixers | €40 | cash | Committed | |
+| Steel reinforcement — wall bond beams above door openings | €400 | cash | Committed | |
+| Kairis — column reinforcement steel, cement, resin anchors | €1,800 | cash | Committed | Enough rebar left over for 1 more column; stirrups to be ordered separately |
+| Workers' wages (week Jun29–Jul5) | €1,910 | cash | Committed | |
+| Cash withdrawal — partial funding for above batch | €3,000 | cash | **Paid** | Actual bank withdrawal Jul 6; item-level allocation TBC |
+| **Total (approved this week)** | **€4,300** | | | €3,000 confirmed withdrawn; ~€1,300 still to withdraw |
+
+### Decisions
+- **Vicky to self-manage structural reinforcement** rather than wait for a specialist contractor (unavailable until Sept) — approved by Antonis
+- **Antonis's fee restructured**: one-off "low and reasonable" payment for technical support + completed structural studies, instead of the full original Phase 1 contract — likely reduces total Phase 4 cost
+- **Week Jun29–Jul5 expenses (€4,300) approved** by Kobi Jul 6 — "go ahead with all the payments"
+
+### Open items
+- **SikaGrout 340 — ~€20,000 estimated material cost** (≈500 bags @ ~€40, still being negotiated by Vicky) — needs Kobi's attention once price is firmed up; not yet in committed budget
+- **~€1,300 remaining** from week Jun29–Jul5 expenses — to be withdrawn
+- **Reconvene Zoom call** with Vicky (cut short Jul 6) to finish reviewing the structural reinforcement plan and cost
+- **Workers insurance €3,858** (Apr–Jun): still unconfirmed
+- **New property** (2 small houses, same village): Vicky was due to share pricing ~Jul 2–3 — follow up
+- **NBG balance €1,640** open item from prior week — confirm resolved
+
+**Running total spent (confirmed Paid only):** ~€81,341 of est. €275K (~29.6%). Additional €21,753 Committed (approved, unpaid), including the €4,300 batch above.
+
+---
+
+## July 7, 2026
+
+No new Evia HOME activity — checked WhatsApp group, direct chat with Vicky, and Gmail since last check (Jul 6, 20:47); nothing new on any channel.
+
+---
+
+## July 7–10, 2026 — First Column Poured, Grout Price & Quantity Confirmed, Kairis Balance Settled
+
+Kobi checked in with Vicky on Jul 9 for a financial update: status of the ~€1,300 still owed from last week's batch, the workers' insurance payment, and — with the Thailand trip approaching (Jul 21–Aug 12) — a ballpark on the next two months' expenses so he can plan the next Israel-to-Greece transfer. Vicky confirmed the insurance is due by law-mandated end of month (no rush), and she'd have the two-month forecast within 6–7 days once she knows exactly how many grout bags the columns will need. Kobi asked for it by end of next week, before he flies out.
+
+Jul 10 brought that clarity. Vicky took the first column all the way through with SikaGrout — industrial-grade non-shrink grout normally used for anchoring wind turbines — and was clearly floored by it: "crazy crazy crazy strong," forming rope-like strands in the mixer rather than separating, poured almost like milk into every sealed gap. Three local cement specialists came by to watch, never having seen the material used before. She's now watering the column overnight as it cures and generates heat.
+
+The numbers firmed up considerably: **Kairis secured €35.20/bag** (down from the ~€40 planning estimate), and the engineering scope is now concrete — **3 columns + 4 beams, ~400 bags total** (foundation-to-roof-garden breakdown: 1.60m ground floor + 3.25m first floor + 3.25m roof garden per column, ×2 more columns, plus beams). That puts total grout material cost at **~€14,080** — a meaningful improvement on the earlier ~€20,000/500-bag estimate flagged Jul 6. Separately, the custom reinforcement bars wrapped around the column steel (placed every 10cm up the full height) run €1.95 each; the design calls for 80 per column, not the 40 originally tested.
+
+On the money side: Vicky withdrew **€3,000 cash** on Jul 10 — €1,300 of it completing last week's Jun29–Jul5 batch (now fully paid out), and €1,700 as a fresh partial payment toward the new Kairis grout/reinforcement balance. Kairis sent a detailed statement: an itemized list of remaining small items (rebar, jackets, resins, cement, sand/gravel — €2,720 combined) plus a separate **€3,520 outstanding balance** covering the first 100 bags of grout received, the first reinforcing steel, and resins. He's also floated ordering **200 more bags (€7,040)** and **20 more steel bars (€700)** to keep material flowing. Vicky doesn't expect another purchase at this scale for the rest of the build, aside from kitchens.
+
+Also on Jul 7, Vicky shared photos of a small order that had arrived (the cheaper option she'd sourced) — Yael confirmed it looked great and credited Vicky's supplier call for the good outcome.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Sand and gravel (week Jun29–Jul5) | €150 | cash | Flipped Committed → Paid; full €4,300 batch now bank-confirmed |
+| Fuel — concrete mixers (week Jun29–Jul5) | €40 | cash | Flipped Committed → Paid |
+| Steel reinforcement — wall bond beams | €400 | cash | Flipped Committed → Paid |
+| Kairis — column reinforcement steel/cement/resin anchors | €1,800 | cash | Flipped Committed → Paid |
+| Workers' wages (week Jun29–Jul5) | €1,910 | cash | Flipped Committed → Paid |
+| Kairis — SikaGrout/reinforcement materials (partial) | €1,700 | cash | New charge, part of Jul 10 €3,000 withdrawal |
+| **Total confirmed this update** | **€3,000 net new cash out** | | (€1,300 completes prior batch + €1,700 new); Jul 6 placeholder line removed, now superseded by itemized Paid rows |
+
+### Decisions
+- **Grout scope locked in**: 3 columns + 4 beams, ~400 bags total, €35.20/bag confirmed price (~€14,080 total material cost) — supersedes the Jul 6 ~500-bag/€20K estimate
+- **Reinforcement bar spec confirmed**: 80 custom bars per column (not 40), €1.95 each, placed every 10cm
+
+### Open items
+- **Kairis outstanding balance €3,520** (100 bags grout received + first reinforcing steel + resins) — confirm with Vicky whether the Jul 10 €1,700 payment already applies against this, or is separate
+- **Possible next order**: 200 more SikaGrout bags (€7,040) + 20 steel bars (€700) — not yet placed, confirm before treating as committed spend
+- **Two-month expense forecast** — Vicky to provide by ~Jul 16–17 (before Kobi's Thailand departure Jul 21) so the next Israel→Greece transfer can be sized
+- **Workers insurance €3,858** — still unconfirmed, due by law end of July
+
+**Running total spent (confirmed Paid only):** ~€84,341 of est. €275K (~30.7%). Committed (approved, unpaid) now ~€17,453.
+
+---
+
+## July 11, 2026
+
+Yael replied in the group to Vicky's Jul 10 report, thanking her for the update and greenlighting the next grout order: 200 more bags of SikaGrout plus 20 steel bars (~€7,740 combined, per Vicky's Jul 10 figures). She also re-raised the open question from the Jul 10 entry — whether the €1,700 paid Jul 10 already applies against the new €3,520 Kairis balance — still awaiting Vicky's answer.
+
+### Decisions
+- **Next grout order approved** (Yael, Jul 11): 200 more SikaGrout bags (€7,040) + 20 steel bars (€700) = ~€7,740. Logged as Committed — Vicky has not yet placed the order or paid.
+
+### Open items
+- **Kairis €3,520 balance allocation** — still unconfirmed whether the Jul 10 €1,700 payment applies against it (asked again by Yael Jul 11)
+
+**Running total spent (confirmed Paid only):** ~€84,341 of est. €275K (~30.7%). Committed (approved, unpaid) now ~€25,193 (includes the newly approved €7,740 grout/steel order).
+
+---
+
+## July 11, 2026 — Balance Sheet Fix + NBG Reconciliation
+
+Kobi flagged that the balance sheet's Summary tab hadn't been updating whenever withdrawals were reported — the "Current NBG balance" figure was a hardcoded number frozen at the 25-Jun statement (€35,202.94), even though it should have moved with every cash withdrawal since. Root cause: the figure was a literal typed into the spreadsheet-generator script, disconnected from the ledger. Fixed by introducing a single "Current NBG Balance Anchor" in `balance_sheet_builder.py` — one clearly labeled block holding the last full statement (date + balance) and the most recent reported balance (date + balance) — that both the Summary tab and a new "Rolling Bridge" section on the Reconciliation tab now read from automatically. The Rolling Bridge computes `statement balance + deposits since − NBG-paid expenses since` and compares it live against whatever balance Kobi last reported, so it can no longer silently go stale.
+
+Kobi then supplied the current NBG balance: **€23,505.02** (as of today). Reconciling against the ledger: from the 25-Jun statement (€35,202.94), €10,790 in NBG cash-out is logged since then (Jun 27 cleaning €150, Jun 29 Yael-unit batch €4,640, Jul 10 structural batch + grout partial €6,000), projecting a balance of €24,412.94 — **€907.92 higher than the actual reported balance**. This gap is flagged, not force-fitted: most likely an ATM withdrawal ran ahead of the itemized weekly reconstruction (the known cash-float pattern), or Vicky has spent something not yet reported in the group. Logged as an open item for her to confirm.
+
+### Decisions
+- **Balance sheet architecture fix**: Summary tab + Reconciliation tab now share one live-updating NBG balance anchor instead of a disconnected hardcoded figure — this class of bug shouldn't recur.
+
+### Open items
+- **€907.92 reconciliation gap** (25-Jun statement → 11-Jul reported balance) — ask Vicky to confirm whether it's cash-float timing or unreported spending
+
+**Running total spent (confirmed Paid only):** ~€84,341 of est. €275K (~30.7%). Committed ~€25,193. NBG balance: €23,505.02 (11-Jul-2026, reported).
+
+---
+
+## July 11, 2026 (afternoon) — Kairis Balance Update, Central Column Discovery, Scope Now ~Double the Antonis Contract
+
+Vicky confirmed the €1,300 remaining from last week's Kairis debt is settled ("this finished"). She then gave a fuller breakdown of this week's Kairis account: €3,420 + €3,530 in new materials for columns and beams = €6,940 total, minus the €1,700 already paid Jul 10, leaving a **€5,240 outstanding debt** — this supersedes (and is more complete than) the €3,520 figure she gave Jul 10, and confirms the €1,700 payment does apply against it, resolving that open question. Adding the already-approved next order (€7,740 for 200 more grout bags + steel), her running total comes to €5,240 + €7,740 = €12,980 — though she followed up moments later with just "13,730" with no explanation, a €750 discrepancy against her own math. She plans to ask Kairis Monday whether he'd prefer a bank transfer for part of the balance instead of cash (easier on her end).
+
+Separately, and more significant: Vicky shared that the original central column — the only one holding up 3 beams (one doubled) — was built 50 years ago at just 40×20cm, and is being reinforced up to 40×55cm. Photos showed the scale of the discovery (7 beams across 2 floors needing this treatment). She was direct about the implication: "the work we will do here is double than on the contract with Antonis. As we were proceeding more things came out. That's why he said — do it, it's impossible to keep on prices without my guys." Antonis is also racing Sika to find a cheaper compound for the connection beams. Kobi's response was supportive but non-committal ("stay flexible, the house will surprise you") — no formal budget re-approval has happened yet for this scope expansion.
+
+### Decisions
+- **Confirmed:** the €1,700 paid Jul 10 does apply against the Kairis grout/reinforcement balance (resolves the open question from the Jul 10/11 entries)
+
+### Open items
+- **Scope now ~double the original Antonis contract** — no updated budget figure yet; needs a real conversation with Vicky/Antonis on what this means for the total structural reinforcement cost, beyond the grout material figures already tracked
+- **Payment method for Kairis** — Vicky asking him Monday whether he'd prefer bank transfer for part of the balance
+
+**Correction (same day):** Kobi confirmed Vicky's "13,730" wasn't a conflicting number — she corrected herself in the text: €12,980 + €750 = €13,730. The extra €750 is a real additional item (detail not yet specified by Vicky). Logged both the €5,240 debt (this week's column/beam materials, not yet paid) and the €750 addition as new Committed lines in the balance sheet. **Committed total is now ~€31,183** (was €25,193), reflecting: €7,740 next grout order + €5,240 Kairis debt + €750 additional item, on top of the pre-existing committed items (electrician, insurance, etc.).
+
+**Running total spent (confirmed Paid only):** ~€84,341 of est. €275K (~30.7%). Committed (approved, unpaid) now ~€31,183.
+
+---
+
+## July 12–20, 2026 — ATM Hiccup, New Transfer, 4-Day Work Stoppage, Vicky Returns
+
+Sunday Jul 12: Vicky planned to withdraw €3,000 cash to cover the week's workers (€2,150) and make a Kairis payment — but the ATM ran dry at €2,000 and she had to wait for the bank to reload Monday. A small real-world delay with no lasting consequence. Workers for the week (Jul 7–12) are logged as paid at €2,150.
+
+Monday Jul 13: Kobi messaged the group to announce a significant transfer from Israel, bringing the NBG balance to approximately **€70,000**. He framed it clearly: "Including the money owed to insurance, electrician, plumber, Kairis, and the near future expenses, it should get us, at least, 2 months further in the project." He also raised the possibility of researching EPC government grants (energy-efficiency subsidies) — noting that certain categories of spend (windows, insulation, AC, heat pump, solar water heater, Kairis structural materials) might qualify, and asking Vicky to think about which invoices to keep for a future grant application.
+
+Then silence. Yael followed up Jul 14 ("not used to no reply from you"), then again Jul 16 with genuine worry. On Jul 17, Vicky re-emerged with a long, heartfelt explanation: her daughter had been devastated by university entrance application stress, and Vicky had effectively "kidnapped" her for focused time together — including stopping work on site for four days because she felt she couldn't be there properly and was afraid mistakes would happen. The university list was finally submitted the night of Jul 16. Yael replied warmly on behalf of both her and Kobi, and the group returned to its normal warmth.
+
+As of Jul 20: no further financial updates or work reports since Vicky's return message on Jul 17. The site has likely resumed but no weekly expense summary has come in yet.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Workers week Jul 7–12 | €2,150 | cash | Vicky withdrew €2,000 Jul 12 (ATM limit); remainder settled |
+| **Total** | **€2,150** | | |
+
+### Open items
+- **Kairis debt €13,730** — Vicky was to discuss payment method (cash vs. transfer) with Kairis on Monday Jul 13; no update yet
+- **Workers insurance €3,858** — still unconfirmed, due by law end of July
+- **Confirm exact Jul 13 transfer amount** — Kobi's message says "significant amount" and ~€70K balance; need exact figure for DEP ledger
+- **EPC government grants** — Vicky to identify which invoices needed; Kobi raised this before Thailand trip (Jul 21–Aug 12)
+- **Antonis scope review** — structural work now roughly double the original contract; no revised budget agreement yet
+
+**Running total spent (confirmed Paid only):** ~€86,491 of est. €275K (~31.5%). Committed ~€31,183. NBG balance ~€70,000 (Jul 13, post-transfer).

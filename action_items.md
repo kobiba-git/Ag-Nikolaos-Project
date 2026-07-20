@@ -75,4 +75,25 @@
 | 2026-06-28 | Basement under Apt A — assess depth and decide if basement wanted | Vicky/Kobi | Open |
 | 2026-06-29 | Vicky to send updated DWG file — Kobi's copy outdated (side window in Apt B, old kitchen layout, 2.60m opening instead of 2.25m) | Vicky | Open |
 | 2026-06-29 | New potential property (2 small houses, 1000–1500 sqm plot, same village) — Vicky to confirm price by ~Jul 2–3 | Vicky | Open |
+| 2026-07-20 | Settle Kairis outstanding debt €13,730 — Vicky to discuss cash vs. bank transfer with Kairis | Vicky | Open |
+| 2026-07-20 | Confirm exact amount of Jul 13 Israel→NBG transfer (Kobi sent "significant amount", NBG ~€70K) for DEP ledger | Kobi | Open |
+| 2026-07-20 | Research EPC government grant invoices — windows, insulation, AC, heat pump, solar water heater, Kairis structural materials | Vicky | Open |
+| 2026-07-20 | Antonis scope review — structural work now ~double original contract; agree on revised budget/scope | Kobi/Vicky | Open |
+| 2026-07-20 | Workers insurance €3,858 (Apr–Jun) — due by law end of July, still unconfirmed paid | Vicky | Open |
 | 2026-06-29 | Withdraw remaining €1,640 (balance of week Jun25-28 expenses) from NBG next withdrawal | Vicky | Done ✅ |
+| 2026-07-06 | Cash withdrawal €3,000 (Jul 6) — itemized: week Jun29-Jul5 expenses €4,300 approved by Kobi, €3,000 withdrawn, ~€1,300 remains | Vicky | Done ✅ |
+| 2026-07-06 | Withdraw remaining ~€1,300 for week Jun29-Jul5 expenses (logged as Committed, not Paid, until this happens) | Vicky | Done ✅ (Jul 10: full €3,000 withdrawn — €1,300 completed this batch, €4,300 batch now fully Paid) |
+| 2026-07-06 | SikaGrout 340 structural grout — ~500 bags (~€20,000 est.) needed for column reinforcement. Vicky negotiating supplier price. Confirm final cost once firmed up. | Vicky → Kobi | Done ✅ (Jul 10: price confirmed €35.20/bag, scope confirmed 3 columns+4 beams ≈400 bags total ≈€14,080) |
+| 2026-07-06 | Finalize Antonis's renegotiated one-off fee (technical support + completed structural studies, replacing original Phase 1 contract) | Vicky | Open |
+| 2026-07-06 | Reconvene Zoom call with Vicky (cut short Jul 6, phone died) to finish reviewing structural reinforcement plan/cost | Kobi + Yael + Vicky | Open |
+| 2026-07-09 | Two-month expense forecast requested by Kobi (needed before Thailand trip Jul 21) — Vicky to provide within 6-7 days | Vicky → Kobi | Open |
+| 2026-07-10 | Confirm whether Jul 10 €1,700 Kairis payment already applies against the new €3,520 outstanding balance, or is separate | Vicky → Kobi | Open |
+| 2026-07-10 | Possible next grout order: 200 more SikaGrout bags (€7,040) + 20 steel bars (€700) — not yet placed, confirm before treating as committed spend | Vicky | Done ✅ (Jul 11: Yael greenlit the order, ~€7,740, logged as Committed — Vicky still needs to place it) |
+| 2026-07-10 | Workers insurance €3,858 (Apr-Jun) — still unconfirmed, due by law end of July | Vicky | Open |
+| 2026-07-11 | Place approved order: 200 more SikaGrout bags + 20 steel bars (~€7,740, approved by Yael Jul 11) | Vicky | Open |
+| 2026-07-11 | Kairis €3,520 balance allocation still unconfirmed — Yael re-asked whether Jul 10 €1,700 payment applies against it | Vicky → Kobi/Yael | Done ✅ (Vicky confirmed same-day: €1,700 does apply, revised balance is €5,240 not €3,520) |
+| 2026-07-11 | €907.92 reconciliation gap (25-Jun statement €35,202.94 → 11-Jul reported €23,505.02, ledger only explains €10,790 of the drop) — confirm with Vicky: cash-float timing or unreported spending | Vicky → Kobi | Open |
+| 2026-07-11 | Kairis running balance discrepancy: Vicky's own math gives €12,980 (€5,240 debt + €7,740 next order) but she separately said €13,730 — clarify which is correct | Vicky → Kobi | Done ✅ (Kobi confirmed: not a discrepancy, Vicky corrected herself — €12,980+€750=€13,730. Both €5,240 and €750 logged as Committed) |
+| 2026-07-11 | What is the €750 additional item Vicky added to the Kairis total? Detail not yet given | Vicky → Kobi | Open |
+| 2026-07-11 | Scope of structural reinforcement now ~double the original Antonis contract per Vicky — needs a real budget conversation, not yet quantified beyond grout material costs already tracked | Vicky + Kobi | Open |
+| 2026-07-11 | Antonis racing Sika to find a cheaper compound for connection beams — follow up on outcome | Vicky | Open |
