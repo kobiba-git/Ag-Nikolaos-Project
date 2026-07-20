@@ -97,3 +97,4 @@
 | 2026-07-11 | What is the €750 additional item Vicky added to the Kairis total? Detail not yet given | Vicky → Kobi | Open |
 | 2026-07-11 | Scope of structural reinforcement now ~double the original Antonis contract per Vicky — needs a real budget conversation, not yet quantified beyond grout material costs already tracked | Vicky + Kobi | Open |
 | 2026-07-11 | Antonis racing Sika to find a cheaper compound for connection beams — follow up on outcome | Vicky | Open |
+| 2026-07-20 | Worker wages for week Jul 13–19 not yet reported (site paused Jul 13–16, resumed Jul 17) — Vicky hasn't posted an expense breakdown for this stub week yet | Vicky → Kobi | Open |
