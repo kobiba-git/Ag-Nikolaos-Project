@@ -460,14 +460,16 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('transfer-note').textContent = bt.note;
 
     // Declare all computed vars first (used by both reconciliation and runway cards)
-    // estimatedBalance = totalTransferred - (totalKnownExpenses - duePending - israelDirectPayments)
-    // totalKnownExpenses includes committed/approved items not yet paid, so we add duePending back.
-    // israelDirectPayments = paid from Israeli bank directly (not via NBG), so subtract from Greek outflows.
+    // estimatedBalance = totalTransferred - acquisitionPaidFromNBG - renovationPaidFromNBG.
+    // Both deductions are pre-filtered in project_data.js to Paid + From-NBG=Yes, so this is just
+    // "money that actually left the account" -- no need to re-derive committed/israel-direct adjustments
+    // here. (Previous formula omitted the acquisition entirely and was off by ~€190K -- fixed 2026-07-21.)
     const duePending         = parseInt((D.kpis.duePending || '0').replace(/[^0-9]/g, ''), 10) || 0;
     const dueSub             = D.kpis.dueSub || '';
     const israelDirect       = bt.israelDirectPayments || 0;
-    const actuallyPaid       = bt.totalKnownExpenses - duePending - israelDirect;
-    const estimatedBalance   = bt.totalTransferred - actuallyPaid;
+    const acquisitionFromNBG = bt.acquisitionPaidFromNBG || 0;
+    const renovationFromNBG  = bt.renovationPaidFromNBG || 0;
+    const estimatedBalance   = bt.totalTransferred - acquisitionFromNBG - renovationFromNBG;
 
     // Reconciliation card
     const reconcDiff      = bt.greekAccountBalance - estimatedBalance;
@@ -481,13 +483,16 @@ document.addEventListener('DOMContentLoaded', function() {
         <span>💸 Total transferred</span><strong>${fmtEur(bt.totalTransferred)}</strong>
       </div>
       <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--lred);border-radius:6px;">
-        <span>📋 Total committed/logged</span><strong>−${fmtEur(bt.totalKnownExpenses)}</strong>
+        <span>🏠 Property acquisition (paid from NBG)</span><strong>−${fmtEur(acquisitionFromNBG)}</strong>
+      </div>
+      <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--lred);border-radius:6px;">
+        <span>🔨 Renovation paid (from NBG)</span><strong>−${fmtEur(renovationFromNBG)}</strong>
       </div>
       <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--yellow);border-radius:6px;">
-        <span>⏳ Due/pending (not yet paid)</span><strong>+${fmtEur(duePending)}</strong>
+        <span>⏳ Due/pending (not yet paid, not deducted)</span><strong>${fmtEur(duePending)}</strong>
       </div>
       ${israelDirect > 0 ? `<div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--lblue);border-radius:6px;">
-        <span>✈️ Paid direct from Israel (not via NBG)</span><strong>+${fmtEur(israelDirect)}</strong>
+        <span>✈️ Of which paid direct from Israel (already excluded above)</span><strong>${fmtEur(israelDirect)}</strong>
       </div>` : ''}
       <div style="display:flex;justify-content:space-between;padding:8px 10px;background:var(--gray);border-radius:6px;border:2px solid var(--blue);">
         <span>🧮 Estimated NBG balance</span><strong style="font-size:15px;">${fmtEur(estimatedBalance)}</strong>

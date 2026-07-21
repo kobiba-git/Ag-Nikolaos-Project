@@ -335,7 +335,7 @@ const PROJECT_DATA = {
       { label: "Structural Reinforcement Materials (Kairis — grout/steel/sand, week Jun29-Jul10)", amount: "€4,050" },
     ],
     totalPaid:      "€92,481",
-    totalCommitted: "€31,183",
+    totalCommitted: "€26,178",
 
     ahead: [
       { label: "Antonis — Phase 1 (foundations & beams)", amount: "€25K–€30K" },
@@ -447,16 +447,22 @@ const PROJECT_DATA = {
       { date: "Sep 28, 2025",  amount: 15000 },
       { date: "Oct 12, 2025",  amount: 130000 },
       { date: "Jan 11, 2026",  amount: 10000 },
-      { date: "Feb 8, 2026",   amount: 20000 },
+      { date: "Feb 8, 2026",  amount: 20000 },
       { date: "Apr 26, 2026",  amount: 70000 },
+      { date: "Jul 13, 2026",  amount: 50000 },
     ],
-    totalTransferred: 270000, // all 6 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
+    totalTransferred: 320000, // all 7 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
     greekAccountBalance:  65505.00, // Kobi confirmed 21-Jul-2026 spot balance
     balanceAsOf:          "July 21, 2026",
-    totalKnownExpenses:   86491,   // renovation paid per balance sheet as of Jun 25 2026
-    israelDirectPayments: 973,     // paid direct from Israeli bank (not via NBG): Vicky reimbursement Jun 24
-    // estimated Greek balance = totalTransferred − (totalKnownExpenses − duePending − israelDirectPayments)
-    // = 100,000 − (72,000 − 10,600 − 973) ≈ €39,573 estimated; actual 35,200 → ~€4,373 unlogged
+    totalKnownExpenses:   92481,   // renovation paid, all methods (Paid status in the ledger) -- per balance sheet, updated 2026-07-21
+    israelDirectPayments: 973,     // subset of the above paid direct from Israel/personal funds, NOT via NBG (Vicky reimbursement Jun 24) -- kept for display only, not used in the balance estimate below
+    acquisitionPaidFromNBG: 167809, // property purchase, paid from NBG (see Property Acquisition 2025 sheet) -- previously missing from the estimate entirely
+    renovationPaidFromNBG:  90454,  // renovation Paid AND From-NBG=Yes only (excludes Wise/card-outside-NBG spend) -- per balance sheet, updated 2026-07-21
+    // Estimated NBG balance = totalTransferred − acquisitionPaidFromNBG − renovationPaidFromNBG.
+    // Both deduction figures come straight from the balance sheet ledger (Property Acquisition sheet +
+    // Renovation Ledger, filtered to Paid + From-NBG=Yes) so this stays correct as the ledger grows --
+    // it should NOT be reconstructed from totalKnownExpenses/duePending/israelDirectPayments, which
+    // previously produced an estimate off by ~€190K because it silently ignored the acquisition entirely.
     note: "Greek bank: NBG — GR18 0110 3180 0000 3180 0400 611",
   },
 
