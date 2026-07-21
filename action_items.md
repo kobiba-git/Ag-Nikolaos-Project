@@ -102,5 +102,6 @@
 | 2026-07-20 | Pay worker insurance €3,858 — accountant confirmed figures, Vicky cleared to proceed | Vicky | Partial ✅ (€1,865 paid Jul 20; €1,993 remaining) |
 | 2026-07-20 | Order lime + sand for Apt B plastering — Kairis wants cash | Vicky | Open |
 | 2026-07-20 | Confirm Kairis materials delivery (expected tomorrow, Jul 21 morning) | Vicky | Open |
-| 2026-07-20 | Finish remaining €1,993 insurance balance — Vicky uncertain she can withdraw again tomorrow (card/ATM limits) | Vicky | Open |
+| 2026-07-20 | Finish remaining €1,993 insurance balance — Vicky uncertain she can withdraw again tomorrow (card/ATM limits) | Vicky | Done ✅ (€1,990 paid Jul 21; €3 left, essentially settled) |
+| 2026-07-21 | Reconcile €767.94 residual in Rolling Bridge (statement+deposits-expenses vs. reported €65,505 balance) — likely untracked small cash spend | Vicky → Kobi | Open |
 | 2026-07-20 | Decide on alternative micro-concrete mix for beams (~1/4 price of SikaGrout) — contingent on specialist joining on-site | Vicky + Kobi | Open |

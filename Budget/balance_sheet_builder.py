@@ -34,8 +34,8 @@ def title(ws,text,sub,ncol):
 STATEMENT_DATE = "2026-06-25"
 STATEMENT_BALANCE = 35202.94
 # CURRENT_* = the most recent balance figure reported, even if just a spot-check (not a full statement).
-CURRENT_BALANCE_DATE = "2026-07-13"
-CURRENT_BALANCE = 70000.00
+CURRENT_BALANCE_DATE = "2026-07-21"
+CURRENT_BALANCE = 65505.00
 
 # ============ RENOVATION LEDGER ============
 # (date, category, description, vendor, amount, method, nbg, status)
@@ -180,11 +180,13 @@ L=[
 ("2026-05-23","Windows/Iron","Metalworker - small storage door+window","Metalworker",550,"cash","Yes","Committed",""),
 ("2026-06-15","Site Works","Excavator - road compaction (60t roller)","Excavator",600,"cash","Yes","Committed",""),
 ("2026-07-20","Legal/Admin","Worker insurance Apr-Jun - partial payment","EFKA",1865,"cash","Yes","Paid","2026-07-20"),
-("2026-06-25","Legal/Admin","Worker insurance Apr-Jun - remaining balance","EFKA",1993,"-","Yes","Committed",""),
+("2026-07-21","Legal/Admin","Worker insurance Apr-Jun - second partial payment","EFKA",1990,"cash","Yes","Paid","2026-07-21"),
+("2026-06-25","Legal/Admin","Worker insurance Apr-Jun - remaining balance","EFKA",3,"-","Yes","Committed",""),
 ("2026-07-19","Materials","Kairis - partial payment (ATM shortfall from last week)","Kairis",150,"cash","Yes","Paid","2026-07-20"),
 ("2026-06-24","Materials","Kairis - remaining balance","Kairis",45,"cash","Yes","Committed",""),
 ("2026-07-11","Materials","Kairis - next SikaGrout order (200 bags) + 20 steel bars - approved by Yael, not yet placed","Kairis",7740.00,"cash","Yes","Committed",""),
-("2026-07-11","Materials","Kairis - outstanding debt for column/beam materials received this week (EUR3,420+EUR3,530=EUR6,940, minus EUR1,700 already paid Jul10)","Kairis",5240.00,"cash","Yes","Committed",""),
+("2026-07-21","Materials","Kairis - partial payment toward column/beam debt","Kairis",1000.00,"cash","Yes","Paid","2026-07-21"),
+("2026-07-11","Materials","Kairis - outstanding debt for column/beam materials received this week (EUR3,420+EUR3,530=EUR6,940, minus EUR1,700 already paid Jul10, minus EUR1,000 paid Jul21)","Kairis",4240.00,"cash","Yes","Committed",""),
 ("2026-07-11","Materials","Kairis - additional item per Vicky Jul11 running-total correction (detail unspecified, confirms total EUR13,730)","Kairis",750.00,"cash","Yes","Committed",""),
 ]
 

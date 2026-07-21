@@ -1132,3 +1132,23 @@ Separately, Kobi noticed Vicky had withdrawn €3,000 today and asked her to ite
 - Alternative mix for beams — awaiting specialist's availability decision
 
 **Running total spent (confirmed Paid only):** ~€89,491 of est. €275K (~32.5%). Committed ~€29,168. NBG balance ~€70,000 (Jul 13, post-transfer, before today's €3,000+€4,800 withdrawals — note the €4,800 is not an Ag. Nikolaos expense).
+
+---
+
+## July 21, 2026 — Second Cash Withdrawal, Insurance Nearly Settled, Balance Update
+
+Kobi asked Vicky to itemize a second ~€3,000 withdrawal from this morning (separate from yesterday's). She confirmed: ~€1,990 finished off the EFKA insurance debt (leaving only ~€3 outstanding, essentially settled) and €1,000 went toward the Kairis column/beam materials debt. Kobi also reported the current NBG balance: €65,505 (Jul 21).
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Worker insurance (EFKA) — second partial payment | €1,990 | cash | Insurance debt now essentially settled (€3 left) |
+| Kairis — partial payment toward column/beam debt | €1,000 | cash | Reduces that debt line from €5,240 to €4,240 |
+| **Total** | **€2,990** | | |
+
+### Open items
+- **Reconciliation flag:** Rolling Bridge computes €66,272.94 (statement €35,202.94 + €50,000 deposit − €18,930 NBG-paid expenses since Jun 25) vs. the reported €65,505 balance — a **€767.94 residual**, above the normal ~€50 rounding threshold. Likely small cash spend not yet itemized (lime/sand, fuel, etc.) — worth a quick check with Vicky next report.
+- Kairis remaining exposure now €12,775 (was €13,730, after €1,000 paid today, plus the small €45 line)
+
+**Running total spent (confirmed Paid only):** ~€92,481 of est. €275K (~33.6%). Committed ~€26,178. NBG balance €65,505 (Jul 21).
