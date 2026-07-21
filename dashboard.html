@@ -365,13 +365,31 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>`).join('');
 
   // ── Action items
-  document.getElementById('action-items').innerHTML = D.actionItems.map(a => `
+  // Two schemas coexist in D.actionItems: the rich card form ({priority,label,title,desc})
+  // and a simpler tracked-item form ({item,owner,status,date}) used for routine follow-ups.
+  // Render each according to its own schema instead of assuming every entry is the rich form
+  // (that mismatch is what previously rendered as literal "undefined" text).
+  document.getElementById('action-items').innerHTML = D.actionItems.map(a => {
+    if (a.item !== undefined) {
+      const isDone = a.status === 'done';
+      const cls = isDone ? 'info' : 'high';
+      const badge = isDone ? '✅ DONE' : '🔵 OPEN';
+      return `
+    <div class="action-item ${cls}">
+      <div>
+        <div class="action-label">${badge} — ${esc(a.owner)}${a.date ? ' · ' + esc(a.date) : ''}</div>
+        <strong>${esc(a.item)}</strong>
+      </div>
+    </div>`;
+    }
+    return `
     <div class="action-item ${a.priority}">
       <div>
         <div class="action-label">${esc(a.label)}</div>
         <strong>${esc(a.title)}</strong> — ${esc(a.desc)}
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 
   // ── Payments table
   const badgeCls  = { paid:'badge-paid', due:'badge-due', upcoming:'badge-upcoming', blocked:'badge-pending' };
