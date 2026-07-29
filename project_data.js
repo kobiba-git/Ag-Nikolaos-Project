@@ -53,9 +53,9 @@ const PROJECT_DATA = {
     { icon: "💶", label: "Three More Cash Episodes (Jul 23–29)",
       sub: "Jul 23: €3,000 withdrawn, paid to Kairis. Jul 27: ATM only gave €700 of a planned €3,000 — covered €680 workers wages + concrete mixer, no Kairis payment that day. Jul 29: €3,000 withdrawn successfully, paid to Kairis. Kobi & Yael are in Thailand (Jul 21–Aug 12) throughout.",
       urgent: false },
-    { icon: "⚠️", label: "Reconciliation Residual Now €5,912 — Anchor Is Stale",
-      sub: "The €65,505 NBG balance anchor is from Jul 21, before this week's €6,680 in Kairis + wages withdrawals. Rolling Bridge now shows a €5,912 residual — expected drift, not missing money, but needs a fresh spot balance from Kobi/Vicky to re-anchor.",
-      urgent: true },
+    { icon: "✅", label: "Balance Reconciled — €58,805 (Jul 29)",
+      sub: "Kobi provided a fresh NBG spot balance (€58,805, Jul 29). Rolling Bridge residual is back to normal cash-float range: €787.94 — consistent with typical ATM/itemization timing drift, nothing to chase.",
+      urgent: false },
     { icon: "🧪", label: "Alternative Micro-Concrete Mix Under Discussion",
       sub: "Kobi shared a cost/complexity analysis of a self-compacting micro-concrete alternative to SikaGrout (~1/4 the price, €280–405/m³ materials vs. much higher installed cost). Vicky won't experiment on columns but is open to trying it on beams — only if the specialist personally joins on-site. Not yet decided.",
       urgent: false },
@@ -461,8 +461,8 @@ const PROJECT_DATA = {
       { date: "Jul 13, 2026",  amount: 50000 },
     ],
     totalTransferred: 320000, // all 7 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
-    greekAccountBalance:  65505.00, // Kobi confirmed 21-Jul-2026 spot balance
-    balanceAsOf:          "July 21, 2026",
+    greekAccountBalance:  58805.00, // Kobi confirmed 29-Jul-2026 spot balance
+    balanceAsOf:          "July 29, 2026",
     totalKnownExpenses:   99161,   // renovation paid, all methods (Paid status in the ledger) -- per balance sheet, updated 2026-07-29
     israelDirectPayments: 973,     // subset of the above paid direct from Israel/personal funds, NOT via NBG (Vicky reimbursement Jun 24) -- kept for display only, not used in the balance estimate below
     acquisitionPaidFromNBG: 167809, // property purchase, paid from NBG (see Property Acquisition 2025 sheet) -- previously missing from the estimate entirely

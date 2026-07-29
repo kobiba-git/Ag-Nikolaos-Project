@@ -1177,4 +1177,6 @@ Vicky's messages didn't specify which Kairis line items the €6,000 (Jul 23 + J
 - Two-month expense forecast (requested Jul 9, still outstanding since Jul 17 return) — no update this period
 - Insurance/EFKA €3 remaining balance — still open, trivial
 
-**Running total spent (confirmed Paid only):** ~€99,161 of est. €275K (~36.1%). Committed ~€20,178. NBG balance last reported €65,505 (Jul 21, stale — see reconciliation note above).
+**Running total spent (confirmed Paid only):** ~€99,161 of est. €275K (~36.1%). Committed ~€20,178. NBG balance €58,805 (Jul 29, fresh spot balance confirmed by Kobi).
+
+**Balance reconciled (Jul 29, same day):** Kobi provided a fresh spot balance — €58,805. Rolling Bridge residual is back to a normal range: €787.94 (statement €35,202.94 + €50,000 deposit − €25,610 NBG-paid expenses since Jun 25 = €59,592.94 computed vs. €58,805 reported). This resolves the €5,912 drift flagged earlier today — it was exactly the stale-anchor effect predicted, nothing to chase further.
