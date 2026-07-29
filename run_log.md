@@ -241,6 +241,6 @@ INTEGRITY CHECKS
 GIT PUSH
   Repo:   kobiba-git/Ag-Nikolaos-Project (branch: main)
   Files:  Budget/Ag_Nikolaos_Balance_Sheet.xlsx, action_items.md, project_data.js, project_log.md, whatsapp_last_checked.txt
-  Commit: (pending)
-  Status: pending
+  Commit: cc411c8 "chore: project update 2026-07-29 -- two Kairis payments (EUR6,000), ATM shortfall covered wages, balance sheet reconciled"
+  Status: ✅ success
 ════════════════════════════════════════════════════════
