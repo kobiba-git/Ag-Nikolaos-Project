@@ -105,3 +105,7 @@
 | 2026-07-20 | Finish remaining €1,993 insurance balance — Vicky uncertain she can withdraw again tomorrow (card/ATM limits) | Vicky | Done ✅ (€1,990 paid Jul 21; €3 left, essentially settled) |
 | 2026-07-21 | Reconcile €767.94 residual in Rolling Bridge (statement+deposits-expenses vs. reported €65,505 balance) — likely untracked small cash spend | Vicky → Kobi | Open |
 | 2026-07-20 | Decide on alternative micro-concrete mix for beams (~1/4 price of SikaGrout) — contingent on specialist joining on-site | Vicky + Kobi | Open |
+| 2026-07-21 | Reconcile €767.94 residual in Rolling Bridge — superseded, residual has grown to €5,912.06 as of Jul 29 (see below) | Vicky → Kobi | Superseded |
+| 2026-07-29 | Confirm Kairis debt allocation — €6,000 paid Jul 23 + Jul 29 was applied (best-guess assumption) against the €4,240 column/beam debt + €750 additional item + €1,010 toward the next order. Get Vicky's actual breakdown. | Vicky → Kobi | Open |
+| 2026-07-29 | Provide a fresh NBG spot balance — reconciliation residual now €5,912.06 (bridge computes €59,592.94 vs. €65,505 reported Jul 21, before this week's €6,680 in withdrawals). Not alarming, but the anchor is stale. | Kobi/Vicky | Open |
+| 2026-07-29 | Confirm ATM shortfall Jul 27 (€700 of planned €3,000) didn't leave any workers/mixer costs unpaid | Vicky | Open |

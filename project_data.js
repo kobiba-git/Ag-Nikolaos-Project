@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated: "2026-07-21",
-    weekOf: "Week of Jul 21–27, 2026",
+    lastUpdated: "2026-07-29",
+    weekOf: "Week of Jul 21–29, 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -38,9 +38,9 @@ const PROJECT_DATA = {
     { icon: "💰", label: "New Transfer — NBG Balance ~€70K",
       sub: "Kobi transferred a significant amount from Israel on Jul 13. NBG balance confirmed ~€70,000. Covers workers, insurance, electrician, plumber, Kairis, and ~2 months of project expenses.",
       urgent: false },
-    { icon: "🔩", label: "Kairis Debt — €13,730 Outstanding",
-      sub: "Accumulated Kairis debt: €7,740 (next SikaGrout order, 200 bags + 20 steel bars) + €5,240 (column/beam materials this week) + €750 (running correction). Vicky discussing payment terms with Kairis.",
-      urgent: true },
+    { icon: "🔩", label: "Kairis Debt — Down to €6,775 After Two More Payments",
+      sub: "€3,000 paid Jul 23 + €3,000 paid Jul 29 (€6,000 total) settled the €4,240 column/beam debt and €750 additional item in full. Remaining: €6,730 next SikaGrout order (200 bags + steel, not yet placed) + €45 old balance. Allocation is Claude's best guess — Vicky hasn't confirmed which items the payments applied to.",
+      urgent: false },
     { icon: "⚡", label: "Electrician — Work Ongoing",
       sub: "Electrical panel work underway. Insurance, electrician scope, and plumbing balances still to be settled from the new NBG funding.",
       urgent: false },
@@ -50,8 +50,11 @@ const PROJECT_DATA = {
     { icon: "🧾", label: "Insurance — Nearly Settled (€3 left)",
       sub: "Second withdrawal Jul 21 (~€3,000): ~€1,990 finished off the EFKA insurance debt (only €3 remaining) and €1,000 went to Kairis. Combined with Jul 20's withdrawal, EUR5,990+ moved through NBG cash across two days.",
       urgent: false },
-    { icon: "⚠️", label: "Balance Reconciliation Gap — €768",
-      sub: "NBG balance now €65,505 (Jul 21). Rolling Bridge computes €66,273 from statement + deposits − logged NBG expenses — a €768 residual above the normal rounding threshold. Likely small untracked cash spend (lime/sand for plastering, etc.) — worth a quick check with Vicky.",
+    { icon: "💶", label: "Three More Cash Episodes (Jul 23–29)",
+      sub: "Jul 23: €3,000 withdrawn, paid to Kairis. Jul 27: ATM only gave €700 of a planned €3,000 — covered €680 workers wages + concrete mixer, no Kairis payment that day. Jul 29: €3,000 withdrawn successfully, paid to Kairis. Kobi & Yael are in Thailand (Jul 21–Aug 12) throughout.",
+      urgent: false },
+    { icon: "⚠️", label: "Reconciliation Residual Now €5,912 — Anchor Is Stale",
+      sub: "The €65,505 NBG balance anchor is from Jul 21, before this week's €6,680 in Kairis + wages withdrawals. Rolling Bridge now shows a €5,912 residual — expected drift, not missing money, but needs a fresh spot balance from Kobi/Vicky to re-anchor.",
       urgent: true },
     { icon: "🧪", label: "Alternative Micro-Concrete Mix Under Discussion",
       sub: "Kobi shared a cost/complexity analysis of a self-compacting micro-concrete alternative to SikaGrout (~1/4 the price, €280–405/m³ materials vs. much higher installed cost). Vicky won't experiment on columns but is open to trying it on beams — only if the specialist personally joins on-site. Not yet decided.",
@@ -62,10 +65,10 @@ const PROJECT_DATA = {
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "€92,481",
-    paidSub:        "EUR 92,481 of EUR 275K (33.6%)",
-    duePending:     "€26,178",
-    dueSub:         "Kairis €12,775 (€7,740 next order + €4,240 column/beam debt + €750 unspecified + €45 remaining, after €1,000 paid Jul21) + electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3 (nearly settled) + metalworker €550 + excavator €600",
+    paidToDate:     "€99,161",
+    paidSub:        "EUR 99,161 of EUR 275K (36.1%)",
+    duePending:     "€20,178",
+    dueSub:         "Kairis €6,775 (€6,730 next SikaGrout order + €45 remaining, after €6,000 paid Jul23+Jul29 settled the column/beam debt + additional item) + electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3 (nearly settled) + metalworker €550 + excavator €600",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
   },
@@ -111,6 +114,8 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
+    { item: "Confirm Kairis debt allocation — €6,000 paid Jul 23 + Jul 29 was applied (Claude's assumption) against the €4,240 column/beam debt + €750 additional item + €1,010 toward the next order; get Vicky's actual breakdown", owner: "Vicky → Kobi", status: "open", date: "2026-07-29" },
+    { item: "Reconciliation residual now €5,912 (was €768 on Jul 21) — the NBG balance anchor is stale; get a fresh spot balance from Kobi/Vicky to re-anchor", owner: "Kobi/Vicky", status: "open", date: "2026-07-29" },
     { item: "SikaGrout structural grout — CONFIRMED Jul 10: €35.20/bag, ~400 bags total (3 columns + 4 beams) ≈ €14,080 ✅", owner: "Vicky → Kobi", status: "done", date: "2026-07-06" },
     { item: "Reconvene Zoom call with Vicky to finish reviewing structural reinforcement plan (cut short Jul 6, phone died)", owner: "Kobi + Yael + Vicky", status: "open", date: "2026-07-06" },
     { item: "Finalize Antonis's renegotiated one-off fee (replacing original Phase 1 contract)", owner: "Vicky", status: "open", date: "2026-07-06" },
@@ -124,7 +129,7 @@ const PROJECT_DATA = {
     { item: "Antonis racing Sika to find a cheaper compound for connection beams — follow up on outcome", owner: "Vicky", status: "open", date: "2026-07-11" },
     { item: "Next grout order — APPROVED by Yael Jul 11: 200 more bags (€7,040) + 20 steel bars (€700) ≈ €7,740. Logged as Committed. Vicky to place order.", owner: "Vicky", status: "open", date: "2026-07-11" },
     { item: "€907.92 unexplained gap between the ledger's projected NBG balance and the reported €23,505.02 (Jul 11) — likely cash-float (ATM withdrawal ahead of itemized expenses) or unreported spending. Ask Vicky to confirm.", owner: "Vicky → Kobi", status: "open", date: "2026-07-11" },
-    { item: "Settle Kairis outstanding debt €13,730 — Vicky to discuss payment terms/transfer with Kairis on Monday", owner: "Vicky", status: "open", date: "2026-07-20" },
+    { item: "Settle Kairis outstanding debt — €6,000 paid Jul 23+29 (of €13,730 original), reducing exposure to €6,775. Confirm exact allocation with Vicky. ⚠️ partial progress", owner: "Vicky", status: "open", date: "2026-07-20" },
     { item: "Confirm exact amount of new Israel→NBG transfer (Kobi sent ~Jul 13, balance now ~€70K) to log in DEP list", owner: "Kobi", status: "open", date: "2026-07-20" },
     { item: "Research EPC government grants — identify invoices needed: windows, insulation, AC, heat pump, solar water heater, Kairis materials", owner: "Vicky", status: "open", date: "2026-07-20" },
     { item: "Antonis contract scope review — work is roughly double original contract; discuss implications for budget and revised agreement", owner: "Kobi/Vicky", status: "open", date: "2026-07-20" },
@@ -200,6 +205,9 @@ const PROJECT_DATA = {
   // ── Payment schedule ──────────────────────────────────────────────
   // status: "paid" | "due" | "upcoming" | "blocked"
   payments: [
+    { date: "Jul 29",     category: "Materials - Structure", desc: "Kairis — cash payment toward outstanding materials debt. Successful withdrawal ('It worked').", vendor: "Kairis", amount: "€3,000", status: "paid" },
+    { date: "Jul 27",     category: "Labor",    desc: "Workers wages + concrete mixer cost, week of Jul 20–24 (small crew, few days on site). ATM only dispensed €700 of a planned €3,000 — no Kairis payment made that day.", vendor: "Workers", amount: "€680", status: "paid" },
+    { date: "Jul 23",     category: "Materials - Structure", desc: "Kairis — cash payment toward outstanding materials debt. Confirmed successful ('Done').", vendor: "Kairis", amount: "€3,000", status: "paid" },
     { date: "Jul 12",     category: "Labor",    desc: "Workers wages — week Jul 7–12. Vicky withdrew €2,000 cash (ATM limit reached), remainder covered subsequently.", vendor: "Workers", amount: "€2,150", status: "paid" },
     { date: "Jul 10",     category: "Materials - Structure", desc: "Week Jun29-Jul5 batch (sand/gravel, fuel, wall bond beam steel, Kairis column reinforcement materials, workers' wages) — fully bank-confirmed Jul 10 with the withdrawal of the remaining €1,300 (€3,000 was withdrawn Jul 6). All 5 items flipped from Committed to Paid.", vendor: "Kairis / Suppliers / Workers", amount: "€4,300", status: "paid" },
     { date: "Jul 10",     category: "Materials - Structure", desc: "Kairis — SikaGrout/reinforcement materials, partial payment toward new €3,520 balance (first 100 bags grout + first reinforcing steel + resins). Part of same €3,000 cash withdrawal.", vendor: "Kairis", amount: "€1,700", status: "paid" },
@@ -333,9 +341,10 @@ const PROJECT_DATA = {
       { label: "Tiles (Spanish Crosscut Marfil, Jun 19)", amount: "€286" },
       { label: "Yael's Unit Furnishings (bed frame, bedding, mattress)", amount: "~€905" },
       { label: "Structural Reinforcement Materials (Kairis — grout/steel/sand, week Jun29-Jul10)", amount: "€4,050" },
+      { label: "Kairis debt payments + workers wages (Jul 23-29)", amount: "€6,680" },
     ],
-    totalPaid:      "€92,481",
-    totalCommitted: "€26,178",
+    totalPaid:      "€99,161",
+    totalCommitted: "€20,178",
 
     ahead: [
       { label: "Antonis — Phase 1 (foundations & beams)", amount: "€25K–€30K" },
@@ -431,7 +440,7 @@ const PROJECT_DATA = {
     summary: {
       dueNow:     "~€10,600",  dueSub:     "Kairis ~€195 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600 + Mattress €400 + Vicky reimbursements ~€1,100",
       workers:    "✅ Paid Jun 22 + Kairis Jun 24", workersSub: "Workers Jun 16–21 (€2,280 cash). Kairis €1,800 paid Jun 24. Running total ~€72K.",
-      paidToDate:     "€92,481",
+      paidToDate:     "€99,161",
       atmLimit:   "€2K",
       laborerRate: "€50/day",
       skilledRate: "€80/day",
@@ -454,10 +463,10 @@ const PROJECT_DATA = {
     totalTransferred: 320000, // all 7 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
     greekAccountBalance:  65505.00, // Kobi confirmed 21-Jul-2026 spot balance
     balanceAsOf:          "July 21, 2026",
-    totalKnownExpenses:   92481,   // renovation paid, all methods (Paid status in the ledger) -- per balance sheet, updated 2026-07-21
+    totalKnownExpenses:   99161,   // renovation paid, all methods (Paid status in the ledger) -- per balance sheet, updated 2026-07-29
     israelDirectPayments: 973,     // subset of the above paid direct from Israel/personal funds, NOT via NBG (Vicky reimbursement Jun 24) -- kept for display only, not used in the balance estimate below
     acquisitionPaidFromNBG: 167809, // property purchase, paid from NBG (see Property Acquisition 2025 sheet) -- previously missing from the estimate entirely
-    renovationPaidFromNBG:  90454,  // renovation Paid AND From-NBG=Yes only (excludes Wise/card-outside-NBG spend) -- per balance sheet, updated 2026-07-21
+    renovationPaidFromNBG:  97133,  // renovation Paid AND From-NBG=Yes only (excludes Wise/card-outside-NBG spend) -- per balance sheet, updated 2026-07-29
     // Estimated NBG balance = totalTransferred − acquisitionPaidFromNBG − renovationPaidFromNBG.
     // Both deduction figures come straight from the balance sheet ledger (Property Acquisition sheet +
     // Renovation Ledger, filtered to Paid + From-NBG=Yes) so this stays correct as the ledger grows --
@@ -471,7 +480,7 @@ const PROJECT_DATA = {
   // Update this section each run when open items / contact details change
   vickyComms: {
     // Message from Kobi to Vicky (update when there's something specific to say)
-    kobMessage: "Vicky — the SikaGrout results look incredible, well done! 🙏 Great news getting the price down to €35.20/bag and confirming the ~400-bag scope.\n\nJul 10 withdrawal (€3,000) received and understood — €1,300 completed last week's batch, €1,700 toward the new Kairis grout balance. Could you confirm whether that €1,700 already applies against the €3,520 outstanding balance you mentioned?\n\nAlso — please send the two-month expense forecast when you can, ideally by ~Jul 16-17, so I can arrange the next transfer before we fly to Thailand on Jul 21. Thank you for everything! 🏠❤️",
+    kobMessage: "Vicky — thanks for the update, and congrats on getting both Kairis withdrawals through this week (Jul 23 + Jul 29)! Sorry about the ATM only giving you €700 on the 27th — that's so frustrating.\n\nWe're in Thailand now (Kao Lak, near Phuket) until Aug 12 — having a wonderful time, thank you for asking. When you get a chance, could you confirm exactly which parts of the Kairis debt the €6,000 covered? And whenever you have a spare moment, a quick spot-check of the NBG balance would help us keep the books straight. No rush — enjoy the rest of your week! ❤️",
 
     // Items Vicky is waiting on from Kobi — update when decisions are made
     waitingOnKobi: [
@@ -481,13 +490,12 @@ const PROJECT_DATA = {
 
     // Items Vicky must action herself — update each run
     vickyMustAction: [
-      "🔴 Confirm workers insurance €3,858 paid (committed Jun 25 to pay by Jun 26 — unconfirmed)",
-      "🟡 Tiles (Spanish Crosscut Marfil) arriving Mon Jun 29 — confirm receipt and start tiling",
-      "🟡 Italian tile deposit ON HOLD — respond to Kobi's 4 questions before Casa Brava payment",
-      "🟡 NBG gov.gr login issue — help Yael & Kobi resolve at Istiaia branch during visit",
-      "🟡 Send two-month expense forecast (requested Jul 9, needed by ~Jul 16-17 before Kobi's Thailand trip)",
-      "🟡 What does the €750 additional item in the Kairis total (€13,730) cover?",
+      "🔴 Confirm allocation of €6,000 Kairis payments (Jul 23 + Jul 29) — which debt items were actually settled?",
+      "🟡 Provide a fresh NBG spot balance — reconciliation residual has grown to €5,912 since the Jul 21 anchor",
+      "🟡 Send two-month expense forecast (requested Jul 9, still outstanding since Jul 17 return)",
+      "🟡 What does the €750 additional item in the Kairis total cover? (now folded into the Jul 23/29 payments — confirm it was actually settled)",
       "🟡 Follow up: Antonis vs Sika compound race for connection beams — what's the outcome?",
+      "🟡 Confirm workers insurance €3 remaining balance settled",
     ],
 
     // Items Kobi has already authorized — update when new approvals given
@@ -506,6 +514,9 @@ const PROJECT_DATA = {
       "Wise transfer €972.55 to Vicky Revolut LT853250002013391261 — Praktiker reimbursement. Confirm received.",
       "Cash withdrawal Jul 10 €3,000 ✅ — completed Jun29-Jul5 batch (€1,300) + Kairis grout partial payment (€1,700).",
       "Next grout order approved (Yael, Jul 11) — 200 more SikaGrout bags + 20 steel bars, ~€7,740. Please place the order.",
+      "Cash withdrawal Jul 23 €3,000 ✅ — paid to Kairis (confirmed 'Done').",
+      "Cash withdrawal Jul 27 €700 ✅ — ATM shortfall, covered €680 workers wages + concrete mixer.",
+      "Cash withdrawal Jul 29 €3,000 ✅ — paid to Kairis (confirmed 'It worked').",
     ],
   },
 

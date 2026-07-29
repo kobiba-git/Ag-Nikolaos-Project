@@ -211,3 +211,36 @@ PUSHED: GitHub main aa15455
 FINANCIALS: Paid €86,491 | Committed €31,183 | NBG ~€70,000 (Jul 13)
 
 ════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════
+ Ag. Nikolaos Update Run — 2026-07-29 14:07
+════════════════════════════════════════════════════════
+
+FILES EDITED THIS RUN
+  Updates/project_log.md              edited
+  Budget/balance_sheet_builder.py     edited
+  Budget/Ag_Nikolaos_Balance_Sheet.xlsx  regenerated
+  Budget/archive/Ag_Nikolaos_Balance_Sheet_2026-07-29.xlsx  created (pruning to 2 skipped — Drive mount blocks delete)
+  project_data.js                     edited
+  action_items.md                     edited
+  whatsapp_last_checked.txt           updated
+  memory/project_ag_nikolaos.md       updated
+  memory/balance_sheet.md             updated
+  memory/project_feedback.md          updated
+  memory/MEMORY.md                    updated
+  dashboard.html                      not changed
+  dashboard_vicky.html                not changed
+  Updates/run_log.md                  appended
+
+INTEGRITY CHECKS
+  project_data.js:      OK
+  dashboard.html:       OK
+  dashboard_vicky.html: OK
+  balance_sheet xlsx:   OK (0 formula errors, recalculated via /tmp working copy — Drive-mounted original had a stale LibreOffice lock file blocking headless recalc)
+
+GIT PUSH
+  Repo:   kobiba-git/Ag-Nikolaos-Project (branch: main)
+  Files:  Budget/Ag_Nikolaos_Balance_Sheet.xlsx, action_items.md, project_data.js, project_log.md, whatsapp_last_checked.txt
+  Commit: (pending)
+  Status: pending
+════════════════════════════════════════════════════════

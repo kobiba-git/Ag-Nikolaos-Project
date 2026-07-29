@@ -1152,3 +1152,29 @@ Kobi asked Vicky to itemize a second ~€3,000 withdrawal from this morning (sep
 - Kairis remaining exposure now €12,775 (was €13,730, after €1,000 paid today, plus the small €45 line)
 
 **Running total spent (confirmed Paid only):** ~€92,481 of est. €275K (~33.6%). Committed ~€26,178. NBG balance €65,505 (Jul 21).
+
+---
+
+## July 23–29, 2026 — Two More Kairis Withdrawals, One ATM Shortfall, Kobi & Yael in Thailand
+
+A quiet week on the work-progress front (Kobi and Yael are traveling in Thailand, Jul 21–Aug 12) but three separate cash episodes worth tracking. On Jul 23, Vicky withdrew €3,000 toward the Kairis debt and confirmed success ("Done ☑️☑️☑️"). On Jul 27, she reported a small crew had worked only a few days that week, with wages + concrete mixer cost coming to €680; she planned to withdraw €3,000 (€680 for that + €2,300 more toward Kairis), but the ATM would only dispense €700 — so no Kairis payment happened that day, just the €680 wage/mixer cost. On Jul 29, she tried again and this time successfully withdrew €3,000 toward Kairis ("It worked 🥳"). The rest of the week was social catch-up: Vicky asked how the family's Thailand trip was going, they exchanged photos from Kao Lak near Phuket, and a tangent conversation about rural Greek ATM ram-raid statistics (prompted by the day's ATM frustration).
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Kairis — cash payment toward outstanding materials debt | €3,000 | Cash | Jul 23. Confirmed successful withdrawal + payment. |
+| Workers' wages + concrete mixer, week of Jul 20–24 (small crew) | €680 | Cash | Jul 27. ATM only dispensed €700 (of a planned €3,000); covered this cost, no Kairis payment made that day. |
+| Kairis — cash payment toward outstanding materials debt | €3,000 | Cash | Jul 29. Confirmed successful ("It worked"). |
+| **Total** | **€6,680** | | |
+
+### Balance sheet allocation (assumption — needs Vicky confirmation)
+Vicky's messages didn't specify which Kairis line items the €6,000 (Jul 23 + Jul 29) applies against. In the absence of a fresh running-balance breakdown, it was applied against the most specific outstanding Committed lines in order: the €4,240 column/beam materials debt (now settled in full), the €750 unspecified additional item (now settled in full), and the remaining €1,010 credited toward the €7,740 next SikaGrout order (200 bags + steel), now showing €6,730 Committed. **This allocation is a best guess — flag for Vicky to confirm the real breakdown next report.**
+
+### Open items
+- **Confirm Kairis debt allocation** — the €6,000 paid Jul 23/29 was applied against the column/beam debt + additional item + partial next-order per the assumption above; get Vicky's actual breakdown to correct if needed
+- **Reconciliation residual now -€5,912.06** (Rolling Bridge: €35,202.94 statement + €50,000 deposit − €25,610 NBG-paid expenses since Jun 25 = €59,592.94 computed vs. €65,505 reported balance). This is expected drift since the €65,505 anchor is from Jul 21, before this week's €6,680 in withdrawals — **not** a discrepancy, but the anchor needs a fresh spot balance from Kobi/Vicky to re-tie.
+- Two-month expense forecast (requested Jul 9, still outstanding since Jul 17 return) — no update this period
+- Insurance/EFKA €3 remaining balance — still open, trivial
+
+**Running total spent (confirmed Paid only):** ~€99,161 of est. €275K (~36.1%). Committed ~€20,178. NBG balance last reported €65,505 (Jul 21, stale — see reconciliation note above).
