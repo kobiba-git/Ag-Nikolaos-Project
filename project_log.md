@@ -1204,3 +1204,40 @@ Per Kobi directly: since the beginning of August, work on the house has been on 
 - (Carried over, unresolved) Fresh NBG spot balance — last confirmed Jul 29 (€58,805); now nearly 7 weeks old
 
 **Running total spent (confirmed Paid only):** ~€99,161 of est. €275K (36.1%) — unchanged since Jul 29. Committed ~€20,178. NBG balance last confirmed €58,805 (Jul 29) — stale, needs a fresh spot check.
+
+---
+
+## September 15, 2026 — Daily Check, No New Activity
+
+WhatsApp bridge restarted and confirmed live (checked twice, ~45s apart, after Kobi restarted it). No new messages in the Evia HOME group or the direct chat with Vicky since the last captured message (Aug 14). Gmail scan (Aug 14–Sep 15) found nothing project-relevant — only automated Spitogatos listing digests and Firebase expiry notices. Consistent with the work-on-hold status noted in the previous entry.
+
+
+---
+
+## August 14 – September 15, 2026 — Work Resumes After Extended Pause
+
+The work pause noted last update turned out to run longer than expected. Vicky was dealing with a serious personal matter (health-related) from mid-August into September — no further detail here, per Kobi's request to respect her privacy — which is why the site stayed idle this whole stretch rather than resuming after the original manpower/PTO gap. No payments or site progress happened between Aug 14 and today.
+
+The one financial item from this period: on Sep 12, Vicky flagged that the water connection fee had come due now that the house is connected to the mains, plus a water meter purchase — a one-off €400. She tried to transfer it to the accountant via POS but the payment was declined; still needs a working payment method.
+
+Good news as of today (Sep 15): Vicky confirmed she and the crew are back. Meli's team is finishing another job first this week and will move over to Ag. Nikolaos once that's done, so full crew is expected by end of week. Vicky asked for a recap/sync meeting once this dashboard update lands, to plan the final stretch and get the house finished on schedule.
+
+**WhatsApp bridge:** restarted and re-paired by Kobi today; the full Aug 14–Sep 15 backlog has now synced and is reflected above.
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Water connection fee (mains) + water meter | €400 | POS (declined) | Committed, not yet paid — needs a different payment method |
+
+### Decisions
+- None formally locked in this period — mostly a status pause, now resuming
+
+### Open items
+- Resolve €400 water connection fee payment (POS declined Sep 12)
+- Schedule the recap/sync meeting Vicky requested
+- Confirm Certificate of Cadaster retrieval (Vicky mentioned Aug 1, still unconfirmed)
+- (Carried over) Confirm Kairis debt allocation for the €6,000 paid Jul 23/29 — still unconfirmed by Vicky
+- (Carried over) Fresh NBG spot balance — last confirmed Jul 29 (€58,805), now ~7 weeks stale
+
+**Running total spent (confirmed Paid only):** ~€99,161 of est. €275K (36.1%) — unchanged. Committed ~€20,578 (up €400 from the new water fee line). NBG balance last confirmed €58,805 (Jul 29) — still stale, needs a fresh spot check.

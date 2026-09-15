@@ -113,3 +113,6 @@
 | 2026-08-01 | Confirm Certificate of Cadaster retrieval (Vicky mentioned picking it up from another lawyer) | Vicky | Open |
 | 2026-09-15 | WhatsApp bridge stale since Aug 14 — restart on Kobi's laptop to close Aug 15–Sep 15 coverage gap | Kobi | Open |
 | 2026-09-15 | Fresh NBG spot balance needed — last confirmed Jul 29 (€58,805), now ~7 weeks stale | Kobi/Vicky | Open |
+| 2026-09-15 | Resolve €400 water connection fee payment — POS transfer to accountant declined Sep 12, needs a different payment method | Vicky/Kobi | Open |
+| 2026-09-15 | Schedule recap/sync meeting with Vicky (requested Sep 15) to plan the final stretch | Kobi/Vicky | Open |
+| 2026-09-15 | Work resumed on site (crew + Vicky back) — confirm full crew is on-site once Meli's other job wraps up (expected end of week) | Vicky | Open |
