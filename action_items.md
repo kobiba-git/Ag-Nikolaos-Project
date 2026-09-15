@@ -109,3 +109,7 @@
 | 2026-07-29 | Confirm Kairis debt allocation — €6,000 paid Jul 23 + Jul 29 was applied (best-guess assumption) against the €4,240 column/beam debt + €750 additional item + €1,010 toward the next order. Get Vicky's actual breakdown. | Vicky → Kobi | Open |
 | 2026-07-29 | Provide a fresh NBG spot balance — reconciliation residual now €5,912.06 (bridge computes €59,592.94 vs. €65,505 reported Jul 21, before this week's €6,680 in withdrawals). Not alarming, but the anchor is stale. | Kobi/Vicky | Open |
 | 2026-07-29 | Confirm ATM shortfall Jul 27 (€700 of planned €3,000) didn't leave any workers/mixer costs unpaid | Vicky | Open |
+| 2026-09-15 | Work on hold since early August — crew unavailable and Vicky on PTO; confirm restart date | Vicky | Open |
+| 2026-08-01 | Confirm Certificate of Cadaster retrieval (Vicky mentioned picking it up from another lawyer) | Vicky | Open |
+| 2026-09-15 | WhatsApp bridge stale since Aug 14 — restart on Kobi's laptop to close Aug 15–Sep 15 coverage gap | Kobi | Open |
+| 2026-09-15 | Fresh NBG spot balance needed — last confirmed Jul 29 (€58,805), now ~7 weeks stale | Kobi/Vicky | Open |

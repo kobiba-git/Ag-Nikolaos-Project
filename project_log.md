@@ -1180,3 +1180,27 @@ Vicky's messages didn't specify which Kairis line items the €6,000 (Jul 23 + J
 **Running total spent (confirmed Paid only):** ~€99,161 of est. €275K (~36.1%). Committed ~€20,178. NBG balance €58,805 (Jul 29, fresh spot balance confirmed by Kobi).
 
 **Balance reconciled (Jul 29, same day):** Kobi provided a fresh spot balance — €58,805. Rolling Bridge residual is back to a normal range: €787.94 (statement €35,202.94 + €50,000 deposit − €25,610 NBG-paid expenses since Jun 25 = €59,592.94 computed vs. €58,805 reported). This resolves the €5,912 drift flagged earlier today — it was exactly the stale-anchor effect predicted, nothing to chase further.
+
+
+---
+
+## July 30 – September 15, 2026 — Work On Hold (Crew Unavailable, Vicky's PTO)
+
+A quiet stretch on the project. The only substantive items in the WhatsApp group between the last check (Jul 29) and Aug 14 (when the bridge stopped syncing) were: Vicky confirming the Kairis balance at €6,730 after the two Jul 23/29 payments (Jul 29 evening); a brief mention from Vicky (Aug 1) that she needs to retrieve the original Certificate of Cadaster from another lawyer who had it; and Kobi's Aug 7 request for a work update and Antonis's beam-work timeline, followed by a Aug 10 follow-up from Yael. Vicky replied Aug 10 that the whole crew had moved to Albania for a wedding and nobody would be working until the end of the month, and separately that Kairis (materials supplier) was closing the company Aug 13–23. No further work-progress or payment messages appear in the captured window (through Aug 14).
+
+Per Kobi directly: since the beginning of August, work on the house has been on hold for lack of available manpower and because Vicky has been on PTO. No elaboration on the personal specifics of her absence is included here, per Kobi's request — this entry sticks to the operational facts needed to track the project.
+
+**No payments were made or reported this period**, and no site work progressed. The balance sheet is therefore unchanged from the Jul 29 position (€99,161 Paid / €20,178 Committed / €58,805 NBG balance, all as of Jul 29).
+
+**WhatsApp bridge note:** the bridge's most recent synced message is from Aug 14, 2026 — over a month stale as of this run (Sep 15). It's unclear whether this reflects a genuinely quiet chat (consistent with the work stoppage) or the bridge itself having stopped running on Kobi's laptop. The checkpoint (`whatsapp_last_checked.txt`) has been left at the last real message timestamp (Aug 14, not today) so that once the bridge is restarted, the next run will pick up anything from Aug 15 onward rather than skipping it. **Action: restart the WhatsApp bridge** (see `whatsapp_mcp_setup_manual.pdf`) to check for a gap in coverage.
+
+**Gmail scan:** no project-relevant emails found between Jul 29 and Sep 15 — only automated Spitogatos property-listing digests and Firebase expiry notices, both filtered out as noise.
+
+### Open items
+- Confirm work restart date with Vicky once crew/availability allows
+- Confirm Certificate of Cadaster retrieval (Vicky, Aug 1 mention)
+- Restart WhatsApp bridge and re-run this check to close the Aug 15–Sep 15 coverage gap
+- (Carried over, unresolved) Confirm Kairis debt allocation for the €6,000 paid Jul 23/29 — still Claude's best-guess assumption, not yet confirmed by Vicky
+- (Carried over, unresolved) Fresh NBG spot balance — last confirmed Jul 29 (€58,805); now nearly 7 weeks old
+
+**Running total spent (confirmed Paid only):** ~€99,161 of est. €275K (36.1%) — unchanged since Jul 29. Committed ~€20,178. NBG balance last confirmed €58,805 (Jul 29) — stale, needs a fresh spot check.

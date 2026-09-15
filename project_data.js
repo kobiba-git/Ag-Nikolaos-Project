@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated: "2026-07-29",
-    weekOf: "Week of Jul 21–29, 2026",
+    lastUpdated: "2026-09-15",
+    weekOf: "Site work on hold since early Aug 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -29,36 +29,18 @@ const PROJECT_DATA = {
   //   urgent: bool    — true = red top border, false = blue top border
   // DO NOT use {task, status} — those fields are ignored by the dashboard.
   weekTasks: [
-    { icon: "🏛️", label: "Central Column — Massively Reinforced",
-      sub: "Original column was only 40×20cm holding 3 beams on 2 floors — redesigned to 40×55cm. Antonis notes total work is roughly double the original contract scope as more structural issues emerge.",
+    { icon: "⏸️", label: "Site Work On Hold Since Early August",
+      sub: "No structural or site-progress reports since early August. The work crew has been unavailable (away for a wedding, per Vicky's Aug 10 message) and Vicky has been on personal leave (PTO). Kairis (materials supplier) was also closed Aug 13–23. No new payments or work reported this period.",
+      urgent: true },
+    { icon: "🔩", label: "Kairis Balance Confirmed — €6,730 (Jul 29)",
+      sub: "Vicky confirmed the Kairis balance after the two Jul 23/29 payments: €6,730 remaining (next SikaGrout order, 200 bags + steel). Unchanged since — no further Kairis payments made this period.",
       urgent: false },
-    { icon: "⏸️", label: "4-Day Work Stoppage (Jul 13–16)",
-      sub: "Vicky paused work to focus on daughter's university applications. Resumed Jul 17. She stopped herself to avoid mistakes on site while distracted.",
+    { icon: "📜", label: "Land Registry — Certificate Retrieval In Progress",
+      sub: "Aug 1: Vicky mentioned she needs to pick up the original Certificate of Cadaster from another lawyer who had it. Not yet confirmed complete.",
       urgent: false },
-    { icon: "💰", label: "New Transfer — NBG Balance ~€70K",
-      sub: "Kobi transferred a significant amount from Israel on Jul 13. NBG balance confirmed ~€70,000. Covers workers, insurance, electrician, plumber, Kairis, and ~2 months of project expenses.",
-      urgent: false },
-    { icon: "🔩", label: "Kairis Debt — Down to €6,775 After Two More Payments",
-      sub: "€3,000 paid Jul 23 + €3,000 paid Jul 29 (€6,000 total) settled the €4,240 column/beam debt and €750 additional item in full. Remaining: €6,730 next SikaGrout order (200 bags + steel, not yet placed) + €45 old balance. Allocation is Claude's best guess — Vicky hasn't confirmed which items the payments applied to.",
-      urgent: false },
-    { icon: "⚡", label: "Electrician — Work Ongoing",
-      sub: "Electrical panel work underway. Insurance, electrician scope, and plumbing balances still to be settled from the new NBG funding.",
-      urgent: false },
-    { icon: "🧱", label: "Plastering Apt B Ceiling — In Progress",
-      sub: "Kairis materials arrived, delivery tomorrow — but extreme heat means SikaGrout work is paused until temps drop next week. Team shifting to plastering Apt B ceiling in the meantime; lime + sand still to be ordered (Kairis wants cash).",
-      urgent: false },
-    { icon: "🧾", label: "Insurance — Nearly Settled (€3 left)",
-      sub: "Second withdrawal Jul 21 (~€3,000): ~€1,990 finished off the EFKA insurance debt (only €3 remaining) and €1,000 went to Kairis. Combined with Jul 20's withdrawal, EUR5,990+ moved through NBG cash across two days.",
-      urgent: false },
-    { icon: "💶", label: "Three More Cash Episodes (Jul 23–29)",
-      sub: "Jul 23: €3,000 withdrawn, paid to Kairis. Jul 27: ATM only gave €700 of a planned €3,000 — covered €680 workers wages + concrete mixer, no Kairis payment that day. Jul 29: €3,000 withdrawn successfully, paid to Kairis. Kobi & Yael are in Thailand (Jul 21–Aug 12) throughout.",
-      urgent: false },
-    { icon: "✅", label: "Balance Reconciled — €58,805 (Jul 29)",
-      sub: "Kobi provided a fresh NBG spot balance (€58,805, Jul 29). Rolling Bridge residual is back to normal cash-float range: €787.94 — consistent with typical ATM/itemization timing drift, nothing to chase.",
-      urgent: false },
-    { icon: "🧪", label: "Alternative Micro-Concrete Mix Under Discussion",
-      sub: "Kobi shared a cost/complexity analysis of a self-compacting micro-concrete alternative to SikaGrout (~1/4 the price, €280–405/m³ materials vs. much higher installed cost). Vicky won't experiment on columns but is open to trying it on beams — only if the specialist personally joins on-site. Not yet decided.",
-      urgent: false },
+    { icon: "📡", label: "WhatsApp Sync Gap — Bridge Needs Restart",
+      sub: "The WhatsApp bridge last captured a message on Aug 14 and has not synced since (checked Sep 15). Restart it on Kobi's laptop to pick up anything from mid-August through today.",
+      urgent: true },
   ],
 
   // ── KPI row (owner dashboard top) ────────────────────────────────
@@ -101,8 +83,8 @@ const PROJECT_DATA = {
       detail: "Large storage = Yael's unit. COMPLETE ✅ — Yael arrived Jun 27 and is very happy with the result! Bathroom (microcement finish, marble sink from original house), bedroom (bed + bedside tables + custom mattress), kitchenette outside the unit. Marble shower complete. Small storage: steel door + window ONLY (no aluminum) — installation by metalworker (€550) approved, pending." },
     { icon: "🔨", status: "ongoing",  name: "Phase 3 — Ground Floor Renovation",
       detail: "Brickwork complete ✅. Apt A installation DONE ✅. Plastering started (rain). PLUMBING COMPLETE ✅ (Jun 13) — entire water supply system for house + garden done. Only upper floor connections remaining (future). ELECTRICAL: conduits installed, boxes/outlets/switches installed in both apts, distribution panels provisioned — ready for cable pulling. Electrical approved (€11,250 GF+storage scope)." },
-    { icon: "🔨", status: "ongoing",  name: "Phase 4 — Antonis Main Contract",
-      detail: "🚀 ACTIVE: Structural reinforcement campaign started June 17. 3 Athens workers on site Mon–Fri. Methodology: shore → excavate column to footing → RC jacket (rebar+stirrups+special grout cement) → repeat for all columns+beams. Materials bulk-ordered by Vicky, deducted from Antonis contract. Slab cut DEFERRED until main column exposed+assessed." },
+    { icon: "⏸️", status: "ongoing",  name: "Phase 4 — Antonis Main Contract",
+      detail: "⏸️ ON HOLD since early August — crew unavailable and Vicky on personal leave; work has not resumed as of this update (Sep 15). Prior progress: structural reinforcement campaign started June 17, 3 Athens workers on site Mon–Fri. Methodology: shore → excavate column to footing → RC jacket (rebar+stirrups+special grout cement) → repeat for all columns+beams. Materials bulk-ordered by Vicky, deducted from Antonis contract. Slab cut DEFERRED until main column exposed+assessed." },
     { icon: "🔨", status: "ongoing",  name: "Phase 5 — Upper Floors & Roof",
       detail: "3RD FLOOR STRUCTURAL WORK COMPLETE ✅ (June 6). ROOF LAYERS: focus week Jun 15–17 (Ilir welding). ROOF SLAB CUT — DEFERRED ⚠️: Vicky recommended waiting until the main column (supports 2nd+3rd floors) is exposed during RC jacket work to assess its actual condition before committing to a slab cut. Kobi agreed Jun 17. Previous crack (couch/living area) still noted. Steel frame for 3rd floor ordered May 26." },
     { icon: "⏳", status: "upcoming", name: "Phase 6 — Finishing (Tiles, Insulation, Doors, Kitchen)",
@@ -114,6 +96,9 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
+    { item: "Work on hold since early August — crew unavailable and Vicky on personal leave (PTO); confirm restart date", owner: "Vicky", status: "open", date: "2026-09-15" },
+    { item: "Confirm Certificate of Cadaster retrieval (Vicky mentioned picking it up from another lawyer, Aug 1)", owner: "Vicky", status: "open", date: "2026-08-01" },
+    { item: "WhatsApp bridge stale since Aug 14 — restart on Kobi's laptop to sync any updates since", owner: "Kobi", status: "open", date: "2026-09-15" },
     { item: "Confirm Kairis debt allocation — €6,000 paid Jul 23 + Jul 29 was applied (Claude's assumption) against the €4,240 column/beam debt + €750 additional item + €1,010 toward the next order; get Vicky's actual breakdown", owner: "Vicky → Kobi", status: "open", date: "2026-07-29" },
     { item: "Reconciliation residual now €5,912 (was €768 on Jul 21) — the NBG balance anchor is stale; get a fresh spot balance from Kobi/Vicky to re-anchor", owner: "Kobi/Vicky", status: "open", date: "2026-07-29" },
     { item: "SikaGrout structural grout — CONFIRMED Jul 10: €35.20/bag, ~400 bags total (3 columns + 4 beams) ≈ €14,080 ✅", owner: "Vicky → Kobi", status: "done", date: "2026-07-06" },
