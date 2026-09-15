@@ -1216,11 +1216,11 @@ WhatsApp bridge restarted and confirmed live (checked twice, ~45s apart, after K
 
 ## August 14 – September 15, 2026 — Work Resumes After Extended Pause
 
-The work pause noted last update turned out to run longer than expected. Vicky was dealing with a serious personal matter (health-related) from mid-August into September — no further detail here, per Kobi's request to respect her privacy — which is why the site stayed idle this whole stretch rather than resuming after the original manpower/PTO gap. No payments or site progress happened between Aug 14 and today.
+The work pause noted last update turned out to run longer than expected. Vicky was dealing with a serious personal matter from mid-August into September — no further detail here, per Kobi's request to respect her privacy — which is why the site stayed idle this whole stretch rather than resuming after the original manpower/PTO gap. No payments or site progress happened between Aug 14 and today.
 
 The one financial item from this period: on Sep 12, Vicky flagged that the water connection fee had come due now that the house is connected to the mains, plus a water meter purchase — a one-off €400. She tried to transfer it to the accountant via POS but the payment was declined; still needs a working payment method.
 
-Good news as of today (Sep 15): Vicky confirmed she and the crew are back. Meli's team is finishing another job first this week and will move over to Ag. Nikolaos once that's done, so full crew is expected by end of week. Vicky asked for a recap/sync meeting once this dashboard update lands, to plan the final stretch and get the house finished on schedule.
+As of today (Sep 15), Vicky said she and the crew were back on the project — see the correction below, though: later the same day she flagged a further delay to the actual crew return. Vicky asked for a recap/sync meeting once this dashboard update lands, to plan the final stretch and get the house finished on schedule.
 
 **WhatsApp bridge:** restarted and re-paired by Kobi today; the full Aug 14–Sep 15 backlog has now synced and is reflected above.
 
@@ -1241,3 +1241,20 @@ Good news as of today (Sep 15): Vicky confirmed she and the crew are back. Meli'
 - (Carried over) Fresh NBG spot balance — last confirmed Jul 29 (€58,805), now ~7 weeks stale
 
 **Running total spent (confirmed Paid only):** ~€99,161 of est. €275K (36.1%) — unchanged. Committed ~€20,578 (up €400 from the new water fee line). NBG balance last confirmed €58,805 (Jul 29) — still stale, needs a fresh spot check.
+
+
+---
+
+## September 15, 2026 (later same day) — Crew Return Pushed to Monday Sep 21
+
+Correction to the note above: Vicky indicated via WhatsApp, later on Sep 15, that Meli and the team will not be back this week after all — the return is now Monday, September 21. This pushes out the "full crew by end of week" expectation logged earlier today. No new payments or site work to report; the underlying pause (on hold since early August, extended into September per the entry above) simply continues a few more days.
+
+### Open items
+- Confirm on Sep 21 that Meli's crew has actually mobilized on-site
+- (Carried over) Resolve €400 water connection fee payment (POS declined Sep 12)
+- (Carried over) Schedule the recap/sync meeting Vicky requested
+- (Carried over) Confirm Certificate of Cadaster retrieval (Vicky mentioned Aug 1, still unconfirmed)
+- (Carried over) Confirm Kairis debt allocation for the €6,000 paid Jul 23/29 — still unconfirmed by Vicky
+- (Carried over) Fresh NBG spot balance — last confirmed Jul 29 (€58,805), now ~7 weeks stale
+
+**Running total spent:** unchanged from the entry above — ~€99,161 Paid / ~€20,578 Committed / €58,805 NBG balance (stale).

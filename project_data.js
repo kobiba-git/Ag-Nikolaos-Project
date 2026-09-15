@@ -29,11 +29,11 @@ const PROJECT_DATA = {
   //   urgent: bool    — true = red top border, false = blue top border
   // DO NOT use {task, status} — those fields are ignored by the dashboard.
   weekTasks: [
-    { icon: "🔨", label: "Work Resuming Today (Sep 15)",
-      sub: "Vicky and the crew are back on the project as of today. Meli's team is finishing another site first this week and will move over to Ag. Nikolaos once that wraps up — full crew expected on-site by end of week.",
-      urgent: false },
+    { icon: "📅", label: "Crew Return Delayed Again — Now Monday Sep 21",
+      sub: "Vicky indicated (Sep 15) another delay: Meli and the team will be back on Monday, Sep 21, not this week as first expected. Confirm on Sep 21 that the crew has actually mobilized.",
+      urgent: true },
     { icon: "⏸️", label: "Work Was On Hold Since Mid-August",
-      sub: "Vicky was dealing with a serious personal matter (health-related) from mid-August into September, which extended the pause beyond the original manpower/PTO reason. No site work or payments happened during this stretch.",
+      sub: "Vicky was dealing with a serious personal matter from mid-August into September, which extended the pause beyond the original manpower/PTO reason. No site work or payments happened during this stretch.",
       urgent: false },
     { icon: "💧", label: "€400 Water Connection Fee — Payment Declined, Needs Retry",
       sub: "One-off fee for the mains water connection (now connected) + water meter purchase. Vicky's POS transfer to the accountant was declined Sep 12 — needs a different payment method. Logged as Committed, not yet paid.",
@@ -84,7 +84,7 @@ const PROJECT_DATA = {
     { icon: "🔨", status: "ongoing",  name: "Phase 3 — Ground Floor Renovation",
       detail: "Brickwork complete ✅. Apt A installation DONE ✅. Plastering started (rain). PLUMBING COMPLETE ✅ (Jun 13) — entire water supply system for house + garden done. Only upper floor connections remaining (future). ELECTRICAL: conduits installed, boxes/outlets/switches installed in both apts, distribution panels provisioned — ready for cable pulling. Electrical approved (€11,250 GF+storage scope)." },
     { icon: "🔨", status: "ongoing",  name: "Phase 4 — Antonis Main Contract",
-      detail: "RESUMING Sep 15 after a work stoppage since early August (crew unavailable, then Vicky dealing with a serious personal matter). Meli's crew finishes another site first this week, full team expected on Ag. Nikolaos by end of week. Prior progress: structural reinforcement campaign started June 17, 3 Athens workers on site Mon–Fri. Methodology: shore → excavate column to footing → RC jacket (rebar+stirrups+special grout cement) → repeat for all columns+beams. Materials bulk-ordered by Vicky, deducted from Antonis contract. Slab cut DEFERRED until main column exposed+assessed." },
+      detail: "ON HOLD, still — crew return delayed again as of Sep 15: Vicky now says Meli and the team will be back Monday Sep 21 (previously expected 'this week'). Stoppage has run since early August (crew unavailable, then Vicky dealing with a serious personal matter). Prior progress: structural reinforcement campaign started June 17, 3 Athens workers on site Mon–Fri. Methodology: shore → excavate column to footing → RC jacket (rebar+stirrups+special grout cement) → repeat for all columns+beams. Materials bulk-ordered by Vicky, deducted from Antonis contract. Slab cut DEFERRED until main column exposed+assessed." },
     { icon: "🔨", status: "ongoing",  name: "Phase 5 — Upper Floors & Roof",
       detail: "3RD FLOOR STRUCTURAL WORK COMPLETE ✅ (June 6). ROOF LAYERS: focus week Jun 15–17 (Ilir welding). ROOF SLAB CUT — DEFERRED ⚠️: Vicky recommended waiting until the main column (supports 2nd+3rd floors) is exposed during RC jacket work to assess its actual condition before committing to a slab cut. Kobi agreed Jun 17. Previous crack (couch/living area) still noted. Steel frame for 3rd floor ordered May 26." },
     { icon: "⏳", status: "upcoming", name: "Phase 6 — Finishing (Tiles, Insulation, Doors, Kitchen)",
@@ -96,7 +96,7 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
-    { item: "Work on hold since early August — RESOLVED: crew + Vicky back on site starting Sep 15 (full crew by end of week)", owner: "Vicky", status: "done", date: "2026-09-15" },
+    { item: "Work on hold since early August — STILL DELAYED: Vicky now says crew (Meli + team) returns Monday Sep 21, not this week as first said Sep 15", owner: "Vicky", status: "open", date: "2026-09-15" },
     { item: "WhatsApp bridge stale since Aug 14 — RESOLVED: Kobi restarted and re-paired it Sep 15, backlog synced", owner: "Kobi", status: "done", date: "2026-09-15" },
     { item: "Resolve €400 water connection fee payment — POS transfer to accountant declined Sep 12, needs a different payment method", owner: "Vicky/Kobi", status: "open", date: "2026-09-15" },
     { item: "Schedule recap/sync meeting with Vicky (requested Sep 15, after this dashboard update) to plan the final stretch", owner: "Kobi/Vicky", status: "open", date: "2026-09-15" },
