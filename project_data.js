@@ -14,8 +14,8 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated: "2026-09-15",
-    weekOf: "Work resuming week of Sep 15, 2026",
+    lastUpdated: "2026-10-02",
+    weekOf: "Week of Sep 28 – Oct 2, 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
   },
@@ -29,27 +29,30 @@ const PROJECT_DATA = {
   //   urgent: bool    — true = red top border, false = blue top border
   // DO NOT use {task, status} — those fields are ignored by the dashboard.
   weekTasks: [
-    { icon: "📅", label: "Crew Return Delayed Again — Now Monday Sep 21",
-      sub: "Vicky indicated (Sep 15) another delay: Meli and the team will be back on Monday, Sep 21, not this week as first expected. Confirm on Sep 21 that the crew has actually mobilized.",
-      urgent: true },
-    { icon: "⏸️", label: "Work Was On Hold Since Mid-August",
-      sub: "Vicky was dealing with a serious personal matter from mid-August into September, which extended the pause beyond the original manpower/PTO reason. No site work or payments happened during this stretch.",
+    { icon: "🏗️", label: "Back on Site — New Crew, Columns Going Up Fast",
+      sub: "Vicky back at the site Sep 24 with a new, stronger crew. First new column poured ~Sep 27 (photos Sep 28); second-floor oven column + new beam reinforcement cages in place Oct 2. Target: both new upper-floor columns done by end of this week, then repair/strengthen the connecting beams.",
       urgent: false },
-    { icon: "💧", label: "€400 Water Connection Fee — Payment Declined, Needs Retry",
-      sub: "One-off fee for the mains water connection (now connected) + water meter purchase. Vicky's POS transfer to the accountant was declined Sep 12 — needs a different payment method. Logged as Committed, not yet paid.",
+    { icon: "📅", label: "Sync Meeting — Sat Oct 3, 12:00",
+      sub: "Recap with Vicky on next steps, timeline and funding plan (Google Meet invite sent). Agenda: schedule to finish, two-month cost forecast, natural stone for ground floor, Kairis balance, fresh NBG balance.",
       urgent: true },
-    { icon: "📅", label: "Recap / Sync Meeting Requested",
-      sub: "Vicky asked for a recap meeting once this dashboard is updated, to plan the final stretch and finish the house on schedule.",
+    { icon: "💶", label: "Two €3,000 Withdrawals Approved (Sep 25 + Sep 29)",
+      sub: "Sep 25: €2,350 to Kairis (balance now €4,400) + nails/petrol/bills. Sep 29: wages €950 + steel/ties/bars €750 + petrol €40 + electricity advance €250 + €1,000 to Kairis. Sep 29 withdrawal not yet confirmed — items logged as Committed.",
       urgent: false },
+    { icon: "⚡", label: "Electricity Meter Reactivation (1969 meter → lower entrance)",
+      sub: "Provider approved reactivation Sep 26; €250 advance of €500 paid. Passport photos sent Sep 30. Vicky to supply plans and source a pole + meter cabinet. Meter moves to Kobi & Yael's name on reconnection.",
+      urgent: false },
+    { icon: "🧾", label: "Bills: Anagnostou Electricity ~€190 + Water Fee €400",
+      sub: "Electricity bill (still in Anagnostou's name) — Vicky handing cash to Stathis Oct 2; Yael asked her to reassure him first. Water connection fee €400 — still to confirm paid.",
+      urgent: true },
   ],
 
   // ── KPI row (owner dashboard top) ────────────────────────────────
   kpis: {
     totalBudget:    "€275K",
     totalBudgetSub: "Vicky: ~1,000–1,050 €/m²",
-    paidToDate:     "€99,161",
-    paidSub:        "EUR 99,161 of EUR 275K (36.1%)",
-    duePending:     "€20,578",
+    paidToDate:     "€102,161",
+    paidSub:        "EUR 102,161 of EUR 275K (37.1%)",
+    duePending:     "€20,635",
     dueSub:         "Kairis €6,775 (€6,730 next SikaGrout order + €45 remaining, after €6,000 paid Jul23+Jul29 settled the column/beam debt + additional item) + electrician scope €12,250 (GF+storage approved) + worker insurance (EFKA) €3 (nearly settled) + metalworker €550 + excavator €600 + water connection fee €400 (payment declined Sep 12, needs retry)",
     bigItems:       "€147K+",
     bigItemsSub:    "Antonis, tiles, windows, electrical",
@@ -84,7 +87,7 @@ const PROJECT_DATA = {
     { icon: "🔨", status: "ongoing",  name: "Phase 3 — Ground Floor Renovation",
       detail: "Brickwork complete ✅. Apt A installation DONE ✅. Plastering started (rain). PLUMBING COMPLETE ✅ (Jun 13) — entire water supply system for house + garden done. Only upper floor connections remaining (future). ELECTRICAL: conduits installed, boxes/outlets/switches installed in both apts, distribution panels provisioned — ready for cable pulling. Electrical approved (€11,250 GF+storage scope)." },
     { icon: "🔨", status: "ongoing",  name: "Phase 4 — Antonis Main Contract",
-      detail: "ON HOLD, still — crew return delayed again as of Sep 15: Vicky now says Meli and the team will be back Monday Sep 21 (previously expected 'this week'). Stoppage has run since early August (crew unavailable, then Vicky dealing with a serious personal matter). Prior progress: structural reinforcement campaign started June 17, 3 Athens workers on site Mon–Fri. Methodology: shore → excavate column to footing → RC jacket (rebar+stirrups+special grout cement) → repeat for all columns+beams. Materials bulk-ordered by Vicky, deducted from Antonis contract. Slab cut DEFERRED until main column exposed+assessed." },
+      detail: "ACTIVE again since Sep 24 after the Aug–Sep pause. Vicky self-managing structural reinforcement with a new, stronger crew (she sourced craftsmen who usually work in Mykonos). New column poured ~Sep 27; second-floor oven column + new beam cages Oct 2. Next: finish the two new upper-floor columns, then repair/strengthen connecting beams. SikaGrout HP340 order partly delivered by Kairis. Methodology: shore → excavate column to footing → RC jacket (rebar+stirrups+special grout) → repeat. Slab cut DEFERRED until main column assessed." },
     { icon: "🔨", status: "ongoing",  name: "Phase 5 — Upper Floors & Roof",
       detail: "3RD FLOOR STRUCTURAL WORK COMPLETE ✅ (June 6). ROOF LAYERS: focus week Jun 15–17 (Ilir welding). ROOF SLAB CUT — DEFERRED ⚠️: Vicky recommended waiting until the main column (supports 2nd+3rd floors) is exposed during RC jacket work to assess its actual condition before committing to a slab cut. Kobi agreed Jun 17. Previous crack (couch/living area) still noted. Steel frame for 3rd floor ordered May 26." },
     { icon: "⏳", status: "upcoming", name: "Phase 6 — Finishing (Tiles, Insulation, Doors, Kitchen)",
@@ -96,6 +99,12 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
+    { priority: "high",     label: "📅 Sat Oct 3",                 title: "Sync Meeting with Vicky — Sat Oct 3, 12:00",
+      desc: "Timeline to finish, two-month cost forecast, funding plan (NBG ~€58K as of Sep 24; next transfer to be planned after the meeting), natural stone vs tiles for ground floor, Kairis balance." },
+    { priority: "high",     label: "🟠 Confirm",                    title: "Fresh NBG Spot Balance",
+      desc: "Ledger anchor still €58,805 (Jul 29). Since then €3,000 withdrawn Sep 25 (and likely another €3,000 Sep 29). Get an exact current balance to re-anchor the reconciliation." },
+    { priority: "info",     label: "🔵 Decision Needed",            title: "Natural Stone for Ground Floor?",
+      desc: "Vicky (Sep 29): ground floor in/outdoor can take natural stone (too heavy for upper floors). ~€45/sqm all-in (stone €18 + install €22 + glue €5) vs cheap tiles €11–12 + same install/glue. Harder to clean, needs sealant. Discuss Oct 3." },
     { item: "Work on hold since early August — STILL DELAYED: Vicky now says crew (Meli + team) returns Monday Sep 21, not this week as first said Sep 15", owner: "Vicky", status: "open", date: "2026-09-15" },
     { item: "WhatsApp bridge stale since Aug 14 — RESOLVED: Kobi restarted and re-paired it Sep 15, backlog synced", owner: "Kobi", status: "done", date: "2026-09-15" },
     { item: "Resolve €400 water connection fee payment — POS transfer to accountant declined Sep 12, needs a different payment method", owner: "Vicky/Kobi", status: "open", date: "2026-09-15" },
@@ -192,6 +201,11 @@ const PROJECT_DATA = {
   // ── Payment schedule ──────────────────────────────────────────────
   // status: "paid" | "due" | "upcoming" | "blocked"
   payments: [
+    { date: "Sep 29",     category: "Labor / Materials", desc: "Approved batch: wages wk Sep 21–27 €950 + reinforcement steel/ties/15× Ø16 bars/nails €750 + petrol €40 + electricity-provider advance €250. Paid from a €3,000 withdrawal (not yet confirmed) that also covers €1,000 to Kairis.", vendor: "Workers / Supplier / Electricity provider", amount: "€1,990", status: "due" },
+    { date: "Sep 25",     category: "Materials - Structure", desc: "Kairis — cash payment toward SikaGrout order. Balance now €4,400 (Vicky, Sep 29).", vendor: "Kairis", amount: "€2,350", status: "paid" },
+    { date: "Sep 25",     category: "Other", desc: "Remainder of Sep 25 €3,000 withdrawal — cash float (nails/steel strips, mixer petrol, possibly bills). Allocation to confirm with Vicky.", vendor: "Vicky (cash float)", amount: "€650", status: "paid" },
+    { date: "Oct 2",      category: "Electrical", desc: "Electricity bill (meter still in Anagnostou's name) — Vicky handing cash to Stathis.", vendor: "Anagnostou", amount: "~€192", status: "due" },
+    { date: "Upcoming",   category: "Materials - Structure", desc: "Kairis outstanding balance (SikaGrout order). €1,000 planned Sep 29 + more by Friday.", vendor: "Kairis", amount: "€4,400", status: "due" },
     { date: "Sep 12",     category: "Plumbing", desc: "Water connection fee (mains) + water meter purchase — one-off, now connected to mains supply. POS transfer to the accountant was declined; needs a different payment method.", vendor: "Accountant", amount: "€400", status: "due" },
     { date: "Jul 29",     category: "Materials - Structure", desc: "Kairis — cash payment toward outstanding materials debt. Successful withdrawal ('It worked').", vendor: "Kairis", amount: "€3,000", status: "paid" },
     { date: "Jul 27",     category: "Labor",    desc: "Workers wages + concrete mixer cost, week of Jul 20–24 (small crew, few days on site). ATM only dispensed €700 of a planned €3,000 — no Kairis payment made that day.", vendor: "Workers", amount: "€680", status: "paid" },
@@ -330,9 +344,10 @@ const PROJECT_DATA = {
       { label: "Yael's Unit Furnishings (bed frame, bedding, mattress)", amount: "~€905" },
       { label: "Structural Reinforcement Materials (Kairis — grout/steel/sand, week Jun29-Jul10)", amount: "€4,050" },
       { label: "Kairis debt payments + workers wages (Jul 23-29)", amount: "€6,680" },
+      { label: "Kairis €2,350 + cash float €650 (Sep 25 withdrawal)", amount: "€3,000" },
     ],
-    totalPaid:      "€99,161",
-    totalCommitted: "€20,578",
+    totalPaid:      "€102,161",
+    totalCommitted: "€20,635",
 
     ahead: [
       { label: "Antonis — Phase 1 (foundations & beams)", amount: "€25K–€30K" },
@@ -415,9 +430,12 @@ const PROJECT_DATA = {
       { icon: "🛏️", title: "Mattress Pickup — Wed Jun 25",          sub: "Custom 195×170 cm, 30cm thick, €400 cash price (reduced from €650).",
         who: "Local mattress manufacturer", desc: "Vicky picking up Wednesday Jun 25. Bedside tables to be fixed to bed frame (Yael's request). Room must be fully ready Jun 27.",
         amount: "€400", payType: "💵 CASH", auth: "✅ Kobi approved — Vicky collecting Jun 25" },
-      { icon: "🧱", title: "Kairis — €3,520 grout/reinforcement balance",  sub: "€1,700 paid toward it Jul 10 (part of €3,000 withdrawal). Confirm remaining balance with Kobi.",
-        who: "Kairis Materials", desc: "Covers first 100 bags SikaGrout received + first reinforcing steel (4.65m column + 4.40m beam) + resins. €1,700 already paid Jul 10 as partial payment — confirm how much (if any) remains outstanding.",
-        amount: "€3,520 (partial €1,700 paid)", payType: "💵 CASH", auth: "⏳ Confirm remaining balance with Kobi" },
+      { icon: "🧱", title: "Kairis — €4,400 SikaGrout balance",  sub: "After €2,350 paid Sep 25. €1,000 planned Sep 29, more by Friday.",
+        who: "Kairis Materials", desc: "Outstanding on the SikaGrout HP340 order (partly delivered Sep 29). Report each payment so the ledger stays correct.",
+        amount: "€4,400", payType: "💵 CASH", auth: "✅ Kobi approved Sep 29" },
+      { icon: "⚡", title: "Electricity Provider — Meter Reactivation", sub: "€250 advance paid Sep 26; €250 balance on completion.",
+        who: "Electricity provider", desc: "Reactivate the 1969 meter and move it to the lower entrance. Needs plans + pole + meter cabinet.",
+        amount: "€250 remaining", payType: "💵 CASH", auth: "✅ Kobi approved" },
       { icon: "🚜", title: "Excavator — Road Compaction €600",      sub: "60-ton road roller to compact all roads.",
         who: "Excavator contractor", desc: "Approved. Vicky to confirm date and pay.",
         amount: "€600", payType: "💵 CASH", auth: "✅ Kobi approved" },
@@ -426,9 +444,9 @@ const PROJECT_DATA = {
         amount: "€550",   payType: "💵 CASH", auth: "✅ Kobi approved — Pay on completion" },
     ],
     summary: {
-      dueNow:     "~€10,600",  dueSub:     "Kairis ~€195 + Electrician ~€8,500 + Blacksmith €550 + Excavator €600 + Mattress €400 + Vicky reimbursements ~€1,100",
+      dueNow:     "€20,635",  dueSub:     "Kairis €4,400 + Sep 29 batch €1,990 + electricity €442 + water €400 + Electrician ~€12,250 + older approved items",
       workers:    "✅ Paid Jun 22 + Kairis Jun 24", workersSub: "Workers Jun 16–21 (€2,280 cash). Kairis €1,800 paid Jun 24. Running total ~€72K.",
-      paidToDate:     "€99,161",
+      paidToDate:     "€102,161",
       atmLimit:   "€2K",
       laborerRate: "€50/day",
       skilledRate: "€80/day",
@@ -451,10 +469,10 @@ const PROJECT_DATA = {
     totalTransferred: 320000, // all 7 transfers to NBG GR18-0400611 (excl. May-31 €2k to Wise)
     greekAccountBalance:  58805.00, // Kobi confirmed 29-Jul-2026 spot balance
     balanceAsOf:          "July 29, 2026",
-    totalKnownExpenses:   99161,   // renovation paid, all methods (Paid status in the ledger) -- per balance sheet, updated 2026-07-29
+    totalKnownExpenses:   102161,   // renovation paid, all methods (Paid status in the ledger) -- per balance sheet, updated 2026-07-29
     israelDirectPayments: 973,     // subset of the above paid direct from Israel/personal funds, NOT via NBG (Vicky reimbursement Jun 24) -- kept for display only, not used in the balance estimate below
     acquisitionPaidFromNBG: 167809, // property purchase, paid from NBG (see Property Acquisition 2025 sheet) -- previously missing from the estimate entirely
-    renovationPaidFromNBG:  97133,  // renovation Paid AND From-NBG=Yes only (excludes Wise/card-outside-NBG spend) -- per balance sheet, updated 2026-07-29
+    renovationPaidFromNBG:  100133,  // renovation Paid AND From-NBG=Yes only (excludes Wise/card-outside-NBG spend) -- per balance sheet, updated 2026-07-29
     // Estimated NBG balance = totalTransferred − acquisitionPaidFromNBG − renovationPaidFromNBG.
     // Both deduction figures come straight from the balance sheet ledger (Property Acquisition sheet +
     // Renovation Ledger, filtered to Paid + From-NBG=Yes) so this stays correct as the ledger grows --
@@ -478,12 +496,13 @@ const PROJECT_DATA = {
 
     // Items Vicky must action herself — update each run
     vickyMustAction: [
-      "🔴 Confirm allocation of €6,000 Kairis payments (Jul 23 + Jul 29) — which debt items were actually settled?",
-      "🟡 Provide a fresh NBG spot balance — reconciliation residual has grown to €5,912 since the Jul 21 anchor",
-      "🟡 Send two-month expense forecast (requested Jul 9, still outstanding since Jul 17 return)",
-      "🟡 What does the €750 additional item in the Kairis total cover? (now folded into the Jul 23/29 payments — confirm it was actually settled)",
-      "🟡 Follow up: Antonis vs Sika compound race for connection beams — what's the outcome?",
-      "🟡 Confirm workers insurance €3 remaining balance settled",
+      "🔴 Confirm the Sep 29 €3,000 withdrawal happened and what was paid (wages €950, steel €750, petrol €40, electricity €250, Kairis €1,000)",
+      "🟡 Confirm how the €650 left from the Sep 25 withdrawal was spent (nails/strips, petrol, water fee?)",
+      "🟡 Confirm the €400 water connection fee is paid",
+      "🟡 Confirm Anagnostou received the ~€190 electricity bill money",
+      "🟡 Electricity meter: send plans to provider, source pole + meter cabinet",
+      "🟡 Send two-month expense forecast / timeline to finish (for Oct 3 meeting)",
+      "🟡 Wages Thu–Sun (Sep 25–28) amount not yet reported",
     ],
 
     // Items Kobi has already authorized — update when new approvals given
@@ -505,6 +524,9 @@ const PROJECT_DATA = {
       "Cash withdrawal Jul 23 €3,000 ✅ — paid to Kairis (confirmed 'Done').",
       "Cash withdrawal Jul 27 €700 ✅ — ATM shortfall, covered €680 workers wages + concrete mixer.",
       "Cash withdrawal Jul 29 €3,000 ✅ — paid to Kairis (confirmed 'It worked').",
+      "Cash withdrawal Sep 25 €3,000 ✅ — Kobi approved. Kairis €2,350 + nails/strips + petrol + bills.",
+      "Cash withdrawal Sep 29 €3,000 — Kobi approved ('All approved'). Wages €950 + steel €750 + petrol €40 + electricity advance €250 + Kairis €1,000.",
+      "Electricity meter reactivation/relocation with the provider (€500, €250 advance paid).",
     ],
   },
 

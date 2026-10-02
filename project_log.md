@@ -1258,3 +1258,50 @@ Correction to the note above: Vicky indicated via WhatsApp, later on Sep 15, tha
 - (Carried over) Fresh NBG spot balance — last confirmed Jul 29 (€58,805), now ~7 weeks stale
 
 **Running total spent:** unchanged from the entry above — ~€99,161 Paid / ~€20,578 Committed / €58,805 NBG balance (stale).
+
+
+---
+
+## September 17 – October 2, 2026 — Work Restarts, New Crew, Columns Going Up
+
+After a few more quiet days (Vicky was unwell briefly), Vicky was back at the site on **Sep 24** with what she calls "a better team than before". She had held off picking workers until she could secure specific craftsmen who usually work in Mykonos for the column work. Progress since has been fast: a new column was poured around Sep 27 (photos Sep 28, "super strong, super fast"). On Oct 2 she shared the second-floor oven column and the new beam reinforcement cages. Her target is to finish the two new upper-floor columns by the end of this week, then repair and strengthen the beams connecting them. Kairis delivered another part of the SikaGrout HP 340 order (Sep 29).
+
+**Electricity:** Zoe raised (Sep 22) that the electricity meter is still in Stathis Anagnostou's name. Vicky explained the original 1969 meter has been deactivated/disconnected for ~20 years, and the supply in use is registered to Stathis's late father. An application has been filed to reactivate the meter and move it to the small lower road at the entrance. The provider came Sep 26 and approved reactivation. Vicky paid a €250 advance of the €500 cost and still needs to supply plans and a pole + meter cabinet. Passport photos for Kobi & Yael were sent Sep 30 for the provider; the meter moves to their name on reconnection. Separately, an electricity bill (~€190, Anagnostou's name) needs paying. Vicky planned to hand Stathis cash Oct 2, and Yael asked her to call and reassure him first because he brought the notice to Zoe again.
+
+**Funding:** Kobi told Vicky (Sep 24) there is about €58K in NBG, and that he'll prepare further funds after the sync meeting. He also emailed Vicky the Kairis balance sheet (Sep 24): €6,730 next SikaGrout order + €45 old balance = €6,775. Vicky confirmed "something like this, correct".
+
+**Design:** Vicky floated natural stone for the ground-floor floors, indoor and outdoor (too heavy for upper floors): about €45/sqm all-in (€18 stone + €22 install + €5 glue). Cheap tiles cost €11–12/sqm plus the same install and glue, but are hard to find in large quantities. Kobi and Yael like natural materials but are concerned about cleaning. To discuss at the meeting.
+
+**Meeting:** sync call set for **Saturday Oct 3, 12:00** (Google Meet).
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Kairis — toward SikaGrout order | €2,350 | cash (Sep 25 withdrawal) | Paid — balance dropped to €4,400 per Vicky Sep 29 |
+| Sep 25 withdrawal remainder (cash float) | €650 | cash | Paid from NBG; allocation TBC (nails/strips ~€45, petrol, possibly bills) |
+| **Total Paid (NBG)** | **€3,000** | | Kobi approved Sep 25 |
+| Workers wages, week Sep 21–27 | €950 | cash | Committed — Sep 29 withdrawal not yet confirmed |
+| Reinforcement steel, column ties, 15× Ø16 6m bars, nails | €750 | cash | Committed |
+| Petrol (concrete mixer) | €40 | cash | Committed |
+| Electricity provider — 50% advance, meter reactivation/relocation | €250 | cash | Vicky paid Sep 26; covered by Sep 29 withdrawal — Committed until confirmed |
+| Electricity provider — remaining 50% | €250 | cash | Committed, on completion |
+| Electricity bill (Anagnostou) | ~€192 | cash | Committed — Vicky to hand to Stathis Oct 2 |
+| Kairis outstanding balance | €4,400 | cash | Committed (was €6,775). €1,000 planned Sep 29, more by Friday |
+
+### Decisions
+- Kobi approved the Sep 25 €3,000 withdrawal (Kairis €2,350 + materials + petrol + bills)
+- Kobi approved the Sep 29 batch ("All approved"): €3,000 withdrawal covering wages, steel, petrol, electricity advance and €1,000 to Kairis
+- Electricity: proceed with reactivating and relocating the old meter via the provider rather than applying for a new one (~€800)
+
+### Open items
+- Confirm the Sep 29 €3,000 withdrawal and Kairis €1,000 payment (Vicky)
+- Confirm how the €650 Sep 25 float was spent; confirm €400 water fee paid (Vicky)
+- Wages for Thu–Sun (Sep 25–28) not yet reported (Vicky)
+- Confirm Anagnostou received the electricity bill money (Vicky)
+- Electricity meter: plans to provider, pole + meter cabinet (Vicky)
+- Fresh exact NBG spot balance — Rolling Bridge residual now −€2,212 because the Jul 29 anchor predates the Sep 25 withdrawal (Kobi/Vicky)
+- Natural stone vs tiles for ground floor — discuss Oct 3 (Kobi/Yael/Vicky)
+- Funding plan / next transfer after the Oct 3 meeting (Kobi)
+
+**Running total spent (confirmed Paid only):** ~€102,161 of est. €275K (37.1%). Committed ~€20,635. NBG balance last exact figure €58,805 (Jul 29); ~€58K per Kobi Sep 24, before the Sep 25 withdrawal.

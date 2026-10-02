@@ -109,10 +109,18 @@
 | 2026-07-29 | Confirm Kairis debt allocation — €6,000 paid Jul 23 + Jul 29 was applied (best-guess assumption) against the €4,240 column/beam debt + €750 additional item + €1,010 toward the next order. Get Vicky's actual breakdown. | Vicky → Kobi | Open |
 | 2026-07-29 | Provide a fresh NBG spot balance — reconciliation residual now €5,912.06 (bridge computes €59,592.94 vs. €65,505 reported Jul 21, before this week's €6,680 in withdrawals). Not alarming, but the anchor is stale. | Kobi/Vicky | Open |
 | 2026-07-29 | Confirm ATM shortfall Jul 27 (€700 of planned €3,000) didn't leave any workers/mixer costs unpaid | Vicky | Open |
-| 2026-09-15 | Work on hold since early August — crew unavailable and Vicky on PTO; confirm restart date | Vicky | Open |
+| 2026-09-15 | Work on hold since early August — crew unavailable and Vicky on PTO; confirm restart date | Vicky | Done ✅ (restarted Sep 24) |
 | 2026-08-01 | Confirm Certificate of Cadaster retrieval (Vicky mentioned picking it up from another lawyer) | Vicky | Open |
-| 2026-09-15 | WhatsApp bridge stale since Aug 14 — restart on Kobi's laptop to close Aug 15–Sep 15 coverage gap | Kobi | Open |
+| 2026-09-15 | WhatsApp bridge stale since Aug 14 — restart on Kobi's laptop to close Aug 15–Sep 15 coverage gap | Kobi | Done ✅ (re-paired Sep 15; restarted again Oct 2) |
 | 2026-09-15 | Fresh NBG spot balance needed — last confirmed Jul 29 (€58,805), now ~7 weeks stale | Kobi/Vicky | Open |
 | 2026-09-15 | Resolve €400 water connection fee payment — POS transfer to accountant declined Sep 12, needs a different payment method | Vicky/Kobi | Open |
-| 2026-09-15 | Schedule recap/sync meeting with Vicky (requested Sep 15) to plan the final stretch | Kobi/Vicky | Open |
-| 2026-09-15 | Work on hold, crew return delayed again — Vicky now says Meli + team back Monday Sep 21 (previously said "this week"); confirm on Sep 21 crew has actually mobilized | Vicky | Open |
+| 2026-09-15 | Schedule recap/sync meeting with Vicky (requested Sep 15) to plan the final stretch | Kobi/Vicky | Done ✅ (set for Sat Oct 3, 12:00) |
+| 2026-09-15 | Work on hold, crew return delayed again — Vicky now says Meli + team back Monday Sep 21 (previously said "this week"); confirm on Sep 21 crew has actually mobilized | Vicky | Done ✅ (Vicky + new crew back on site Sep 24) |
+| 2026-10-02 | Confirm Sep 29 €3,000 withdrawal happened + Kairis €1,000 paid (wages €950, steel €750, petrol €40, electricity €250 still logged Committed) | Vicky | Open |
+| 2026-10-02 | Explain allocation of €650 cash float left from Sep 25 withdrawal (nails/strips, petrol, water fee?) | Vicky | Open |
+| 2026-10-02 | Report wages for Thu–Sun Sep 25–28 | Vicky | Open |
+| 2026-10-02 | Confirm Anagnostou received ~€190 electricity bill money (Yael asked Vicky to call him first) | Vicky | Open |
+| 2026-10-02 | Electricity meter reactivation: send plans to provider, buy pole + meter cabinet; €250 balance on completion | Vicky | Open |
+| 2026-10-02 | Decide natural stone (~€45/sqm all-in) vs tiles for ground floor | Kobi/Yael/Vicky | Open |
+| 2026-10-02 | Sync meeting Sat Oct 3 12:00 — timeline, 2-month forecast, funding plan; then prepare next NBG transfer | Kobi/Vicky | Open |
+| 2026-10-02 | Fresh exact NBG spot balance — Rolling Bridge residual −€2,212 (anchor Jul 29 predates Sep 25 withdrawal) | Kobi/Vicky | Open |
