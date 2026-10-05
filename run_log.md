@@ -385,3 +385,38 @@ GIT PUSH
   Commit: b098c02 "chore: project update 2026-10-02 -- work restarted Sep 24 with new crew, Sep 25 EUR3,000 withdrawal logged ..."
   Status: ✅ success
 ════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════
+ Ag. Nikolaos Update Run — 2026-10-05 20:45
+════════════════════════════════════════════════════════
+
+SOURCES
+  User:             NBG balance €49,805
+  WhatsApp group:   ~60 new (Oct 2 14:44 – Oct 3 19:03; group quiet since, bridge live — other chats synced 20:36)
+  WhatsApp direct:  0 new
+  Gmail:            2 relevant (PPC/DEI doc review done + request confirmation, forwarded by Kobi Oct 4)
+
+FILES EDITED THIS RUN
+  Updates/project_log.md              edited
+  Budget/balance_sheet_builder.py     edited (anchor → €49,805 Oct 5; 5 Committed→Paid; 5 new Paid rows; Kairis committed → €1,950 total; flag 12 resolved, flag 13 added)
+  Budget/Ag_Nikolaos_Balance_Sheet.xlsx  regenerated + recalculated (0 formula errors)
+  Budget/archive/Ag_Nikolaos_Balance_Sheet_2026-10-05.xlsx  created (old archives not pruned — delete not permitted)
+  project_data.js                     edited
+  action_items.md                     edited (4 closed, 7 added)
+  whatsapp_last_checked.txt           updated → 2026-10-05T20:45:00
+  memory/project_ag_nikolaos.md       updated
+  dashboard.html                      not changed
+  dashboard_vicky.html                not changed
+  Updates/run_log.md                  appended
+
+INTEGRITY CHECKS
+  project_data.js:      ✅ OK (also parsed with node)
+  dashboard.html:       ✅ OK
+  dashboard_vicky.html: ✅ OK
+
+GIT PUSH
+  Repo:   kobiba-git/Ag-Nikolaos-Project (branch: main)
+  Files:  Budget/Ag_Nikolaos_Balance_Sheet.xlsx, Budget/balance_sheet_builder.py, action_items.md, project_data.js, project_log.md, whatsapp_last_checked.txt (+ recalculated xlsx & run_log.md follow-up)
+  Commit: e621bd9 "chore: project update 2026-10-05 -- NBG balance re-anchored to EUR49,805, Sep 29 batch confirmed paid, Oct 3 weekly batch logged, Kairis now EUR1,950"
+  Status: ✅ success
+════════════════════════════════════════════════════════
