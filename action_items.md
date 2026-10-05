@@ -112,15 +112,22 @@
 | 2026-09-15 | Work on hold since early August — crew unavailable and Vicky on PTO; confirm restart date | Vicky | Done ✅ (restarted Sep 24) |
 | 2026-08-01 | Confirm Certificate of Cadaster retrieval (Vicky mentioned picking it up from another lawyer) | Vicky | Open |
 | 2026-09-15 | WhatsApp bridge stale since Aug 14 — restart on Kobi's laptop to close Aug 15–Sep 15 coverage gap | Kobi | Done ✅ (re-paired Sep 15; restarted again Oct 2) |
-| 2026-09-15 | Fresh NBG spot balance needed — last confirmed Jul 29 (€58,805), now ~7 weeks stale | Kobi/Vicky | Open |
+| 2026-09-15 | Fresh NBG spot balance needed — last confirmed Jul 29 (€58,805), now ~7 weeks stale | Kobi/Vicky | Done ✅ (€49,805 on Oct 5) |
 | 2026-09-15 | Resolve €400 water connection fee payment — POS transfer to accountant declined Sep 12, needs a different payment method | Vicky/Kobi | Open |
 | 2026-09-15 | Schedule recap/sync meeting with Vicky (requested Sep 15) to plan the final stretch | Kobi/Vicky | Done ✅ (set for Sat Oct 3, 12:00) |
 | 2026-09-15 | Work on hold, crew return delayed again — Vicky now says Meli + team back Monday Sep 21 (previously said "this week"); confirm on Sep 21 crew has actually mobilized | Vicky | Done ✅ (Vicky + new crew back on site Sep 24) |
-| 2026-10-02 | Confirm Sep 29 €3,000 withdrawal happened + Kairis €1,000 paid (wages €950, steel €750, petrol €40, electricity €250 still logged Committed) | Vicky | Open |
+| 2026-10-02 | Confirm Sep 29 €3,000 withdrawal happened + Kairis €1,000 paid (wages €950, steel €750, petrol €40, electricity €250 still logged Committed) | Vicky | Done ✅ (NBG balance Oct 5 ties to it) |
 | 2026-10-02 | Explain allocation of €650 cash float left from Sep 25 withdrawal (nails/strips, petrol, water fee?) | Vicky | Open |
 | 2026-10-02 | Report wages for Thu–Sun Sep 25–28 | Vicky | Open |
 | 2026-10-02 | Confirm Anagnostou received ~€190 electricity bill money (Yael asked Vicky to call him first) | Vicky | Open |
-| 2026-10-02 | Electricity meter reactivation: send plans to provider, buy pole + meter cabinet; €250 balance on completion | Vicky | Open |
+| 2026-10-02 | Electricity meter reactivation: send plans to provider, buy pole + meter cabinet; €250 balance on completion | Vicky | Open (€250 balance paid Oct 4) |
 | 2026-10-02 | Decide natural stone (~€45/sqm all-in) vs tiles for ground floor | Kobi/Yael/Vicky | Open |
-| 2026-10-02 | Sync meeting Sat Oct 3 12:00 — timeline, 2-month forecast, funding plan; then prepare next NBG transfer | Kobi/Vicky | Open |
-| 2026-10-02 | Fresh exact NBG spot balance — Rolling Bridge residual −€2,212 (anchor Jul 29 predates Sep 25 withdrawal) | Kobi/Vicky | Open |
+| 2026-10-02 | Sync meeting Sat Oct 3 12:00 — timeline, 2-month forecast, funding plan; then prepare next NBG transfer | Kobi/Vicky | Done ✅ (held Oct 3; next transfer still to plan) |
+| 2026-10-02 | Fresh exact NBG spot balance — Rolling Bridge residual −€2,212 (anchor Jul 29 predates Sep 25 withdrawal) | Kobi/Vicky | Done ✅ (€49,805 Oct 5; residual now +€788) |
+| 2026-10-05 | Approve sliding gate offer €1,450 (painted black) — ask if installation included; foundation wall ~4 m³ concrete; motor after weighing | Kobi (Vicky to get install price) | Open |
+| 2026-10-05 | Decide exterior colour: RAL 7038 Agate Grey (Kobi & Yael) vs RAL 7044 Silk Grey (Vicky) | Kobi/Yael/Vicky | Open |
+| 2026-10-05 | Front window privacy — shutters vs Vicky's alternative | Kobi/Yael/Vicky | Open |
+| 2026-10-05 | Kairis €400 gap: €4,400 (Sep 29) → €3,000 (Oct 3) with only €1,000 logged — was €400 paid from the Sep 25 float? | Vicky | Open |
+| 2026-10-05 | Send updated house plans once laptop is back from service | Vicky | Open |
+| 2026-10-05 | Send fresh front/back photos of the house for AI simulations | Vicky | Open |
+| 2026-10-05 | Plan next NBG transfer (balance €49,805 on Oct 5; ~€3K/week burn) | Kobi | Open |

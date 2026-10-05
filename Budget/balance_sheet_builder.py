@@ -34,8 +34,8 @@ def title(ws,text,sub,ncol):
 STATEMENT_DATE = "2026-06-25"
 STATEMENT_BALANCE = 35202.94
 # CURRENT_* = the most recent balance figure reported, even if just a spot-check (not a full statement).
-CURRENT_BALANCE_DATE = "2026-07-29"
-CURRENT_BALANCE = 58805.00
+CURRENT_BALANCE_DATE = "2026-10-05"
+CURRENT_BALANCE = 49805.00
 
 # ============ RENOVATION LEDGER ============
 # (date, category, description, vendor, amount, method, nbg, status)
@@ -171,6 +171,11 @@ L=[
 ("2026-07-29","Materials","Kairis - cash payment toward outstanding materials debt (remainder applied to next SikaGrout order)","Kairis",3000.00,"cash","Yes","Paid","2026-07-29"),
 ("2026-09-25","Materials","Kairis - cash payment toward SikaGrout order balance (Vicky Sep 29: balance now EUR4,400 after this payment)","Kairis",2350.00,"cash","Yes","Paid","2026-09-25"),
 ("2026-09-25","Other","Remainder of Sep 25 EUR3,000 NBG withdrawal - cash float, allocation TBC (nails/steel strips ~EUR45, mixer petrol; possibly water fee EUR400 / ELEC deposit)","Vicky (cash float)",650.00,"cash","Yes","Paid","2026-09-25"),
+("2026-09-29","Materials","Kairis - EUR1,000 payment toward SikaGrout balance from Sep 29 EUR3,000 withdrawal (inferred: NBG balance Oct 5 ties to three EUR3,000 withdrawals since Jul 29)","Kairis",1000.00,"cash","Yes","Paid","2026-09-29"),
+("2026-10-03","Labour","Workers wages - week Sep 28-Oct 3 (4/4/3/4/3/3 workers Mon-Sat)","Site crew",1510.00,"cash","Yes","Paid","2026-10-03"),
+("2026-10-03","Fuel","Fuel - week Sep 28-Oct 3 (EUR2.20/l)","Site",50.00,"cash","Yes","Paid","2026-10-03"),
+("2026-10-03","Materials","Construction materials - week Sep 28-Oct 3","Supplier",150.00,"cash","Yes","Paid","2026-10-03"),
+("2026-10-03","Materials","Kairis - EUR1,050 payment toward SikaGrout debt (EUR3,000 -> EUR1,950 remaining)","Kairis",1050.00,"cash","Yes","Paid","2026-10-03"),
 # committed / upcoming (approved)
 ("2026-06-28","Materials","Materials - week Jun25-28 (Yael unit completion)","Kairis",1500.00,"cash","Yes","Paid","2026-06-29"),
 ("2026-06-28","Plumbing","Plumber - Yael unit completion","Plumber",200.00,"cash","Yes","Paid","2026-06-29"),
@@ -189,14 +194,14 @@ L=[
 ("2026-06-25","Legal/Admin","Worker insurance Apr-Jun - remaining balance","EFKA",3,"-","Yes","Committed",""),
 ("2026-07-19","Materials","Kairis - partial payment (ATM shortfall from last week)","Kairis",150,"cash","Yes","Paid","2026-07-20"),
 ("2026-06-24","Materials","Kairis - remaining balance","Kairis",45,"cash","Yes","Committed",""),
-("2026-07-11","Materials","Kairis - SikaGrout HP340 order (200 bags) + steel - partly delivered Sep; outstanding balance per Vicky Sep 29 EUR4,400 incl. EUR45 old balance (EUR1,000 payment planned Sep 29, unconfirmed)","Kairis",4355.00,"cash","Yes","Committed",""),
+("2026-07-11","Materials","Kairis - SikaGrout HP340 order (200 bags) + steel - partly delivered Sep; outstanding balance per Vicky Oct 3 EUR1,950 incl. EUR45 old balance (Sep 29 EUR4,400 -> EUR3,000 before Oct 3 payment; EUR400 gap vs logged payments, see flag 13)","Kairis",1905.00,"cash","Yes","Committed",""),
 ("2026-07-21","Materials","Kairis - partial payment toward column/beam debt","Kairis",1000.00,"cash","Yes","Paid","2026-07-21"),
 ("2026-09-12","Plumbing","Water connection fee (mains) + water meter purchase - one-off, now connected to mains supply","Accountant (POS transfer attempted Sep 12, declined - payment method to be resolved)",400.00,"pending","No","Committed",""),
-("2026-09-29","Labour","Workers wages - week of Sep 21-27 (crew back on site Sep 24)","Site crew",950.00,"cash","Yes","Committed",""),
-("2026-09-29","Materials","Reinforcement steel, column ties, 15x D16 6m connecting bars + nails","Supplier",750.00,"cash","Yes","Committed",""),
-("2026-09-29","Fuel","Petrol for concrete mixer (column pour)","Site",40.00,"cash","Yes","Committed",""),
-("2026-09-26","Electrical","Electricity provider - 50% advance to reactivate 1969 meter + relocate to lower entrance (incl. install permit + supply approval); Vicky paid Sep 26, to be covered by Sep 29 withdrawal","Electricity provider",250.00,"cash","Yes","Committed",""),
-("2026-09-26","Electrical","Electricity provider - remaining 50% for meter reactivation/relocation","Electricity provider",250.00,"cash","Yes","Committed",""),
+("2026-09-29","Labour","Workers wages - week of Sep 21-27 (crew back on site Sep 24)","Site crew",950.00,"cash","Yes","Paid","2026-09-29"),
+("2026-09-29","Materials","Reinforcement steel, column ties, 15x D16 6m connecting bars + nails","Supplier",750.00,"cash","Yes","Paid","2026-09-29"),
+("2026-09-29","Fuel","Petrol for concrete mixer (column pour)","Site",40.00,"cash","Yes","Paid","2026-09-29"),
+("2026-09-26","Electrical","Electricity provider - 50% advance to reactivate 1969 meter + relocate to lower entrance (incl. install permit + supply approval); Vicky paid Sep 26, covered by Sep 29 withdrawal","Electricity provider",250.00,"cash","Yes","Paid","2026-09-29"),
+("2026-09-26","Electrical","Electricity provider - remaining 50% for meter reactivation/relocation (Vicky Oct 3: paying Oct 4 from Oct 3 withdrawal)","Electricity provider",250.00,"cash","Yes","Paid","2026-10-04"),
 ("2026-09-23","Electrical","Electricity bill (meter still in Anagnostou name) - Vicky to hand cash to Stathis Oct 2","Anagnostou (Stathis)",192.00,"cash","Yes","Committed",""),
 ]
 
@@ -470,7 +475,8 @@ FL=[
 ("8","Amanatidis + plumbing card payments (€2,140)","RESOLVED per Kobi: paid with the NBG debit card; reclassified as From NBG = Yes.","Resolved","None."),
 ("9","Worker insurance Apr-Jun €3,858","Not present in the NBG statement -> confirms still UNPAID. Listed as Committed.","OPEN","Pay/confirm; then it moves to Paid."),
 ("11","EUR907.92 residual — rolling bridge (25-Jun to 11-Jul)","Kobi reported the current NBG balance as EUR23,505.02 on 11-Jul-2026. The ledger only accounts for EUR10,790 in NBG-paid cash-out since the 25-Jun statement (EUR35,202.94), projecting EUR24,412.94 -- EUR907.92 more than reported. Consistent with the known cash-float pattern (round ATM withdrawals vs itemized weekly reconstructions) but could also be spending Vicky hasn't reported yet.","OPEN","Ask Vicky to confirm — either an ATM withdrawal that ran ahead of itemized expenses, or a payment not yet reported in the WhatsApp group."),
-("12","Rolling bridge residual -EUR2,212.06 (Oct 2)","Anchor balance (EUR58,805) is from 29-Jul and predates the 25-Sep EUR3,000 withdrawal now logged as Paid (EUR2,350 Kairis + EUR650 unallocated float). Kobi said ~EUR58K on 24-Sep (approx, not used as anchor). Residual moved by exactly the EUR3,000 -- anchor staleness, not missing money.","OPEN","Get a fresh exact NBG spot balance; also confirm whether the 29-Sep EUR3,000 withdrawal happened (its items are still Committed) and how the EUR650 float was spent.")
+("12","Rolling bridge residual -EUR2,212.06 (Oct 2)","Anchor balance (EUR58,805) is from 29-Jul and predates the 25-Sep EUR3,000 withdrawal now logged as Paid (EUR2,350 Kairis + EUR650 unallocated float). Kobi said ~EUR58K on 24-Sep (approx, not used as anchor). Residual moved by exactly the EUR3,000 -- anchor staleness, not missing money.","Resolved","Superseded by flag 13 (fresh NBG balance EUR49,805 on Oct 5)."),
+("13","NBG balance EUR49,805 (Oct 5) + Kairis EUR400 gap","Kobi reported EUR49,805 on 5-Oct = EUR58,805 (29-Jul) minus exactly three EUR3,000 ATM withdrawals (Sep 25, Sep 29, Oct 3). Sep 29 committed items (wages 950, steel 750, petrol 40, ELEC advance 250) + inferred Kairis 1,000 moved to Paid; Oct 3 report logged (wages 1,510, fuel 50, materials 150, ELEC 250, Kairis 1,050 = EUR3,010). Kairis: Sep 29 balance EUR4,400 minus logged EUR1,000 = EUR3,400, but Vicky Oct 3 says EUR3,000 -> EUR400 paid from somewhere unlogged (likely the Sep 25 EUR650 float).","OPEN","Ask Vicky: did EUR400 of the Sep 25 float go to Kairis? Confirm how the rest of the EUR650 float was spent. Rolling-bridge residual is the remaining cash-float timing gap.")
 ]
 r=5
 for n,iss,hand,st,act in FL:

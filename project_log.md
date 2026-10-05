@@ -1305,3 +1305,40 @@ After a few more quiet days (Vicky was unwell briefly), Vicky was back at the si
 - Funding plan / next transfer after the Oct 3 meeting (Kobi)
 
 **Running total spent (confirmed Paid only):** ~€102,161 of est. €275K (37.1%). Committed ~€20,635. NBG balance last exact figure €58,805 (Jul 29); ~€58K per Kobi Sep 24, before the Sep 25 withdrawal.
+
+---
+
+## October 2–5, 2026
+
+Crew of 3–4 workers on site all six days of the week (Sep 28–Oct 3), continuing the column and beam strengthening. Vicky described SikaGrout-340 HP in detail and, in reply to Kobi's question, confirmed it is used only to jacket existing columns and beams (EN 1504-3 R4 / 1504-6) with newly anchored rebar, not to cast new ones — a thin, dense jacket keeps added section size and dead load low given the existing foundations. Kobi, Yael and Vicky held the planned sync on Sat Oct 3 (Vicky on site): exterior colours, the large windows, and the sliding entrance gate were discussed. Vicky's laptop is in for service, so updated plans will follow. On Oct 4 Kobi forwarded two PPC/DEI emails to Vicky and Yael — document review completed and the supply-representation request (no. 31412405) forwarded. On Oct 5 Kobi reported the NBG balance at €49,805, which ties exactly to three €3,000 withdrawals since Jul 29 (Sep 25, Sep 29, Oct 3).
+
+### Payments
+
+| Item | Amount | Method | Notes |
+|---|---|---|---|
+| Workers wages, week Sep 21–27 | €950 | cash (Sep 29 withdrawal) | Committed → Paid (confirmed via NBG balance) |
+| Reinforcement steel, ties, 15× Ø16 bars, nails | €750 | cash (Sep 29) | Committed → Paid |
+| Petrol (concrete mixer) | €40 | cash (Sep 29) | Committed → Paid |
+| Electricity provider — 50% advance | €250 | cash (Sep 29) | Committed → Paid |
+| Kairis — toward SikaGrout balance | €1,000 | cash (Sep 29) | Inferred from balance tie-out |
+| Workers wages, week Sep 28–Oct 3 (4/4/3/4/3/3 workers) | €1,510 | cash (Oct 3 withdrawal) | Vicky report Oct 3 |
+| Fuel (€2.20/l) | €50 | cash (Oct 3) | |
+| Construction materials | €150 | cash (Oct 3) | |
+| Electricity provider — remaining 50% | €250 | cash (Oct 3) | Paid Oct 4 — meter reactivation fully paid |
+| Kairis — toward SikaGrout debt | €1,050 | cash (Oct 3) | €3,000 → €1,950 remaining |
+| **Total** | **€6,000** | | Sep 29 €2,990 + Oct 3 €3,010 |
+
+### Decisions
+- SikaGrout-340 HP confirmed for strengthening existing columns/beams only (Vicky, Oct 3)
+- Large staircase window (bottom to roof-garden room) and large front window both kept (Vicky, Oct 3)
+- Exterior colour shortlist: RAL 7038 Agate Grey (Kobi & Yael) vs RAL 7044 Silk Grey (Vicky) — not final; Kobi's preferred AI simulation is the top-left option
+
+### Open items
+- Sliding entrance gate offer €1,450 painted black — ask if installation is included; needs ~4 m³ concrete foundation wall; motor after weighing — Kobi to approve
+- Front window privacy: shutters (Kobi) vs Vicky's alternative proposal
+- Kairis €400 gap: balance €4,400 (Sep 29) → €3,000 (Oct 3) but only €1,000 logged — likely from the Sep 25 €650 float (Vicky to confirm)
+- Rolling-bridge residual +€788 after re-anchoring — ATM cash not yet itemised (Vicky)
+- Updated house plans once laptop is back; fresh front/back photos for simulations (Vicky)
+- Anagnostou ~€190 electricity bill and €400 water fee still to confirm (Vicky)
+
+**Running total spent (confirmed Paid only):** ~€108,161 of est. €275K (39.3%). Committed €15,945. NBG balance €49,805 (Oct 5).
