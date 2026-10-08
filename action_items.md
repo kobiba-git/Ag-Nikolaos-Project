@@ -110,7 +110,7 @@
 | 2026-07-29 | Provide a fresh NBG spot balance — reconciliation residual now €5,912.06 (bridge computes €59,592.94 vs. €65,505 reported Jul 21, before this week's €6,680 in withdrawals). Not alarming, but the anchor is stale. | Kobi/Vicky | Open |
 | 2026-07-29 | Confirm ATM shortfall Jul 27 (€700 of planned €3,000) didn't leave any workers/mixer costs unpaid | Vicky | Open |
 | 2026-09-15 | Work on hold since early August — crew unavailable and Vicky on PTO; confirm restart date | Vicky | Done ✅ (restarted Sep 24) |
-| 2026-08-01 | Confirm Certificate of Cadaster retrieval (Vicky mentioned picking it up from another lawyer) | Vicky | Open |
+| 2026-08-01 | Confirm Certificate of Cadaster retrieval (Vicky mentioned picking it up from another lawyer) | Vicky | Done ✅ (received before Aug; scan shared Oct 8) |
 | 2026-09-15 | WhatsApp bridge stale since Aug 14 — restart on Kobi's laptop to close Aug 15–Sep 15 coverage gap | Kobi | Done ✅ (re-paired Sep 15; restarted again Oct 2) |
 | 2026-09-15 | Fresh NBG spot balance needed — last confirmed Jul 29 (€58,805), now ~7 weeks stale | Kobi/Vicky | Done ✅ (€49,805 on Oct 5) |
 | 2026-09-15 | Resolve €400 water connection fee payment — POS transfer to accountant declined Sep 12, needs a different payment method | Vicky/Kobi | Open |
@@ -128,6 +128,9 @@
 | 2026-10-05 | Decide exterior colour: RAL 7038 Agate Grey (Kobi & Yael) vs RAL 7044 Silk Grey (Vicky) | Kobi/Yael/Vicky | Open |
 | 2026-10-05 | Front window privacy — shutters vs Vicky's alternative | Kobi/Yael/Vicky | Open |
 | 2026-10-05 | Kairis €400 gap: €4,400 (Sep 29) → €3,000 (Oct 3) with only €1,000 logged — was €400 paid from the Sep 25 float? | Vicky | Open |
-| 2026-10-05 | Send updated house plans once laptop is back from service | Vicky | Open |
+| 2026-10-05 | Send updated house plans once laptop is back from service | Vicky | Open (laptop pickup in Athens next week; trying iPad meanwhile) |
 | 2026-10-05 | Send fresh front/back photos of the house for AI simulations | Vicky | Open |
 | 2026-10-05 | Plan next NBG transfer (balance €49,805 on Oct 5; ~€3K/week burn) | Kobi | Open |
+| 2026-10-08 | Long-lead orders (2–3 month supply): tiles, windows, doors, kitchens, bathroom fixtures — Vicky to share options + ballpark prices over ~2 weeks | Vicky | Open |
+| 2026-10-08 | Joint decision meeting on long-lead orders after the options round (Kobi offered Fri Oct 9 / Sat Oct 10 call — no time set yet) | Kobi/Yael/Vicky | Open |
+| 2026-10-08 | 2nd-floor brick walls start after Oct 28 — finalize internal layout before then | Vicky/Kobi | Open |

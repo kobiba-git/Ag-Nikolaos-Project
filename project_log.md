@@ -1342,3 +1342,22 @@ Crew of 3–4 workers on site all six days of the week (Sep 28–Oct 3), continu
 - Anagnostou ~€190 electricity bill and €400 water fee still to confirm (Vicky)
 
 **Running total spent (confirmed Paid only):** ~€108,161 of est. €275K (39.3%). Committed €15,945. NBG balance €49,805 (Oct 5).
+
+---
+
+## Oct 6–8, 2026
+
+A quiet, planning-focused stretch with no payments reported. Vicky's laptop is still in Athens for service. She'll pick it up next week and meanwhile try the plan corrections on her iPad. On Oct 7 she said bricklaying for the second-floor walls starts after Oct 28. On Oct 8 Kobi raised the long-lead orders (tiles, windows, doors, kitchens, bathroom fixtures, 2–3 months to supply) as the main schedule bottleneck. Vicky agreed to an options round with ballpark pricing over the next ~2 weeks, followed by a session to make final decisions. She also confirmed the land registry certificate was received before August and shared a scan. She clarified that the electricity "plan" is only the per-residence load estimate for the DEI distribution operator, not the internal socket/lighting layout, and that it has already been submitted. (Note: the WhatsApp bridge was down Oct 5–8 because WhatsApp rejected the outdated client; it was rebuilt with an updated whatsmeow on Oct 8 and these messages were backfilled.)
+
+### Decisions
+- Long-lead items: Vicky to share options + ballpark prices over the next ~2 weeks, then a joint meeting to make final decisions (agreed Oct 8)
+- 2nd-floor brick walls to start after Oct 28 (Vicky, Oct 7)
+
+### Open items
+- Options + ballpark prices for tiles, windows, doors, kitchens, bathroom fixtures (Vicky, ~2 weeks)
+- Decision meeting: Kobi offered Fri Oct 9 or Sat Oct 10; no time set yet
+- Updated house plans: laptop pickup in Athens next week (Vicky)
+- Land registry certificate: ✅ resolved (in hand since before August)
+- DEI electricity load submission: ✅ already done
+
+**Running total spent (confirmed Paid only):** ~€108,161 of est. €275K (39.3%). Committed €15,945. NBG balance €49,805 (Oct 5), unchanged; no new financial activity.

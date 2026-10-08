@@ -14,7 +14,7 @@ const PROJECT_DATA = {
 
   // ── Meta ──────────────────────────────────────────────────────────
   meta: {
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-08",
     weekOf: "Week of Oct 5–10, 2026",
     projectStart:  "Feb 2026",
     estCompletion: "Late 2026",
@@ -41,8 +41,14 @@ const PROJECT_DATA = {
     { icon: "💶", label: "NBG Balance €49,805 (Oct 5) — Re-anchored",
       sub: "Ties to three €3,000 withdrawals since Jul 29 (Sep 25, Sep 29, Oct 3). Oct 3 batch: wages €1,510 + fuel €50 + materials €150 + electricity €250 + Kairis €1,050. Kairis now owed €1,950.",
       urgent: false },
-    { icon: "📐", label: "Updated Plans + Fresh Photos",
-      sub: "Vicky to send updated house plans once her laptop is back from service (calling Mon Oct 5), plus fresh front/back photos of the house for AI simulations.",
+    { icon: "📐", label: "Updated Plans — Laptop Still in Athens",
+      sub: "Vicky's laptop isn't back yet — she picks it up in Athens next week. Meanwhile she'll try the plan corrections on iPad (needs AutoCAD installed). Fresh front/back photos for AI simulations still pending.",
+      urgent: false },
+    { icon: "🛒", label: "Long-Lead Orders — Options Round (Next ~2 Weeks)",
+      sub: "Kobi (Oct 8): tiles, windows, doors, kitchens, bathroom fixtures take 2–3 months to supply. Vicky agreed to share options + ballpark prices over the next ~2 weeks (final measurements not possible yet), then a meeting to make final decisions.",
+      urgent: true },
+    { icon: "🧱", label: "2nd-Floor Brick Walls — From Oct 28",
+      sub: "Vicky (Oct 7): bricklaying on the second floor starts after Oct 28. Land registry certificate confirmed in hand (received before August). DEI load-requirement submission already done.",
       urgent: false },
   ],
 
@@ -99,6 +105,10 @@ const PROJECT_DATA = {
   // ── Action items (owner dashboard) ───────────────────────────────
   // priority: "critical" | "high" | "info"
   actionItems: [
+    { priority: "high",     label: "🟠 Decision Needed",            title: "Long-Lead Orders — Tiles, Windows, Doors, Kitchens, Bathrooms",
+      desc: "2–3 month supply lead times. Vicky to share options + ballpark prices over the next ~2 weeks (Oct 8), then a joint session to finalize. Depends on updated house plans (Vicky's laptop back next week)." },
+    { item: "Land registry certificate — Vicky confirms received before August; scan shared in group Oct 8", owner: "Vicky", status: "done", date: "2026-10-08" },
+    { item: "Electricity: DEI load-requirement plan (per-residence load, not internal layout) — already submitted, no further action", owner: "Vicky", status: "done", date: "2026-10-08" },
     { priority: "high",     label: "🟠 Decision Needed",            title: "Approve Sliding Gate Offer — €1,450",
       desc: "Painted black; ask whether installation is included. Plus foundation wall (~4 m³ concrete) and a motor sized to the gate's weight. Vicky may buy concrete from a nearby pour to save cost." },
     { priority: "high",     label: "🟠 Confirm",                    title: "Kairis €400 Gap + Sep 25 Float",
@@ -512,7 +522,8 @@ const PROJECT_DATA = {
       "🟡 Confirm the €400 water connection fee is paid",
       "🟡 Confirm Anagnostou received the ~€190 electricity bill money",
       "🟡 Gate: ask blacksmith if €1,450 includes installation; weigh gate → choose motor; plan foundation wall (~4 m³ concrete)",
-      "🟡 Send updated house plans when laptop is back from service",
+      "🟡 Send updated house plans — laptop pickup in Athens next week (trying corrections on iPad meanwhile)",
+      "🟠 Share options + ballpark prices for tiles, windows, doors, kitchens, bathroom fixtures over the next ~2 weeks, then set a decision meeting",
       "🟡 Send fresh front/back photos of the house (for AI colour/design simulations)",
       "🟡 Electricity meter: send plans to provider, source pole + meter cabinet",
     ],
