@@ -420,3 +420,34 @@ GIT PUSH
   Commit: e621bd9 "chore: project update 2026-10-05 -- NBG balance re-anchored to EUR49,805, Sep 29 batch confirmed paid, Oct 3 weekly batch logged, Kairis now EUR1,950"
   Status: ✅ success
 ════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════
+ Ag. Nikolaos Update Run — 2026-10-08 18:21
+════════════════════════════════════════════════════════
+
+NOTE: Bridge was stale (WhatsApp 405 "client outdated"). Rebuilt with whatsmeow 2026-10-07 + CGO (msys64 gcc) and restarted; Oct 5–8 backlog synced.
+
+FILES EDITED THIS RUN
+  Updates/project_log.md              edited
+  Budget/balance_sheet_builder.py     skipped (no financial updates)
+  Budget/Ag_Nikolaos_Balance_Sheet.xlsx  skipped
+  Budget/archive/Ag_Nikolaos_Balance_Sheet_YYYY-MM-DD.xlsx  skipped
+  project_data.js                     edited
+  action_items.md                     edited
+  whatsapp_last_checked.txt           updated (2026-10-08T18:21:25)
+  memory/project_ag_nikolaos.md       updated
+  dashboard.html                      not changed
+  dashboard_vicky.html                not changed
+  Updates/run_log.md                  appended
+
+INTEGRITY CHECKS
+  project_data.js:      ✅ OK (also parsed with node)
+  dashboard.html:       ✅ OK
+  dashboard_vicky.html: ✅ OK
+
+GIT PUSH
+  Repo:   kobiba-git/Ag-Nikolaos-Project (branch: main)
+  Files:  action_items.md, project_data.js, project_log.md, whatsapp_last_checked.txt (+ run_log.md follow-up)
+  Commit: dafef6c "chore: project update 2026-10-08 -- long-lead orders options round agreed, land registry cert confirmed, 2nd-floor bricks after Oct 28"
+  Status: ✅ success
+════════════════════════════════════════════════════════
